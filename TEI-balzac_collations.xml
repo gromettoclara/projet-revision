@@ -1,0 +1,932 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<!DOCTYPE TEI [
+     <!ENTITY caro '<persName ref="#femme">Caroline</persName>'>
+     <!ENTITY doc '<persName ref="#doc">docteur</persName>'>
+     <!ENTITY Adolphe '<persName ref="#mari">Adolphe</persName>'>
+     <!ENTITY trismus '<hi rend="i">trismus</hi>'>
+     <!ENTITY susp "...">
+     <!ENTITY fe "femme">
+     <!ENTITY ho "homme">
+     <!ENTITY end-p '<milestone unit="tei:p"/><lb/>'>
+     <!ENTITY dash '<milestone unit="tei:p"/><lb/><pc type="dash-speaking" pre="true">–</pc> '>
+     <!ENTITY Fvirg '<app corresp="#punct"><lem wit="#F">,</lem></app>'>
+     <!ENTITY Cvirg '<app corresp="#punct"><rdg wit="#C">,</rdg></app>'>
+     <!ENTITY Rvirg '<app corresp="#punct"><rdg wit="#R2M">,</rdg></app>'>
+     <!ENTITY Rsusp '<app corresp="#punct #attenuation"><rdg wit="#R2M">&susp;</rdg></app>'>
+     <!ENTITY Fp-Rsusp '<app corresp="#punct"><lem wit="#F">.</lem><rdg wit="#R2M">&susp;</rdg></app>'>
+     <!ENTITY Fp-Csusp '<app corresp="#punct"><lem wit="#F">.</lem><rdg wit="#C2">&susp;</rdg></app>'>
+     <!ENTITY int-Rsusp '<app corresp="#punct"><lem wit="#F">?</lem><rdg wit="#R2M">?&susp;</rdg></app>'>
+]>
+
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">La Comédie Humaine</title>
+            <title type="sub">Extraits choisis</title>
+            <title type="sub">Édition critique et génétique</title>
+            <author ref="balzac">Balzac</author>
+            <principal xml:id="cg">GROMETTO Clara</principal>
+            <respStmt>
+               <resp>Sélection, alignement des témoins et édition en ligne par</resp>
+               <persName ref="#cg">
+                  <forename>Clara</forename>
+                  <surname>Grometto</surname>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Édition électronique de la Comédie Humaine dans la version dite Furne corrigée
+                  (qui intègre les corrections manuscrites apportées par l'auteur)</resp>
+               <orgName>
+                  <ref target="https://ebalzac.com/">eBalzac</ref>
+               </orgName>
+               <note>Projet financé par l'ANR dans le cadre du Projet d’Hypertexte de l’Œuvre de
+                  Balzac reposant sur l’Utilisation de Similarités – PHŒBUS</note>
+            </respStmt>
+            <respStmt>
+               <resp>Responsables du projet eBalzac</resp>
+               <persName>
+                  <forename>Andrea</forename>
+                  <surname>Del Lungo</surname>
+               </persName>
+               <persName>
+                  <forename>Pierre</forename>
+                  <surname>Glaudes</surname>
+               </persName>
+               <persName>
+                  <forename>Jean-Gabriel</forename>
+                  <surname>Ganascia</surname>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Institutions partenaires de eBalzac</resp>
+               <orgName>ALITHILA (Université de Lille III)</orgName>
+               <orgName>CELLF (CNRS &amp; Université Paris IV Sorbonne)</orgName>
+               <orgName>LIP6 (Université Paris VI)</orgName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>École nationale des chartes</publisher>
+            <pubPlace>Paris, France</pubPlace>
+            <date when-iso="2024-02-27" type="date-de-rendu">27 février 2024</date>
+         </publicationStmt>
+         <sourceDesc>
+            <listWit>
+               <witness xml:id="F">
+                  <note>L'encodage est issu d'une rétroconversion de l'édition TEI réalisée par
+                     <ref target="https://ebalzac.com/">eBalzac</ref> en .txt.</note>
+                  <biblFull>
+                     <titleStmt>
+                        <title>La Comédie humaine, édition électronique</title>
+                     </titleStmt>
+                     <editionStmt>
+                        <edition>Cette édition électronique de <hi rend="i">La Comédie humaine</hi>
+                           constitue la première édition en ligne de l’œuvre de Balzac dans la
+                           version dite du « Furne corrigé », qui intègre les corrections
+                           manuscrites apportées par l’auteur sur son exemplaire personnel de la
+                           première édition de <hi rend="i">La Comédie humaine</hi> parue chez Furne
+                           de 1842 à 1847. Cet exemplaire est conservé dans le fonds Lovenjoul de la
+                           Bibliothèque de l’Institut de France. Pour les romans publiés chez Furne
+                           après la mort de l'auteur, le texte a été établi à partir de la dernière
+                           édition datant de son vivant. Cette édition a été établie dans le cadre
+                           du projet PHŒBUS, financé par l’Agence nationale de la recherche
+                           (2015-2019).</edition>
+                     </editionStmt>
+                     <publicationStmt>
+                        <publisher>eBalzac</publisher>
+                        <publisher>ALITHILA (Université Lille III)</publisher>
+                        <publisher>CELLF (CNRS &amp; Université Paris IV Sorbonne)</publisher>
+                        <publisher>LIP6 (Université Paris VI)</publisher>
+                        <availability status="restricted">
+                           <p>Sous licence <ref target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/">CC
+                              BY-NC-ND 3.0 FR DEED Attribution - Pas d’Utilisation Commerciale -
+                              Pas de Modification 3.0 France</ref></p>
+                           <p>Copyright © 2017 Université Charles-de-Gaulle Lille 3,
+                              agissant pour le projet ANR « Projet d’hypertexte de l’œuvre de Balzac
+                              par l’utilisation de similarités » (ci-après dénommé ANR
+                              Phœbus).</p>
+                           <p>Cette ressource électronique protégée par le code de la propriété
+                              intellectuelle sur les bases de données (L341-1) est mise à
+                              disposition de la communauté scientifique internationale par l’ANR
+                              Phœbus, selon les termes de la licence Creative Commons : « Attribution
+                              - Pas d’Utilisation Commerciale - Pas de
+                              Modification 3.0 France (CC BY-NC-ND 3.0 FR) ».</p>
+                           <p>Attribution : afin de référencer la source, toute utilisation ou
+                              publication dérivée de cette ressource électroniques comportera le nom
+                              de l’ANR Phœbus et surtout l’adresse Internet de la ressource.</p>
+                           <p>Pas d’Utilisation Commerciale : dans l’intérêt de la communauté
+                              scientifique, toute utilisation commerciale est interdite.</p>
+                           <p>Pas de Modification : l’ANR Phœbus s’engage à améliorer et à corriger
+                              cette ressource électronique, notamment en intégrant toutes les
+                              contributions extérieures, la diffusion de versions modifiées de cette
+                              ressource n’est pas souhaitable.</p>
+
+                        </availability>
+                        <pubPlace>Paris</pubPlace>
+                        <date when="2017"/>
+                     </publicationStmt>
+                     <sourceDesc>
+                        <bibl>
+                           <title type="main">La Comédie Humaine</title>
+                           <title level="m">Neuvième volume (Études de mœurs, Scènes de la vie
+                              parisienne, Tome I) / HISTOIRE DES TREIZE : Ferragus .– La Duchesse de
+                              Langeais .– La Fille aux yeux d'or. – LE PÈRE GORIOT.</title>
+                           <title level="a">La Fille aux yeux d'or</title>
+                           <author ref="https://catalogue.bnf.fr/ark:/12148/cb118900414">
+                              <persName ref="#balzac">
+                                 <forename>BALZAC</forename>
+                                 <surname>Honoré de</surname>
+                              </persName>
+                           </author>
+                           <publisher>Furne, rue Saint-André-des-Arts, 55 ;
+                              J.-J. Dubochet et cie, rue de Seine, 33 ; J. Hetzel, rue de
+                              Seine, 33.</publisher>
+                           <pubPlace>Paris</pubPlace>
+                           <date>1843</date>
+                           <biblScope unit="page">239-240</biblScope>
+                        </bibl>
+
+                        <bibl>
+                           <title type="main">La Comédie Humaine</title>
+                           <title level="m">Quatorzième volume (Études philosophiques, Tome I) / La
+                              Peau de chagrin. – Jésus-Christ en Flandre. – Melmoth
+                              réconcilié. / Le Chef-d'œuvre inconnu. – La Recherche de
+                              l'absolu.</title>
+                           <title level="a">La Peau de Chagrin</title>
+                           <author ref="https://catalogue.bnf.fr/ark:/12148/cb118900414">
+                              <persName ref="#balzac">
+                                 <forename>BALZAC</forename>
+                                 <surname>Honoré de</surname>
+                              </persName>
+                           </author>
+                           <publisher>Furne, rue Saint-André-des-Arts, 55 ; J.-J. Dubochet et cie, rue de Seine, 33 ; J. Hetzel, 
+                              rue de Seine, 33.</publisher>
+                           <pubPlace>Paris</pubPlace>
+                           <date>1845</date>
+                           <biblScope unit="page">35-38</biblScope>
+                        </bibl>
+
+                        <bibl>
+                           <title level="m">Petites misères de la vie conjugale.</title>
+                           <author ref="https://catalogue.bnf.fr/ark:/12148/cb118900414">
+                              <persName ref="#balzac">
+                                 <forename>BALZAC</forename>
+                                 <surname>Honoré de</surname>
+                              </persName>
+                           </author>
+                           <publisher>Chlendowski, 8, rue du Jardinet</publisher>
+                           <pubPlace>Paris</pubPlace>
+                           <date>1846</date>
+                           <biblScope unit="page">182-185</biblScope>
+                           <note>L'édition Chlendowski est antérieure à l'édition du 18° volume de
+                              La Comédie Humaine (publié par Houssiaux en 1855, soit après la mort
+                              de <persName ref="#balzac">Balzac</persName>). Elle sert de base à
+                              l'établissement du texte car elle constitue la dernière édition
+                              contrôlée par l'auteur.</note>
+                        </bibl>
+                        <bibl>
+                           <title level="s">ŒUVRES COMPLÈTES</title> / de
+                           <author ref="https://catalogue.bnf.fr/ark:/12148/cb118900414">
+                              <persName ref="#balzac">M. de Balzac</persName></author>. -
+                           <pubPlace>Paris</pubPlace>, <publisher>les Bibliophiles de
+                           l'originale</publisher>, <date>1965-1976</date>. 30 vol. [R 8° Ca 10,
+                           12 Publiées sous la direction de <editor>Jean-A. Ducourneau</editor>.
+                           <biblScope unit="volume">I-XVI</biblScope>. <title type="main">La
+                           Comédie humaine</title>. <note>Fac-similé de l'exemplaire corrigé par
+                           Balzac de l'édition Furne-Hetzel de 1842-1846 (Furne corrigé) avec
+                           transcription des corrections.</note></bibl>
+                     </sourceDesc>
+                  </biblFull>
+               </witness>
+               <witness xml:id="C">
+                  <note>L'encodage se fonde sur la <ref facs="https://gallica.bnf.fr/ark:/12148/bpt6k1048844p/f1.item">
+                     numérisation de <bibl>La Caricature morale, politique et littéraire</bibl></ref>
+                     disponible sur l'interface de <ref target="https://catalogue.bnf.fr/ark:/12148/cb12381002j">
+                        Gallica (Bnf)</ref>.</note>
+                  <biblStruct>
+                     <analytic>
+                        <author ref="https://catalogue.bnf.fr/ark:/12148/cb118900414">
+                           <persName ref="#balzac">Alfred Coudreux</persName>
+                        </author>
+                        <title level="a">Le petit Mercier</title>
+                        <idno type="ark">ark:/12148/bpt6k1048844p</idno>
+                     </analytic>
+                     <monogr>
+                        <title level="j"> La Caricature morale, politique et littéraire </title>
+                        <imprint>
+                           <date when="1830-12-16">16 décembre 1830</date>
+                        </imprint>
+                        <biblScope unit="page">49-51</biblScope>
+
+                     </monogr>
+
+                     <ptr type="catBnf" target="http://catalogue.bnf.fr/ark:/12148/cb344523348"/>
+                  </biblStruct>
+               </witness>
+
+               <witness xml:id="C2">
+                  <note>L'encodage se fonde sur la <ref facs="https://gallica.bnf.fr/ark:/12148/bpt6k10488349/f1.item">
+                     numérisation de <bibl>La Caricature morale, politique et littéraire</bibl></ref>
+                     disponible sur l'interface de <ref target="https://catalogue.bnf.fr/ark:/12148/cb12381002j">
+                        Gallica (Bnf)</ref>.</note>
+                  <biblStruct>
+                     <analytic>
+                        <author ref="https://catalogue.bnf.fr/ark:/12148/cb118900414">
+                           <persName ref="#balzac">Alfred Coudreux</persName>
+                        </author>
+                        <title level="a">La Consultation</title>
+                        <idno type="ark">ark:/12148/bpt6k10488349</idno>
+                     </analytic>
+                     <monogr>
+                        <title level="j">La Caricature morale, politique et littéraire</title>
+                        <imprint>
+                           <date when="1830-11-11">11 novembre 1830</date>
+                        </imprint>
+                        <biblScope unit="page">9-11</biblScope>
+
+                     </monogr>
+                     <ptr type="catBnf" target="https://catalogue.bnf.fr/ark:/12148/cb344523348"/>
+                  </biblStruct>
+               </witness>
+               <witness xml:id="R2M">
+                  <note>L'encodage se fonde sur la <ref facs="https://archive.org/details/revuedesdeuxmond011831pari/">
+                     numérisation de <bibl>La Revue des deux mondes</bibl></ref> disponible sur l'interface
+                     des <ref target="https://archive.org/about/">Internet Archives</ref>.</note>
+                  <biblStruct>
+                     <analytic>
+                        <author ref="https://catalogue.bnf.fr/ark:/12148/cb118900414">
+                           <persName ref="#balzac">Alfred Coudreux</persName>
+                        </author>
+                        <title level="a">Une débauche</title>
+                        <idno type="ark">ark:/13960/t6445rk72</idno>
+                     </analytic>
+                     <monogr>
+                        <title level="j">La revue des deux Mondes</title>
+                        <imprint>
+                           <date when="1831-05">Mai 1831</date>
+                        </imprint>
+                        <biblScope unit="vol">Tome 2</biblScope>
+                        <biblScope unit="page">287-291</biblScope>
+                     </monogr>
+                     <ptr type="URI" target="https://archive.org/details/revuedesdeuxmond011831pari/"/>
+                  </biblStruct>
+               </witness>
+            </listWit>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p>L'alignement des passages journalistiques et romanesques accouplés a été réalisé
+               avec l'aide de l'algorithme de Dekker de <ref target="https://collatex.net/">Collatex</ref>.
+               Cet alignement a été repris ensuite pour constituer l'édition critique et génétique qui suit.</p>
+            <p>L'édition critique et l'alignement des témoins cherchent à permettre l'étude la plus
+               précise possible de la variance et des similitudes entre l'antécédent publié dans la
+               presse et la version roman :
+               <list>
+                  <item>La structuration du texte en paragraphes (&lt;p&gt;) a été abandonnée : les
+                     trois textes sont insérés dans un conteneur &lt;ab&gt; et les changements de
+                     paragraphes sont signalés par des &lt;milestone&gt;, pour que l'alignement des
+                     témoins puisse mettre en avant les variances syntaxiques, lexicales ou
+                     orthographiques. On considérera que les variations affectant la structure
+                     syntaxique et le sémantisme sont plus importantes que les variations tenant à la
+                     structure de la page. C'est pourquoi les changements de page n'a pas été encodé,
+                     nous considérerons que ces aspects ne relèvent pas de décisions auctoriales.</item>
+                  <item>Quand deux blocs dans les deux témoins de texte se présentent comme trop
+                     éloignés pour un alignement mot-à-mot mais peuvent être mis en parallèle pour
+                     d'autres raisons (structures syntaxiques, thématiques, alignement des mots qui
+                     suivent), ils seront encodés dans un même élément &lt;app&gt;. L'@corresp
+                     portera la valeur générale "word-diff" ; et "add-words" si l'un des deux
+                     témoins est significativement plus fourni que l'autre.</item>
+                  <item>Les italiques et les petites capitales ont été rendues par la balise
+                     &lt;hi&gt;, et si leur présence produit une nouvelle variante, l'@corresp
+                     portera la valeur "rend".</item>
+                  <item>Prise de décision concernant les déplacements et les structures syntaxiques
+                     en miroir : il revient à l'encodeur la décision de les encoder dans un seul
+                     élément &lt;app&gt; (considérant alors un déplacement au sein du bloc,
+                     l'inversion de l'ordre de deux groupes dans la phrase) ou dans deux éléments
+                     &lt;app&gt; distincts (considérant alors une suppression à un endroit et un
+                     ajout à un autre endroit du texte) en fonction de la portée du déplacement.
+                     Dans les deux cas, si on observe le déplacement d'un terme ou d'un groupe de
+                     mot dans la phrase l'@corresp portera la valeur "sentence-order".</item>
+               </list></p>
+            <p>Pour chaque élément &lt;app&gt;, un attribut "@corresp" est utilisé pour préciser la
+               nature de la différence entre les témoins. Les valeurs possibles pour cet attribut sont:<list>
+                  <item xml:id="orth">différence orthographique</item>
+                  <item xml:id="punct">différence de ponctuation</item>
+                  <item xml:id="sentence-order">différence dans l'ordre des mots dans un bloc de
+                     texte, ou déplacement de termes dans la phrase</item>
+                  <item xml:id="word-diff">des mots différents sont utilisés dans un même bloc de
+                     texte dans les différents témoins</item>
+                  <item xml:id="pers-diff">différence dans la dénomination des personnages (et pas
+                     différence de personnage)</item>
+                  <item xml:id="add-words">un témoin présente un ou plusieurs mots qui ne se
+                     trouvent pas dans l'autre</item>
+                  <item xml:id="text-segmentation">la séparation du texte en paragraphes est
+                     différente d'un témoin à l'autre</item>
+                  <item xml:id="attenuation">la différence va dans le sens de l'atténuation, de la
+                     version antérieure à la version postérieure</item>
+                  <item xml:id="expressif">la différence va dans le sens de l'emphase, de la version
+                     antérieure à la version postérieure</item>
+                  <item xml:id="general">la différence va vers la généralisation, de la version
+                     antérieure à la version postérieure</item>
+                  <item xml:id="particulier">la différence va vers la particularisation, de la
+                     version antérieure à la version postérieure</item>
+                  <item xml:id="syntax">la différence est d'ordre syntaxique (conjugaison, passage
+                     de la seconde à la troisième personne&susp;)</item>
+                  <item xml:id="parole">différence dans la prise de parole des personnages
+                     (notamment rajout de verbe de parole)</item>
+                  <item xml:id="rend">différence typographique significative</item>
+                  <item xml:id="place-diff">changement dans la dénomination d'un lieu</item>
+               </list></p>
+            <segmentation>
+               <p>Pour mieux aligner les textes et mettre en avant les variations entre les témoins,
+                  les paragraphes ne sont pas contenus dans des &lt;p&gt;. Le passage d'un
+                  paragraphe à l'autre est signalé par un &lt;milestone unit="tei:p"/&gt; et par un
+                  &lt;lb/&gt;. Cette méthode est suggérée par Beshero-Bondar, Cayless,
+                  Vigilanti (2019: 3.10) <bibl>
+                     <author>
+                        <persName>Beshero-Bondar</persName>
+                        <persName>Cayless</persName>
+                        <persName>Viglianti</persName>
+                     </author>
+                     <title>Document Modeling with the TEI Critical Apparatus</title>
+                     <date>2019</date>
+                     <ref target="http://bit.ly/crit-app-panel"/>
+                  </bibl></p>
+            </segmentation>
+         </editorialDecl>
+         <projectDesc>
+            <p>Encodage réalisé dans le cadre du cours de TEI du M2 TNAH de l'ENC,
+               2022-2023.</p>
+         </projectDesc>
+         <variantEncoding method="parallel-segmentation" location="internal"/>
+      </encodingDesc>
+      <profileDesc>
+         <creation>
+            <title>Extraits choisis de la Comédie Humaine et leurs antécédents.</title>
+            <origDate type="date-range" xml:id="XIXe">XIXe siècle</origDate>
+            <country>France</country>
+         </creation>
+         <abstract>
+            <p><persName ref="#balzac">Balzac</persName> a la spécificité de multiplier les supports d'écriture
+               (livre, feuilleton, articles de journal), en réutilisant ses textes antérieurs. Ainsi son activité
+               journalistique, bien que motivée a priori par une rentabilité, n'est pas sans intérêt, d'autant que
+               les journaux se font l'antichambre de l'œuvre à venir. L'auteur collabore à partir de 1830 à de nombreux
+               journaux et revue, souvent sous pseudonyme. Il prépublie des œuvres courtes, contes et nouvelles ; mais
+               aussi (c'est ce qui nous intéresse) des passages que l'on retrouvera ensuite intégré dans des romans.
+               L'idée est donc d'accoler les ébauches avec leur version la plus aboutie dont on dispose,
+               c'est-à-dire le Furne corrigée, exemplaire personnel de La Comédie Humaine de Balzac,
+               et annoté par l'auteur lui-même.</p>
+            <p>Cette amorce d'édition critique fournira un nouvel outil d'interrogation des textes
+               de La Comédie Humaine, en approfondissant la connaissance des phénomènes génétiques,
+               poétiques et stylistiques à l'œuvre dans le processus d'écriture, et en permettant
+               de mieux comprendre l'apparition des réutilisations dans l'œuvre littéraire.</p>
+         </abstract>
+         <particDesc>
+            <listPerson>
+               <head>Liste des personnes, physiques, morales, fictives ou réelles dans les passages
+                  encodé</head>
+               <person xml:id="balzac" role="real">
+                  <persName type="text-name">
+                     <addName>Alfred Coudreux</addName>
+                  </persName>
+                  <persName type="contemporary-name" resp="#cg" cert="high">
+                     <forename>Honoré de</forename>
+                     <surname>Balzac</surname>
+                  </persName>
+               </person>
+               <person xml:id="mercier" role="fictional">
+                  <persName type="text-name">
+                     <name>Mercier</name>
+                  </persName>
+               </person>
+               <person xml:id="merciere">
+                  <persName type="occupation-name" resp="#cg" cert="high">
+                     <name>Mercière</name>
+                  </persName>
+                  <persName type="text-name">
+                     <name>sa &fe;</name>
+                  </persName>
+               </person>
+               <person xml:id="vh" role="real">
+                  <persName type="contemporary-name" resp="#cg" cert="high">
+                     <forename>Victor</forename>
+                     <surname>Hugo</surname>
+                  </persName>
+                  <note>Romancier et poète (1802-1885)</note>
+               </person>
+               <person xml:id="etienne" role="real">
+                  <persName type="text-name" resp="#cg" cert="high">
+                     <forename>Joseph</forename>
+                     <surname>Étienne</surname>
+                  </persName>
+                  <persName type="contemporary-name" resp="#cg" cert="high">
+                     <forename>Étienne</forename>
+                     <nameLink>de</nameLink>
+                     <surname>Jouy</surname>
+                  </persName>
+                  <persName type="text-name">
+                     <addName type="honorific">M.</addName>
+                     <surname>Etienne</surname>
+                  </persName>
+                  <note source="wikipedia">Dramaturge et librettiste (1764-1846)</note>
+               </person>
+               <person xml:id="jay" role="real">
+                  <persName type="contemporary-name" resp="#cg" cert="high">
+                     <forename>Antoine</forename>
+                     <surname>Jay</surname>
+                  </persName>
+                  <persName type="text-name">
+                     <addName type="honorific">M.</addName>
+                     <surname>Jay</surname>
+                  </persName>
+                  <note source="wikipedia">&ho; de lettres, journaliste, historien et &ho; politique
+                     (1770-1854)</note>
+               </person>
+               <person xml:id="chaign" role="real">
+                  <persName type="contemporary-name" resp="#cg" cert="low">
+                     <forename>Jean-Louis</forename>
+                     <surname>Chaigneau</surname>
+                  </persName>
+                  <persName type="text-name">
+                     <addName type="honorific">M.</addName>
+                     <surname>Chaignieau</surname>
+                  </persName>
+                  <note source="wikipedia">Jean-Louis Chaigneau (1767-1847) est un &ho;
+                     politique français. Pendant la révolution, il entra au Conseil des
+                     Cinq-Cents. Il y prit quelquefois la parole, par exemple, pour présenter
+                     un rapport sur les versements en assignats faits par les comptables. Il siégea
+                     jusqu'en l'an VIII.</note>
+               </person>
+               <person xml:id="tag" role="real">
+                  <persName type="contemporary-name" resp="#cg" cert="high">
+                     <forename>Marie</forename>
+                     <surname>Taglioni</surname>
+                  </persName>
+                  <persName type="text-name">
+                     <addName type="honorific">
+                        <app corresp="#add-words">
+                           <lem wit="#F">la</lem>
+                        </app>
+                     </addName>
+                     <surname>Taglioni</surname>
+                  </persName>
+                  <note source="encyclopaedia Universalis">Danseuse et chorégraphe d'origine
+                     italienne (1804-1884). Elle est l'initiatrice des pointes.</note>
+               </person>
+               <person xml:id="laf" role="real">
+                  <persName type="contemporary-name" resp="#cg" cert="high">
+                     <forename>Gilbert</forename>
+                     <nameLink>du</nameLink>
+                     <surname>Mottier</surname>
+                     <nameLink>de</nameLink>
+                     <surname>Lafayette</surname>
+                  </persName>
+                  <persName type="text-name">
+                     <addName type="occupation">général</addName>
+                     <surname>Lafayette</surname>
+                  </persName>
+                  <note source="wikipedia">&ho; politique français, célèbre en raison de son engagement dans les
+                     rangs de l'armée des insurgés américains (1777-1783), puis dans l'aile libérale et
+                     réformiste de l'aristocratie française (1784-1792), enfin dans l'opposition libérale
+                     au régime de la monarchie de Juillet qu'il avait pourtant contribué à établir lors des Trois
+                     Glorieuses (juillet 1830).</note>
+               </person>
+               <person xml:id="mari" role="fictional">
+                  <persName type="text-name">
+                     <app corresp="#word-diff #particulier">
+                        <lem wit="#F">
+                           <forename>Adolphe</forename>
+                        </lem>
+                        <rdg wit="#C">
+                           <addName type="honorific">M. le Conte</addName>
+                        </rdg>
+                     </app>
+                  </persName>
+               </person>
+               <person xml:id="femme" role="fictional">
+                  <persName type="text-name">
+                     <app corresp="#word-diff #particulier">
+                        <lem wit="#F">
+                           <!--honorific ?-->
+                           <forename type="honorific">Caroline</forename>
+                        </lem>
+                        <rdg wit="#C">
+                           <name type="honorific">Madame de ***</name>
+                        </rdg>
+                     </app>
+                  </persName>
+               </person>
+               <person xml:id="elssler" role="real">
+                  <persName type="contemporary-name" resp="#cg" cert="high">
+                     <forename>Fanny</forename>
+                     <surname>Elssler</surname>
+                  </persName>
+                  <persName type="text-name">
+                     <surname>Elssler</surname>
+                  </persName>
+                  <note source="encyclopaedia Universalis">Danseuse autrichienne, née à Gumpendorf,
+                     près de Vienne. Fille du copiste et confident de Joseph Haydn, Fanny Elssler ne
+                     sera pas une danseuse enfermée dans les milieux du spectacle (elle sera la
+                     maîtresse du duc de Reichstadt ; voir L'Aiglon d'Edmond Rostand !).</note>
+               </person>
+               <person xml:id="pa" role="fictional">
+                  <persName type="contemporary-name" resp="#cg" cert="medium">
+                     <addName type="occupation">père</addName>
+                     <surname>Aubry</surname>
+                  </persName>
+                  <note>Personnage du roman <hi rend="i">Atala</hi> de Châteaubriand (1801)</note>
+               </person>
+               <person xml:id="doc">
+                  <persName type="text-name" resp="cg">
+                     <name type="occupation-name">Le &doc;</name>
+                  </persName>
+               </person>
+               <person xml:id="rab" role="real">
+                  <persName type="contemporary-name" resp="#cg" cert="high">
+                     <forename>François</forename>
+                     <surname>Rabelais</surname>
+                  </persName>
+                  <persName type="text-name">
+                     <addName type="honorific">maître</addName>
+                     <surname>Alcofribas</surname>
+                  </persName>
+                  <note source="wikipedia">François Rabelais est également connu sous deux
+                     anagrammes de son nom : Alcofribas Nasier ou bien Serafin Calobarsy. Il est un
+                     écrivain français humaniste de la Renaissance (1483 ou 1494-1553)</note>
+               </person>
+               <person xml:id="emile" role="fictional">
+                  <persName type="text-name">
+                     <name>Émile</name>
+                  </persName>
+               </person>
+               <person xml:id="raph">
+                  <persName type="occupation-name" resp="cg">
+                     <name>Raphaël</name>
+                  </persName>
+               </person>
+               <person xml:id="louisXVIII">
+                  <persName type="contemporary-name" resp="#cg" cert="high">
+                     <forename>Louis</forename>
+                     <genName>XVIII</genName>
+                  </persName>
+                  <note>Roi de France et de Navarre du 6 avril 1814 au 20 mars 1815 puis du 8
+                     juillet 1815 à sa mort, le 16 septembre 1824.</note>
+               </person>
+               <personGrp xml:id="convive" role="invités" sex="masculin"/>
+               <person xml:id="taillefer" role="fictional">
+                  <persName type="text-name" resp="#cg" cert="high">
+                     <forename>Jean-Frédéric</forename>
+                     <surname>Taillefer</surname>
+                  </persName>
+                  <persName type="text-name">
+                     <name>amphitryon</name>
+                  </persName>
+                  <note source="Wikipedia">Jean-Frédéric Taillefer est un personnage de la
+                     Comédie Humaine. Fournisseur de vivres sous l'Empire, il s'enrichit à la suite
+                     d'un crime. Il devient banquier et spécule avec le baron de NucingeLorsque l'on
+                     parle de l'hôte, le terme « amphitryon » est utilisé. En langage soutenu, on
+                     entend par ce mot l'hôte d'un dîner. Mais il s'agit de la référence à une
+                     comédie de Molière inspirée de celle de Plaute, dans laquelle Amphitryon,
+                     personnage éponyme, organise un dîner au cours duquel il est déshonoré,
+                     apprenant qu'il est trompé. Satyre de la société parisienne du XIXe.</note>
+               </person>
+               <listRelation>
+                  <head>Liste des relations entre les personnages dans l'extrait encodé</head>
+                  <relation name="married" mutual="#mercier #merciere"/>
+                  <relation name="married" mutual="#mari #femme"/>
+                  <relation name="friend" mutual="#emile #raph"/>
+               </listRelation>
+            </listPerson>
+         </particDesc>
+         <settingDesc>
+            <listPlace>
+               <head>Lieux dans le passage encodé</head>
+               <place xml:id="paris">
+                  <placeName type="text-name">Paris</placeName>
+                  <country ref="#fr">France</country>
+               </place>
+               <place xml:id="fr">
+                  <placeName ref="fr">France</placeName>
+               </place>
+               <place xml:id="antin">
+                  <placeName type="contemporary-name">la Chaussée-d'Antin</placeName>
+                  <settlement type="town" ref="#paris">Paris</settlement>
+                  <note>Le quartier de la Chaussée-d'Antin est le 34e quartier administratif
+                     de Paris situé dans le 9 arrondissement</note>
+               </place>
+               <place xml:id="rue_bar">
+                  <placeName type="contemporary-name">rue Barillerie</placeName>
+                  <settlement type="town" ref="#paris">Paris</settlement>
+                  <note>La rue de la Barillerie est une ancienne rue de Paris, aujourd'hui disparue.
+                     Elle était située sur l'île de la Cité, dans l'ancien 11e arrondissement
+                     (actuel 1er arrondissement) pour les numéros impairs et dans l'ancien 9e
+                     arrondissement (actuel 4e arrondissement) pour les numéros pairs. Elle a
+                     disparu lors du percement du Boulevard de Paris.</note>
+               </place>
+               <place xml:id="rue_mont">
+                  <placeName type="contemporary-name">rue Montmartre</placeName>
+                  <settlement type="town" ref="#paris">Paris</settlement>
+                  <note>Se situe dans le premier et deuxième arrondissement de Paris</note>
+               </place>
+               <place xml:id="rue_gar">
+                  <placeName type="contemporary-name">rue Garancière</placeName>
+                  <settlement type="town" ref="#paris">Paris</settlement>
+                  <note>Se situe dans le sixième arrondissement de Paris</note>
+               </place>
+               <place xml:id="cinq_arr">
+                  <placeName type="contemporary-name">5° arrondissement</placeName>
+                  <settlement type="town" ref="#paris">Paris</settlement>
+               </place>
+               <place xml:id="st_sulp">
+                  <placeName type="contemporary-name">Saint-Sulpice</placeName>
+                  <settlement type="town" ref="#paris">Paris</settlement>
+                  <note>Le quartier Saint-Sulpice et son église se situent dans le sixième
+                     arrondissement de Paris.</note>
+               </place>
+               <place xml:id="opera">
+                  <placeName type="text-name">Opéra</placeName>
+                  <placeName type="contemporary-name" resp="cg" cert="low">Opéra Le
+                     Pelletier</placeName>
+                  <settlement type="town" ref="#paris">Paris</settlement>
+               </place>
+               <place xml:id="italiens">
+                  <placeName type="text-name">les Italiens</placeName>
+                  <placeName type="contemporary-name" resp="cg" cert="low">Théâtre National de
+                     l'Opéra-comique</placeName>
+                  <settlement type="town" ref="#paris">Paris</settlement>
+                  <note>Depuis 1825, l'Opéra comique, qui conserve dans l'ancienne dénomination "Les Italiens" occupent la salle Favart dans le deuxième arrondissement de
+                     Paris.</note>
+               </place>
+            </listPlace>
+         </settingDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+<ab>
+            <title>Le Petit Mercier</title>
+
+            <app corresp="#word-diff #attenuation">
+               <lem wit="#F">Et d'abord saluez ce</lem>
+               <rdg wit="#C"><hi rend="sc">Gloire</hi> à toi</rdg>
+            </app>
+            roi du mouvement
+            <app corresp="#word-diff #attenuation">
+               <lem wit="#F">parisien, qui s'est soumis le</lem>
+               <rdg wit="#C">! souverain du</rdg>
+            </app>
+            temps et <app corresp="#add-words"><rdg wit="#C">maître de</rdg></app>
+            l'espace <app corresp="#punct #attenuation"><lem wit="#F">.</lem><rdg wit="#C">!&susp;</rdg></app>
+            <app corresp="#persname-diff">
+               <lem wit="#F">Oui, saluez cette</lem>
+               <rdg wit="#C">Salut, être courageux,</rdg>
+            </app>
+            créature composée de salpêtre et de gaz <app corresp="#add-words"><rdg wit="#C">carbonique&susp;</rdg></app>
+            qui <app corresp="#orth"><lem wit="#F">donne</lem><rdg wit="#C">donnes</rdg></app>
+            des <app corresp="#orth"><lem wit="#F">enfants</lem><rdg wit="#C">enfans</rdg></app>
+            à la France pendant <app corresp="#persname-diff"><lem wit="#F">ses</lem><rdg wit="#C">tes</rdg></app>
+            nuits laborieuses &Fvirg;
+            et <app corresp="#add-words"><rdg wit="#C">qui</rdg></app>
+            <app corresp="#word-diff"><lem wit="#F">remultiplie</lem><rdg wit="#C">multiplies</rdg></app>&Cvirg;
+            pendant le jour <app corresp="#punct"><rdg wit="#C">,</rdg></app>
+            <app corresp="#persname-diff"><lem wit="#F">son</lem><rdg wit="#C">ton</rdg></app>
+            individu &Cvirg;pour le service, la gloire et le plaisir de
+            <app corresp="#persname-diff"><lem wit="#F">ses</lem><rdg wit="#C">tes</rdg></app>
+            concitoyens <app corresp="#punct #attenuation"><lem wit="#F">.</lem><rdg wit="#C">!&susp;</rdg></app>
+            <app corresp="#persname-diff">
+               <lem wit="#F">Cet &ho; résout</lem>
+               <rdg wit="#C">Salut, toi qui a résolu</rdg>
+            </app>
+            le problème de suffire, à la fois, à une &fe; aimable, à
+            <app corresp="#persname-diff"><lem wit="#F">son</lem><rdg wit="#C">ton</rdg></app>
+            ménage, au Constitutionnel, à <app corresp="#persname-diff"><lem wit="#F">son</lem><rdg wit="#C">ton</rdg></app>
+            <app corresp="#orth"><lem wit="#F">bureau</lem><rdg wit="#C">Bureau</rdg></app>,
+            à la Garde nationale, à l'<placeName ref="#opera">Opéra</placeName>, à Dieu
+            <app corresp="#punct"><lem wit="#F">;</lem><rdg wit="#C">,</rdg></app>
+            <app corresp="#add-words #attenuation">
+               <lem wit="#F">mais pour transformer</lem>
+               <rdg wit="#C">à tout&susp; et qui tires parti de tout, transformant</rdg>
+            </app>
+            en écus le Constitutionnel, <app corresp="#persname-diff"><lem wit="#F">le</lem><rdg wit="#C">ton</rdg></app>
+            Bureau, l'<placeName ref="#opera">Opéra</placeName>, la Garde nationale,
+            <app corresp="#persname-diff"><lem wit="#F">la</lem><rdg wit="#C">ta</rdg></app>
+            &fe; et Dieu <app corresp="#punct #attenuation"><lem wit="#F">.</lem><rdg wit="#C">!&susp;</rdg></app>
+            <app corresp="#persname-diff">
+               <lem wit="#F">Enfin saluez un</lem>
+               <rdg wit="#C">Salut prince des cumulards,</rdg>
+            </app>, irréprochable cumulard
+            <app corresp="#punct"><lem wit="#F">.</lem><rdg wit="#C">,</rdg></app>
+            <app corresp="#add-words #attenuation #text-segmentation">
+               <rdg wit="#C">cumulard intéressant, honte des oisifs ! image violente de l'<hi rend="sc">utile dulci</hi> !&susp;&end-p;</rdg>
+            </app>
+            <app corresp="#add-words #attenuation #text-segmentation">
+               <rdg wit="#C">Pardonnez-moi cette incroyable hyperbole ; mais encore un mot, et vous chanterez à la gloire
+                  de l'&ho; en qui je veux célébrer <hi rend="sc">l'utilité</hi> même !&susp;.&end-p;</rdg>
+            </app>
+            Levé tous les jours à cinq heures, il a franchi &Cvirg; comme un oiseau &Cvirg;l'espace qui sépare
+            <app corresp="#place-diff #general">
+               <lem wit="#F">son domicile</lem>
+               <rdg wit="#C"><placeName ref="#rue_bar">la rue Barillerie</placeName></rdg>
+            </app>
+
+            de <placeName ref="#rue_mont">la rue Montmartre</placeName>
+            <app corresp="#punct"><lem wit="#F">. Qu</lem><rdg wit="#C">; et, qu</rdg></app>'il vente
+            <app corresp="#punct #syntax"><lem wit="#F">ou</lem><rdg wit="#C">,</rdg></app>
+            tonne, pleuve ou neige, il est au Constitutionnel
+            <app corresp="#punct #syntax"><lem wit="#F">et y attend</lem><rdg wit="#C">, attendant</rdg></app>
+            la charge de journaux dont il a soumissionné la distribution
+            <app corresp="#punct #attenuation"><lem wit="#F">.</lem><rdg wit="#C">!</rdg></app>
+            Il reçoit ce pain politique avec avidité, le prend
+            <app corresp="#punct #syntax"><lem wit="#F">et</lem><rdg wit="#C">,</rdg></app>
+            le porte <app corresp="#punct"><lem wit="#F">. À</lem><rdg wit="#C">; et, à</rdg></app>
+            neuf heures, il est au sein de son ménage,
+            <app corresp="#syntax"><lem wit="#F">débite</lem><rdg wit="#C">débitant</rdg></app>
+            un <app corresp="#orth"><lem wit="#F">calembour</lem><rdg wit="#C">calembourg</rdg></app>
+            à sa &fe;, lui <app corresp="#syntax"><lem wit="#F">dérobe</lem><rdg wit="#C">dérobant</rdg></app>
+            un gros baiser, <app corresp="#syntax"><lem wit="#F">déguste</lem><rdg wit="#C">dégustant</rdg></app>
+            une tasse de café ou <app corresp="#syntax"><lem wit="#F">gronde</lem><rdg wit="#C">grondant</rdg></app>
+            ses <app corresp="#orth"><lem wit="#F">enfants</lem><rdg wit="#C">enfans</rdg></app>
+            <app corresp="#punct"><lem wit="#F">.</lem><rdg wit="#C">!</rdg></app>
+            <app corresp="#add-words"><lem wit="#F">À</lem><rdg wit="#C">Puis, à</rdg></app>
+            dix heures moins un quart, il apparaît
+            <app corresp="#place-diff #general"><rdg wit="#C"><placeName ref="#rue_gar">rue Garancière</placeName>,</rdg></app>
+            à la Mairie <app corresp="#punct #text-segmentation"><lem wit="#F">.</lem><rdg wit="#C">!&susp;.&end-p;</rdg></app>
+            Là, posé sur un fauteuil, comme un perroquet <app corresp="#add-words"><rdg wit="#C">vert</rdg></app>
+            sur <app corresp="#persname-diff"><lem wit="#F">son</lem><rdg wit="#C">un</rdg></app>
+            bâton <app corresp="#sentence-order"><rdg wit="#C">, jusqu'à quatre heures il écrivasse</rdg></app>
+            chauffé par <placeName ref="#paris">la ville de Paris</placeName>,
+            <app corresp="#syntax"><lem wit="#F">il inscrit</lem><rdg wit="#C">inscrivant</rdg></app>
+            <app corresp="#sentence-order"><lem wit="#F">jusqu'a quatre heures</lem></app>,
+            sans leur donner une larme ou un sourire, les décès et les naissances
+            <app corresp="#word-diff #general">
+
+               <lem wit="#F">de <placeName ref="#cinq_arr">tout un</placeName></lem>
+               <rdg wit="#C">du <placeName ref="#cinq_arr">5e</placeName></rdg>
+            </app>
+            <placeName ref="#cinq_arr">arrondissement</placeName>
+            <app corresp="#punct #attenuation"><lem wit="#F">.</lem><rdg wit="#C">!&susp;.</rdg></app>
+            Le bonheur, le malheur <app corresp="#word-diff #attenuation"><lem wit="#F">du</lem><rdg wit="#C">de tout un</rdg></app>
+            quartier passe par le bec de sa plume, comme l'esprit
+            <app corresp="#word-diff">
+               <lem wit="#F">du Constitutionnel voyageait</lem>
+               <rdg wit="#C">de <persName ref="#jay">M.Jay</persName>, la polémique de <persName ref="#etienne">M. Etienne</persName>
+                  et l'encre de <persName ref="#chaign">M. Chaignieau</persName> étaient</rdg>
+            </app>
+
+            naguère sur ses épaules <app corresp="#punct"><lem wit="#F">.</lem><rdg wit="#C">&susp;</rdg></app>
+            Rien ne lui pèse ! Il va toujours <app corresp="#word-diff"><lem wit="#F">droit devant lui</lem><rdg wit="#C">chanteronnant</rdg></app>,
+            prend son patriotisme tout fait dans le journal, ne contredit personne, crie ou
+            applaudit avec tout le monde, et vit en hirondelle
+            <app corresp="#punct #attenuation #text-segmentation"><lem wit="#F">.</lem><rdg wit="#C">!&susp;&end-p;</rdg></app>
+            <app corresp="#orth"><lem wit="#F">À</lem><rdg wit="#C">A</rdg></app>
+            deux pas de
+            <app corresp="#word-diff #general">
+
+               <lem wit="#F">sa paroisse</lem>
+               <rdg wit="#C"><placeName ref="#st_sulp">Saint-Sulpice</placeName></rdg>
+            </app>, il peut, en cas d'une cérémonie importante, laisser sa place
+            <app corresp="#word-diff">
+               <lem wit="#F">à un surnuméraire</lem>
+               <rdg wit="#C">au garçon de bureau</rdg>
+            </app>
+            et aller chanter un <hi rend="i">requiem</hi>
+            <app corresp="#word-diff"><lem wit="#F">au</lem><rdg wit="#C">à ce</rdg></app>
+            lutrin <app corresp="#add-words"><lem wit="#F">de l'église,</lem></app>
+            dont il est, le dimanche et les jours de fête, le plus bel ornement, la voix la plus imposante, où il tord
+            avec énergie sa large bouche en faisant tonner un joyeux
+            <app corresp="#punct #attenuation">
+               <lem wit="#F"><hi rend="i">Amen</hi>.</lem>
+               <rdg wit="#C"> : - <hi rend="i">Amen</hi> !&susp;</rdg>
+            </app>
+            Il est chantre <app corresp="#punct #attenuation #text-segmentation"><lem wit="#F">.</lem><rdg wit="#C">!&susp;&end-p;</rdg></app>
+            Libéré à quatre heures de son service officiel, il apparaît pour répandre la joie
+            et la gaieté au sein de la boutique la plus célèbre qui soit en la Cité.
+            <app corresp="#sentence-order #word-diff #punct">
+               <lem wit="#F">Heureuse est sa &fe;, il</lem>
+               <rdg wit="#C"><persName ref="#merciere">Sa &fe;</persName> est mercière. Il</rdg>
+            </app>
+            n'a pas le temps d'être jaloux ; <app corresp="#word-diff"><lem wit="#F">il</lem><rdg wit="#C">car c'</rdg></app>
+            est plutôt <app corresp="#add-words"><rdg wit="#C">un</rdg></app>
+            &ho; d'action que de sentiment. Aussi, dès qu'il arrive,
+            <app corresp="#sentence-order"><lem wit="#F">agace-il</lem><rdg wit="#C">il agace</rdg></app>
+            <app corresp="#word-diff"><lem wit="#F">les</lem><rdg wit="#C">des</rdg></app>
+            demoiselles <app corresp="#word-diff #general"><lem wit="#F">de</lem><rdg wit="#C">du</rdg></app>
+            comptoir, dont les yeux vifs attirent force chalands
+            <app corresp="#punct"><lem wit="#F">;</lem><rdg wit="#C">&susp;</rdg></app>
+            <app corresp="#add-words"><rdg wit="#C">Il</rdg></app>
+            se gaudit au sein des parures, des fichus, de la mousseline
+            <app corresp="#syntax"><lem wit="#F">façonnée</lem><rdg wit="#C">façonnés</rdg></app>
+            par ces habiles ouvrières ; ou, plus souvent encore, avant de dîner, il
+            <app corresp="#add-words"><lem wit="#F">sert une pratique,</lem></app>
+            copie une page du journal ou porte chez l'huissier quelque effet en retard
+            <app corresp="#punct #text-segmentation"><lem wit="#F">.</lem><rdg wit="#C">&susp;&end-p;</rdg></app>
+            <app corresp="#orth"><lem wit="#F">À</lem><rdg wit="#C">A</rdg></app>
+            six heures <app corresp="#add-words"><lem wit="#F">, tous les deux jours,</lem></app>
+            il est fidèle à son poste
+            <app corresp="#punct #syntax #add-words">
+               <lem wit="#F">. Inamovible basse-taille des chœurs il</lem><rdg wit="#C">et</rdg>
+            </app>
+            se trouve <app corresp="#add-words"><rdg wit="#C">planté, soit</rdg></app> à l'<placeName ref="#opera">Opéra</placeName>
+            <app corresp="#add-words">
+               <rdg wit="#C">, soit aux <placeName ref="#italiens">Italiens</placeName></rdg>
+            </app>, prêt à <app corresp="#word-diff"><lem wit="#F">y devenir</lem><rdg wit="#C">se formuler en</rdg></app>
+            soldat, <app corresp="#add-words"><rdg wit="#C">en</rdg></app>
+            Arabe, <app corresp="#add-words"><rdg wit="#C">en</rdg></app>
+            prisonnier, <app corresp="#add-words"><rdg wit="#C">en</rdg></app>
+            sauvage, <app corresp="#add-words"><rdg wit="#C">en</rdg></app>
+            paysan <app corresp="#add-words"><rdg wit="#C">, en officier</rdg></app>,
+            <app corresp="#add-words"><rdg wit="#C">en</rdg></app>
+            ombre, <app corresp="#add-words #orth"><lem wit="#F">pate</lem><rdg wit="#C">en patte</rdg></app>
+            de chameau, <app corresp="#add-words"><rdg wit="#C">en</rdg></app>
+            lion, <app corresp="#add-words"><rdg wit="#C">en</rdg></app>
+            diable, <app corresp="#add-words"><rdg wit="#C">en</rdg></app>
+            génie <app corresp="#add-words"><rdg wit="#C">, en Africain</rdg></app>,
+            <app corresp="#add-words"><rdg wit="#C">en</rdg></app> esclave,
+            <app corresp="#word-diff"><lem wit="#F">eunuque noir ou blanc,</lem><rdg wit="#C">en grand seigneur&susp;,</rdg></app>
+            toujours expert à <app corresp="#word-diff"><lem wit="#F">produire</lem><rdg wit="#C">faire</rdg></app>
+            de la joie, de la douleur, de la pitié, de l'étonnement, à pousser
+            <app corresp="#word-diff"><lem wit="#F">d'invariables</lem><rdg wit="#C">des</rdg></app>
+            cris, à se taire, à chasser, à se battre, à représenter Rome ou l'
+            <app corresp="#orth"><lem wit="#F">Égypte</lem><rdg wit="#C">Egypte</rdg></app>
+            <app corresp="#punct"><lem wit="#F">;</lem><rdg wit="#C">,</rdg></app>
+            mais toujours
+            <app corresp="#word-diff #sentence-order #text-segmentation">
+               <lem wit="#F"><hi rend="i">in petto</hi>, <persName ref="#mercier">mercier</persName>.</lem>
+               <rdg wit="#C"><persName ref="#mercier">mercier</persName> au fond du cœur&susp;&end-p;</rdg>
+            </app>
+            <app corresp="#orth"><lem wit="#F">À</lem><rdg wit="#C">A</rdg></app>
+            minuit, il redevient bon mari, &ho;,
+            <app corresp="#sentence-order"><lem wit="#F">tendre père</lem><rdg wit="#C">père tendre</rdg></app>,
+            il se glisse dans le lit conjugal, l'imagination encore tendue par les formes décevantes des nymphes de
+            l'Opéra, <app corresp="#syntax"><lem wit="#F">et fait</lem><rdg wit="#C">faisant</rdg></app>
+            ainsi tourner &Fvirg; au profit de l'amour conjugal &Fvirg; les dépravations du monde et les voluptueux
+            ronds de jambe de <app corresp="#add-words #particulier"><lem wit="#F">la</lem></app>
+            <persName ref="#tag">Taglioni</persName>
+            <app corresp="#punct #attenuation"><lem wit="#F">.</lem><rdg wit="#C">!&susp;</rdg></app>
+            Enfin, s'il dort <app corresp="#punct #attenuation"><lem wit="#F">, il</lem><rdg wit="#C">?&susp; Il</rdg></app>
+            dort vite, <app corresp="#syntax"><lem wit="#F">et dépêche</lem><rdg wit="#C">dépêchant</rdg></app>
+            son sommeil comme
+            <app corresp="#add-words #attenuation #text-segmentation">
+               <lem wit="#F">il a dépêché sa vie</lem>
+               <rdg wit="#C">il dépêche sa vie&susp;&end-p;Comme il est bel &ho;, il a obtenu la place lucrative de tambour-major de légion</rdg>
+            </app>.
+            <app corresp="#add-words #text-segmentation">
+               <rdg wit="#C">Alors, les dimanches, il est, selon les vœux de l'église ou du <persName ref="#laf">général
+                  Lafayette</persName>, ou chantre divin, rossignol lithurgique, ou modèle des grâces, une sorte d'Apollon
+                  militaire, réglant la marche des tambours, et se balançant en tête de la garde nationale, comme une
+                  préface de <persName ref="#vh">Victor Hugo</persName> devant un volume de poésies !&susp;&end-p;</rdg>
+            </app>N'est-ce pas le mouvement fait &ho;, l'espace incarné
+            <app corresp="#add-words #attenuation"><rdg wit="#C">, le cumul en chair et en os</rdg></app>,
+            le protée de la civilisation ? <app corresp="#word-diff"><lem wit="#F">Cet</lem><rdg wit="#C">C'est un</rdg></app>
+            &ho; <app corresp="#syntax"><rdg wit="#C">qui</rdg></app>
+            résume tout : histoire, littérature, politique, gouvernement, religion, art militaire
+            <app corresp="#punct #attenuation"><lem wit="#F">.</lem><rdg wit="#C">!</rdg></app>
+            <app corresp="#syntax"><lem wit="#F">N'est-ce pas</lem><rdg wit="#C">C'est</rdg></app>
+            une encyclopédie vivante <app corresp="#punct #syntax"><lem wit="#F">,</lem><rdg wit="#C">et</rdg></app>
+            un atlas grotesque
+            <app corresp="#add-words #word-diff">
+               <lem wit="#F">, sans cesse en marche comme <placeName ref="#paris">Paris</placeName> et qui jamais ne
+                  repose ?</lem>
+               <rdg wit="#C">; il porte le matin le <hi rend="i">Constitutionnel</hi> ; pendant le jour, il stipule la
+                  vie et la mort ; le soir, il représente le monde entier ! il est sans cesse en marche comme la société !</rdg>
+            </app>
+            <app corresp="#sentence-order">
+               <lem wit="#F">En lui tout est jambes.</lem>
+               <rdg wit="#C">Tout en lui tout est jambe !&susp;</rdg>
+            </app>
+            <app corresp="#add-words">
+               <lem wit="#F"> Aucune physionomie ne saurait se conserver pure en de tels travaux. Peut-être l'ouvrier qui
+                  meurt vieux à trente ans, l'estomac tanné par les doses progressives de son eau-de-vie, sera-t-il trouvé,
+                  au dire de quelques philosophes bien rentés, plus heureux que ne l'est<persName ref="#mercier">le mercier</persName>.
+                  L'un périt d'un seul coup et l'autre en détail. De</lem>
+               <rdg wit="#C">Il cumule Dieu et le Diable, le gouvernement et l'opposition ; et, de</rdg>
+            </app>
+            ses huit industries, de ses épaules, de son gosier, de ses mains
+            <app corresp="#add-words"><rdg wit="#C">, de ses mollets</rdg></app>,
+            de <persName ref="#merciere">sa &fe;</persName> et de son commerce,
+            <app corresp="#word-diff"><lem wit="#F">celui-ci</lem><rdg wit="#C">il</rdg></app>
+            retire, comme d'autant de fermes, des <app corresp="#orth"><lem wit="#F">enfants</lem><rdg wit="#C">enfans</rdg></app>,
+            <app corresp="#word-diff #general"><lem wit="#F">quelques</lem><rdg wit="#C">douze</rdg></app>
+            mille francs et le plus laborieux bonheur qui ait <app corresp="#add-words"><lem wit="#F">jamais</lem></app>
+            récréé cœur d'&ho; <app corresp="#punct #attenuation"><lem wit="#F">.</lem><rdg wit="#C">!&susp;</rdg></app>
+            <app corresp="#word-diff #text-segmentation">
+               <lem wit="#F">Cette fortune et ces enfants, ou les enfants qui résument tout pour lui, deviennent la
+                  proie du monde supérieur, auquel il porte ses écus et sa fille, ou son fils élevé au collége, qui,
+                  plus instruit que ne l'est son père, jette plus haut ses regards ambitieux. Souvent le cadet d'un
+                  petit détaillant veut être quelque chose dans l'État.</lem>
+               <rdg wit="#C">O mon voisin ! tu es, sans t'en douter, un symbole dont ta &fe; a seule la clé !&susp; Va,
+                  cours, poursuis ta carrière&susp; Te reposeras-tu jamais ?&susp; Mort, ton chagrin serait d'être couché
+                  sans espoir de mouvement&susp; Sois tranquille, tu trouveras encore de l'emploi parmi les ombres, et
+                  tu reviendras peut-être dans les romans nouveaux, soit comme esprit, soit comme génie !&susp;&end-p;
+                  Gloire à toi, roi du mouvement ! (Bis.) <persName ref="#balzac"><hi rend="sc">Alfred Coudreux</hi></persName></rdg>
+            </app>
+</ab>
+      </body>
+   </text>
+</TEI>

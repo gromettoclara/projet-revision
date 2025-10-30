@@ -1,0 +1,26 @@
+<?xml-stylesheet href="xsltforms/xsltforms.xsl" type="text/xsl"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:xf="http://www.w3.org/2002/xforms" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:ev="http://www.w3.org/2001/xml-events" tei:bogus="fix Firefox namespace issue" lang="fr">
+    <head>
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover" />
+        <title>Flaubert texte-images</title>
+        <xf:model id="textimage">
+            <xf:instance id="diff" src="TEI-balzac_collations.xml"/>
+
+            <!-- Bindings pour lier les éléments à l’UI -->
+            <xf:bind nodeset="tei:body/tei:ab/tei:app" type="xforms:string"/>
+        </xf:model>
+    </head>
+   <body>
+    <xf:repeat nodeset="instance('diff')//tei:body/tei:ab/tei:app">
+        <div>
+            <strong>LEM :</strong>
+            <xf:output ref="tei:lem"/>
+        </div>
+        <div>
+            <strong>RDG :</strong>
+            <xf:output ref="tei:rdg"/>
+        </div>
+        <hr/>
+    </xf:repeat>
+</body>
+</html>
