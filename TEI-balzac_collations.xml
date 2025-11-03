@@ -27,261 +27,85 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title type="main">La Comédie Humaine</title>
-            <title type="sub">Extraits choisis</title>
-            <title type="sub">Édition critique et génétique</title>
-            <author ref="balzac">Balzac</author>
+            <title type="main">Titre de l'article</title>
+            <title type="sub">Sous-titre</title>
+            <title type="sub">Édition comparée trouver un mieux titre</title>
+            <author ref="balzac"></author>
             <principal xml:id="cg">GROMETTO Clara</principal>
             <respStmt>
-               <resp>Sélection, alignement des témoins et édition en ligne par</resp>
+               <resp>Sélection, alignement des versions et édition en ligne par</resp>
                <persName ref="#cg">
                   <forename>Clara</forename>
                   <surname>Grometto</surname>
                </persName>
             </respStmt>
             <respStmt>
-               <resp>Édition électronique de la Comédie Humaine dans la version dite Furne corrigée
-                  (qui intègre les corrections manuscrites apportées par l'auteur)</resp>
+               <resp>Édition de la version finale de l'article</resp>
                <orgName>
-                  <ref target="https://ebalzac.com/">eBalzac</ref>
+                  <ref target="https://www.sens-public.org/">Sens Public</ref>
                </orgName>
-               <note>Projet financé par l'ANR dans le cadre du Projet d’Hypertexte de l’Œuvre de
-                  Balzac reposant sur l’Utilisation de Similarités – PHŒBUS</note>
             </respStmt>
             <respStmt>
-               <resp>Responsables du projet eBalzac</resp>
-               <persName>
-                  <forename>Andrea</forename>
-                  <surname>Del Lungo</surname>
-               </persName>
-               <persName>
-                  <forename>Pierre</forename>
-                  <surname>Glaudes</surname>
-               </persName>
-               <persName>
-                  <forename>Jean-Gabriel</forename>
-                  <surname>Ganascia</surname>
+               <resp>Directrice de la revue Sens Public</resp>
+               <persName ref="#mm">
+                  <forename>Margot</forename>
+                  <surname>Mellet</surname>
                </persName>
             </respStmt>
             <respStmt>
-               <resp>Institutions partenaires de eBalzac</resp>
-               <orgName>ALITHILA (Université de Lille III)</orgName>
-               <orgName>CELLF (CNRS &amp; Université Paris IV Sorbonne)</orgName>
-               <orgName>LIP6 (Université Paris VI)</orgName>
+               <resp>Situation de la revue dans l'institution</resp>
+               <orgName>DLLF</orgName>
             </respStmt>
          </titleStmt>
          <publicationStmt>
-            <publisher>École nationale des chartes</publisher>
-            <pubPlace>Paris, France</pubPlace>
-            <date when-iso="2024-02-27" type="date-de-rendu">27 février 2024</date>
+            <publisher>Université de Montréal</publisher>
+            <pubPlace>Montréal, Québec</pubPlace>
+            <date when-iso="2025-12-15" type="date-de-rendu">15 décembre 2025</date>
          </publicationStmt>
          <sourceDesc>
+            <biblStruct>
+               <analytic>
+                  <author>
+                     <forename>James</forename>
+                     <forename>H.</forename>
+                     <surname>Coombs</surname>
+                  </author>
+                  <author>
+                     <forename>Allen</forename>
+                     <surname>Renear</surname>
+                  </author>
+                  <author>
+                     <forename>Steven</forename>
+                     <forename>J.</forename>
+                     <surname>DeRose</surname>
+                  </author>
+                  <title level="a">Markup Systems and The Future of Scholarly Text
+                     Processing</title>
+                  <idno type="DOI">10.1145/32206.32209</idno>
+                  <ref target="http://xml.coverpages.org/coombs.html">http://xml.coverpages.org/coombs.html</ref>
+               </analytic>
+               <monogr>
+                  <title level="j">Revue Sens Public</title>
+                  <imprint>
+                     <date>2025</date>
+                  </imprint>
+                  <biblScope unit="volume">30</biblScope>
+                  <biblScope unit="issue">11</biblScope>
+                  <biblScope unit="page">933–947</biblScope>
+               </monogr>
+               <note>Encodage issu des sources stylo</note>
+            </biblStruct>
             <listWit>
-               <witness xml:id="F">
-                  <note>L'encodage est issu d'une rétroconversion de l'édition TEI réalisée par
-                     <ref target="https://ebalzac.com/">eBalzac</ref> en .txt.</note>
-                  <biblFull>
-                     <titleStmt>
-                        <title>La Comédie humaine, édition électronique</title>
-                     </titleStmt>
-                     <editionStmt>
-                        <edition>Cette édition électronique de <hi rend="i">La Comédie humaine</hi>
-                           constitue la première édition en ligne de l’œuvre de Balzac dans la
-                           version dite du « Furne corrigé », qui intègre les corrections
-                           manuscrites apportées par l’auteur sur son exemplaire personnel de la
-                           première édition de <hi rend="i">La Comédie humaine</hi> parue chez Furne
-                           de 1842 à 1847. Cet exemplaire est conservé dans le fonds Lovenjoul de la
-                           Bibliothèque de l’Institut de France. Pour les romans publiés chez Furne
-                           après la mort de l'auteur, le texte a été établi à partir de la dernière
-                           édition datant de son vivant. Cette édition a été établie dans le cadre
-                           du projet PHŒBUS, financé par l’Agence nationale de la recherche
-                           (2015-2019).</edition>
-                     </editionStmt>
-                     <publicationStmt>
-                        <publisher>eBalzac</publisher>
-                        <publisher>ALITHILA (Université Lille III)</publisher>
-                        <publisher>CELLF (CNRS &amp; Université Paris IV Sorbonne)</publisher>
-                        <publisher>LIP6 (Université Paris VI)</publisher>
-                        <availability status="restricted">
-                           <p>Sous licence <ref target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/">CC
-                              BY-NC-ND 3.0 FR DEED Attribution - Pas d’Utilisation Commerciale -
-                              Pas de Modification 3.0 France</ref></p>
-                           <p>Copyright © 2017 Université Charles-de-Gaulle Lille 3,
-                              agissant pour le projet ANR « Projet d’hypertexte de l’œuvre de Balzac
-                              par l’utilisation de similarités » (ci-après dénommé ANR
-                              Phœbus).</p>
-                           <p>Cette ressource électronique protégée par le code de la propriété
-                              intellectuelle sur les bases de données (L341-1) est mise à
-                              disposition de la communauté scientifique internationale par l’ANR
-                              Phœbus, selon les termes de la licence Creative Commons : « Attribution
-                              - Pas d’Utilisation Commerciale - Pas de
-                              Modification 3.0 France (CC BY-NC-ND 3.0 FR) ».</p>
-                           <p>Attribution : afin de référencer la source, toute utilisation ou
-                              publication dérivée de cette ressource électroniques comportera le nom
-                              de l’ANR Phœbus et surtout l’adresse Internet de la ressource.</p>
-                           <p>Pas d’Utilisation Commerciale : dans l’intérêt de la communauté
-                              scientifique, toute utilisation commerciale est interdite.</p>
-                           <p>Pas de Modification : l’ANR Phœbus s’engage à améliorer et à corriger
-                              cette ressource électronique, notamment en intégrant toutes les
-                              contributions extérieures, la diffusion de versions modifiées de cette
-                              ressource n’est pas souhaitable.</p>
-
-                        </availability>
-                        <pubPlace>Paris</pubPlace>
-                        <date when="2017"/>
-                     </publicationStmt>
-                     <sourceDesc>
-                        <bibl>
-                           <title type="main">La Comédie Humaine</title>
-                           <title level="m">Neuvième volume (Études de mœurs, Scènes de la vie
-                              parisienne, Tome I) / HISTOIRE DES TREIZE : Ferragus .– La Duchesse de
-                              Langeais .– La Fille aux yeux d'or. – LE PÈRE GORIOT.</title>
-                           <title level="a">La Fille aux yeux d'or</title>
-                           <author ref="https://catalogue.bnf.fr/ark:/12148/cb118900414">
-                              <persName ref="#balzac">
-                                 <forename>BALZAC</forename>
-                                 <surname>Honoré de</surname>
-                              </persName>
-                           </author>
-                           <publisher>Furne, rue Saint-André-des-Arts, 55 ;
-                              J.-J. Dubochet et cie, rue de Seine, 33 ; J. Hetzel, rue de
-                              Seine, 33.</publisher>
-                           <pubPlace>Paris</pubPlace>
-                           <date>1843</date>
-                           <biblScope unit="page">239-240</biblScope>
-                        </bibl>
-
-                        <bibl>
-                           <title type="main">La Comédie Humaine</title>
-                           <title level="m">Quatorzième volume (Études philosophiques, Tome I) / La
-                              Peau de chagrin. – Jésus-Christ en Flandre. – Melmoth
-                              réconcilié. / Le Chef-d'œuvre inconnu. – La Recherche de
-                              l'absolu.</title>
-                           <title level="a">La Peau de Chagrin</title>
-                           <author ref="https://catalogue.bnf.fr/ark:/12148/cb118900414">
-                              <persName ref="#balzac">
-                                 <forename>BALZAC</forename>
-                                 <surname>Honoré de</surname>
-                              </persName>
-                           </author>
-                           <publisher>Furne, rue Saint-André-des-Arts, 55 ; J.-J. Dubochet et cie, rue de Seine, 33 ; J. Hetzel, 
-                              rue de Seine, 33.</publisher>
-                           <pubPlace>Paris</pubPlace>
-                           <date>1845</date>
-                           <biblScope unit="page">35-38</biblScope>
-                        </bibl>
-
-                        <bibl>
-                           <title level="m">Petites misères de la vie conjugale.</title>
-                           <author ref="https://catalogue.bnf.fr/ark:/12148/cb118900414">
-                              <persName ref="#balzac">
-                                 <forename>BALZAC</forename>
-                                 <surname>Honoré de</surname>
-                              </persName>
-                           </author>
-                           <publisher>Chlendowski, 8, rue du Jardinet</publisher>
-                           <pubPlace>Paris</pubPlace>
-                           <date>1846</date>
-                           <biblScope unit="page">182-185</biblScope>
-                           <note>L'édition Chlendowski est antérieure à l'édition du 18° volume de
-                              La Comédie Humaine (publié par Houssiaux en 1855, soit après la mort
-                              de <persName ref="#balzac">Balzac</persName>). Elle sert de base à
-                              l'établissement du texte car elle constitue la dernière édition
-                              contrôlée par l'auteur.</note>
-                        </bibl>
-                        <bibl>
-                           <title level="s">ŒUVRES COMPLÈTES</title> / de
-                           <author ref="https://catalogue.bnf.fr/ark:/12148/cb118900414">
-                              <persName ref="#balzac">M. de Balzac</persName></author>. -
-                           <pubPlace>Paris</pubPlace>, <publisher>les Bibliophiles de
-                           l'originale</publisher>, <date>1965-1976</date>. 30 vol. [R 8° Ca 10,
-                           12 Publiées sous la direction de <editor>Jean-A. Ducourneau</editor>.
-                           <biblScope unit="volume">I-XVI</biblScope>. <title type="main">La
-                           Comédie humaine</title>. <note>Fac-similé de l'exemplaire corrigé par
-                           Balzac de l'édition Furne-Hetzel de 1842-1846 (Furne corrigé) avec
-                           transcription des corrections.</note></bibl>
-                     </sourceDesc>
-                  </biblFull>
-               </witness>
-               <witness xml:id="C">
-                  <note>L'encodage se fonde sur la <ref facs="https://gallica.bnf.fr/ark:/12148/bpt6k1048844p/f1.item">
-                     numérisation de <bibl>La Caricature morale, politique et littéraire</bibl></ref>
-                     disponible sur l'interface de <ref target="https://catalogue.bnf.fr/ark:/12148/cb12381002j">
-                        Gallica (Bnf)</ref>.</note>
-                  <biblStruct>
-                     <analytic>
-                        <author ref="https://catalogue.bnf.fr/ark:/12148/cb118900414">
-                           <persName ref="#balzac">Alfred Coudreux</persName>
-                        </author>
-                        <title level="a">Le petit Mercier</title>
-                        <idno type="ark">ark:/12148/bpt6k1048844p</idno>
-                     </analytic>
-                     <monogr>
-                        <title level="j"> La Caricature morale, politique et littéraire </title>
-                        <imprint>
-                           <date when="1830-12-16">16 décembre 1830</date>
-                        </imprint>
-                        <biblScope unit="page">49-51</biblScope>
-
-                     </monogr>
-
-                     <ptr type="catBnf" target="http://catalogue.bnf.fr/ark:/12148/cb344523348"/>
-                  </biblStruct>
-               </witness>
-
-               <witness xml:id="C2">
-                  <note>L'encodage se fonde sur la <ref facs="https://gallica.bnf.fr/ark:/12148/bpt6k10488349/f1.item">
-                     numérisation de <bibl>La Caricature morale, politique et littéraire</bibl></ref>
-                     disponible sur l'interface de <ref target="https://catalogue.bnf.fr/ark:/12148/cb12381002j">
-                        Gallica (Bnf)</ref>.</note>
-                  <biblStruct>
-                     <analytic>
-                        <author ref="https://catalogue.bnf.fr/ark:/12148/cb118900414">
-                           <persName ref="#balzac">Alfred Coudreux</persName>
-                        </author>
-                        <title level="a">La Consultation</title>
-                        <idno type="ark">ark:/12148/bpt6k10488349</idno>
-                     </analytic>
-                     <monogr>
-                        <title level="j">La Caricature morale, politique et littéraire</title>
-                        <imprint>
-                           <date when="1830-11-11">11 novembre 1830</date>
-                        </imprint>
-                        <biblScope unit="page">9-11</biblScope>
-
-                     </monogr>
-                     <ptr type="catBnf" target="https://catalogue.bnf.fr/ark:/12148/cb344523348"/>
-                  </biblStruct>
-               </witness>
-               <witness xml:id="R2M">
-                  <note>L'encodage se fonde sur la <ref facs="https://archive.org/details/revuedesdeuxmond011831pari/">
-                     numérisation de <bibl>La Revue des deux mondes</bibl></ref> disponible sur l'interface
-                     des <ref target="https://archive.org/about/">Internet Archives</ref>.</note>
-                  <biblStruct>
-                     <analytic>
-                        <author ref="https://catalogue.bnf.fr/ark:/12148/cb118900414">
-                           <persName ref="#balzac">Alfred Coudreux</persName>
-                        </author>
-                        <title level="a">Une débauche</title>
-                        <idno type="ark">ark:/13960/t6445rk72</idno>
-                     </analytic>
-                     <monogr>
-                        <title level="j">La revue des deux Mondes</title>
-                        <imprint>
-                           <date when="1831-05">Mai 1831</date>
-                        </imprint>
-                        <biblScope unit="vol">Tome 2</biblScope>
-                        <biblScope unit="page">287-291</biblScope>
-                     </monogr>
-                     <ptr type="URI" target="https://archive.org/details/revuedesdeuxmond011831pari/"/>
-                  </biblStruct>
-               </witness>
+               <witness xml:id="V1">Premières épreuves à telle date <ptr target="lien vers la preview de la version"/></witness>
+               <witness xml:id="V2">Secondes épreuves à telle date</witness>
+               <witness xml:id="V3">troisièmes épreuves à telle date</witness>
             </listWit>
+            
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
          <editorialDecl>
-            <p>L'alignement des passages journalistiques et romanesques accouplés a été réalisé
+            <p>L'alignement des version a été réalisé
                avec l'aide de l'algorithme de Dekker de <ref target="https://collatex.net/">Collatex</ref>.
                Cet alignement a été repris ensuite pour constituer l'édition critique et génétique qui suit.</p>
             <p>L'édition critique et l'alignement des témoins cherchent à permettre l'étude la plus
@@ -289,14 +113,12 @@
                presse et la version roman :
                <list>
                   <item>La structuration du texte en paragraphes (&lt;p&gt;) a été abandonnée : les
-                     trois textes sont insérés dans un conteneur &lt;ab&gt; et les changements de
+                     textes sont insérés dans un conteneur &lt;ab&gt; et les changements de
                      paragraphes sont signalés par des &lt;milestone&gt;, pour que l'alignement des
-                     témoins puisse mettre en avant les variances syntaxiques, lexicales ou
-                     orthographiques. On considérera que les variations affectant la structure
-                     syntaxique et le sémantisme sont plus importantes que les variations tenant à la
-                     structure de la page. C'est pourquoi les changements de page n'a pas été encodé,
-                     nous considérerons que ces aspects ne relèvent pas de décisions auctoriales.</item>
-                  <item>Quand deux blocs dans les deux témoins de texte se présentent comme trop
+                     versions puisse mettre en avant les variantes syntaxiques, lexicales ou
+                     orthographiques. On considérera essentiellement les variations affectant la structure
+                     syntaxique, l'ortho-typo ou le sémantisme.</item>
+                  <item>Quand deux blocs dans les versions de texte se présentent comme trop
                      éloignés pour un alignement mot-à-mot mais peuvent être mis en parallèle pour
                      d'autres raisons (structures syntaxiques, thématiques, alignement des mots qui
                      suivent), ils seront encodés dans un même élément &lt;app&gt;. L'@corresp
@@ -305,46 +127,23 @@
                   <item>Les italiques et les petites capitales ont été rendues par la balise
                      &lt;hi&gt;, et si leur présence produit une nouvelle variante, l'@corresp
                      portera la valeur "rend".</item>
-                  <item>Prise de décision concernant les déplacements et les structures syntaxiques
+                  <!--<item>Prise de décision concernant les déplacements et les structures syntaxiques
                      en miroir : il revient à l'encodeur la décision de les encoder dans un seul
                      élément &lt;app&gt; (considérant alors un déplacement au sein du bloc,
                      l'inversion de l'ordre de deux groupes dans la phrase) ou dans deux éléments
                      &lt;app&gt; distincts (considérant alors une suppression à un endroit et un
                      ajout à un autre endroit du texte) en fonction de la portée du déplacement.
                      Dans les deux cas, si on observe le déplacement d'un terme ou d'un groupe de
-                     mot dans la phrase l'@corresp portera la valeur "sentence-order".</item>
+                     mot dans la phrase l'@corresp portera la valeur "sentence-order".</item>-->
                </list></p>
             <p>Pour chaque élément &lt;app&gt;, un attribut "@corresp" est utilisé pour préciser la
                nature de la différence entre les témoins. Les valeurs possibles pour cet attribut sont:<list>
                   <item xml:id="orth">différence orthographique</item>
                   <item xml:id="punct">différence de ponctuation</item>
-                  <item xml:id="sentence-order">différence dans l'ordre des mots dans un bloc de
-                     texte, ou déplacement de termes dans la phrase</item>
-                  <item xml:id="word-diff">des mots différents sont utilisés dans un même bloc de
-                     texte dans les différents témoins</item>
-                  <item xml:id="pers-diff">différence dans la dénomination des personnages (et pas
-                     différence de personnage)</item>
-                  <item xml:id="add-words">un témoin présente un ou plusieurs mots qui ne se
-                     trouvent pas dans l'autre</item>
-                  <item xml:id="text-segmentation">la séparation du texte en paragraphes est
-                     différente d'un témoin à l'autre</item>
-                  <item xml:id="attenuation">la différence va dans le sens de l'atténuation, de la
-                     version antérieure à la version postérieure</item>
-                  <item xml:id="expressif">la différence va dans le sens de l'emphase, de la version
-                     antérieure à la version postérieure</item>
-                  <item xml:id="general">la différence va vers la généralisation, de la version
-                     antérieure à la version postérieure</item>
-                  <item xml:id="particulier">la différence va vers la particularisation, de la
-                     version antérieure à la version postérieure</item>
-                  <item xml:id="syntax">la différence est d'ordre syntaxique (conjugaison, passage
-                     de la seconde à la troisième personne&susp;)</item>
-                  <item xml:id="parole">différence dans la prise de parole des personnages
-                     (notamment rajout de verbe de parole)</item>
-                  <item xml:id="rend">différence typographique significative</item>
-                  <item xml:id="place-diff">changement dans la dénomination d'un lieu</item>
+
                </list></p>
             <segmentation>
-               <p>Pour mieux aligner les textes et mettre en avant les variations entre les témoins,
+               <p>Pour mieux aligner les textes et mettre en avant les variations entre les versions,
                   les paragraphes ne sont pas contenus dans des &lt;p&gt;. Le passage d'un
                   paragraphe à l'autre est signalé par un &lt;milestone unit="tei:p"/&gt; et par un
                   &lt;lb/&gt;. Cette méthode est suggérée par Beshero-Bondar, Cayless,
@@ -361,317 +160,52 @@
             </segmentation>
          </editorialDecl>
          <projectDesc>
-            <p>Encodage réalisé dans le cadre du cours de TEI du M2 TNAH de l'ENC,
-               2022-2023.</p>
+            <p>Encodage réalisé dans le cadre du cours de ..........</p>
          </projectDesc>
          <variantEncoding method="parallel-segmentation" location="internal"/>
       </encodingDesc>
       <profileDesc>
-         <creation>
-            <title>Extraits choisis de la Comédie Humaine et leurs antécédents.</title>
-            <origDate type="date-range" xml:id="XIXe">XIXe siècle</origDate>
-            <country>France</country>
-         </creation>
+         <langUsage>
+            <language ident="fr">French</language>
+         </langUsage>
+         <textDesc n="novel">
+            <channel mode="w">print; part issues</channel>
+            <constitution type="single"/>
+            <derivation type="original"/>
+            <domain type="art"/>
+            <factuality type="fiction"/>
+            <interaction type="none"/>
+            <preparedness type="prepared"/>
+            <purpose type="entertain" degree="high"/>
+            <purpose type="inform" degree="medium"/>
+         </textDesc>
          <abstract>
-            <p><persName ref="#balzac">Balzac</persName> a la spécificité de multiplier les supports d'écriture
-               (livre, feuilleton, articles de journal), en réutilisant ses textes antérieurs. Ainsi son activité
-               journalistique, bien que motivée a priori par une rentabilité, n'est pas sans intérêt, d'autant que
-               les journaux se font l'antichambre de l'œuvre à venir. L'auteur collabore à partir de 1830 à de nombreux
-               journaux et revue, souvent sous pseudonyme. Il prépublie des œuvres courtes, contes et nouvelles ; mais
-               aussi (c'est ce qui nous intéresse) des passages que l'on retrouvera ensuite intégré dans des romans.
-               L'idée est donc d'accoler les ébauches avec leur version la plus aboutie dont on dispose,
-               c'est-à-dire le Furne corrigée, exemplaire personnel de La Comédie Humaine de Balzac,
-               et annoté par l'auteur lui-même.</p>
-            <p>Cette amorce d'édition critique fournira un nouvel outil d'interrogation des textes
-               de La Comédie Humaine, en approfondissant la connaissance des phénomènes génétiques,
-               poétiques et stylistiques à l'œuvre dans le processus d'écriture, et en permettant
-               de mieux comprendre l'apparition des réutilisations dans l'œuvre littéraire.</p>
+            <p>résumé de l'article</p>
+          
          </abstract>
          <particDesc>
             <listPerson>
-               <head>Liste des personnes, physiques, morales, fictives ou réelles dans les passages
-                  encodé</head>
-               <person xml:id="balzac" role="real">
-                  <persName type="text-name">
-                     <addName>Alfred Coudreux</addName>
-                  </persName>
-                  <persName type="contemporary-name" resp="#cg" cert="high">
-                     <forename>Honoré de</forename>
-                     <surname>Balzac</surname>
+               <head>Liste des personnes ayant participé à la présente édition : </head>
+               <person xml:id="aarsenault" role="editor">
+                  <persName>
+                     <forename>Adrien</forename>
+                     <surname>Arsenault</surname>
                   </persName>
                </person>
-               <person xml:id="mercier" role="fictional">
-                  <persName type="text-name">
-                     <name>Mercier</name>
-                  </persName>
-               </person>
-               <person xml:id="merciere">
-                  <persName type="occupation-name" resp="#cg" cert="high">
-                     <name>Mercière</name>
-                  </persName>
-                  <persName type="text-name">
-                     <name>sa &fe;</name>
-                  </persName>
-               </person>
-               <person xml:id="vh" role="real">
-                  <persName type="contemporary-name" resp="#cg" cert="high">
-                     <forename>Victor</forename>
-                     <surname>Hugo</surname>
-                  </persName>
-                  <note>Romancier et poète (1802-1885)</note>
-               </person>
-               <person xml:id="etienne" role="real">
-                  <persName type="text-name" resp="#cg" cert="high">
-                     <forename>Joseph</forename>
-                     <surname>Étienne</surname>
-                  </persName>
-                  <persName type="contemporary-name" resp="#cg" cert="high">
-                     <forename>Étienne</forename>
-                     <nameLink>de</nameLink>
-                     <surname>Jouy</surname>
-                  </persName>
-                  <persName type="text-name">
-                     <addName type="honorific">M.</addName>
-                     <surname>Etienne</surname>
-                  </persName>
-                  <note source="wikipedia">Dramaturge et librettiste (1764-1846)</note>
-               </person>
-               <person xml:id="jay" role="real">
-                  <persName type="contemporary-name" resp="#cg" cert="high">
-                     <forename>Antoine</forename>
-                     <surname>Jay</surname>
-                  </persName>
-                  <persName type="text-name">
-                     <addName type="honorific">M.</addName>
-                     <surname>Jay</surname>
-                  </persName>
-                  <note source="wikipedia">&ho; de lettres, journaliste, historien et &ho; politique
-                     (1770-1854)</note>
-               </person>
-               <person xml:id="chaign" role="real">
-                  <persName type="contemporary-name" resp="#cg" cert="low">
-                     <forename>Jean-Louis</forename>
-                     <surname>Chaigneau</surname>
-                  </persName>
-                  <persName type="text-name">
-                     <addName type="honorific">M.</addName>
-                     <surname>Chaignieau</surname>
-                  </persName>
-                  <note source="wikipedia">Jean-Louis Chaigneau (1767-1847) est un &ho;
-                     politique français. Pendant la révolution, il entra au Conseil des
-                     Cinq-Cents. Il y prit quelquefois la parole, par exemple, pour présenter
-                     un rapport sur les versements en assignats faits par les comptables. Il siégea
-                     jusqu'en l'an VIII.</note>
-               </person>
-               <person xml:id="tag" role="real">
-                  <persName type="contemporary-name" resp="#cg" cert="high">
-                     <forename>Marie</forename>
-                     <surname>Taglioni</surname>
-                  </persName>
-                  <persName type="text-name">
-                     <addName type="honorific">
-                        <app corresp="#add-words">
-                           <lem wit="#F">la</lem>
-                        </app>
-                     </addName>
-                     <surname>Taglioni</surname>
-                  </persName>
-                  <note source="encyclopaedia Universalis">Danseuse et chorégraphe d'origine
-                     italienne (1804-1884). Elle est l'initiatrice des pointes.</note>
-               </person>
-               <person xml:id="laf" role="real">
-                  <persName type="contemporary-name" resp="#cg" cert="high">
-                     <forename>Gilbert</forename>
-                     <nameLink>du</nameLink>
-                     <surname>Mottier</surname>
-                     <nameLink>de</nameLink>
-                     <surname>Lafayette</surname>
-                  </persName>
-                  <persName type="text-name">
-                     <addName type="occupation">général</addName>
-                     <surname>Lafayette</surname>
-                  </persName>
-                  <note source="wikipedia">&ho; politique français, célèbre en raison de son engagement dans les
-                     rangs de l'armée des insurgés américains (1777-1783), puis dans l'aile libérale et
-                     réformiste de l'aristocratie française (1784-1792), enfin dans l'opposition libérale
-                     au régime de la monarchie de Juillet qu'il avait pourtant contribué à établir lors des Trois
-                     Glorieuses (juillet 1830).</note>
-               </person>
-               <person xml:id="mari" role="fictional">
-                  <persName type="text-name">
-                     <app corresp="#word-diff #particulier">
-                        <lem wit="#F">
-                           <forename>Adolphe</forename>
-                        </lem>
-                        <rdg wit="#C">
-                           <addName type="honorific">M. le Conte</addName>
-                        </rdg>
-                     </app>
-                  </persName>
-               </person>
-               <person xml:id="femme" role="fictional">
-                  <persName type="text-name">
-                     <app corresp="#word-diff #particulier">
-                        <lem wit="#F">
-                           <!--honorific ?-->
-                           <forename type="honorific">Caroline</forename>
-                        </lem>
-                        <rdg wit="#C">
-                           <name type="honorific">Madame de ***</name>
-                        </rdg>
-                     </app>
-                  </persName>
-               </person>
-               <person xml:id="elssler" role="real">
-                  <persName type="contemporary-name" resp="#cg" cert="high">
-                     <forename>Fanny</forename>
-                     <surname>Elssler</surname>
-                  </persName>
-                  <persName type="text-name">
-                     <surname>Elssler</surname>
-                  </persName>
-                  <note source="encyclopaedia Universalis">Danseuse autrichienne, née à Gumpendorf,
-                     près de Vienne. Fille du copiste et confident de Joseph Haydn, Fanny Elssler ne
-                     sera pas une danseuse enfermée dans les milieux du spectacle (elle sera la
-                     maîtresse du duc de Reichstadt ; voir L'Aiglon d'Edmond Rostand !).</note>
-               </person>
-               <person xml:id="pa" role="fictional">
-                  <persName type="contemporary-name" resp="#cg" cert="medium">
-                     <addName type="occupation">père</addName>
-                     <surname>Aubry</surname>
-                  </persName>
-                  <note>Personnage du roman <hi rend="i">Atala</hi> de Châteaubriand (1801)</note>
-               </person>
-               <person xml:id="doc">
-                  <persName type="text-name" resp="cg">
-                     <name type="occupation-name">Le &doc;</name>
-                  </persName>
-               </person>
-               <person xml:id="rab" role="real">
-                  <persName type="contemporary-name" resp="#cg" cert="high">
-                     <forename>François</forename>
-                     <surname>Rabelais</surname>
-                  </persName>
-                  <persName type="text-name">
-                     <addName type="honorific">maître</addName>
-                     <surname>Alcofribas</surname>
-                  </persName>
-                  <note source="wikipedia">François Rabelais est également connu sous deux
-                     anagrammes de son nom : Alcofribas Nasier ou bien Serafin Calobarsy. Il est un
-                     écrivain français humaniste de la Renaissance (1483 ou 1494-1553)</note>
-               </person>
-               <person xml:id="emile" role="fictional">
-                  <persName type="text-name">
-                     <name>Émile</name>
-                  </persName>
-               </person>
-               <person xml:id="raph">
-                  <persName type="occupation-name" resp="cg">
-                     <name>Raphaël</name>
-                  </persName>
-               </person>
-               <person xml:id="louisXVIII">
-                  <persName type="contemporary-name" resp="#cg" cert="high">
-                     <forename>Louis</forename>
-                     <genName>XVIII</genName>
-                  </persName>
-                  <note>Roi de France et de Navarre du 6 avril 1814 au 20 mars 1815 puis du 8
-                     juillet 1815 à sa mort, le 16 septembre 1824.</note>
-               </person>
-               <personGrp xml:id="convive" role="invités" sex="masculin"/>
-               <person xml:id="taillefer" role="fictional">
-                  <persName type="text-name" resp="#cg" cert="high">
-                     <forename>Jean-Frédéric</forename>
-                     <surname>Taillefer</surname>
-                  </persName>
-                  <persName type="text-name">
-                     <name>amphitryon</name>
-                  </persName>
-                  <note source="Wikipedia">Jean-Frédéric Taillefer est un personnage de la
-                     Comédie Humaine. Fournisseur de vivres sous l'Empire, il s'enrichit à la suite
-                     d'un crime. Il devient banquier et spécule avec le baron de NucingeLorsque l'on
-                     parle de l'hôte, le terme « amphitryon » est utilisé. En langage soutenu, on
-                     entend par ce mot l'hôte d'un dîner. Mais il s'agit de la référence à une
-                     comédie de Molière inspirée de celle de Plaute, dans laquelle Amphitryon,
-                     personnage éponyme, organise un dîner au cours duquel il est déshonoré,
-                     apprenant qu'il est trompé. Satyre de la société parisienne du XIXe.</note>
-               </person>
-               <listRelation>
-                  <head>Liste des relations entre les personnages dans l'extrait encodé</head>
-                  <relation name="married" mutual="#mercier #merciere"/>
-                  <relation name="married" mutual="#mari #femme"/>
-                  <relation name="friend" mutual="#emile #raph"/>
-               </listRelation>
             </listPerson>
          </particDesc>
-         <settingDesc>
-            <listPlace>
-               <head>Lieux dans le passage encodé</head>
-               <place xml:id="paris">
-                  <placeName type="text-name">Paris</placeName>
-                  <country ref="#fr">France</country>
-               </place>
-               <place xml:id="fr">
-                  <placeName ref="fr">France</placeName>
-               </place>
-               <place xml:id="antin">
-                  <placeName type="contemporary-name">la Chaussée-d'Antin</placeName>
-                  <settlement type="town" ref="#paris">Paris</settlement>
-                  <note>Le quartier de la Chaussée-d'Antin est le 34e quartier administratif
-                     de Paris situé dans le 9 arrondissement</note>
-               </place>
-               <place xml:id="rue_bar">
-                  <placeName type="contemporary-name">rue Barillerie</placeName>
-                  <settlement type="town" ref="#paris">Paris</settlement>
-                  <note>La rue de la Barillerie est une ancienne rue de Paris, aujourd'hui disparue.
-                     Elle était située sur l'île de la Cité, dans l'ancien 11e arrondissement
-                     (actuel 1er arrondissement) pour les numéros impairs et dans l'ancien 9e
-                     arrondissement (actuel 4e arrondissement) pour les numéros pairs. Elle a
-                     disparu lors du percement du Boulevard de Paris.</note>
-               </place>
-               <place xml:id="rue_mont">
-                  <placeName type="contemporary-name">rue Montmartre</placeName>
-                  <settlement type="town" ref="#paris">Paris</settlement>
-                  <note>Se situe dans le premier et deuxième arrondissement de Paris</note>
-               </place>
-               <place xml:id="rue_gar">
-                  <placeName type="contemporary-name">rue Garancière</placeName>
-                  <settlement type="town" ref="#paris">Paris</settlement>
-                  <note>Se situe dans le sixième arrondissement de Paris</note>
-               </place>
-               <place xml:id="cinq_arr">
-                  <placeName type="contemporary-name">5° arrondissement</placeName>
-                  <settlement type="town" ref="#paris">Paris</settlement>
-               </place>
-               <place xml:id="st_sulp">
-                  <placeName type="contemporary-name">Saint-Sulpice</placeName>
-                  <settlement type="town" ref="#paris">Paris</settlement>
-                  <note>Le quartier Saint-Sulpice et son église se situent dans le sixième
-                     arrondissement de Paris.</note>
-               </place>
-               <place xml:id="opera">
-                  <placeName type="text-name">Opéra</placeName>
-                  <placeName type="contemporary-name" resp="cg" cert="low">Opéra Le
-                     Pelletier</placeName>
-                  <settlement type="town" ref="#paris">Paris</settlement>
-               </place>
-               <place xml:id="italiens">
-                  <placeName type="text-name">les Italiens</placeName>
-                  <placeName type="contemporary-name" resp="cg" cert="low">Théâtre National de
-                     l'Opéra-comique</placeName>
-                  <settlement type="town" ref="#paris">Paris</settlement>
-                  <note>Depuis 1825, l'Opéra comique, qui conserve dans l'ancienne dénomination "Les Italiens" occupent la salle Favart dans le deuxième arrondissement de
-                     Paris.</note>
-               </place>
-            </listPlace>
-         </settingDesc>
+        
       </profileDesc>
+      <revisionDesc status="embargoed">
+         <change when="1991-11-11" who="#LB">review version 2</change>
+      </revisionDesc>
    </teiHeader>
    <text>
       <body>
 <ab>
-            <title>Le Petit Mercier</title>
-
+            <title type="main">Titre de l'article</title>
+            <title type="subtitle">Sous-titre</title>
+            <!--<abstract></abstract>-->
             <app corresp="#word-diff #attenuation">
                <lem wit="#F">Et d'abord saluez ce</lem>
                <rdg wit="#C"><hi rend="sc">Gloire</hi> à toi</rdg>
