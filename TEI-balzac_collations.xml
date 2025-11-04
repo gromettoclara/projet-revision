@@ -53,7 +53,7 @@
                </persName>
             </respStmt>
             <respStmt>
-               <resp>Situation de la revue dans l'institution</resp>
+               <resp>Situation de la revue dans l'institution</resp><!-- mal dit -->
                <orgName>DLLF</orgName>
             </respStmt>
          </titleStmt>
@@ -136,12 +136,22 @@
                      Dans les deux cas, si on observe le déplacement d'un terme ou d'un groupe de
                      mot dans la phrase l'@corresp portera la valeur "sentence-order".</item>-->
                </list></p>
+            <p>La modélisation des corrections est basée sur les distinctions opérées par le <ref target="https://www.chicagomanualofstyle.org/book/ed18/frontmatter/toc.html">CMOS18</ref>.</p>
             <p>Pour chaque élément &lt;app&gt;, un attribut "@corresp" est utilisé pour préciser la
-               nature de la différence entre les témoins. Les valeurs possibles pour cet attribut sont:<list>
-                  <item xml:id="orth">différence orthographique</item>
-                  <item xml:id="punct">différence de ponctuation</item>
-
+               nature de la correction. Les valeurs possibles pour cet attribut sont:<list>
+                  <item xml:id="hard">modification d'ordre éditoriale</item>
+                  <item xml:id="querie">suggestion à l'auteur</item>
+                  <item xml:id="orth">correction orthographique</item>
+                  <item xml:id="gram">correction concernant l'usage grammatical</item>
+                  <item xml:id="punct">correction de ponctuation</item>
+                  <item xml:id="titles">correction des titres et des noms propres</item>
+                  <item xml:id="abbr">correction des abbréviations</item>
+                  <item xml:id="nbr">correction des dates et nombres</item>
+                  <item xml:id="add-note">ajout d'une note de bas de page</item>
+                  <item xml:id="biblio">vérification des citations et des références</item>
+                  <item xml:id="list-fig">vérification des listes et figures</item>
                </list></p>
+            <p>Deux systèmes se superposent : un niveau de criticité de la vérification auctoriale. querie ou hard. <!--expliquer--></p>
             <segmentation>
                <p>Pour mieux aligner les textes et mettre en avant les variations entre les versions,
                   les paragraphes ne sont pas contenus dans des &lt;p&gt;. Le passage d'un
@@ -204,7 +214,8 @@
       <body>
 <ab>
             <title type="main">Titre de l'article</title>
-            <title type="subtitle">Sous-titre</title>
+            <title type="subtitle">Sous-titre</title> 
+            <title type="niveau2">Un Titre de niveau 2</title>
             <!--<abstract></abstract>-->
             <app corresp="#word-diff #attenuation">
                <lem wit="#F">Et d'abord saluez ce</lem>
