@@ -1,4 +1,0 @@
-<root>
-<app><rdg wit="#V1">Voici un </rdg><rdg wit="#V2">Voici un </rdg><rdg wit="#V3">Voici un </rdg></app>
-<app><rdg wit="#V2">autre </rdg><rdg wit="#V3">troisième </rdg></app>
-<app><rdg wit="#V1">exemple.</rdg><rdg wit="#V2">exemple.</rdg><rdg wit="#V3">exemple.</rdg></app></root>
