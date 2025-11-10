@@ -10,7 +10,7 @@ collation.add_plain_witness("V1", premiere_version)
 collation.add_plain_witness("V2", derniere_relecture)
 
 
-tei_output = collate(collation, output="tei-xml", segmentation=False, near_match=False)
+tei_output = collate(collation, output="xml", segmentation=False, near_match=False)
 
 with open("collation.xml", "w") as output:
     output.write(tei_output.replace("<app>", "\n<app>"))

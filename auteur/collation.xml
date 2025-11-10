@@ -1,0 +1,663 @@
+<root>
+<app><rdg wit="#V1">#</rdg><rdg wit="#V2">Mon </rdg></app>
+<app><rdg wit="#V1">La </rdg></app>
+<app><rdg wit="#V1">renaissance </rdg></app>
+<app><rdg wit="#V1">de </rdg></app>
+<app><rdg wit="#V1">l</rdg></app>
+<app><rdg wit="#V1">'</rdg></app>
+<app><rdg wit="#V1">auteur </rdg></app>
+<app><rdg wit="#V1">(</rdg></app>
+<app><rdg wit="#V1">en </rdg></app>
+<app><rdg wit="#V1">ligne</rdg></app>
+<app><rdg wit="#V1">), </rdg></app>
+<app><rdg wit="#V1">de </rdg></app>
+<app><rdg wit="#V1">Balzac </rdg></app>
+<app><rdg wit="#V1">à </rdg></app>
+<app><rdg wit="#V1">François </rdg></app>
+<app><rdg wit="#V1">BonMon </rdg></app>
+<app><rdg wit="#V1">propos </rdg><rdg wit="#V2">propos </rdg></app>
+<app><rdg wit="#V1">vise </rdg><rdg wit="#V2">vise </rdg></app>
+<app><rdg wit="#V1">à </rdg><rdg wit="#V2">à </rdg></app>
+<app><rdg wit="#V1">articuler</rdg><rdg wit="#V2">articuler</rdg></app>
+<app><rdg wit="#V1">, </rdg><rdg wit="#V2">, </rdg></app>
+<app><rdg wit="#V1">précisément </rdg><rdg wit="#V2">précisément </rdg></app>
+<app><rdg wit="#V1">autour </rdg><rdg wit="#V2">autour </rdg></app>
+<app><rdg wit="#V1">de </rdg><rdg wit="#V2">de </rdg></app>
+<app><rdg wit="#V1">la </rdg><rdg wit="#V2">la </rdg></app>
+<app><rdg wit="#V1">notion </rdg><rdg wit="#V2">notion </rdg></app>
+<app><rdg wit="#V1">d</rdg><rdg wit="#V2">d</rdg></app>
+<app><rdg wit="#V1">'</rdg><rdg wit="#V2">’</rdg></app>
+<app><rdg wit="#V1">auteur</rdg><rdg wit="#V2">auteur</rdg></app>
+<app><rdg wit="#V1">,</rdg><rdg wit="#V2">,</rdg></app>
+<app><rdg wit="#V1">les </rdg><rdg wit="#V2">les </rdg></app>
+<app><rdg wit="#V1">deux </rdg><rdg wit="#V2">deux </rdg></app>
+<app><rdg wit="#V1">axes </rdg><rdg wit="#V2">axes </rdg></app>
+<app><rdg wit="#V1">principaux </rdg><rdg wit="#V2">principaux </rdg></app>
+<app><rdg wit="#V1">des </rdg><rdg wit="#V2">des </rdg></app>
+<app><rdg wit="#V1">humanités </rdg><rdg wit="#V2">humanités </rdg></app>
+<app><rdg wit="#V1">numériques </rdg><rdg wit="#V2">numériques </rdg></app>
+<app><rdg wit="#V1">littéraires </rdg><rdg wit="#V2">littéraires </rdg></app>
+<app><rdg wit="#V1">: </rdg><rdg wit="#V2">: </rdg></app>
+<app><rdg wit="#V1">d</rdg><rdg wit="#V2">d</rdg></app>
+<app><rdg wit="#V1">'</rdg><rdg wit="#V2">’</rdg></app>
+<app><rdg wit="#V1">uncôté</rdg><rdg wit="#V2">uncôté</rdg></app>
+<app><rdg wit="#V1">, </rdg><rdg wit="#V2">, </rdg></app>
+<app><rdg wit="#V1">l</rdg><rdg wit="#V2">l</rdg></app>
+<app><rdg wit="#V1">'</rdg><rdg wit="#V2">’</rdg></app>
+<app><rdg wit="#V1">édition </rdg><rdg wit="#V2">édition </rdg></app>
+<app><rdg wit="#V1">et </rdg><rdg wit="#V2">et </rdg></app>
+<app><rdg wit="#V1">la </rdg><rdg wit="#V2">la </rdg></app>
+<app><rdg wit="#V1">diffusion </rdg><rdg wit="#V2">diffusion </rdg></app>
+<app><rdg wit="#V1">des </rdg><rdg wit="#V2">des </rdg></app>
+<app><rdg wit="#V1">textes </rdg><rdg wit="#V2">textes </rdg></app>
+<app><rdg wit="#V1">au </rdg><rdg wit="#V2">au </rdg></app>
+<app><rdg wit="#V1">format </rdg><rdg wit="#V2">format </rdg></app>
+<app><rdg wit="#V1">numérique</rdg><rdg wit="#V2">numérique</rdg></app>
+<app><rdg wit="#V1">, </rdg><rdg wit="#V2">, </rdg></app>
+<app><rdg wit="#V1">ce </rdg><rdg wit="#V2">ce </rdg></app>
+<app><rdg wit="#V1">quipermet </rdg><rdg wit="#V2">quipermet </rdg></app>
+<app><rdg wit="#V1">des </rdg><rdg wit="#V2">des </rdg></app>
+<app><rdg wit="#V1">formes </rdg><rdg wit="#V2">formes </rdg></app>
+<app><rdg wit="#V1">d</rdg><rdg wit="#V2">d</rdg></app>
+<app><rdg wit="#V1">'</rdg><rdg wit="#V2">’</rdg></app>
+<app><rdg wit="#V1">interrogation </rdg><rdg wit="#V2">interrogation </rdg></app>
+<app><rdg wit="#V1">inédites </rdg><rdg wit="#V2">inédites </rdg></app>
+<app><rdg wit="#V1">des </rdg><rdg wit="#V2">des </rdg></app>
+<app><rdg wit="#V1">corpus</rdg><rdg wit="#V2">corpus</rdg></app>
+<app><rdg wit="#V1">, </rdg><rdg wit="#V2">, </rdg></app>
+<app><rdg wit="#V1">suivant </rdg><rdg wit="#V2">suivant </rdg></app>
+<app><rdg wit="#V1">desperspectives </rdg><rdg wit="#V2">desperspectives </rdg></app>
+<app><rdg wit="#V1">de </rdg><rdg wit="#V2">de </rdg></app>
+<app><rdg wit="#V1">valorisation </rdg><rdg wit="#V2">valorisation </rdg></app>
+<app><rdg wit="#V1">du </rdg><rdg wit="#V2">du </rdg></app>
+<app><rdg wit="#V1">patrimoine </rdg><rdg wit="#V2">patrimoine </rdg></app>
+<app><rdg wit="#V1">littéraire </rdg><rdg wit="#V2">littéraire </rdg></app>
+<app><rdg wit="#V1">du </rdg><rdg wit="#V2">du </rdg></app>
+<app><rdg wit="#V1">passé</rdg><rdg wit="#V2">passé</rdg></app>
+<app><rdg wit="#V1">, </rdg><rdg wit="#V2">, </rdg></app>
+<app><rdg wit="#V1">commel</rdg><rdg wit="#V2">commel</rdg></app>
+<app><rdg wit="#V1">'</rdg><rdg wit="#V2">’</rdg></app>
+<app><rdg wit="#V1">entreprise </rdg><rdg wit="#V2">entreprise </rdg></app>
+<app><rdg wit="#V1">d</rdg><rdg wit="#V2">d</rdg></app>
+<app><rdg wit="#V1">'</rdg><rdg wit="#V2">’</rdg></app>
+<app><rdg wit="#V1">édition </rdg><rdg wit="#V2">édition </rdg></app>
+<app><rdg wit="#V1">numérique </rdg><rdg wit="#V2">numérique </rdg></app>
+<app><rdg wit="#V1">de </rdg><rdg wit="#V2">de </rdg></app>
+<app><rdg wit="#V1">*</rdg><rdg wit="#V2">*</rdg></app>
+<app><rdg wit="#V1">La</rdg><rdg wit="#V2">La </rdg></app>
+<app><rdg wit="#V1">* *</rdg></app>
+<app><rdg wit="#V1">Comédie </rdg><rdg wit="#V2">Comédie </rdg></app>
+<app><rdg wit="#V1">humaine</rdg><rdg wit="#V2">humaine</rdg></app>
+<app><rdg wit="#V1">* </rdg><rdg wit="#V2">* </rdg></app>
+<app><rdg wit="#V1">du </rdg><rdg wit="#V2">du </rdg></app>
+<app><rdg wit="#V1">siteebalzac</rdg><rdg wit="#V2">site</rdg></app>
+<app><rdg wit="#V2">[</rdg></app>
+<app><rdg wit="#V2">eBalzac</rdg></app>
+<app><rdg wit="#V2">](</rdg></app>
+<app><rdg wit="#V2">https</rdg></app>
+<app><rdg wit="#V2">://</rdg></app>
+<app><rdg wit="#V2">www</rdg></app>
+<app><rdg wit="#V2">.</rdg></app>
+<app><rdg wit="#V2">ebalzac</rdg></app>
+<app><rdg wit="#V1">.</rdg><rdg wit="#V2">.</rdg></app>
+<app><rdg wit="#V1">com</rdg><rdg wit="#V2">com</rdg></app>
+<app><rdg wit="#V1">. </rdg><rdg wit="#V2">/) ; </rdg></app>
+<app><rdg wit="#V1">De </rdg><rdg wit="#V2">de </rdg></app>
+<app><rdg wit="#V1">l</rdg><rdg wit="#V2">l</rdg></app>
+<app><rdg wit="#V1">'</rdg><rdg wit="#V2">’</rdg></app>
+<app><rdg wit="#V1">autre</rdg><rdg wit="#V2">autre</rdg></app>
+<app><rdg wit="#V1">, </rdg><rdg wit="#V2">, </rdg></app>
+<app><rdg wit="#V1">la </rdg><rdg wit="#V2">la </rdg></app>
+<app><rdg wit="#V1">création </rdg><rdg wit="#V2">création </rdg></app>
+<app><rdg wit="#V1">contemporaine </rdg><rdg wit="#V2">contemporaine </rdg></app>
+<app><rdg wit="#V1">nativement </rdg><rdg wit="#V2">nativement </rdg></app>
+<app><rdg wit="#V1">numérique</rdg><rdg wit="#V2">numérique</rdg></app>
+<app><rdg wit="#V1">,</rdg><rdg wit="#V2">,</rdg></app>
+<app><rdg wit="#V1">hypertextuelle </rdg><rdg wit="#V2">hypertextuelle </rdg></app>
+<app><rdg wit="#V1">et </rdg><rdg wit="#V2">et </rdg></app>
+<app><rdg wit="#V1">multimédiale</rdg><rdg wit="#V2">multimédiale</rdg></app>
+<app><rdg wit="#V1">, </rdg><rdg wit="#V2">, </rdg></app>
+<app><rdg wit="#V1">qui </rdg><rdg wit="#V2">qui </rdg></app>
+<app><rdg wit="#V1">se </rdg><rdg wit="#V2">se </rdg></app>
+<app><rdg wit="#V1">développe </rdg><rdg wit="#V2">développe </rdg></app>
+<app><rdg wit="#V1">notamment </rdg><rdg wit="#V2">notamment </rdg></app>
+<app><rdg wit="#V1">dans </rdg><rdg wit="#V2">dans </rdg></app>
+<app><rdg wit="#V1">dessites </rdg><rdg wit="#V2">dessites </rdg></app>
+<app><rdg wit="#V1">d</rdg><rdg wit="#V2">d</rdg></app>
+<app><rdg wit="#V1">'</rdg><rdg wit="#V2">’</rdg></app>
+<app><rdg wit="#V1">auteurs</rdg><rdg wit="#V2">auteurs</rdg></app>
+<app><rdg wit="#V1">, </rdg><rdg wit="#V2">, </rdg></app>
+<app><rdg wit="#V1">des </rdg><rdg wit="#V2">des </rdg></app>
+<app><rdg wit="#V1">blogs</rdg><rdg wit="#V2">blogs</rdg></app>
+<app><rdg wit="#V1">, </rdg><rdg wit="#V2">, </rdg></app>
+<app><rdg wit="#V1">des </rdg><rdg wit="#V2">des </rdg></app>
+<app><rdg wit="#V1">livres</rdg><rdg wit="#V2">livres</rdg></app>
+<app><rdg wit="#V1">-</rdg><rdg wit="#V2">-</rdg></app>
+<app><rdg wit="#V1">applications</rdg><rdg wit="#V2">applications</rdg></app>
+<app><rdg wit="#V1">, </rdg><rdg wit="#V2">, </rdg></app>
+<app><rdg wit="#V1">et </rdg><rdg wit="#V2">et </rdg></app>
+<app><rdg wit="#V1">plus </rdg><rdg wit="#V2">plus </rdg></app>
+<app><rdg wit="#V1">récemmentsur </rdg><rdg wit="#V2">récemmentsur </rdg></app>
+<app><rdg wit="#V1">les </rdg><rdg wit="#V2">les </rdg></app>
+<app><rdg wit="#V1">réseaux </rdg><rdg wit="#V2">réseaux </rdg></app>
+<app><rdg wit="#V1">sociaux</rdg><rdg wit="#V2">sociaux</rdg></app>
+<app><rdg wit="#V1">. </rdg><rdg wit="#V2">. </rdg></app>
+<app><rdg wit="#V1">De </rdg><rdg wit="#V2">De </rdg></app>
+<app><rdg wit="#V1">Balzac </rdg><rdg wit="#V2">Balzac </rdg></app>
+<app><rdg wit="#V1">à </rdg><rdg wit="#V2">à </rdg></app>
+<app><rdg wit="#V1">François </rdg><rdg wit="#V2">François </rdg></app>
+<app><rdg wit="#V1">Bon </rdg><rdg wit="#V2">Bon </rdg></app>
+<app><rdg wit="#V1">(</rdg><rdg wit="#V2">(</rdg></app>
+<app><rdg wit="#V1">ou </rdg><rdg wit="#V2">ou </rdg></app>
+<app><rdg wit="#V1">même </rdg><rdg wit="#V2">même </rdg></app>
+<app><rdg wit="#V1">de </rdg><rdg wit="#V2">de </rdg></app>
+<app><rdg wit="#V1">FrançoisBon </rdg><rdg wit="#V2">FrançoisBon </rdg></app>
+<app><rdg wit="#V1">à </rdg><rdg wit="#V2">à </rdg></app>
+<app><rdg wit="#V1">Balzac</rdg><rdg wit="#V2">Balzac</rdg></app>
+<app><rdg wit="#V1">, </rdg><rdg wit="#V2">, </rdg></app>
+<app><rdg wit="#V1">quand </rdg><rdg wit="#V2">quand </rdg></app>
+<app><rdg wit="#V1">on </rdg><rdg wit="#V2">on </rdg></app>
+<app><rdg wit="#V1">connaît </rdg><rdg wit="#V2">connaît </rdg></app>
+<app><rdg wit="#V1">l</rdg><rdg wit="#V2">l</rdg></app>
+<app><rdg wit="#V1">'</rdg><rdg wit="#V2">’</rdg></app>
+<app><rdg wit="#V1">admiration </rdg><rdg wit="#V2">admiration </rdg></app>
+<app><rdg wit="#V1">que </rdg><rdg wit="#V2">que </rdg></app>
+<app><rdg wit="#V1">l</rdg><rdg wit="#V2">l</rdg></app>
+<app><rdg wit="#V1">'</rdg><rdg wit="#V2">’</rdg></app>
+<app><rdg wit="#V1">inventeur </rdg><rdg wit="#V2">inventeur </rdg></app>
+<app><rdg wit="#V1">du </rdg><rdg wit="#V2">du </rdg></app>
+<app><rdg wit="#V1">site </rdg><rdg wit="#V2">site </rdg></app>
+<app><rdg wit="#V1">*</rdg><rdg wit="#V2">*</rdg></app>
+<app><rdg wit="#V1">LeTiers </rdg><rdg wit="#V2">Le </rdg></app>
+<app><rdg wit="#V2">Tiers </rdg></app>
+<app><rdg wit="#V1">Livre</rdg><rdg wit="#V2">Livre</rdg></app>
+<app><rdg wit="#V1">* </rdg><rdg wit="#V2">* </rdg></app>
+<app><rdg wit="#V1">porte </rdg><rdg wit="#V2">porte </rdg></app>
+<app><rdg wit="#V1">à </rdg><rdg wit="#V2">à </rdg></app>
+<app><rdg wit="#V2">l</rdg></app>
+<app><rdg wit="#V2">’</rdg></app>
+<app><rdg wit="#V2">endroit </rdg></app>
+<app><rdg wit="#V2">de </rdg></app>
+<app><rdg wit="#V1">l</rdg><rdg wit="#V2">l</rdg></app>
+<app><rdg wit="#V1">'</rdg><rdg wit="#V2">’</rdg></app>
+<app><rdg wit="#V1">auteur </rdg><rdg wit="#V2">auteur </rdg></app>
+<app><rdg wit="#V1">de </rdg><rdg wit="#V2">de </rdg></app>
+<app><rdg wit="#V1">*</rdg><rdg wit="#V2">*</rdg></app>
+<app><rdg wit="#V1">La </rdg><rdg wit="#V2">La </rdg></app>
+<app><rdg wit="#V1">Comédie </rdg><rdg wit="#V2">Comédie </rdg></app>
+<app><rdg wit="#V1">humaine</rdg><rdg wit="#V2">humaine</rdg></app>
+<app><rdg wit="#V1">*) </rdg><rdg wit="#V2">*), </rdg></app>
+<app><rdg wit="#V1">l</rdg><rdg wit="#V2">l</rdg></app>
+<app><rdg wit="#V1">'</rdg><rdg wit="#V2">’</rdg></app>
+<app><rdg wit="#V1">interrogationsur </rdg><rdg wit="#V2">interrogationsur </rdg></app>
+<app><rdg wit="#V1">les </rdg><rdg wit="#V2">les </rdg></app>
+<app><rdg wit="#V1">modes </rdg><rdg wit="#V2">modes </rdg></app>
+<app><rdg wit="#V1">de </rdg><rdg wit="#V2">de </rdg></app>
+<app><rdg wit="#V1">présence </rdg><rdg wit="#V2">présence </rdg></app>
+<app><rdg wit="#V1">d</rdg><rdg wit="#V2">d</rdg></app>
+<app><rdg wit="#V1">'</rdg><rdg wit="#V2">’</rdg></app>
+<app><rdg wit="#V1">un </rdg><rdg wit="#V2">un </rdg></app>
+<app><rdg wit="#V1">auteur </rdg><rdg wit="#V2">auteur </rdg></app>
+<app><rdg wit="#V1">en </rdg><rdg wit="#V2">en </rdg></app>
+<app><rdg wit="#V1">ligne </rdg><rdg wit="#V2">ligne </rdg></app>
+<app><rdg wit="#V1">et </rdg><rdg wit="#V2">et </rdg></app>
+<app><rdg wit="#V1">sur </rdg><rdg wit="#V2">sur </rdg></app>
+<app><rdg wit="#V1">la </rdg><rdg wit="#V2">la </rdg></app>
+<app><rdg wit="#V1">pertinence </rdg><rdg wit="#V2">pertinence </rdg></app>
+<app><rdg wit="#V1">mêmede </rdg><rdg wit="#V2">mêmede </rdg></app>
+<app><rdg wit="#V1">la </rdg><rdg wit="#V2">la </rdg></app>
+<app><rdg wit="#V1">notion </rdg><rdg wit="#V2">notion </rdg></app>
+<app><rdg wit="#V1">d</rdg><rdg wit="#V2">d</rdg></app>
+<app><rdg wit="#V1">'</rdg><rdg wit="#V2">’</rdg></app>
+<app><rdg wit="#V1">auteur </rdg><rdg wit="#V2">auteur </rdg></app>
+<app><rdg wit="#V1">semble </rdg><rdg wit="#V2">semble </rdg></app>
+<app><rdg wit="#V1">commune</rdg><rdg wit="#V2">commune</rdg></app>
+<app><rdg wit="#V1">, </rdg><rdg wit="#V2">, </rdg></app>
+<app><rdg wit="#V1">et </rdg><rdg wit="#V2">et </rdg></app>
+<app><rdg wit="#V1">permet </rdg><rdg wit="#V2">permet </rdg></app>
+<app><rdg wit="#V1">d</rdg><rdg wit="#V2">d</rdg></app>
+<app><rdg wit="#V1">'</rdg><rdg wit="#V2">’</rdg></app>
+<app><rdg wit="#V1">analyser </rdg><rdg wit="#V2">analyser </rdg></app>
+<app><rdg wit="#V1">lesreconfigurations </rdg><rdg wit="#V2">lesreconfigurations </rdg></app>
+<app><rdg wit="#V1">multiples </rdg><rdg wit="#V2">multiples </rdg></app>
+<app><rdg wit="#V1">qu</rdg><rdg wit="#V2">qu</rdg></app>
+<app><rdg wit="#V1">'</rdg><rdg wit="#V2">’</rdg></app>
+<app><rdg wit="#V1">implique </rdg><rdg wit="#V2">implique </rdg></app>
+<app><rdg wit="#V1">le </rdg><rdg wit="#V2">le </rdg></app>
+<app><rdg wit="#V1">support </rdg><rdg wit="#V2">support </rdg></app>
+<app><rdg wit="#V1">numérique </rdg><rdg wit="#V2">numérique </rdg></app>
+<app><rdg wit="#V1">: </rdg><rdg wit="#V2">: </rdg></app>
+<app><rdg wit="#V1">celles</rdg><rdg wit="#V2">celles</rdg></app>
+<app><rdg wit="#V1">-</rdg><rdg wit="#V2">-</rdg></app>
+<app><rdg wit="#V1">cine </rdg><rdg wit="#V2">cine </rdg></app>
+<app><rdg wit="#V1">semblent </rdg><rdg wit="#V2">semblent </rdg></app>
+<app><rdg wit="#V1">pas </rdg><rdg wit="#V2">pas </rdg></app>
+<app><rdg wit="#V1">amener </rdg><rdg wit="#V2">amener </rdg></app>
+<app><rdg wit="#V1">à </rdg><rdg wit="#V2">à </rdg></app>
+<app><rdg wit="#V1">une </rdg><rdg wit="#V2">une </rdg></app>
+<app><rdg wit="#V1">dissolution</rdg><rdg wit="#V2">dissolution</rdg></app>
+<app><rdg wit="#V1">, </rdg><rdg wit="#V2">, </rdg></app>
+<app><rdg wit="#V1">mais </rdg><rdg wit="#V2">mais </rdg></app>
+<app><rdg wit="#V1">vont </rdg><rdg wit="#V2">vont </rdg></app>
+<app><rdg wit="#V1">plutôt </rdg><rdg wit="#V2">plutôt </rdg></app>
+<app><rdg wit="#V1">dans </rdg><rdg wit="#V2">dans </rdg></app>
+<app><rdg wit="#V1">le </rdg><rdg wit="#V2">le </rdg></app>
+<app><rdg wit="#V1">sensd</rdg><rdg wit="#V2">sensd</rdg></app>
+<app><rdg wit="#V1">'</rdg><rdg wit="#V2">’</rdg></app>
+<app><rdg wit="#V1">une </rdg><rdg wit="#V2">une </rdg></app>
+<app><rdg wit="#V1">persistance</rdg><rdg wit="#V2">persistance</rdg></app>
+<app><rdg wit="#V1">, </rdg><rdg wit="#V2">, </rdg></app>
+<app><rdg wit="#V1">voire </rdg><rdg wit="#V2">voire </rdg></app>
+<app><rdg wit="#V1">d</rdg><rdg wit="#V2">d</rdg></app>
+<app><rdg wit="#V1">'</rdg><rdg wit="#V2">’</rdg></app>
+<app><rdg wit="#V1">une </rdg><rdg wit="#V2">une </rdg></app>
+<app><rdg wit="#V1">renaissance </rdg><rdg wit="#V2">renaissance </rdg></app>
+<app><rdg wit="#V1">de </rdg><rdg wit="#V2">de </rdg></app>
+<app><rdg wit="#V1">la </rdg><rdg wit="#V2">la </rdg></app>
+<app><rdg wit="#V1">figure </rdg><rdg wit="#V2">figure </rdg></app>
+<app><rdg wit="#V1">auctoriale</rdg><rdg wit="#V2">auctoriale</rdg></app>
+<app><rdg wit="#V1">. </rdg><rdg wit="#V2">. </rdg></app>
+<app><rdg wit="#V1">Jeme </rdg><rdg wit="#V2">Afin </rdg></app>
+<app><rdg wit="#V1">propose </rdg><rdg wit="#V2">d</rdg></app>
+<app><rdg wit="#V1">de </rdg><rdg wit="#V2">’</rdg></app>
+<app><rdg wit="#V1">l</rdg><rdg wit="#V2">étayer </rdg></app>
+<app><rdg wit="#V1">'</rdg><rdg wit="#V2">cette </rdg></app>
+<app><rdg wit="#V1">analyser </rdg><rdg wit="#V2">hypothèse</rdg></app>
+<app><rdg wit="#V2">, </rdg></app>
+<app><rdg wit="#V2">je </rdg></app>
+<app><rdg wit="#V2">commencerai </rdg></app>
+<app><rdg wit="#V1">par </rdg><rdg wit="#V2">par </rdg></app>
+<app><rdg wit="#V1">un </rdg><rdg wit="#V2">un </rdg></app>
+<app><rdg wit="#V1">rappel </rdg><rdg wit="#V2">rappel </rdg></app>
+<app><rdg wit="#V1">initial </rdg><rdg wit="#V2">initial </rdg></app>
+<app><rdg wit="#V1">de </rdg><rdg wit="#V2">de </rdg></app>
+<app><rdg wit="#V1">l</rdg><rdg wit="#V2">l</rdg></app>
+<app><rdg wit="#V1">'</rdg><rdg wit="#V2">’</rdg></app>
+<app><rdg wit="#V1">arrêt </rdg><rdg wit="#V2">arrêt </rdg></app>
+<app><rdg wit="#V1">de </rdg><rdg wit="#V2">de </rdg></app>
+<app><rdg wit="#V1">mort </rdg><rdg wit="#V2">mort </rdg></app>
+<app><rdg wit="#V1">dontelle </rdg><rdg wit="#V2">dont </rdg></app>
+<app><rdg wit="#V1">fut </rdg><rdg wit="#V2">fut </rdg></app>
+<app><rdg wit="#V1">frappée</rdg><rdg wit="#V2">frappé </rdg></app>
+<app><rdg wit="#V1">, </rdg><rdg wit="#V2">l</rdg></app>
+<app><rdg wit="#V2">’</rdg></app>
+<app><rdg wit="#V2">auteur </rdg></app>
+<app><rdg wit="#V1">pour </rdg><rdg wit="#V2">pour </rdg></app>
+<app><rdg wit="#V1">examiner </rdg><rdg wit="#V2">examiner </rdg></app>
+<app><rdg wit="#V1">ensuite </rdg><rdg wit="#V2">ensuite </rdg></app>
+<app><rdg wit="#V1">trois </rdg><rdg wit="#V2">trois </rdg></app>
+<app><rdg wit="#V1">formes </rdg><rdg wit="#V2">formes </rdg></app>
+<app><rdg wit="#V1">différentes </rdg><rdg wit="#V2">différentes </rdg></app>
+<app><rdg wit="#V1">deprésence </rdg></app>
+<app><rdg wit="#V1">de </rdg><rdg wit="#V2">de </rdg></app>
+<app><rdg wit="#V1">l</rdg><rdg wit="#V2">sa </rdg></app>
+<app><rdg wit="#V1">'</rdg><rdg wit="#V2">présence </rdg></app>
+<app><rdg wit="#V1">auteur </rdg><rdg wit="#V2">actuelle </rdg></app>
+<app><rdg wit="#V1">en </rdg><rdg wit="#V2">en </rdg></app>
+<app><rdg wit="#V1">ligne </rdg><rdg wit="#V2">ligne </rdg></app>
+<app><rdg wit="#V1">: </rdg><rdg wit="#V2">: </rdg></app>
+<app><rdg wit="#V1">les </rdg><rdg wit="#V2">les </rdg></app>
+<app><rdg wit="#V1">sites </rdg><rdg wit="#V2">sites </rdg></app>
+<app><rdg wit="#V1">patrimoniaux </rdg><rdg wit="#V2">patrimoniaux </rdg></app>
+<app><rdg wit="#V1">« </rdg><rdg wit="#V2">« </rdg></app>
+<app><rdg wit="#V1">sur </rdg><rdg wit="#V2">sur </rdg></app>
+<app><rdg wit="#V1">auteur </rdg><rdg wit="#V2">auteur </rdg></app>
+<app><rdg wit="#V1">»,</rdg><rdg wit="#V2">»,</rdg></app>
+<app><rdg wit="#V1">les </rdg><rdg wit="#V2">les </rdg></app>
+<app><rdg wit="#V1">sites </rdg><rdg wit="#V2">sites </rdg></app>
+<app><rdg wit="#V1">de </rdg><rdg wit="#V2">de </rdg></app>
+<app><rdg wit="#V1">création </rdg><rdg wit="#V2">création </rdg></app>
+<app><rdg wit="#V1">contemporaine </rdg><rdg wit="#V2">contemporaine </rdg></app>
+<app><rdg wit="#V1">(</rdg><rdg wit="#V2">(</rdg></app>
+<app><rdg wit="#V1">principalement </rdg><rdg wit="#V2">principalement </rdg></app>
+<app><rdg wit="#V1">celui </rdg><rdg wit="#V2">celui </rdg></app>
+<app><rdg wit="#V1">de </rdg><rdg wit="#V2">de </rdg></app>
+<app><rdg wit="#V1">FrançoisBon</rdg><rdg wit="#V2">FrançoisBon</rdg></app>
+<app><rdg wit="#V1">), </rdg><rdg wit="#V2">) </rdg></app>
+<app><rdg wit="#V1">et </rdg><rdg wit="#V2">et </rdg></app>
+<app><rdg wit="#V1">un </rdg><rdg wit="#V2">un </rdg></app>
+<app><rdg wit="#V1">exemple </rdg><rdg wit="#V2">exemple </rdg></app>
+<app><rdg wit="#V1">de </rdg><rdg wit="#V2">de </rdg></app>
+<app><rdg wit="#V1">réécriture </rdg><rdg wit="#V2">réécriture </rdg></app>
+<app><rdg wit="#V1">collective </rdg><rdg wit="#V2">collective </rdg></app>
+<app><rdg wit="#V1">en </rdg><rdg wit="#V2">en </rdg></app>
+<app><rdg wit="#V1">tweets </rdg><rdg wit="#V2">tweets </rdg></app>
+<app><rdg wit="#V1">de </rdg><rdg wit="#V2">de </rdg></app>
+<app><rdg wit="#V1">*</rdg><rdg wit="#V2">*</rdg></app>
+<app><rdg wit="#V1">MadameBovary</rdg><rdg wit="#V2">MadameBovary</rdg></app>
+<app><rdg wit="#V1">*.##</rdg><rdg wit="#V2">*.## </rdg></app>
+<app><rdg wit="#V1">Retour </rdg><rdg wit="#V2">Retour </rdg></app>
+<app><rdg wit="#V1">au </rdg><rdg wit="#V2">au </rdg></app>
+<app><rdg wit="#V1">passé </rdg><rdg wit="#V2">passé </rdg></app>
+<app><rdg wit="#V1">: </rdg><rdg wit="#V2">: </rdg></app>
+<app><rdg wit="#V1">l</rdg><rdg wit="#V2">l</rdg></app>
+<app><rdg wit="#V1">'</rdg><rdg wit="#V2">’</rdg></app>
+<app><rdg wit="#V1">arrêt </rdg><rdg wit="#V2">arrêt </rdg></app>
+<app><rdg wit="#V1">de </rdg><rdg wit="#V2">de </rdg></app>
+<app><rdg wit="#V1">mort </rdg><rdg wit="#V2">mort </rdg></app>
+<app><rdg wit="#V1">de </rdg><rdg wit="#V2">de </rdg></app>
+<app><rdg wit="#V1">l</rdg><rdg wit="#V2">l</rdg></app>
+<app><rdg wit="#V1">'</rdg><rdg wit="#V2">’</rdg></app>
+<app><rdg wit="#V1">auteurPour </rdg><rdg wit="#V2">auteurPour </rdg></app>
+<app><rdg wit="#V1">contextualiser </rdg><rdg wit="#V2">contextualiser </rdg></app>
+<app><rdg wit="#V1">la </rdg><rdg wit="#V2">la </rdg></app>
+<app><rdg wit="#V1">notion </rdg><rdg wit="#V2">notion </rdg></app>
+<app><rdg wit="#V1">d</rdg><rdg wit="#V2">d</rdg></app>
+<app><rdg wit="#V1">'</rdg><rdg wit="#V2">’</rdg></app>
+<app><rdg wit="#V1">auteur </rdg><rdg wit="#V2">auteur </rdg></app>
+<app><rdg wit="#V1">et </rdg><rdg wit="#V2">et </rdg></app>
+<app><rdg wit="#V1">ses </rdg><rdg wit="#V2">ses </rdg></app>
+<app><rdg wit="#V1">reconfigurations</rdg><rdg wit="#V2">reconfigurations</rdg></app>
+<app><rdg wit="#V1">, </rdg><rdg wit="#V2">, </rdg></app>
+<app><rdg wit="#V1">jeremonte </rdg><rdg wit="#V2">jeremonte </rdg></app>
+<app><rdg wit="#V1">à </rdg><rdg wit="#V2">à </rdg></app>
+<app><rdg wit="#V1">l</rdg><rdg wit="#V2">l</rdg></app>
+<app><rdg wit="#V1">'</rdg><rdg wit="#V2">’</rdg></app>
+<app><rdg wit="#V1">archéologie </rdg><rdg wit="#V2">archéologie </rdg></app>
+<app><rdg wit="#V1">pré</rdg><rdg wit="#V2">pré</rdg></app>
+<app><rdg wit="#V1">-</rdg><rdg wit="#V2">-</rdg></app>
+<app><rdg wit="#V1">numérique </rdg><rdg wit="#V2">numérique </rdg></app>
+<app><rdg wit="#V1">en </rdg><rdg wit="#V2">en </rdg></app>
+<app><rdg wit="#V1">proposant </rdg><rdg wit="#V2">proposant </rdg></app>
+<app><rdg wit="#V1">une </rdg><rdg wit="#V2">une </rdg></app>
+<app><rdg wit="#V1">suite </rdg><rdg wit="#V2">suite </rdg></app>
+<app><rdg wit="#V1">de </rdg><rdg wit="#V2">de </rdg></app>
+<app><rdg wit="#V1">troiscitations</rdg><rdg wit="#V2">troiscitations</rdg></app>
+<app><rdg wit="#V1">. </rdg><rdg wit="#V2">. </rdg></app>
+<app><rdg wit="#V1">La </rdg><rdg wit="#V2">La </rdg></app>
+<app><rdg wit="#V1">première</rdg><rdg wit="#V2">première</rdg></app>
+<app><rdg wit="#V1">, </rdg><rdg wit="#V2">, </rdg></app>
+<app><rdg wit="#V1">très </rdg><rdg wit="#V2">très </rdg></app>
+<app><rdg wit="#V1">connue</rdg><rdg wit="#V2">connue</rdg></app>
+<app><rdg wit="#V1">, </rdg><rdg wit="#V2">, </rdg></app>
+<app><rdg wit="#V1">est </rdg><rdg wit="#V2">est </rdg></app>
+<app><rdg wit="#V1">extraite </rdg><rdg wit="#V2">extraite </rdg></app>
+<app><rdg wit="#V1">de </rdg><rdg wit="#V2">de </rdg></app>
+<app><rdg wit="#V1">l</rdg><rdg wit="#V2">l</rdg></app>
+<app><rdg wit="#V1">'</rdg><rdg wit="#V2">’</rdg></app>
+<app><rdg wit="#V1">article </rdg><rdg wit="#V2">article </rdg></app>
+<app><rdg wit="#V1">de </rdg><rdg wit="#V2">de </rdg></app>
+<app><rdg wit="#V1">RolandBarthes </rdg><rdg wit="#V2">RolandBarthes </rdg></app>
+<app><rdg wit="#V1">sur </rdg><rdg wit="#V2">sur </rdg></app>
+<app><rdg wit="#V1">« </rdg><rdg wit="#V2">« </rdg></app>
+<app><rdg wit="#V1">La </rdg><rdg wit="#V2">La </rdg></app>
+<app><rdg wit="#V1">mort </rdg><rdg wit="#V2">mort </rdg></app>
+<app><rdg wit="#V1">de </rdg><rdg wit="#V2">de </rdg></app>
+<app><rdg wit="#V1">l</rdg><rdg wit="#V2">l</rdg></app>
+<app><rdg wit="#V1">'</rdg><rdg wit="#V2">’</rdg></app>
+<app><rdg wit="#V1">auteur </rdg><rdg wit="#V2">auteur </rdg></app>
+<app><rdg wit="#V1">», </rdg><rdg wit="#V2">», </rdg></app>
+<app><rdg wit="#V1">datant </rdg><rdg wit="#V2">datant </rdg></app>
+<app><rdg wit="#V1">de </rdg><rdg wit="#V2">de </rdg></app>
+<app><rdg wit="#V1">1968</rdg><rdg wit="#V2">1968</rdg></app>
+<app><rdg wit="#V1">. </rdg><rdg wit="#V2">. </rdg></app>
+<app><rdg wit="#V1">La </rdg><rdg wit="#V2">La </rdg></app>
+<app><rdg wit="#V1">fin </rdg><rdg wit="#V2">fin </rdg></app>
+<app><rdg wit="#V1">du </rdg><rdg wit="#V2">du </rdg></app>
+<app><rdg wit="#V1">texterésume </rdg><rdg wit="#V2">texterésume </rdg></app>
+<app><rdg wit="#V1">les </rdg><rdg wit="#V2">les </rdg></app>
+<app><rdg wit="#V1">acquis </rdg><rdg wit="#V2">acquis </rdg></app>
+<app><rdg wit="#V1">et </rdg><rdg wit="#V2">et </rdg></app>
+<app><rdg wit="#V1">prononce </rdg><rdg wit="#V2">prononce </rdg></app>
+<app><rdg wit="#V1">l</rdg><rdg wit="#V2">l</rdg></app>
+<app><rdg wit="#V1">'</rdg><rdg wit="#V2">’</rdg></app>
+<app><rdg wit="#V1">arrêt </rdg><rdg wit="#V2">arrêt </rdg></app>
+<app><rdg wit="#V1">de </rdg><rdg wit="#V2">de </rdg></app>
+<app><rdg wit="#V1">mort</rdg><rdg wit="#V2">mort</rdg></app>
+<app><rdg wit="#V1">, </rdg><rdg wit="#V2">, </rdg></app>
+<app><rdg wit="#V1">en </rdg><rdg wit="#V2">en </rdg></app>
+<app><rdg wit="#V1">annonçant </rdg><rdg wit="#V2">annonçant </rdg></app>
+<app><rdg wit="#V1">la</rdg><rdg wit="#V2">la</rdg></app>
+<app><rdg wit="#V1">« </rdg><rdg wit="#V2">« </rdg></app>
+<app><rdg wit="#V1">naissance </rdg><rdg wit="#V2">naissance </rdg></app>
+<app><rdg wit="#V1">» </rdg><rdg wit="#V2">» </rdg></app>
+<app><rdg wit="#V1">du </rdg><rdg wit="#V2">du </rdg></app>
+<app><rdg wit="#V1">lecteur </rdg><rdg wit="#V2">lecteur </rdg></app>
+<app><rdg wit="#V1">qui </rdg><rdg wit="#V2">qui </rdg></app>
+<app><rdg wit="#V1">en </rdg><rdg wit="#V2">en </rdg></app>
+<app><rdg wit="#V1">est </rdg><rdg wit="#V2">est </rdg></app>
+<app><rdg wit="#V1">le </rdg><rdg wit="#V2">le </rdg></app>
+<app><rdg wit="#V1">corollaire </rdg><rdg wit="#V2">corollaire </rdg></app>
+<app><rdg wit="#V1">:&gt; </rdg><rdg wit="#V2">:&gt; </rdg></app>
+<app><rdg wit="#V1">Un </rdg><rdg wit="#V2">Un </rdg></app>
+<app><rdg wit="#V1">texte </rdg><rdg wit="#V2">texte </rdg></app>
+<app><rdg wit="#V1">est </rdg><rdg wit="#V2">est </rdg></app>
+<app><rdg wit="#V1">fait </rdg><rdg wit="#V2">fait </rdg></app>
+<app><rdg wit="#V1">d</rdg><rdg wit="#V2">d</rdg></app>
+<app><rdg wit="#V1">'</rdg><rdg wit="#V2">’</rdg></app>
+<app><rdg wit="#V1">écritures </rdg><rdg wit="#V2">écritures </rdg></app>
+<app><rdg wit="#V1">multiples </rdg><rdg wit="#V2">multiples </rdg></app>
+<app><rdg wit="#V1">issues </rdg><rdg wit="#V2">issues </rdg></app>
+<app><rdg wit="#V1">de </rdg><rdg wit="#V2">de </rdg></app>
+<app><rdg wit="#V1">plusieurs </rdg><rdg wit="#V2">plusieurs </rdg></app>
+<app><rdg wit="#V1">cultures</rdg><rdg wit="#V2">cultures</rdg></app>
+<app><rdg wit="#V1">&gt; </rdg><rdg wit="#V2">&gt; </rdg></app>
+<app><rdg wit="#V1">et </rdg><rdg wit="#V2">et </rdg></app>
+<app><rdg wit="#V1">qui </rdg><rdg wit="#V2">qui </rdg></app>
+<app><rdg wit="#V1">entrent </rdg><rdg wit="#V2">entrent </rdg></app>
+<app><rdg wit="#V1">les </rdg><rdg wit="#V2">les </rdg></app>
+<app><rdg wit="#V1">unes </rdg><rdg wit="#V2">unes </rdg></app>
+<app><rdg wit="#V1">avec </rdg><rdg wit="#V2">avec </rdg></app>
+<app><rdg wit="#V1">les </rdg><rdg wit="#V2">les </rdg></app>
+<app><rdg wit="#V1">autres </rdg><rdg wit="#V2">autres </rdg></app>
+<app><rdg wit="#V1">en </rdg><rdg wit="#V2">en </rdg></app>
+<app><rdg wit="#V1">dialogue</rdg><rdg wit="#V2">dialogue</rdg></app>
+<app><rdg wit="#V1">, </rdg><rdg wit="#V2">, </rdg></app>
+<app><rdg wit="#V1">en </rdg><rdg wit="#V2">en </rdg></app>
+<app><rdg wit="#V1">parodie</rdg><rdg wit="#V2">parodie</rdg></app>
+<app><rdg wit="#V1">, </rdg><rdg wit="#V2">, </rdg></app>
+<app><rdg wit="#V1">en</rdg><rdg wit="#V2">en</rdg></app>
+<app><rdg wit="#V1">&gt; </rdg><rdg wit="#V2">&gt; </rdg></app>
+<app><rdg wit="#V1">contestation </rdg><rdg wit="#V2">contestation </rdg></app>
+<app><rdg wit="#V1">; </rdg><rdg wit="#V2">; </rdg></app>
+<app><rdg wit="#V1">mais </rdg><rdg wit="#V2">mais </rdg></app>
+<app><rdg wit="#V1">il </rdg><rdg wit="#V2">il </rdg></app>
+<app><rdg wit="#V1">y </rdg><rdg wit="#V2">y </rdg></app>
+<app><rdg wit="#V1">a </rdg><rdg wit="#V2">a </rdg></app>
+<app><rdg wit="#V1">un </rdg><rdg wit="#V2">un </rdg></app>
+<app><rdg wit="#V1">lieu </rdg><rdg wit="#V2">lieu </rdg></app>
+<app><rdg wit="#V1">où </rdg><rdg wit="#V2">où </rdg></app>
+<app><rdg wit="#V1">cette </rdg><rdg wit="#V2">cette </rdg></app>
+<app><rdg wit="#V1">multiplicité </rdg><rdg wit="#V2">multiplicité </rdg></app>
+<app><rdg wit="#V1">se </rdg><rdg wit="#V2">se </rdg></app>
+<app><rdg wit="#V1">ressemble</rdg><rdg wit="#V2">ressemble</rdg></app>
+<app><rdg wit="#V1">&gt; </rdg><rdg wit="#V2">&gt; </rdg></app>
+<app><rdg wit="#V1">et </rdg><rdg wit="#V2">et </rdg></app>
+<app><rdg wit="#V1">ce </rdg><rdg wit="#V2">ce </rdg></app>
+<app><rdg wit="#V1">lieu</rdg><rdg wit="#V2">lieu</rdg></app>
+<app><rdg wit="#V1">, </rdg><rdg wit="#V2">, </rdg></app>
+<app><rdg wit="#V1">ce </rdg><rdg wit="#V2">ce </rdg></app>
+<app><rdg wit="#V1">n</rdg><rdg wit="#V2">n</rdg></app>
+<app><rdg wit="#V1">'</rdg><rdg wit="#V2">’</rdg></app>
+<app><rdg wit="#V1">est </rdg><rdg wit="#V2">est </rdg></app>
+<app><rdg wit="#V1">pas </rdg><rdg wit="#V2">pas </rdg></app>
+<app><rdg wit="#V1">l</rdg><rdg wit="#V2">l</rdg></app>
+<app><rdg wit="#V1">'</rdg><rdg wit="#V2">’</rdg></app>
+<app><rdg wit="#V1">auteur</rdg><rdg wit="#V2">auteur</rdg></app>
+<app><rdg wit="#V1">, </rdg><rdg wit="#V2">, </rdg></app>
+<app><rdg wit="#V1">comme </rdg><rdg wit="#V2">comme </rdg></app>
+<app><rdg wit="#V1">on </rdg><rdg wit="#V2">on </rdg></app>
+<app><rdg wit="#V1">l</rdg><rdg wit="#V2">l</rdg></app>
+<app><rdg wit="#V1">'</rdg><rdg wit="#V2">’</rdg></app>
+<app><rdg wit="#V1">a </rdg><rdg wit="#V2">a </rdg></app>
+<app><rdg wit="#V1">dit </rdg><rdg wit="#V2">dit </rdg></app>
+<app><rdg wit="#V1">jusqu</rdg><rdg wit="#V2">jusqu</rdg></app>
+<app><rdg wit="#V1">'</rdg><rdg wit="#V2">’</rdg></app>
+<app><rdg wit="#V1">à </rdg><rdg wit="#V2">à </rdg></app>
+<app><rdg wit="#V1">présent</rdg><rdg wit="#V2">présent</rdg></app>
+<app><rdg wit="#V1">,&gt; </rdg><rdg wit="#V2">,&gt; </rdg></app>
+<app><rdg wit="#V1">c</rdg><rdg wit="#V2">c</rdg></app>
+<app><rdg wit="#V1">'</rdg><rdg wit="#V2">’</rdg></app>
+<app><rdg wit="#V1">est </rdg><rdg wit="#V2">est </rdg></app>
+<app><rdg wit="#V1">le </rdg><rdg wit="#V2">le </rdg></app>
+<app><rdg wit="#V1">lecteur </rdg><rdg wit="#V2">lecteur </rdg></app>
+<app><rdg wit="#V1">; </rdg><rdg wit="#V2">; </rdg></app>
+<app><rdg wit="#V1">le </rdg><rdg wit="#V2">le </rdg></app>
+<app><rdg wit="#V1">lecteur </rdg><rdg wit="#V2">lecteur </rdg></app>
+<app><rdg wit="#V1">l</rdg><rdg wit="#V2">l</rdg></app>
+<app><rdg wit="#V1">'</rdg><rdg wit="#V2">’</rdg></app>
+<app><rdg wit="#V1">espace </rdg><rdg wit="#V2">espace </rdg></app>
+<app><rdg wit="#V1">même </rdg><rdg wit="#V2">même </rdg></app>
+<app><rdg wit="#V1">où </rdg><rdg wit="#V2">où </rdg></app>
+<app><rdg wit="#V1">s</rdg><rdg wit="#V2">s</rdg></app>
+<app><rdg wit="#V1">'</rdg><rdg wit="#V2">’</rdg></app>
+<app><rdg wit="#V1">inscrivent </rdg><rdg wit="#V2">inscrivent </rdg></app>
+<app><rdg wit="#V1">sans</rdg><rdg wit="#V2">sans</rdg></app>
+<app><rdg wit="#V1">&gt; </rdg><rdg wit="#V2">&gt; </rdg></app>
+<app><rdg wit="#V1">qu</rdg><rdg wit="#V2">qu</rdg></app>
+<app><rdg wit="#V1">'</rdg><rdg wit="#V2">’</rdg></app>
+<app><rdg wit="#V1">aucune </rdg><rdg wit="#V2">aucune </rdg></app>
+<app><rdg wit="#V1">ne </rdg><rdg wit="#V2">ne </rdg></app>
+<app><rdg wit="#V1">se </rdg><rdg wit="#V2">se </rdg></app>
+<app><rdg wit="#V1">perde</rdg><rdg wit="#V2">perde</rdg></app>
+<app><rdg wit="#V1">, </rdg><rdg wit="#V2">, </rdg></app>
+<app><rdg wit="#V1">toutes </rdg><rdg wit="#V2">toutes </rdg></app>
+<app><rdg wit="#V1">les </rdg><rdg wit="#V2">les </rdg></app>
+<app><rdg wit="#V1">citations </rdg><rdg wit="#V2">citations </rdg></app>
+<app><rdg wit="#V1">dont </rdg><rdg wit="#V2">dont </rdg></app>
+<app><rdg wit="#V1">elle </rdg><rdg wit="#V2">elle </rdg></app>
+<app><rdg wit="#V1">fait </rdg><rdg wit="#V2">fait </rdg></app>
+<app><rdg wit="#V1">une</rdg><rdg wit="#V2">une</rdg></app>
+<app><rdg wit="#V1">&gt; </rdg><rdg wit="#V2">&gt; </rdg></app>
+<app><rdg wit="#V1">écriture</rdg><rdg wit="#V2">écriture </rdg></app>
+<app><rdg wit="#V1">[^</rdg><rdg wit="#V2">[@</rdg></app>
+<app><rdg wit="#V1">1</rdg><rdg wit="#V2">barthes_mort_1968</rdg></app>
+<app><rdg wit="#V2">, </rdg></app>
+<app><rdg wit="#V2">p</rdg></app>
+<app><rdg wit="#V2">. </rdg></app>
+<app><rdg wit="#V2">495</rdg></app>
+<app><rdg wit="#V1">].</rdg><rdg wit="#V2">].</rdg></app>
+<app><rdg wit="#V1">Barthes </rdg><rdg wit="#V2">Barthes </rdg></app>
+<app><rdg wit="#V1">refuse </rdg><rdg wit="#V2">refuse </rdg></app>
+<app><rdg wit="#V1">donc </rdg></app>
+<app><rdg wit="#V1">à </rdg><rdg wit="#V2">à </rdg></app>
+<app><rdg wit="#V1">l</rdg><rdg wit="#V2">l</rdg></app>
+<app><rdg wit="#V1">'</rdg><rdg wit="#V2">’</rdg></app>
+<app><rdg wit="#V1">auteur </rdg><rdg wit="#V2">auteur </rdg></app>
+<app><rdg wit="#V1">le </rdg><rdg wit="#V2">le </rdg></app>
+<app><rdg wit="#V1">rôle </rdg><rdg wit="#V2">rôle </rdg></app>
+<app><rdg wit="#V1">de </rdg><rdg wit="#V2">de </rdg></app>
+<app><rdg wit="#V1">producteur </rdg><rdg wit="#V2">producteur </rdg></app>
+<app><rdg wit="#V1">de </rdg><rdg wit="#V2">de </rdg></app>
+<app><rdg wit="#V1">texte</rdg><rdg wit="#V2">texte</rdg></app>
+<app><rdg wit="#V1">, </rdg><rdg wit="#V2">, </rdg></app>
+<app><rdg wit="#V1">lasignification </rdg><rdg wit="#V2">lasignification </rdg></app>
+<app><rdg wit="#V1">se </rdg><rdg wit="#V2">se </rdg></app>
+<app><rdg wit="#V1">trouvant </rdg><rdg wit="#V2">trouvant </rdg></app>
+<app><rdg wit="#V1">uniquement </rdg><rdg wit="#V2">uniquement </rdg></app>
+<app><rdg wit="#V1">dans </rdg><rdg wit="#V2">dans </rdg></app>
+<app><rdg wit="#V1">un </rdg><rdg wit="#V2">un </rdg></app>
+<app><rdg wit="#V1">langage </rdg><rdg wit="#V2">langage </rdg></app>
+<app><rdg wit="#V1">impersonnel</rdg><rdg wit="#V2">impersonnel</rdg></app>
+<app><rdg wit="#V1">,</rdg><rdg wit="#V2">,</rdg></app>
+<app><rdg wit="#V1">anonyme</rdg><rdg wit="#V2">anonyme</rdg></app>
+<app><rdg wit="#V1">, </rdg><rdg wit="#V2">, </rdg></app>
+<app><rdg wit="#V1">neutre</rdg><rdg wit="#V2">neutre</rdg></app>
+<app><rdg wit="#V1">, </rdg><rdg wit="#V2">, </rdg></app>
+<app><rdg wit="#V1">sans </rdg><rdg wit="#V2">sans </rdg></app>
+<app><rdg wit="#V1">origine </rdg><rdg wit="#V2">origine </rdg></app>
+<app><rdg wit="#V1">; </rdg><rdg wit="#V2">; </rdg></app>
+<app><rdg wit="#V1">l</rdg><rdg wit="#V2">l</rdg></app>
+<app><rdg wit="#V1">'</rdg><rdg wit="#V2">’</rdg></app>
+<app><rdg wit="#V1">auteur </rdg><rdg wit="#V2">auteur </rdg></app>
+<app><rdg wit="#V1">est </rdg><rdg wit="#V2">est </rdg></app>
+<app><rdg wit="#V1">donc </rdg><rdg wit="#V2">donc </rdg></app>
+<app><rdg wit="#V1">relégué </rdg><rdg wit="#V2">relégué </rdg></app>
+<app><rdg wit="#V1">au </rdg><rdg wit="#V2">au </rdg></app>
+<app><rdg wit="#V1">simple </rdg><rdg wit="#V2">simple </rdg></app>
+<app><rdg wit="#V1">rôlede </rdg><rdg wit="#V2">rôlede </rdg></app>
+<app><rdg wit="#V1">scripteur </rdg><rdg wit="#V2">scripteur </rdg></app>
+<app><rdg wit="#V1">suivant </rdg><rdg wit="#V2">suivant </rdg></app>
+<app><rdg wit="#V1">une </rdg><rdg wit="#V2">une </rdg></app>
+<app><rdg wit="#V1">idée </rdg><rdg wit="#V2">idée </rdg></app>
+<app><rdg wit="#V1">intertextuelle </rdg><rdg wit="#V2">intertextuelle </rdg></app>
+<app><rdg wit="#V1">de </rdg><rdg wit="#V2">de </rdg></app>
+<app><rdg wit="#V1">la </rdg><rdg wit="#V2">la </rdg></app>
+<app><rdg wit="#V1">littérature </rdg><rdg wit="#V2">littérature </rdg></app>
+<app><rdg wit="#V1">danslaquelle </rdg><rdg wit="#V2">danslaquelle </rdg></app>
+<app><rdg wit="#V1">chaque </rdg><rdg wit="#V2">chaque </rdg></app>
+<app><rdg wit="#V1">texte </rdg><rdg wit="#V2">texte </rdg></app>
+<app><rdg wit="#V1">n</rdg><rdg wit="#V2">n</rdg></app>
+<app><rdg wit="#V1">'</rdg><rdg wit="#V2">’</rdg></app>
+<app><rdg wit="#V1">est </rdg><rdg wit="#V2">est </rdg></app>
+<app><rdg wit="#V1">qu</rdg><rdg wit="#V2">qu</rdg></app>
+<app><rdg wit="#V1">'</rdg><rdg wit="#V2">’</rdg></app>
+<app><rdg wit="#V1">un </rdg><rdg wit="#V2">un </rdg></app>
+<app><rdg wit="#V1">« </rdg><rdg wit="#V2">« </rdg></app>
+<app><rdg wit="#V1">tissu </rdg><rdg wit="#V2">tissu </rdg></app>
+<app><rdg wit="#V1">de </rdg><rdg wit="#V2">de </rdg></app>
+<app><rdg wit="#V1">citations </rdg><rdg wit="#V2">citations </rdg></app>
+<app><rdg wit="#V1">». </rdg><rdg wit="#V2">». </rdg></app>
+<app><rdg wit="#V1">On </rdg><rdg wit="#V2">On </rdg></app>
+<app><rdg wit="#V1">a </rdg><rdg wit="#V2">a </rdg></app>
+<app><rdg wit="#V1">pusouvent </rdg><rdg wit="#V2">pusouvent </rdg></app>
+<app><rdg wit="#V1">affirmer </rdg><rdg wit="#V2">affirmer </rdg></app>
+<app><rdg wit="#V1">que </rdg><rdg wit="#V2">que </rdg></app>
+<app><rdg wit="#V1">ce </rdg><rdg wit="#V2">ce </rdg></app>
+<app><rdg wit="#V1">qui </rdg><rdg wit="#V2">qui </rdg></app>
+<app><rdg wit="#V1">pour </rdg><rdg wit="#V2">pour </rdg></app>
+<app><rdg wit="#V1">Barthes </rdg><rdg wit="#V2">Barthes </rdg></app>
+<app><rdg wit="#V1">était </rdg><rdg wit="#V2">était </rdg></app>
+<app><rdg wit="#V1">un </rdg><rdg wit="#V2">un </rdg></app>
+<app><rdg wit="#V1">fantasme</rdg><rdg wit="#V2">fantasme</rdg></app>
+<app><rdg wit="#V1">, </rdg><rdg wit="#V2">, </rdg></app>
+<app><rdg wit="#V1">c</rdg><rdg wit="#V2">c</rdg></app>
+<app><rdg wit="#V1">'</rdg><rdg wit="#V2">’</rdg></app>
+<app><rdg wit="#V1">est</rdg><rdg wit="#V2">est</rdg></app>
+<app><rdg wit="#V1">-</rdg><rdg wit="#V2">-</rdg></app>
+<app><rdg wit="#V1">à</rdg><rdg wit="#V2">à</rdg></app>
+<app><rdg wit="#V1">-</rdg><rdg wit="#V2">-</rdg></app>
+<app><rdg wit="#V1">direcette </rdg><rdg wit="#V2">direcette </rdg></app>
+<app><rdg wit="#V1">littérature </rdg><rdg wit="#V2">littérature </rdg></app>
+<app><rdg wit="#V1">purement </rdg><rdg wit="#V2">purement </rdg></app>
+<app><rdg wit="#V1">intertextuelle </rdg><rdg wit="#V2">intertextuelle </rdg></app>
+<app><rdg wit="#V1">dégagée </rdg><rdg wit="#V2">dégagée </rdg></app>
+<app><rdg wit="#V1">de </rdg><rdg wit="#V2">de </rdg></app>
+<app><rdg wit="#V1">toute </rdg><rdg wit="#V2">toute </rdg></app>
+<app><rdg wit="#V1">origine</rdg><rdg wit="#V2">origine</rdg></app>
+<app><rdg wit="#V1">,</rdg><rdg wit="#V2">,</rdg></app>
+<app><rdg wit="#V1">constitue </rdg><rdg wit="#V2">constitue </rdg></app>
+<app><rdg wit="#V1">aussi </rdg><rdg wit="#V2">aussi </rdg></app>
+<app><rdg wit="#V1">une </rdg><rdg wit="#V2">une </rdg></app>
+<app><rdg wit="#V1">sorte </rdg><rdg wit="#V2">sorte </rdg></app>
+<app><rdg wit="#V1">d</rdg><rdg wit="#V2">d</rdg></app>
+<app><rdg wit="#V1">'</rdg><rdg wit="#V2">’</rdg></app>
+<app><rdg wit="#V1">anticipation </rdg><rdg wit="#V2">anticipation </rdg></app>
+<app><rdg wit="#V1">divinatoire </rdg><rdg wit="#V2">divinatoire </rdg></app>
+<app><rdg wit="#V1">de </rdg><rdg wit="#V2">de </rdg></app>
+<app><rdg wit="#V1">la </rdg><rdg wit="#V2">la </rdg></app>
+<app><rdg wit="#V1">textualiténumérique </rdg><rdg wit="#V2">textualiténumérique </rdg></app>
+<app><rdg wit="#V1">qui </rdg><rdg wit="#V2">qui </rdg></app>
+<app><rdg wit="#V1">aurait </rdg><rdg wit="#V2">aurait </rdg></app>
+<app><rdg wit="#V1">porté </rdg><rdg wit="#V2">porté </rdg></app>
+<app><rdg wit="#V1">la </rdg><rdg wit="#V2">la </rdg></app>
+<app><rdg wit="#V1">notion </rdg><rdg wit="#V2">notion </rdg></app>
+<app><rdg wit="#V1">d</rdg><rdg wit="#V2">d</rdg></app>
+<app><rdg wit="#V1">'</rdg><rdg wit="#V2">’</rdg></app>
+<app><rdg wit="#V1">auteur </rdg><rdg wit="#V2">auteur </rdg></app>
+<app><rdg wit="#V1">à </rdg><rdg wit="#V2">à </rdg></app>
+<app><rdg wit="#V1">sa </rdg><rdg wit="#V2">sa </rdg></app>
+<app><rdg wit="#V1">dissolution</rdg><rdg wit="#V2">dissolution</rdg></app>
+<app><rdg wit="#V1">.</rdg><rdg wit="#V2">.</rdg></app>
+<app><rdg wit="#V1">J</rdg><rdg wit="#V2">J</rdg></app>
+<app><rdg wit="#V1">'</rdg><rdg wit="#V2">’</rdg></app>
+<app><rdg wit="#V1">introduis </rdg><rdg wit="#V2">introduis </rdg></app>
+<app><rdg wit="#V1">alors </rdg><rdg wit="#V2">alors </rdg></app>
+<app><rdg wit="#V1">la </rdg><rdg wit="#V2">la </rdg></app>
+<app><rdg wit="#V1">deuxième </rdg><rdg wit="#V2">deuxième </rdg></app>
+<app><rdg wit="#V1">citation</rdg><rdg wit="#V2">citation</rdg></app>
+<app><rdg wit="#V1">, </rdg><rdg wit="#V2">, </rdg></app>
+<app><rdg wit="#V1">que </rdg><rdg wit="#V2">que </rdg></app>
+<app><rdg wit="#V1">l</rdg><rdg wit="#V2">l</rdg></app>
+<app><rdg wit="#V1">'</rdg><rdg wit="#V2">’</rdg></app>
+<app><rdg wit="#V1">on </rdg><rdg wit="#V2">on </rdg></app>
+<app><rdg wit="#V1">doit </rdg><rdg wit="#V2">doit </rdg></app>
+<app><rdg wit="#V1">à </rdg><rdg wit="#V2">à </rdg></app>
+<app><rdg wit="#V1">AntoineCompagnon</rdg><rdg wit="#V2">AntoineCompagnon</rdg></app>
+<app><rdg wit="#V1">. </rdg><rdg wit="#V2">. </rdg></app>
+<app><rdg wit="#V1">Nous </rdg><rdg wit="#V2">Nous </rdg></app>
+<app><rdg wit="#V1">sommes </rdg><rdg wit="#V2">sommes </rdg></app>
+<app><rdg wit="#V1">maintenant </rdg><rdg wit="#V2">maintenant </rdg></app>
+<app><rdg wit="#V1">en </rdg><rdg wit="#V2">en </rdg></app>
+<app><rdg wit="#V1">2000</rdg><rdg wit="#V2">2000</rdg></app>
+<app><rdg wit="#V1">, </rdg><rdg wit="#V2">, </rdg></app></root>
