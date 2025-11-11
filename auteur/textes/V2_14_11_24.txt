@@ -1,536 +1,128 @@
-Mon propos vise à articuler, précisément autour de la notion d’auteur,
-les deux axes principaux des humanités numériques littéraires : d’un
-côté, l’édition et la diffusion des textes au format numérique, ce qui
-permet des formes d’interrogation inédites des corpus, suivant des
-perspectives de valorisation du patrimoine littéraire du passé, comme
-l’entreprise d’édition numérique de *La Comédie humaine* du site
-[eBalzac](https://www.ebalzac.com/) ; de l’autre, la création contemporaine nativement numérique,
-hypertextuelle et multimédiale, qui se développe notamment dans des
-sites d’auteurs, des blogs, des livres-applications, et plus récemment
-sur les réseaux sociaux. De Balzac à François Bon (ou même de François
-Bon à Balzac, quand on connaît l’admiration que l’inventeur du site *Le Tiers Livre* porte à l’endroit de l’auteur de *La Comédie humaine*), l’interrogation
-sur les modes de présence d’un auteur en ligne et sur la pertinence même
-de la notion d’auteur semble commune, et permet d’analyser les
-reconfigurations multiples qu’implique le support numérique : celles-ci
-ne semblent pas amener à une dissolution, mais vont plutôt dans le sens
-d’une persistance, voire d’une renaissance de la figure auctoriale. Afin d’étayer cette hypothèse, je commencerai par un rappel initial de l’arrêt de mort dont fut frappé l’auteur pour examiner ensuite trois formes différentes de sa présence actuelle en ligne : les sites patrimoniaux « sur auteur »,
-les sites de création contemporaine (principalement celui de François
-Bon) et un exemple de réécriture collective en tweets de *Madame
-Bovary*.
+Mon propos vise à articuler, précisément autour de la notion d’auteur, les deux axes principaux des humanités numériques littéraires : d’un côté, l’édition et la diffusion des textes au format numérique, ce qui permet des formes d’interrogation inédites des corpus, suivant des perspectives de valorisation du patrimoine littéraire du passé, comme l’entreprise d’édition numérique de *La Comédie humaine* du site [eBalzac](https://www.ebalzac.com/) ; de l’autre, la création contemporaine nativement numérique, hypertextuelle et multimédiale, qui se développe notamment dans des sites d’auteurs, des blogs, des livres-applications, et plus récemment sur les réseaux sociaux. De Balzac à François Bon (ou même de François Bon à Balzac, quand on connaît l’admiration que l’inventeur du site *Le Tiers Livre* porte à l’endroit de l’auteur de *La Comédie humaine*), l’interrogation sur les modes de présence d’un auteur en ligne et sur la pertinence même de la notion d’auteur semble commune, et permet d’analyser les reconfigurations multiples qu’implique le support numérique : celles-ci ne semblent pas amener à une dissolution, mais vont plutôt dans le sens d’une persistance, voire d’une renaissance de la figure auctoriale. Afin d’étayer cette hypothèse, je commencerai par un rappel initial de l’arrêt de mort dont fut frappé l’auteur pour examiner ensuite trois formes différentes de sa présence actuelle en ligne : les sites patrimoniaux « sur auteur », les sites de création contemporaine (principalement celui de François Bon) et un exemple de réécriture collective en tweets de *Madame Bovary*.
 
-## Retour au passé : l’arrêt de mort de l’auteur
+ ## Retour au passé : l’arrêt de mort de l’auteur
 
-Pour contextualiser la notion d’auteur et ses reconfigurations, je
-remonte à l’archéologie pré-numérique en proposant une suite de trois
-citations. La première, très connue, est extraite de l’article de Roland
-Barthes sur « La mort de l’auteur », datant de 1968. La fin du texte
-résume les acquis et prononce l’arrêt de mort, en annonçant la
-« naissance » du lecteur qui en est le corollaire :
+ Pour contextualiser la notion d’auteur et ses reconfigurations, je remonte à l’archéologie pré-numérique en proposant une suite de trois citations. La première, très connue, est extraite de l’article de Roland Barthes sur « La mort de l’auteur », datant de 1968. La fin du texte résume les acquis et prononce l’arrêt de mort, en annonçant la « naissance » du lecteur qui en est le corollaire :
 
-> Un texte est fait d’écritures multiples issues de plusieurs cultures
-> et qui entrent les unes avec les autres en dialogue, en parodie, en
-> contestation ; mais il y a un lieu où cette multiplicité se ressemble
-> et ce lieu, ce n’est pas l’auteur, comme on l’a dit jusqu’à présent,
-> c’est le lecteur ; le lecteur l’espace même où s’inscrivent sans
-> qu’aucune ne se perde, toutes les citations dont elle fait une
-> écriture [@barthes_mort_1968, p. 495].
+ > Un texte est fait d’écritures multiples issues de plusieurs cultures 
+ > et qui entrent les unes avec les autres en dialogue, en parodie, en 
+ > contestation ; mais il y a un lieu où cette multiplicité se ressemble 
+ > et ce lieu, ce n’est pas l’auteur, comme on l’a dit jusqu’à présent, 
+ > c’est le lecteur ; le lecteur l’espace même où s’inscrivent sans 
+ > qu’aucune ne se perde, toutes les citations dont elle fait une > écriture [@barthes_mort_1968, p. 495].
 
-Barthes refuse à l’auteur le rôle de producteur de texte, la
-signification se trouvant uniquement dans un langage impersonnel,
-anonyme, neutre, sans origine ; l’auteur est donc relégué au simple rôle
-de scripteur suivant une idée intertextuelle de la littérature dans
-laquelle chaque texte n’est qu’un « tissu de citations ». On a pu
-souvent affirmer que ce qui pour Barthes était un fantasme, c’est-à-dire
-cette littérature purement intertextuelle dégagée de toute origine,
-constitue aussi une sorte d’anticipation divinatoire de la textualité
-numérique qui aurait porté la notion d’auteur à sa dissolution.
+ Barthes refuse à l’auteur le rôle de producteur de texte, la signification se trouvant uniquement dans un langage impersonnel, anonyme, neutre, sans origine ; l’auteur est donc relégué au simple rôle de scripteur suivant une idée intertextuelle de la littérature dans laquelle chaque texte n’est qu’un « tissu de citations ». On a pu souvent affirmer que ce qui pour Barthes était un fantasme, c’est-à-dire cette littérature purement intertextuelle dégagée de toute origine, constitue aussi une sorte d’anticipation divinatoire de la textualité numérique qui aurait porté la notion d’auteur à sa dissolution.
 
-J’introduis alors la deuxième citation, que l’on doit à Antoine
-Compagnon. Nous sommes maintenant en 2000, et la réflexion nous est
-fournie dans un article qui s’intitule « Un monde sans auteur », intégré
-au volume collectif dirigé par Jean-Yves Mollier, *Où va le livre*.
-Antoine Compagnon rappelle que la notion d’auteur est essentiellement
-juridique et profondément liée à la fonction éditoriale :
+ J’introduis alors la deuxième citation, que l’on doit à Antoine Compagnon. Nous sommes maintenant en 2000, et la réflexion nous est fournie dans un article qui s’intitule « Un monde sans auteur », intégré au volume collectif dirigé par Jean-Yves Mollier, *Où va le livre*. Antoine Compagnon rappelle que la notion d’auteur est essentiellement juridique et profondément liée à la fonction éditoriale :
 
-> La notion d’auteur n’est pas une idée purement littéraire mais une
-> construction sociale et culturelle liée inextricablement à l’histoire
-> de l’édition. Les relations aux mécènes, aux éditeurs, aux libraires,
-> aux lecteurs déterminaient jadis le statut de l’auteur. Aujourd’hui,
-> la cyberculture est le contexte pertinent de la définition de
-> l’auteur, ou de son indéfinition [@compagnon_monde_2000].
+ > La notion d’auteur n’est pas une idée purement littéraire mais une 
+ > construction sociale et culturelle liée inextricablement à l’histoire 
+ > de l’édition. Les relations aux mécènes, aux éditeurs, aux libraires, 
+ > aux lecteurs déterminaient jadis le statut de l’auteur. Aujourd’hui, 
+ > la cyberculture est le contexte pertinent de la définition de > l’auteur, ou de son indéfinition [@compagnon_monde_2000].
 
-Pour Compagnon, sans éditeur il n’y a pas d’auteur. De ce point de vue,
-le numérique se soustrait aux règles de la fonction éditoriale classique
-au profit de l’auto-édition, ou de ce que Marcello Vitali Rosati appelle
-*éditorialisation* [@vitali-rosati_pour_2020] ; il signerait ainsi l’indéfinition de
-l’auteur, voire sa disparition, qu’Antoine Compagnon, trente ans après
-Barthes, semble regretter.
+ Pour Compagnon, sans éditeur il n’y a pas d’auteur. De ce point de vue, le numérique se soustrait aux règles de la fonction éditoriale classique au profit de l’auto-édition, ou de ce que Marcello Vitali Rosati appelle *éditorialisation* [@vitali-rosati_pour_2020] ; il signerait ainsi l’indéfinition de l’auteur, voire sa disparition, qu’Antoine Compagnon, trente ans après Barthes, semble regretter.
 
-La dernière citation est de Roger Chartier, historien du livre bien
-connu, qui nous livre cette réflexion en 2011 :
+ La dernière citation est de Roger Chartier, historien du livre bien connu, qui nous livre cette réflexion en 2011 :
 
-> L’image de la navigation sur le réseau, devenue si familière, indique
-> avec acuité les caractéristiques de cette nouvelle manière de lire \[c’est-à-dire celle d’une textualité mobile, ce que Chartier vient
-> d’expliquer dans les lignes qui précèdent\], segmentée, fragmentée,
-> discontinue, qui défie profondément la perception des livres comme
-> œuvres, des textes comme des créations singulières et originales,
-> toujours identiques à elles-mêmes et, pour cette raison même, propriété
-> de leur auteur [@chartier_quest-ce_2010].
+ > L’image de la navigation sur le réseau, devenue si familière, indique 
+ > avec acuité les caractéristiques de cette nouvelle manière de lire \[c’est-à-dire celle d’une textualité mobile, ce que Chartier vient 
+ > d’expliquer dans les lignes qui précèdent\], segmentée, fragmentée, 
+ > discontinue, qui défie profondément la perception des livres comme 
+ > œuvres, des textes comme des créations singulières et originales, 
+ > toujours identiques à elles-mêmes et, pour cette raison même, propriété 
+ > de leur auteur [@chartier_quest-ce_2010].
 
-Le propos de Roger Chartier participe d’un certain discours
-catastrophiste, courant jusqu’à il y a une dizaine d’années, qui
-considérait le tournant numérique comme l’inévitable cause d’une très
-prochaine mort du livre, dans le sens d’un épuisement de la culture de
-l’imprimé ayant comme corollaire l’effondrement de la fonction
-auctoriale. Trois éléments qui constituent précisément la fonction
-auteur de manière traditionnelle sont ainsi contestés par ces trois
-citations d’époque : l’origine, pour Barthes ; l’autorité, pour
-Compagnon ; la propriété, pour Chartier, du moment où le livre n’est
-plus matériel et ne figure plus symboliquement cette propriété de
-l’auteur indiquée par le nom sur la première page de la couverture. La
-négation de l’origine, de l’autorité et de la propriété forme alors le
-socle théorique d’une réflexion actuelle qui postule la dissolution de
-l’auteur dans le numérique.
+ Le propos de Roger Chartier participe d’un certain discours catastrophiste, courant jusqu’à il y a une dizaine d’années, qui considérait le tournant numérique comme l’inévitable cause d’une très prochaine mort du livre, dans le sens d’un épuisement de la culture de l’imprimé ayant comme corollaire l’effondrement de la fonction auctoriale. Trois éléments qui constituent précisément la fonction auteur de manière traditionnelle sont ainsi contestés par ces trois citations d’époque : l’origine, pour Barthes ; l’autorité, pour Compagnon ; la propriété, pour Chartier, du moment où le livre n’est plus matériel et ne figure plus symboliquement cette propriété de l’auteur indiquée par le nom sur la première page de la couverture. La négation de l’origine, de l’autorité et de la propriété forme alors le socle théorique d’une réflexion actuelle qui postule la dissolution de l’auteur dans le numérique.
 
-## Un nouvel objet numérique : les sites « sur auteur »
+ ## Un nouvel objet numérique : les sites « sur auteur »
 
-Le premier axe annoncé en ouverture, qui concerne les entreprises de
-patrimonialisation dans le domaine des humanités numériques littéraires,
-veut établir un constat dont le dessein est de montrer l’inexactitude de
-ces prédictions critiques ainsi que la persistance de la notion
-d’auteur, certes reconfigurée, mais toujours bien présente. Je commence
-par rappeler une enquête que j’ai menée avec Giovanni Pietro Vitali
-autour des entreprises de patrimonialisation sur la littérature du XIX^e^
-siècle. Bien évidemment, cette époque est un trésor pour les
-spécialistes qui travaillent dans les humanités numériques, étant donné que les textes sont libres de droits et qu’ils peuvent donc être édités
-de diverses manières. L’enquête avait pour objectif d’identifier les
-projets les plus aboutis dans le domaine éditorial et d’en analyser les apports, dont le principal est de
-permettre un accès généralement libre et gratuit aux corpus,
-c’est-à-dire au texte littéraire, mais aussi à d’autres documents d’ordre
-génétique, contextuel ou bibliographique[^1]. Or cette investigation
-nous a conduit à un constat assez inattendu : la plupart des projets en
-humanités numériques littéraires, y compris ceux qui participent de ce
-qu’on appelle le *Distant Reading*, sont des projets *sur auteur*.
+ Le premier axe annoncé en ouverture, qui concerne les entreprises de patrimonialisation dans le domaine des humanités numériques littéraires, veut établir un constat dont le dessein est de montrer l’inexactitude de ces prédictions critiques ainsi que la persistance de la notion d’auteur, certes reconfigurée, mais toujours bien présente. Je commence par rappeler une enquête que j’ai menée avec Giovanni Pietro Vitali autour des entreprises de patrimonialisation sur la littérature du XIX^e^ siècle. Bien évidemment, cette époque est un trésor pour les spécialistes qui travaillent dans les humanités numériques, étant donné que les textes sont libres de droits et qu’ils peuvent donc être édités de diverses manières. L’enquête avait pour objectif d’identifier les projets les plus aboutis dans le domaine éditorial et d’en analyser les apports, dont le principal est de permettre un accès généralement libre et gratuit aux corpus, c’est-à-dire au texte littéraire, mais aussi à d’autres documents d’ordre génétique, contextuel ou bibliographique[^1]. Or cette investigation nous a conduit à un constat assez inattendu : la plupart des projets en humanités numériques littéraires, y compris ceux qui participent de ce qu’on appelle le *Distant Reading*, sont des projets *sur auteur*.
 
-Voici quelques exemples qui résument les acquis de l’enquête. Dans la
-littérature de langue anglaise, on peut mentionner le site sur les
-manuscrits de [Jane Austen](https://janeausten.ac.uk/) ou le [Prismatic Jane Eyre](https://prismaticjaneeyre.org/), site
-sur les traductions en langue étrangère de l’œuvre de l’autrice, ou
-encore la [Melville Electronic Library](https://melville.electroniclibrary.org/). Pour en venir à la
-littérature italienne, on peut citer le [Wiki Leopardi](http://wikileopardi.altervista.org/), ainsi
-qu’une excellente édition des [*Idilli*](http://leopardi.ecdosys.org/it/Home/) du même auteur, puis un site
-très complet sur [Manzoni](http://www.alessandromanzoni.org/), qui présente aussi les manuscrits. Dans
-le domaine de la littérature de langue française se démarquent le
-célèbre site sur les manuscrits de [Stendhal](http://manuscrits-de-stendhal.org/), l’un des premiers dans
-le domaine des humanités numériques littéraires, ou celui sur la
-correspondance d’[Émile Zola](http://eman-archives.org/CorrespondanceZola/) ainsi que les sites proposant l’édition
-de Balzac et de Flaubert dont il sera question dans la suite.
+ Voici quelques exemples qui résument les acquis de l’enquête. Dans la littérature de langue anglaise, on peut mentionner le site sur les manuscrits de [Jane Austen](https://janeausten.ac.uk/) ou le [Prismatic Jane Eyre](https://prismaticjaneeyre.org/), site sur les traductions en langue étrangère de l’œuvre de l’autrice, ou encore la [Melville Electronic Library](https://melville.electroniclibrary.org/). Pour en venir à la littérature italienne, on peut citer le [Wiki Leopardi](http://wikileopardi.altervista.org/), ainsi qu’une excellente édition des [*Idilli*](http://leopardi.ecdosys.org/it/Home/) du même auteur, puis un site très complet sur [Manzoni](http://www.alessandromanzoni.org/), qui présente aussi les manuscrits. Dans le domaine de la littérature de langue française se démarquent le célèbre site sur les manuscrits de [Stendhal](http://manuscrits-de-stendhal.org/), l’un des premiers dans le domaine des humanités numériques littéraires, ou celui sur la correspondance d’[Émile Zola](http://eman-archives.org/CorrespondanceZola/) ainsi que les sites proposant l’édition de Balzac et de Flaubert dont il sera question dans la suite.
 
-Cette accessibilité inédite, qui contribue à la vaste diffusion de la
-connaissance, ne va pas sans problèmes. Le principal est la surabondance
-de l’information, problème commun à l’ensemble de l’archive Web par son
-immensité, ainsi que la redéfinition de la fonction éditoriale, dont les
-garanties d’authenticité et de qualité, qui ont constitué pendant des
-siècles les fondements de la culture de l’imprimé, sont remises en
-question. Je donne un exemple concernant Balzac : l’utilisateur qui
-voudrait lire un texte de l’auteur de *La Comédie humaine* au format
-numérique tombera très difficilement sur la « bonne version » du texte,
-c’est-à-dire la version qui intègre les corrections manuscrites de
-l’exemplaire personnel de l’auteur et qui correspond à la règle
-philologique de donner à lire le dernier état du texte établi du vivant
-de l’auteur. Or cette version, qui circule dans les éditions imprimées
-depuis plus d’un siècle (dans la Pléiade, mais aussi dans toutes les
-éditions de poche), est introuvable en ligne sauf sur le site eBalzac.
-La plupart des sites donnent la version sans les corrections de Balzac ou
-même, comme Wikisource, la numérisation d’une édition posthume qui
-n’intègre pas les corrections de Balzac et qui contient un nombre
-d’erreurs incalculable. Le paradoxe est donc flagrant : les textes de
-Balzac qui circulent en ligne, exception faite du site eBalzac, ne sont
-pas les mêmes que ceux qu’on lit dans les éditions imprimées, et ils
-sont d’ailleurs plus pauvres et plus fautifs que ces derniers.
+ Cette accessibilité inédite, qui contribue à la vaste diffusion de la connaissance, ne va pas sans problèmes. Le principal est la surabondance de l’information, problème commun à l’ensemble de l’archive Web par son immensité, ainsi que la redéfinition de la fonction éditoriale, dont les garanties d’authenticité et de qualité, qui ont constitué pendant des siècles les fondements de la culture de l’imprimé, sont remises en question. Je donne un exemple concernant Balzac : l’utilisateur qui voudrait lire un texte de l’auteur de *La Comédie humaine* au format numérique tombera très difficilement sur la « bonne version » du texte, c’est-à-dire la version qui intègre les corrections manuscrites de l’exemplaire personnel de l’auteur et qui correspond à la règle philologique de donner à lire le dernier état du texte établi du vivant de l’auteur. Or cette version, qui circule dans les éditions imprimées depuis plus d’un siècle (dans la Pléiade, mais aussi dans toutes les éditions de poche), est introuvable en ligne sauf sur le site eBalzac. La plupart des sites donnent la version sans les corrections de Balzac ou même, comme Wikisource, la numérisation d’une édition posthume qui n’intègre pas les corrections de Balzac et qui contient un nombre d’erreurs incalculable. Le paradoxe est donc flagrant : les textes de Balzac qui circulent en ligne, exception faite du site eBalzac, ne sont pas les mêmes que ceux qu’on lit dans les éditions imprimées, et ils sont d’ailleurs plus pauvres et plus fautifs que ces derniers.
 
-Mon objectif n’est pas évidemment de procéder à une défense d’office de
-l’édition numérique, dont j’ai plutôt pointé un certain nombre de
-problèmes dans l’article déjà mentionné : il me semble que la
-réponse à cette difficulté réside dans la structuration et dans le
-référencement des données que proposent certains projets de recherche de
-grande ampleur. Je donnerai ici deux exemples. Le premier est le site
-pionnier sur [Flaubert](https://flaubert.univ-rouen.fr/) de l’Université de Rouen, qui donne accès à
-l’intégralité des manuscrits de l’auteur avec une transcription
-diplomatique en vis-à-vis de chaque feuillet. Ces manuscrits
-peuvent être consultés par des tableaux génétiques qui présentent, pour
-chaque séquence du texte, la stratification chronologique de sa genèse,
-depuis les premiers éléments -- notes, plans, brouillons -- jusqu’au
-manuscrit définitif, puis à celui du copiste, et au texte publié.
+ Mon objectif n’est pas évidemment de procéder à une défense d’office de l’édition numérique, dont j’ai plutôt pointé un certain nombre de problèmes dans l’article déjà mentionné : il me semble que la réponse à cette difficulté réside dans la structuration et dans le référencement des données que proposent certains projets de recherche de grande ampleur. Je donnerai ici deux exemples. Le premier est le site pionnier sur [Flaubert](https://flaubert.univ-rouen.fr/) de l’Université de Rouen, qui donne accès à l’intégralité des manuscrits de l’auteur avec une transcription diplomatique en vis-à-vis de chaque feuillet. Ces manuscrits peuvent être consultés par des tableaux génétiques qui présentent, pour chaque séquence du texte, la stratification chronologique de sa genèse, depuis les premiers éléments -- notes, plans, brouillons -- jusqu’au manuscrit définitif, puis à celui du copiste, et au texte publié.
 
-![Stratification génétique du début de *Madame Bovary*, site Flaubert de l’Université de Rouen](https://imgur.com/Oe5kyQI.png)
+ ![Stratification génétique du début de *Madame Bovary*, site Flaubert de l’Université de Rouen](https://imgur.com/Oe5kyQI.png)
 
-Le corpus des manuscrits, ordonné et structuré, devient ainsi pleinement
-accessible à l’utilisateur, qui peut observer la complexité
-extraordinaire du travail sur la forme effectué par l’écrivain. Le
-deuxième exemple, le site [eBalzac](https://www.ebalzac.com/)[^15], porte cette fois sur la
-génétique de l’imprimé : il propose une version philologiquement très
-exacte de *La Comédie humaine* et donne accès aux versions antérieures,
-c’est-à-dire aux états imprimés qui présentent des corrections
-auctoriales, à partir des premières éditions en feuilleton, en revue ou
-en volume. Sa rubrique « génétique » propose la comparaison des
-multiples états imprimés des textes de *La Comédie humaine*, dans
-lesquelles les variantes sont surlignées suivant quatre types
-d’opérations : suppressions, insertions, remplacements et déplacements.
+ Le corpus des manuscrits, ordonné et structuré, devient ainsi pleinement accessible à l’utilisateur, qui peut observer la complexité extraordinaire du travail sur la forme effectué par l’écrivain. Le deuxième exemple, le site [eBalzac](https://www.ebalzac.com/)[^15], porte cette fois sur la génétique de l’imprimé : il propose une version philologiquement très exacte de *La Comédie humaine* et donne accès aux versions antérieures, c’est-à-dire aux états imprimés qui présentent des corrections auctoriales, à partir des premières éditions en feuilleton, en revue ou en volume. Sa rubrique « génétique » propose la comparaison des multiples états imprimés des textes de *La Comédie humaine*, dans lesquelles les variantes sont surlignées suivant quatre types d’opérations : suppressions, insertions, remplacements et déplacements.
 
-![Comparaison génétique entre les deux premières éditions imprimées de *La Maison du Chat-qui-pelote*, site ebalzac.com](https://imgur.com/RR9TtdW.png)
+ ![Comparaison génétique entre les deux premières éditions imprimées de *La Maison du Chat-qui-pelote*, site ebalzac.com](https://imgur.com/RR9TtdW.png)
 
-Ces sites ont comme caractéristique commune de révéler des éléments
-génétiques permettant à l’utilisateur d’entrer dans la fabrique de
-l’œuvre, mais reposent aussi sur une visée d’exhaustivité qui, par la
-mise en ligne du corpus le plus étendu possible concernant l’œuvre d’un
-auteur, se rapproche souvent des entreprises traditionnelles des œuvres
-complètes. Ceci n’implique évidemment pas un retour à une vision
-téléologique de l’histoire littéraire. Au contraire, il me semble que
-ces sites proposent une reconfiguration de la notion d’auteur que l’on
-peut rapprocher de la création contemporaine nativement numérique dont
-l’exemple majeur, nous le verrons, est le site de François Bon, qui se
-donne à lire comme l’atelier d’une œuvre en devenir. Sous des formes
-différentes, ces sites de création redéfinissent une notion d’auteur qui
-intègre la fonction éditoriale ; or, les sites patrimoniaux, même s’ils
-n’ont évidemment pas de visée créative, contribuent à repenser
-l’auctorialité selon une perspective semblable. En effet, ces sites
-participent moins des études sur auteur traditionnelles, avec les
-implications critiques que cela comporte en termes de monumentalisation
-et de canonisation, qu’ils proposent plutôt une saisie multiple de la
-figure de l’auteur, par la représentation que le numérique permet de la
-mobilité de l’œuvre et de son devenir. Le site eBalzac ne monumentalise
-pas l’auteur de la *Comédie humaine*, bien au contraire, il le donne à
-lire dans ses aspects génétiques, dans la mobilité d’une œuvre en
-devenir, en conduisant l’utilisateur au cœur de l’écriture, avec ses
-connotations dynamiques et instables que l’édition imprimée vient
-finalement figer, ne donnant à lire qu’une seule version du texte.
+ Ces sites ont comme caractéristique commune de révéler des éléments génétiques permettant à l’utilisateur d’entrer dans la fabrique de l’œuvre, mais reposent aussi sur une visée d’exhaustivité qui, par la mise en ligne du corpus le plus étendu possible concernant l’œuvre d’un auteur, se rapproche souvent des entreprises traditionnelles des œuvres complètes. Ceci n’implique évidemment pas un retour à une vision téléologique de l’histoire littéraire. Au contraire, il me semble que ces sites proposent une reconfiguration de la notion d’auteur que l’on peut rapprocher de la création contemporaine nativement numérique dont l’exemple majeur, nous le verrons, est le site de François Bon, qui se donne à lire comme l’atelier d’une œuvre en devenir. Sous des formes différentes, ces sites de création redéfinissent une notion d’auteur qui intègre la fonction éditoriale ; or, les sites patrimoniaux, même s’ils n’ont évidemment pas de visée créative, contribuent à repenser l’auctorialité selon une perspective semblable. En effet, ces sites participent moins des études sur auteur traditionnelles, avec les implications critiques que cela comporte en termes de monumentalisation et de canonisation, qu’ils proposent plutôt une saisie multiple de la figure de l’auteur, par la représentation que le numérique permet de la mobilité de l’œuvre et de son devenir. Le site eBalzac ne monumentalise pas l’auteur de la *Comédie humaine*, bien au contraire, il le donne à lire dans ses aspects génétiques, dans la mobilité d’une œuvre en devenir, en conduisant l’utilisateur au cœur de l’écriture, avec ses connotations dynamiques et instables que l’édition imprimée vient finalement figer, ne donnant à lire qu’une seule version du texte.
 
-## Le site d’auteur comme fabrique de l’œuvre : le *Tiers Livre* de François Bon
+ ## Le site d’auteur comme fabrique de l’œuvre : le *Tiers Livre* de François Bon
 
-Dans ce sens, on peut rapprocher ces entreprises éditoriales sur le XIX^e^
-siècle avec les sites d’auteur, en particulier à travers l’exemple de celui de François Bon, [le *Tiers Livre*](https://www.tierslivre.net/), qui a été l’un des premiers sites littéraires en
-France : avec une certaine fierté, l’auteur nous en rappelle l’année de
-naissance « préhistorique » (1997) dès la page
-d’accueil.
+ Dans ce sens, on peut rapprocher ces entreprises éditoriales sur le XIX^e^ siècle avec les sites d’auteur, en particulier à travers l’exemple de celui de François Bon, [le *Tiers Livre*](https://www.tierslivre.net/), qui a été l’un des premiers sites littéraires en France : avec une certaine fierté, l’auteur nous en rappelle l’année de naissance « préhistorique » (1997) dès la page d’accueil.
 
-Ce qui m’intéresse dans l’entreprise de François Bon est le geste
-autobiographique, que le nom du site, ne s’identifiant pas à celui de l’auteur, refuse d’afficher par la référence intertextuelle à Rabelais ; en réalité, l’ensemble du site peut être lu comme une autobiographie « au
-présent », qui se construit au jour le jour, dans laquelle l’auteur est constamment saisi au cœur de son écriture et de son travail créatif multimédial. Ce site constitue ainsi la fabrique d’une
-œuvre en devenir : il propose l’accès à une archive tellement immense que l’on peine parfois à retrouver les pages consultées autrefois, au fil d’une navigation erratique qui expose l’utilisateur à l’expérience du fragmentaire. D’ailleurs, l’espace de l’œuvre numérique est par définition fragmentaire : soit
-parce qu’il articule les fragments dans une perspective qui reste
-ordonnée, comme c’est le cas d’*Autobiographie des objets*, mais aussi
-de *Traversée de Buffalo* ou d’*Erre*, autant d’œuvres multimédiales du
-site ; soit parce qu’il établit un parcours qui va d’un fragment à
-l’autre, selon la logique de l’hypertexte, sans suivre un sens
-déterminé.
+ Ce qui m’intéresse dans l’entreprise de François Bon est le geste autobiographique, que le nom du site, ne s’identifiant pas à celui de l’auteur, refuse d’afficher par la référence intertextuelle à Rabelais ; en réalité, l’ensemble du site peut être lu comme une autobiographie « au présent », qui se construit au jour le jour, dans laquelle l’auteur est constamment saisi au cœur de son écriture et de son travail créatif multimédial. Ce site constitue ainsi la fabrique d’une œuvre en devenir : il propose l’accès à une archive tellement immense que l’on peine parfois à retrouver les pages consultées autrefois, au fil d’une navigation erratique qui expose l’utilisateur à l’expérience du fragmentaire. D’ailleurs, l’espace de l’œuvre numérique est par définition fragmentaire : soit parce qu’il articule les fragments dans une perspective qui reste ordonnée, comme c’est le cas d’*Autobiographie des objets*, mais aussi de *Traversée de Buffalo* ou d’*Erre*, autant d’œuvres multimédiales du site ; soit parce qu’il établit un parcours qui va d’un fragment à l’autre, selon la logique de l’hypertexte, sans suivre un sens déterminé.
 
-La question concerne donc l’articulation entre le fragment et la
-totalité, une totalité qu’il est difficile de percevoir ou de concevoir
-dans un site, contrairement au livre papier qui, même composé de
-fragments, matérialise par un contenant, le livre, son propre contenu,
-en manifestant ainsi son unité. Le site Internet est mobile dans ses
-limites mêmes : les fragments s’y ajoutent jour après jour -- ou
-disparaissent, d’ailleurs --, sa page d’accueil se modifie, son
-arborescence est dynamique. Autant dire que l’ensemble de fragments
-contenu dans un site n’aboutit pas à la composition d’une mosaïque ou
-d’une image stable. Cette œuvre en devenir sera figée peut-être
-uniquement par la mort de l’auteur, moment auquel il faudrait idéalement
-enregistrer un état du site Internet qui ne pourra plus bouger par une
-intervention auctoriale, ayant au fond le même statut que l’édition
-Furne de *La Comédie humaine* avec les corrections de Balzac : celui de
-fixer la « version » de l’œuvre à léguer à la postérité.
+ La question concerne donc l’articulation entre le fragment et la totalité, une totalité qu’il est difficile de percevoir ou de concevoir dans un site, contrairement au livre papier qui, même composé de fragments, matérialise par un contenant, le livre, son propre contenu, en manifestant ainsi son unité. Le site Internet est mobile dans ses limites mêmes : les fragments s’y ajoutent jour après jour -- ou disparaissent, d’ailleurs --, sa page d’accueil se modifie, son arborescence est dynamique. Autant dire que l’ensemble de fragments contenu dans un site n’aboutit pas à la composition d’une mosaïque ou d’une image stable. Cette œuvre en devenir sera figée peut-être uniquement par la mort de l’auteur, moment auquel il faudrait idéalement enregistrer un état du site Internet qui ne pourra plus bouger par une intervention auctoriale, ayant au fond le même statut que l’édition Furne de *La Comédie humaine* avec les corrections de Balzac : celui de fixer la « version » de l’œuvre à léguer à la postérité.
 
-On entre ainsi dans un espace dans lequel la figure de l’auteur change
-radicalement, car elle ne peut plus être pensée comme une figure de
-propriété, l’ensemble d’un site Internet étant instable et mobile.
-François Bon nous en donne un excellent exemple par les modalités
-d’inscription de l’auteur dans le site. Contrairement à d’autres sites
-d’auteur qui utilisent le nom propre comme nom de domaine (Jean-Philippe
-Toussaint, Laurent Mauvignier, etc.), telle une marque éphémère de
-propriété, François Bon conçoit plutôt le nom de domaine comme titre -- le *Tiers Livre*, évidemment intertextuel -- et choisit d’inscrire le
-nom de l’auteur par une biographie accessible depuis la page d’accueil.
-Or cette biographie se donne à lire comme un exercice de style sur le
-genre, à partir du lien qui, sur la page d’accueil, indique simplement
-« bio » : manière de se soustraire à l’aspect formel et normatif de
-l’entreprise biographique pour en faire plutôt, à travers
-l’abréviation, un espace intime et un lieu de travail sur l’écriture de
-soi. La page de la « [bio](https://www.tierslivre.net/spip/spip.php?article3569) » affiche d’emblée le caractère multiple de
-celle-ci : sous une photo de l’auteur se trouve le titre à rallonge
-« François Bon \| la bio, le CV, la vie et le reste » ainsi qu’un
-sous-titre énigmatique : « *petite tentative d’une web-autobiographie
-malléable* », qui insiste sur le caractère modeste et informel de
-l’entreprise.
+ On entre ainsi dans un espace dans lequel la figure de l’auteur change radicalement, car elle ne peut plus être pensée comme une figure de propriété, l’ensemble d’un site Internet étant instable et mobile. François Bon nous en donne un excellent exemple par les modalités d’inscription de l’auteur dans le site. Contrairement à d’autres sites d’auteur qui utilisent le nom propre comme nom de domaine (Jean-Philippe Toussaint, Laurent Mauvignier, etc.), telle une marque éphémère de propriété, François Bon conçoit plutôt le nom de domaine comme titre -- le *Tiers Livre*, évidemment intertextuel -- et choisit d’inscrire le nom de l’auteur par une biographie accessible depuis la page d’accueil. Or cette biographie se donne à lire comme un exercice de style sur le genre, à partir du lien qui, sur la page d’accueil, indique simplement « bio » : manière de se soustraire à l’aspect formel et normatif de l’entreprise biographique pour en faire plutôt, à travers l’abréviation, un espace intime et un lieu de travail sur l’écriture de soi. La page de la « [bio](https://www.tierslivre.net/spip/spip.php?article3569) » affiche d’emblée le caractère multiple de celle-ci : sous une photo de l’auteur se trouve le titre à rallonge « François Bon \| la bio, le CV, la vie et le reste » ainsi qu’un sous-titre énigmatique : « *petite tentative d’une web-autobiographie malléable* », qui insiste sur le caractère modeste et informel de l’entreprise.
 
-![Page de la "bio" de François Bon, site le *Tiers Livre*](https://imgur.com/hjfUpfl.png)
+ ![Page de la "bio" de François Bon, site le *Tiers Livre*](https://imgur.com/hjfUpfl.png)
 
-La particularité de cette biographie est qu’elle présente plusieurs
-accès possibles. On peut d’abord y entrer par année, de manière tout à
-fait traditionnelle : en cliquant sur chacune des dates, l’internaute
-est renvoyé à autant de paragraphes qui contiennent des informations
-bio-bibliographiques, rédigées à la troisième personne et assorties de
-photographies. Mais on peut aussi y entrer suivant des notices
-biographiques « au choix », dont la première reprend les règles de
-l’exercice en ce qu’elle présente un résumé de la carrière de
-l’écrivain, s’achevant par l’entreprise du site : « Rassemble
-progressivement l’ensemble de ses travaux sur Tiers Livre Éditeur,
-maison fondée en 2015, en complément de la plateforme d’expérimentation
-web Tiers Livre, un des premiers sites web de littérature francophone
-(depuis 1997), et d’une chaîne vidéo de référence pour la littérature
-contemporaine de création ». Le ton sérieux est cependant nuancé par le
-titre coiffant le texte : « *notice libre d’emploi, à abréger selon* »,
-qui désacralise la biographie en ouvrant la possibilité d’une
-utilisation libre, dans tous les sens du terme, au point où il serait
-possible de couper la parole à/de l’auteur.
+ La particularité de cette biographie est qu’elle présente plusieurs accès possibles. On peut d’abord y entrer par année, de manière tout à fait traditionnelle : en cliquant sur chacune des dates, l’internaute est renvoyé à autant de paragraphes qui contiennent des informations bio-bibliographiques, rédigées à la troisième personne et assorties de photographies. Mais on peut aussi y entrer suivant des notices biographiques « au choix », dont la première reprend les règles de l’exercice en ce qu’elle présente un résumé de la carrière de l’écrivain, s’achevant par l’entreprise du site : « Rassemble progressivement l’ensemble de ses travaux sur Tiers Livre Éditeur, maison fondée en 2015, en complément de la plateforme d’expérimentation web Tiers Livre, un des premiers sites web de littérature francophone (depuis 1997), et d’une chaîne vidéo de référence pour la littérature contemporaine de création ». Le ton sérieux est cependant nuancé par le titre coiffant le texte : « *notice libre d’emploi, à abréger selon* », qui désacralise la biographie en ouvrant la possibilité d’une utilisation libre, dans tous les sens du terme, au point où il serait possible de couper la parole à/de l’auteur.
 
-Suit une « *notice plus brève* », également sérieuse, qui se donne à
-lire comme un résumé de la précédente et dont la fin renvoie à nouveau à
-l’entreprise numérique, par une phrase au style télégraphique et
-assortie de coquilles, comme si l’auteur commençait à se couper lui-même
-la parole : « Se consacre désormais à recher active sur outils de
-création littéraire, mutation numérique du livre et de l’écrit,
-notamment via sa chaîne YouTube web & littérature ». Le sérieux de la
-notice est cette fois sapé par le titre de la suivante, « *notice encore plus brève* », qui tient en une ligne : « François Bon, né en 1953.
-Chercheur inventeur en objets web de littérature. Tous renseignements
-sur son site *Tiers Livre* », c’est-à-dire dans l’espace où nous sommes.
-C’est une sorte de boucle autoréférentielle qui se forme ici, tel un
-ruban de Mœbius dont nous ne pourrons plus sortir : la notice renvoie
-au site dans lequel est contenue la notice, qui renvoie au site, etc.
+ Suit une « *notice plus brève* », également sérieuse, qui se donne à lire comme un résumé de la précédente et dont la fin renvoie à nouveau à l’entreprise numérique, par une phrase au style télégraphique et assortie de coquilles, comme si l’auteur commençait à se couper lui-même la parole : « Se consacre désormais à recher active sur outils de création littéraire, mutation numérique du livre et de l’écrit, notamment via sa chaîne YouTube web & littérature ». Le sérieux de la notice est cette fois sapé par le titre de la suivante, « *notice encore plus brève* », qui tient en une ligne : « François Bon, né en 1953. Chercheur inventeur en objets web de littérature. Tous renseignements sur son site *Tiers Livre* », c’est-à-dire dans l’espace où nous sommes. C’est une sorte de boucle autoréférentielle qui se forme ici, tel un ruban de Mœbius dont nous ne pourrons plus sortir : la notice renvoie au site dans lequel est contenue la notice, qui renvoie au site, etc.
 
-Vient enfin ce chef-d’œuvre d’ironie qu’est la « *notice encore plus brève (posthume)* », dans laquelle tout élément biographique disparaît,
-au seul profit de l’entreprise numérique : « La disparition de son site
-Internet à sa mort fut brièvement considérée comme une perte par
-quelques-uns ». La phrase, empreinte de fausse modestie, livre une
-vérité colossale sur la labilité du site Internet et de l’information
-sur le Web en général : qu’en sera-t-il du site Internet de François Bon
-le jour de sa mort ? est-ce qu’il va effectivement disparaître avec son
-auteur ? Derrière l’ironie, cette phrase instaure le clivage entre la
-littérature imprimée, censée assurer par sa concrétude et son héritage
-symbolique l’accès de l’auteur à l’immortalité, et la littérature
-numérique, dont est rappelé le caractère friable, instable et finalement
-*mortel*.
+ Vient enfin ce chef-d’œuvre d’ironie qu’est la « *notice encore plus brève (posthume)* », dans laquelle tout élément biographique disparaît, au seul profit de l’entreprise numérique : « La disparition de son site Internet à sa mort fut brièvement considérée comme une perte par quelques-uns ». La phrase, empreinte de fausse modestie, livre une vérité colossale sur la labilité du site Internet et de l’information sur le Web en général : qu’en sera-t-il du site Internet de François Bon le jour de sa mort ? est-ce qu’il va effectivement disparaître avec son auteur ? Derrière l’ironie, cette phrase instaure le clivage entre la littérature imprimée, censée assurer par sa concrétude et son héritage symbolique l’accès de l’auteur à l’immortalité, et la littérature numérique, dont est rappelé le caractère friable, instable et finalement *mortel*.
 
-Après une dernière notice en anglais s’ouvre une courte rubrique « CV,
-photos, références », qui démultiplie davantage la biographie à travers
-l’image de l’auteur sur le Web, contrainte de se démarquer de ses
-homonymes. Un avertissement nous le rappelle : « tous les ans de
-nombreuses confusions, on devrait monter un club des homonymes : je ne
-suis ni champion de speed-riding ni archéologue ni conseiller général ni
-antiquaire, ni informaticien (et j’en connais encore 3 autres), en tenir
-compte dans vos recherches, merci ».
+ Après une dernière notice en anglais s’ouvre une courte rubrique « CV, photos, références », qui démultiplie davantage la biographie à travers l’image de l’auteur sur le Web, contrainte de se démarquer de ses homonymes. Un avertissement nous le rappelle : « tous les ans de nombreuses confusions, on devrait monter un club des homonymes : je ne suis ni champion de speed-riding ni archéologue ni conseiller général ni antiquaire, ni informaticien (et j’en connais encore 3 autres), en tenir compte dans vos recherches, merci ».
 
-Nous arrivons enfin à la partie la plus intéressante, c’est-à-dire à la
-« petite tentative d’une autobiographie malléable » annoncée par le
-sous-titre en haut de la page. Nous glissons alors dans un autre
-espace : il ne s’agit plus d’une biographie ou d’un CV, mais
-explicitement d’une autobiographie, teintée certes de modestie, mais qui
-se configure comme une œuvre de création et qui s’inscrit dans un genre
-littéraire bien connu. François Bon joue avec les codes du genre à
-partir de ce *Nota* qui introduit trois éléments fondamentaux. Le
-premier fonctionne comme un avertissement visant à protéger le droit
-d’auteur : « cette notice autobiographique n’est pas destinée à
-publication ou reproduction, même partielle ». Puis le deuxième vient le
-contredire : « cette demande n’étant jamais respectée, cette notice
-inclura systématiquement au moins un élément fictif discret,
-régulièrement modifié ».
+ Nous arrivons enfin à la partie la plus intéressante, c’est-à-dire à la « petite tentative d’une autobiographie malléable » annoncée par le sous-titre en haut de la page. Nous glissons alors dans un autre espace : il ne s’agit plus d’une biographie ou d’un CV, mais explicitement d’une autobiographie, teintée certes de modestie, mais qui se configure comme une œuvre de création et qui s’inscrit dans un genre littéraire bien connu. François Bon joue avec les codes du genre à partir de ce *Nota* qui introduit trois éléments fondamentaux. Le premier fonctionne comme un avertissement visant à protéger le droit d’auteur : « cette notice autobiographique n’est pas destinée à publication ou reproduction, même partielle ». Puis le deuxième vient le contredire : « cette demande n’étant jamais respectée, cette notice inclura systématiquement au moins un élément fictif discret, régulièrement modifié ».
 
-Deux questions éminemment sérieuses se posent à travers cette
-contradiction : d’abord, celle de l’usage que l’on peut faire de
-l’information sur le Web, qui tend à effacer l’origine de la parole,
-ainsi que son autorité, par la pratique du plagiat, considérée comme
-inéluctable. Et voilà que François Bon conçoit un stratagème pour
-piéger l’utilisateur qui voudrait faire un copier-coller de son
-autobiographie, par l’introduction d’éléments fictifs et, de surcroît,
-mobiles. Ensuite, il y a celle de la définition même de l’autobiographie,
-censée raconter la vie de l’auteur dans sa « vérité », ici mise en doute
-par ces noyaux de fiction disséminés et dissimulés. Or le troisième
-point du « nota » constitue le véritable tourniquet qui ébranle
-finalement la frontière entre fait et fiction : « \[D\]es manuels, études ou
-dictionnaires ayant validé imprudemment certains de ces éléments
-fictifs, ils ont été dès lors intégrés définitivement à cette notice ».
+ Deux questions éminemment sérieuses se posent à travers cette contradiction : d’abord, celle de l’usage que l’on peut faire de l’information sur le Web, qui tend à effacer l’origine de la parole, ainsi que son autorité, par la pratique du plagiat, considérée comme inéluctable. Et voilà que François Bon conçoit un stratagème pour piéger l’utilisateur qui voudrait faire un copier-coller de son autobiographie, par l’introduction d’éléments fictifs et, de surcroît, mobiles. Ensuite, il y a celle de la définition même de l’autobiographie, censée raconter la vie de l’auteur dans sa « vérité », ici mise en doute par ces noyaux de fiction disséminés et dissimulés. Or le troisième point du « nota » constitue le véritable tourniquet qui ébranle finalement la frontière entre fait et fiction : « \[D\]es manuels, études ou dictionnaires ayant validé imprudemment certains de ces éléments fictifs, ils ont été dès lors intégrés définitivement à cette notice ».
 
-L’auteur joue donc sur cette frontière en annonçant une autobiographie
-corrompue par des éléments fictifs, qui ont cependant été validés par
-une autorité tierce : validation qui a eu pour effet de faire entrer ces
-éléments fictifs dans l’ordre du « réel ». Est ainsi proposée une
-réflexion critique sur l’autorité dans l’espace numérique, capable de
-valider le faux, dont l’enjeu est aussi de porter un doute sur le savoir
-tel qu’il est transmis dans le Web et sur un système de transmission de
-l’information à l’image de Wikipédia : celui qui peut véhiculer des
-*fakes* par des procédures d’autovalidation. Dans le cas de
-l’autobiographie de François Bon -- dont on commence à comprendre
-pourquoi elle est « malléable » --, l’aspect le plus inattendu réside
-dans le fait qu’après ce « nota » en trois points, on retrouve la suite
-de paragraphes par années à laquelle renvoyait, par des liens en haut de
-la page, la première biographie, celle qui passait pour sérieuse et
-traditionnelle. Un court-circuit s’opère à l’intérieur d’une seule page
-Web : la biographie annoncée au début devient ainsi une autobiographie
-« polluée » par des éléments fictifs, qui piège l’utilisateur en lui
-montrant les ressorts cachés du truquage de l’information. La page
-entière doit alors être lue comme une forme d’autofiction qui permet à
-l’auteur de ne pas être réduit à l’état de donnée, comme le soutient
-Gilles Bonnet : « \[P\]ar le trait autofictif, l’écrivain évide sa présence
-autobiographique sur le web pour y insérer un caillot fictionnel, se
-substituant à la logique hétéronome de constitution des *data*. » [@bonnet_pour_2017, p. 140]
+ L’auteur joue donc sur cette frontière en annonçant une autobiographie corrompue par des éléments fictifs, qui ont cependant été validés par une autorité tierce : validation qui a eu pour effet de faire entrer ces éléments fictifs dans l’ordre du « réel ». Est ainsi proposée une réflexion critique sur l’autorité dans l’espace numérique, capable de valider le faux, dont l’enjeu est aussi de porter un doute sur le savoir tel qu’il est transmis dans le Web et sur un système de transmission de l’information à l’image de Wikipédia : celui qui peut véhiculer des *fakes* par des procédures d’autovalidation. Dans le cas de l’autobiographie de François Bon -- dont on commence à comprendre pourquoi elle est « malléable » --, l’aspect le plus inattendu réside dans le fait qu’après ce « nota » en trois points, on retrouve la suite de paragraphes par années à laquelle renvoyait, par des liens en haut de la page, la première biographie, celle qui passait pour sérieuse et traditionnelle. Un court-circuit s’opère à l’intérieur d’une seule page Web : la biographie annoncée au début devient ainsi une autobiographie « polluée » par des éléments fictifs, qui piège l’utilisateur en lui montrant les ressorts cachés du truquage de l’information. La page entière doit alors être lue comme une forme d’autofiction qui permet à l’auteur de ne pas être réduit à l’état de donnée, comme le soutient Gilles Bonnet : « \[P\]ar le trait autofictif, l’écrivain évide sa présence autobiographique sur le web pour y insérer un caillot fictionnel, se substituant à la logique hétéronome de constitution des *data*. » [@bonnet_pour_2017, p. 140]
 
-Il n’y a donc plus de définition stable par rapport à un critère de
-réalité, voire de vérité, car le site propose une figure d’auteur
-construite par l’auteur lui-même, sans médiation éditoriale. Mais cette information est aussi instable parce qu’elle est
-à l’image de l’instabilité du site même, d’une œuvre pensée dans un
-environnement numérique qui la transforme indéfiniment. Le site est une
-mise en scène de soi, qui consiste à créer un personnage d’auteur d’une
-manière aussi paradoxale. D’une part, cette mise en scène colle au
-réel : on voit François Bon dans son bureau, dans sa cave, entouré de
-ses livres, de ses objets, par une exhibition de son corps -- je fais
-ici référence aux milliers de vidéos qui le présentent dans son espace
-de travail. D’autre part, cette mise en scène dévoile une partie
-fictionnelle qui ferait de l’ensemble du site une forme
-d’autobiographie, voire d’autofiction, là où précisément la fiction est
-assumée à l’intérieur du geste autobiographique. Et cela se passe à
-l’intérieur d’une immense œuvre fragmentaire dont la meilleure
-définition est donnée par le texte qui s’intitule [*Qu’est-ce que le web
-change à l’auteur de littérature ?*](https://www.tierslivre.net/spip/spip.php?article4224), où l’auteur, en faisant référence
-aussi à *Après le livre*, montre précisément que le fragment est le
-point de départ fondamental de cette entreprise d’écriture : « Ce que le
-web change non seulement à notre façon de mémoriser, mais à notre façon
-d’organiser la pensée, par plaques et nappes, par conjonctions et
-superpositions, et non plus enchaînement ». On sort ainsi de l’idée
-d’une linéarité inéluctable du texte littéraire, à travers une
-organisation fragmentaire imposée par le support numérique, qui modifie
-en profondeur la conception de l’œuvre. Le site se configure donc comme
-la fabrique de celle-ci et, d’une certaine manière, comme un avant-texte
-de ce qui pourra devenir éventuellement un livre, comme ce fut le cas du
-blog *Tumulte*. C’est le signe que dans ce site trône une figure
-d’auteur en quête de son œuvre, faisant semblant d’ignorer que celle-là
-précisément est son œuvre.
+ Il n’y a donc plus de définition stable par rapport à un critère de réalité, voire de vérité, car le site propose une figure d’auteur construite par l’auteur lui-même, sans médiation éditoriale. Mais cette information est aussi instable parce qu’elle est à l’image de l’instabilité du site même, d’une œuvre pensée dans un environnement numérique qui la transforme indéfiniment. Le site est une mise en scène de soi, qui consiste à créer un personnage d’auteur d’une manière aussi paradoxale. D’une part, cette mise en scène colle au réel : on voit François Bon dans son bureau, dans sa cave, entouré de ses livres, de ses objets, par une exhibition de son corps -- je fais ici référence aux milliers de vidéos qui le présentent dans son espace de travail. D’autre part, cette mise en scène dévoile une partie fictionnelle qui ferait de l’ensemble du site une forme d’autobiographie, voire d’autofiction, là où précisément la fiction est assumée à l’intérieur du geste autobiographique. Et cela se passe à l’intérieur d’une immense œuvre fragmentaire dont la meilleure définition est donnée par le texte qui s’intitule [*Qu’est-ce que le web change à l’auteur de littérature ?*](https://www.tierslivre.net/spip/spip.php?article4224), où l’auteur, en faisant référence aussi à *Après le livre*, montre précisément que le fragment est le point de départ fondamental de cette entreprise d’écriture : « Ce que le web change non seulement à notre façon de mémoriser, mais à notre façon d’organiser la pensée, par plaques et nappes, par conjonctions et superpositions, et non plus enchaînement ». On sort ainsi de l’idée d’une linéarité inéluctable du texte littéraire, à travers une organisation fragmentaire imposée par le support numérique, qui modifie en profondeur la conception de l’œuvre. Le site se configure donc comme la fabrique de celle-ci et, d’une certaine manière, comme un avant-texte de ce qui pourra devenir éventuellement un livre, comme ce fut le cas du blog *Tumulte*. C’est le signe que dans ce site trône une figure d’auteur en quête de son œuvre, faisant semblant d’ignorer que celle-là précisément est son œuvre.
 
-## L’écriture collective, ou comment réduire Flaubert en tweets
+ ## L’écriture collective, ou comment réduire Flaubert en tweets
 
-J’aimerais, à la fin de ce parcours panoramique sur la figure de
-l’auteur, introduire brièvement la mention d’une forme de création
-littéraire différente par rapport au site d’auteur, qui consiste en une
-entreprise de réécriture collective. Je fais référence à celle menée par
-Baraques Walden[^20] et organisée à l’occasion du bicentenaire de la
-naissance de Flaubert en 2021, qui propose la réécriture, ou plus
-exactement la « réduction », de *Madame Bovary* en 280 tweets de 280
-caractères chacun, à raison d’un par jour, publié sur Twitter
-(maintenant X), Instagram et Facebook du 29 janvier au 4 novembre 2021.
+ J’aimerais, à la fin de ce parcours panoramique sur la figure de l’auteur, introduire brièvement la mention d’une forme de création littéraire différente par rapport au site d’auteur, qui consiste en une entreprise de réécriture collective. Je fais référence à celle menée par Baraques Walden[^20] et organisée à l’occasion du bicentenaire de la naissance de Flaubert en 2021, qui propose la réécriture, ou plus exactement la « réduction », de *Madame Bovary* en 280 tweets de 280 caractères chacun, à raison d’un par jour, publié sur Twitter (maintenant X), Instagram et Facebook du 29 janvier au 4 novembre 2021.
 
-Ce projet, appelé « Bowary » (ou aussi « Madame Bovary 2.0 »), a réuni,
-sous la direction de Stéphane Nappez, dix auteurs français surnommés les
-« bowarystes » : Julia Kerninon, Arno Bertina, Emmanuel Renart, Laure
-Limongi, Fabrice Chillet, Agnès Maupré, Frédéric Ciriez, Fred Duval,
-Maylis de Kerangal et Vincent Message. Comme expliqué dans la
-présentation du projet, chacun s’est vu décerner un dixième du livre avec pour mission de le « réduire » quotidiennement à la sauce Twitter.
+ Ce projet, appelé « Bowary » (ou aussi « Madame Bovary 2.0 »), a réuni, sous la direction de Stéphane Nappez, dix auteurs français surnommés les « bowarystes » : Julia Kerninon, Arno Bertina, Emmanuel Renart, Laure Limongi, Fabrice Chillet, Agnès Maupré, Frédéric Ciriez, Fred Duval, Maylis de Kerangal et Vincent Message. Comme expliqué dans la présentation du projet, chacun s’est vu décerner un dixième du livre avec pour mission de le « réduire » quotidiennement à la sauce Twitter.
 
-Le titre du projet, « Bowary », vient d’un manuscrit préparatoire de
-Flaubert, datant de 1851, où pointe pour la première fois le nom
-du personnage, appelé « Charles Bouvary » ; le manuscrit est reproduit
-dans un tweet du projet, du 3 janvier 2021, assorti d’un commentaire
-soulignant qu’on pourrait aussi lire « Bowary ».
+ Le titre du projet, « Bowary », vient d’un manuscrit préparatoire de Flaubert, datant de 1851, où pointe pour la première fois le nom du personnage, appelé « Charles Bouvary » ; le manuscrit est reproduit dans un tweet du projet, du 3 janvier 2021, assorti d’un commentaire soulignant qu’on pourrait aussi lire « Bowary ».
 
-![Page Twitter (X) du projet Bowary](https://imgur.com/vjnMBHX.png)
+ ![Page Twitter (X) du projet Bowary](https://imgur.com/vjnMBHX.png)
 
-La modification de la
-consonne permet d’intégrer le W initial de Walden et de renvoyer ainsi
-au groupe d’écrivains, qui se configure alors comme un auteur
-collectif : le graphisme des tweets montre cette identification, en
-inscrivant sur la photographie de chaque écrivain qu’il ou elle « est
-Bowary ». La présentation du projet insiste aussi sur l’aspect
-désacralisant de l’entreprise : plutôt que de parler de « réécriture »
-ou d’« adaptation » -- termes qui pourraient paraître polémiques dans
-leur tension irrésolvable entre création et innutrition --, les
-bowarystes préfèrent d’emblée le terme « réduction », comme un jeu de
-mots culinaire et un brin potache sur le fait de « résumer » *Madame Bovary*... à leur sauce. Il ne s’agit donc pas de *réécrire* le roman, mais de le faire mijoter dans des sauces différentes, quoiqu’en
-respectant toujours scrupuleusement les ingrédients d’exception à la
-base de la recette.
+ La modification de la consonne permet d’intégrer le W initial de Walden et de renvoyer ainsi au groupe d’écrivains, qui se configure alors comme un auteur collectif : le graphisme des tweets montre cette identification, en inscrivant sur la photographie de chaque écrivain qu’il ou elle « est Bowary ». La présentation du projet insiste aussi sur l’aspect désacralisant de l’entreprise : plutôt que de parler de « réécriture » ou d’« adaptation » -- termes qui pourraient paraître polémiques dans leur tension irrésolvable entre création et innutrition --, les bowarystes préfèrent d’emblée le terme « réduction », comme un jeu de mots culinaire et un brin potache sur le fait de « résumer » *Madame Bovary*... à leur sauce. Il ne s’agit donc pas de *réécrire* le roman, mais de le faire mijoter dans des sauces différentes, quoiqu’en respectant toujours scrupuleusement les ingrédients d’exception à la base de la recette.
 
-![Page Facebook du Projet Bowary, reproduisant le tweet 29 par Arno Bertina](https://imgur.com/OWjE4ms.png)
+ ![Page Facebook du Projet Bowary, reproduisant le tweet 29 par Arno Bertina](https://imgur.com/OWjE4ms.png)
 
-Je vais ici montrer l’exemple d’Arno Bertina, l’écrivain en charge de la
-deuxième section et qui a eu parmi les membres du groupe l’approche la
-plus métatextuelle, intégrant à la réécriture une composante de
-commentaire, y compris autour de la figure de l’auteur. Voici son
-premier tweet, le numéro 29 de l’ensemble, qui propose la « réduction »
-d’un moment capital du roman, la scène des noces entre Charles et Emma:
+ Je vais ici montrer l’exemple d’Arno Bertina, l’écrivain en charge de la deuxième section et qui a eu parmi les membres du groupe l’approche la plus métatextuelle, intégrant à la réécriture une composante de commentaire, y compris autour de la figure de l’auteur. Voici son premier tweet, le numéro 29 de l’ensemble, qui propose la « réduction » d’un moment capital du roman, la scène des noces entre Charles et Emma:
 
-> 029\. L’auteur continue son travail de sape : la littérature est
-> grotesque, et il faut à cette dernière des pimprenelles du type d’Emma
-> pour croire encore aux noces du rêve et de la vie. Une lune de miel au
-> bord des golfes où s’enivrer du parfum des citronniers ? Ahahaha.
+ > 029\. L’auteur continue son travail de sape : la littérature est 
+ > grotesque, et il faut à cette dernière des pimprenelles du type d’Emma 
+ > pour croire encore aux noces du rêve et de la vie. Une lune de miel au 
+ > bord des golfes où s’enivrer du parfum des citronniers ? Ahahaha.
 
-Ce premier tweet de Bertina est écrit, d’une certaine manière, *sous
-l’autorité de Flaubert* : l’auteur surgit au début du texte comme figure
-tutélaire par laquelle commence la section, et son « travail de sape »
-sera aussi celui de son réécrivain (j’ose le terme) moderne ; le verbe
-choisi -- « continuer », alors que nous sommes au début d’une section --,
-semble indiquer une sorte de relais de Flaubert à Bertina dans une
-entreprise de démasquage de la littérature. Le texte procède en effet à
-une dénonciation du lyrisme, en soulignant le caractère grotesque de ces
-noces, auxquelles Emma attribue en revanche une très haute fonction
-symbolique, mais aussi de la littérature qui véhicule les lieux communs
-du romantisme ; et le rire final réunit les deux écrivains dans une
-attitude cynique, marquée par l’ironie.
+ Ce premier tweet de Bertina est écrit, d’une certaine manière, *sous l’autorité de Flaubert* : l’auteur surgit au début du texte comme figure tutélaire par laquelle commence la section, et son « travail de sape » sera aussi celui de son réécrivain (j’ose le terme) moderne ; le verbe choisi -- « continuer », alors que nous sommes au début d’une section --, semble indiquer une sorte de relais de Flaubert à Bertina dans une entreprise de démasquage de la littérature. Le texte procède en effet à une dénonciation du lyrisme, en soulignant le caractère grotesque de ces noces, auxquelles Emma attribue en revanche une très haute fonction symbolique, mais aussi de la littérature qui véhicule les lieux communs du romantisme ; et le rire final réunit les deux écrivains dans une attitude cynique, marquée par l’ironie.
 
-Dans la même perspective, nous pouvons citer le tweet 40, consacré cette
-fois à la réécriture d’une autre scène clé du roman : le bal à la
-Vaubyessard, seul moment de la vie d’Emma où elle peut toucher à la
-sphère de l’aristocratie. Mais l’attention du réécrivain se tourne vers
-le pauvre mari :
+ Dans la même perspective, nous pouvons citer le tweet 40, consacré cette fois à la réécriture d’une autre scène clé du roman : le bal à la Vaubyessard, seul moment de la vie d’Emma où elle peut toucher à la sphère de l’aristocratie. Mais l’attention du réécrivain se tourne vers le pauvre mari :
 
-> J’aimerais te sauver, Charles, mais Flaubert écrit que tu as regardé
-> jouer au whist pendant 5 h. sans en comprendre les règles ! Il ajoute
-> que tu rentres chez toi le lendemain sans voir qu’Emma est bouleversée
-> -- le bal a ouvert un trou dans sa vie. Tu es indéfendable !
+ > J’aimerais te sauver, Charles, mais Flaubert écrit que tu as regardé 
+ > jouer au whist pendant 5 h. sans en comprendre les règles ! Il ajoute 
+ > que tu rentres chez toi le lendemain sans voir qu’Emma est bouleversée 
+ > -- le bal a ouvert un trou dans sa vie. Tu es indéfendable !
 
-L’autorité de l’auteur est toujours là, de manière certes ironique et
-métatextuelle, par le rappel du texte qu’il nous a légué : « Flaubert
-écrit que... », doit bien écrire Bertina, en avouant ainsi son
-impuissance à modifier le destin du personnage ou à changer le cours du
-roman. Le réécrivain est alors bien obligé, au cours de son dialogue
-avec le personnage, de constater sa médiocrité et de le condamner sans
-appel (en allant cette fois à l’encontre du précepte flaubertien de
-l’objectivité). Toujours derrière l’ironie, Bertina assume ainsi une
-posture auctoriale plus autoritaire que celle de Flaubert...
+ L’autorité de l’auteur est toujours là, de manière certes ironique et métatextuelle, par le rappel du texte qu’il nous a légué : « Flaubert écrit que... », doit bien écrire Bertina, en avouant ainsi son impuissance à modifier le destin du personnage ou à changer le cours du roman. Le réécrivain est alors bien obligé, au cours de son dialogue avec le personnage, de constater sa médiocrité et de le condamner sans appel (en allant cette fois à l’encontre du précepte flaubertien de l’objectivité). Toujours derrière l’ironie, Bertina assume ainsi une posture auctoriale plus autoritaire que celle de Flaubert...
 
-Pour conclure, ce qui me semble intéressant dans le cas du projet
-Bowary, c’est que la figure de l’auteur se trouve multipliée et prise
-dans un vertige : chacun de ces auteurs contemporains est « Bowary »,
-car ce dernier est un auteur collectif qui renvoie au nom d’un
-personnage inventé par un auteur du XIX^e^ siècle qui, lui-même, selon la
-légende, se serait identifié au personnage (« Madame Bovary, c’est
-moi »). Derrière les dix auteurs des tweets se cachent à la fois un
-autre auteur (Flaubert, auteur fréquemment cité de l’œuvre source ici
-« réduite »), un personnage (Madame Bovary, ici transposée en
-« Bowary »), un collectif d’auteurs (Baraques Walden) et enfin une
-instance qu’on pourrait associer à une figure d’éditeur ou, de manière
-encore plus ancienne, de commanditaire (Stéphane Nappez, initiateur et
-coordinateur du projet). Le tout avec un rythme quotidien qui rappelle
-le roman feuilleton du XIX^e^ siècle[^21] !
+ Pour conclure, ce qui me semble intéressant dans le cas du projet Bowary, c’est que la figure de l’auteur se trouve multipliée et prise dans un vertige : chacun de ces auteurs contemporains est « Bowary », car ce dernier est un auteur collectif qui renvoie au nom d’un personnage inventé par un auteur du XIX^e^ siècle qui, lui-même, selon la légende, se serait identifié au personnage (« Madame Bovary, c’est moi »). Derrière les dix auteurs des tweets se cachent à la fois un autre auteur (Flaubert, auteur fréquemment cité de l’œuvre source ici « réduite »), un personnage (Madame Bovary, ici transposée en « Bowary »), un collectif d’auteurs (Baraques Walden) et enfin une instance qu’on pourrait associer à une figure d’éditeur ou, de manière encore plus ancienne, de commanditaire (Stéphane Nappez, initiateur et coordinateur du projet). Le tout avec un rythme quotidien qui rappelle le roman feuilleton du XIX^e^ siècle[^21] !
 
-Le lecteur est ainsi pris dans un cercle au centre duquel se love
-toujours, imperturbable malgré son évidente désacralisation, la figure
-de l’auteur, dont la mort annoncée n’adviendra finalement pas.
+ Le lecteur est ainsi pris dans un cercle au centre duquel se love toujours, imperturbable malgré son évidente désacralisation, la figure de l’auteur, dont la mort annoncée n’adviendra finalement pas.
 
-## Bibliographie
+ ## Bibliographie
 
-[^1]: Je n’insisterai pas ici sur les possibilités d’interrogation
-    inédite que permettent ces sites, pour lesquelles je renvoie à l’article
-    mentionné [@del_lungo_litterature_2021, p. 64-75].
+ [^1]: Je n’insisterai pas ici sur les possibilités d’interrogation inédite que permettent ces sites, pour lesquelles je renvoie à l’article     mentionné [@del_lungo_litterature_2021, p. 64-75].
 
-[^15]: Pour une présentation de ce projet
-    éditorial, voir Del Lungo [-@del_lungo_ledition_2021].
+ [^15]: Pour une présentation de ce projet éditorial, voir Del Lungo [-@del_lungo_ledition_2021].
 
-[^20]: Baraques Walden désigne un collectif d’auteurs qui a pour but, à
-    la suite de l’ouvrage d’Henry David Thoreau (*Walden ou la vie dans
-    les bois*), de créer des cabanes pour écrivains à la campagne. Voir
-    la page d’accueil du site [Baraques Walden](https://baraqueswalden.fr/) ainsi que la page du
-    [projet « Bowary »](https://baraqueswalden.fr/about/bowary-ou-la-twitterature-en-bande-organisee/).
+ [^20]: Baraques Walden désigne un collectif d’auteurs qui a pour but, à     la suite de l’ouvrage d’Henry David Thoreau (*Walden ou la vie dans     les bois*), de créer des cabanes pour écrivains à la campagne. Voir     la page d’accueil du site [Baraques Walden](https://baraqueswalden.fr/) ainsi que la page du     [projet « Bowary »](https://baraqueswalden.fr/about/bowary-ou-la-twitterature-en-bande-organisee/).
 
-[^21]: Les tweets ont fait l’objet aussi d’un livre numérique (*Bowary*,
-    éditions Baraques, novembre 2021), dont la postface rappelle ce
-    parallèle avec le feuilleton : « \[Les bowarystes\] ont réussi ce
-    qui était peut-être au départ une gageure, une frivolité : passer le
-    premier roman de Flaubert à la moulinette des réseaux sociaux sous
-    la forme d’une diffusion quotidienne pendant 280 jours et, the last
-    but not the least, en faire un feuilleton viral et éclairant. »
+ [^21]: Les tweets ont fait l’objet aussi d’un livre numérique (*Bowary*,     éditions Baraques, novembre 2021), dont la postface rappelle ce     parallèle avec le feuilleton : « \[Les bowarystes\] ont réussi ce     qui était peut-être au départ une gageure, une frivolité : passer le     premier roman de Flaubert à la moulinette des réseaux sociaux sous     la forme d’une diffusion quotidienne pendant 280 jours et, the last     but not the least, en faire un feuilleton viral et éclairant. »
