@@ -37,6 +37,12 @@
             </xf:instance>
 
             <xf:action ev:event="callbackevent">
+
+<!-- Remise à zéro de l'instance app -->
+    <xf:delete nodeset="instance('app')/*"/>
+    <xf:insert origin="instance('apparatus')/tei:lem" context="instance('app')" nodeset="*"/>
+    
+
                 <xf:setvalue ref="instance('app')/@xml:id" value="event('app')"/>
                 <xf:setvalue ref="instance('app')/tei:lem/@xml:id" value="event('lem')"/>
                 <xf:insert origin="instance('text')//tei:app[@xml:id = event('app')]/*[@xml:id = event('lem')]/node()" context="instance('app')/tei:lem" />
