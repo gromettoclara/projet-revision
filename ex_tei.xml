@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>CritiX</title>
+            </titleStmt>
+            <publicationStmt>
+                <p/>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <ab>Les fleurs sont <app xml:id="app01" corresp="#subst">
+                    <lem xml:id="lem01"><hi>belles</hi></lem>
+                    <rdg xml:id="rdg01">moches</rdg>
+                    </app>. nouveau contenu <app xml:id="app02">
+               <lem xml:id="lem02">Et d'abord saluez ce</lem>
+               <rdg xml:id="rdg02"><hi>Gloire</hi> à toi</rdg>
+            </app> blabla <app xml:id="app03" corresp="#meca">
+               <lem xml:id="lem03">parisien, qui s'est soumis le</lem>
+               <rdg xml:id="rdg03">! souverain du</rdg>
+            </app> et un autre texte.
+            <app xml:id="app04">
+               <lem xml:id="lem04">Oui, saluez cette</lem>
+               <rdg xml:id="rdg04">Salut, être courageux,</rdg>
+            </app></ab>
+            
+
+
+
+                    
+        </body>
+    </text>
+</TEI>

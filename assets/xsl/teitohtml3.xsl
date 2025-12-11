@@ -26,15 +26,21 @@
     </xsl:template>
     
     <xsl:template match="tei:app">
-        <span class="app" id="{ ./@xml:id }"><xsl:apply-templates select="tei:lem"/></span>
+        <span id="{@xml:id}">
+            <xsl:apply-templates select="tei:rdg"/>
+        </span>
     </xsl:template>
     
-    <xsl:template match="tei:lem">
-        <span class="lem" id="{ ./@xml:id }"><span style="cursor: pointer;" onclick="review('{ parent::tei:app/@xml:id }', '{ ./@xml:id }')"><xsl:apply-templates/></span></span>
-    </xsl:template>
     
+    <xsl:template match="tei:rdg[parent::tei:app[@corresp='#meca']]">
+        <span class="rdg2">
+            <xsl:apply-templates/>
+        </span>
+    </xsl:template>
+
     <xsl:template match="tei:rdg">
-        <span class="rdg" id="{ ./@xml:id }"><span style="cursor: pointer;" onclick="review('{ parent::tei:app/@xml:id }', '{ ./@xml:id }')"><xsl:apply-templates/></span></span>
+            <xsl:apply-templates/>
+        </span>
     </xsl:template>
     
 </xsl:stylesheet>
