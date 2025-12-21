@@ -3,22 +3,15 @@
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
 
-<!DOCTYPE TEI [
-     <!ENTITY nbsp '&#160;'>
-
-]>
-
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title type="main">Titre de l'article</title>
-            <title type="sub">Sous-titre</title>
-            <title type="sub">Édition comparée trouver un mieux titre</title>
-            <author ref="balzac"/>
+            <title type="main">Périodicité, cadences et fiction en régime sériel (1900-1970)</title>
+            <title type="sub">Édition comparée de deux moments</title>
             <principal xml:id="cg">GROMETTO Clara</principal>
             <respStmt>
-               <resp>Sélection, alignement des versions et prototype pour comparaison en ligne</resp>
+               <resp>Sélection, alignement des versions et prototype pour un formulaire de comparaison</resp>
                <persName ref="#cg">
                   <forename>Clara</forename>
                   <surname>Grometto</surname>
@@ -183,7 +176,7 @@
             <purpose type="inform" degree="high"/>
          </textDesc>
          <textClass>
-            <keywords scheme="#fr_RAMEAU"><!--vérifier que c'est la bonne ontologie-->
+            <keywords scheme="#fr_RAMEAU">
                <list>
                   <item>Édition, presse et médias</item>
                   <item>Arts et lettres</item>
@@ -249,7 +242,7 @@
    <text>
       <body>
          <ab>## Introduction<milestone unit="tei:p"/>
-            <lb/> Avant de désigner le découpage d'un récit ou le temps séparant la
+            <lb/>Avant de désigner le découpage d'un récit ou le temps séparant la
             parution de plusieurs récits (épisodes d'une série, livraisons d'un feuilleton, volumes
             d'un cycle...), l'intervalle désigne une rupture matérielle, spatiale ou temporelle qui
             affecte les artefacts médiatiques eux-mêmes. Depuis l'industrialisation de l'édition au
@@ -268,7 +261,7 @@
             lecture) et spatiales (qui influent sur le format du support et donc sur les dimensions
             du texte) associées aux marchandises de papier. Autrement dit, les intervalles
             industriels et commerciaux se répercutent sur la nature des œuvres.<milestone unit="tei:p"/>
-            <lb/> À partir de la situation des collections populaires qui naissent
+            <lb/>À partir de la situation des collections populaires qui naissent
             en France au début du XX^e^ siècle, on peut donc réfléchir à l'articulation qui existe
             entre l'intervalle (comme caractéristique temporelle et spatiale des marchandises
             sérialisées), sa formulation médiatique dans les collections populaires (à travers la
@@ -300,7 +293,7 @@
                <lem wit="#V1">médiatique<milestone unit="tei:p"/></lem>
                <rdg wit="#V2">médiatiques<milestone unit="tei:p"/></rdg>
             </app>.
-            <milestone unit="tei:p"/><lb/> ## Collections populaires et poétique industrielle<milestone
+            <milestone unit="tei:p"/><lb/>## Collections populaires et poétique industrielle<milestone
                unit="pb"/><lb/>
              La question de l'intervalle se pose ainsi, en amont de la
             poétique et de l'esthétique des productions sérielles, au niveau du renouvellement des
@@ -316,7 +309,7 @@
             économique peuvent éclairer la façon dont ont été appréhendées ces collections et ces
             œuvres, faisant glisser notre réflexion d'une perspective technique à un questionnement
                esthétique.<milestone unit="tei:p"/>
-            <lb/> Rappelons en deux mots cette mutation qui se produit dans
+            <lb/>Rappelons en deux mots cette mutation qui se produit dans
             l'édition populaire au début du XX^e^ siècle. En 1906, l'éditeur Arthème Fayard lance
             « Le Livre populaire », offrant un long roman complet à 65 centimes. Il est
             immédiatement suivi par les autres éditeurs populaires -- Tallandier, Ferenczy, Rouff,
@@ -326,7 +319,7 @@
             Bill », ce qui lui permet de les proposer dans toute l'Europe, y compris en France
             (1907). Le modèle qu'il impose -- celui de la collection de fascicules à personnage
             récurrent -- sera à son tour imité un peu partout en Europe[^3].<milestone unit="tei:p"/>
-            <lb/> Ces deux événements correspondent à une série de changements
+            <lb/>Ces deux événements correspondent à une série de changements
             majeurs dans les pratiques des éditeurs populaires. Le premier tient bien sûr à
             l'autonomisation de la fiction par rapport à l'actualité : elle qui apparaissait dans la
             presse comme un type de production journalistique parmi d'autres (le feuilleton
@@ -339,7 +332,7 @@
             la vente en livres par rapport aux gains que rapportait la parution dans la presse,
             expliquaient que les romans populaires soient restés dominés par l'esthétique du
                feuilleton[^4].<milestone unit="tei:p"/>
-            <lb/> Une deuxième mutation, essentielle, découle du changement de
+            <lb/>Une deuxième mutation, essentielle, découle du changement de
             support. Conçue par des éditeurs de presse, la collection populaire conserve le principe
             du contrat de lecture éditorial du périodique. Elle offre une présentation standardisée
             (nombre de pages, format, image de couverture...) qui définit un pacte à la fois
@@ -351,7 +344,7 @@
             déplacement du pacte de lecture de l'auteur vers l'éditeur, au point qu'on peut parler
             d'auctorialité éditoriale. On achète un volume du « Petit livre » ou du « Livre
             national », bien plus qu'un livre de tel ou tel auteur.<milestone unit="tei:p"/>
-            <lb/> Une telle mutation est un épiphénomène, dans l'édition, d'un
+            <lb/>Une telle mutation est un épiphénomène, dans l'édition, d'un
             mouvement culturel beaucoup plus profond qui affecte l'ensemble des marchandises à
             partir de la seconde moitié du XIX^e^ siècle. Ce mouvement, c'est celui d'une
             transformation de la figure du producteur d'un modèle d'artisanat (il est celui qui
@@ -372,7 +365,7 @@
             plus de ceux des auteurs, que se détermine la valeur des œuvres. Ils deviennent des
             traits essentiels parce que l'industrie bascule plus largement dans des processus de
             fabrication articulant production industrielle et marque.<milestone unit="tei:p"/>
-            <lb/> Le déplacement de la production du côté de l'éditeur en passe
+            <lb/>Le déplacement de la production du côté de l'éditeur en passe
             également par un effacement matériel des auteurs-scripteurs dans les publications : chez
             Street and Smith à la fin du XIX^e^ siècle, et donc chez Eichler qui en importe les
             ouvrages au début du XX^e^ siècle, leur nom disparaît[^7]. Chez Ferenczy, Rouff ou
@@ -387,7 +380,7 @@
             production et de distribution rationalisés et standardisés des biens de consommation,
             dont la mise en place préoccupe les entrepreneurs et les politiques
             [@coriat_atelier_1979; @lefebvre_invention_2003].<milestone unit="tei:p"/>
-            <lb/> Si les écrivains sont traités comme des exécutants, c'est parce
+            <lb/>Si les écrivains sont traités comme des exécutants, c'est parce
             que, dans la communication architextuelle qui s'impose avec les collections, les œuvres
             et les auteurs singuliers sont appréhendés comme des éléments s'inscrivant dans une
             logique globale de production, devant se soumettre aux rythmes qu'elle impose, puisque
@@ -405,7 +398,7 @@
             comme ceux associés aux rythmes de distribution (liés à la logique périodique des
             collections) appellent une lecture en série, à *intervalles rapides*, qui saisit les
             œuvres par la médiation de l'unité architextuelle de la collection.<milestone unit="tei:p"/>
-            <lb/> Si la logique périodique reste capitale pour les éditeurs, c'est
+            <lb/>Si la logique périodique reste capitale pour les éditeurs, c'est
             bien que celle-ci a une incidence sur les modes de lecture. Dès lors que l'œuvre est
             appréhendée à travers la médiation de la série architextuelle qui la porte, alors elle
             n'est jamais que relativement autonome par rapport aux autres productions partageant la
@@ -413,9 +406,9 @@
             (temporel et spatial) qui la sépare des autres œuvres publiées avant ou après elle, ou
             partageant avec elle le rayonnage. La question de la discontinuité joue un rôle clé dans
             l'appréhension de l'œuvre.<milestone unit="tei:p"/>
-            <lb/> ## Le genre comme thématisation des poétiques sérielles<milestone
+            <lb/>## Le genre comme thématisation des poétiques sérielles<milestone
                unit="pb"/>
-            <lb/> Ainsi, l'acheteur des collections populaires lit d'une manière
+            <lb/>Ainsi, l'acheteur des collections populaires lit d'une manière
             différente de celle qui prévalait au XIX^e^ siècle, parce qu'il lit par la médiation de
             la série, et qu'il saisit toujours l'œuvre dans sa relation à celles qui la précèdent ou
             l'encadrent. Une des conséquences en est le bouleversement que subit l'usage des genres
@@ -426,7 +419,7 @@
             promette la plus grande variété d'événements et de tonalités. L'usage de la terminologie
             générique vise à souligner cette variété, avec des formulations comme « grand roman
             d'amour et d'aventures » ou « grand roman d'aventures, de combat et d'amour »[^10] <app corresp="#meca #app">
-               <lem wit="#V1"></lem>
+               <lem wit="#V1"/>
                <rdg wit="#V2">qui </rdg>
             </app>
             ont une fonction descriptive <app corresp="#subst #change">
@@ -437,7 +430,7 @@
             genre -- amour, policier, aventure[^11] -- visant à travers lui un type de public
             particulier (respectivement femmes, hommes et enfants[^12]). Ils limitent donc au
             contraire la palette des attentes associées aux œuvres.<milestone unit="tei:p"/>
-            <lb/> Ce changement s'explique par la volonté des éditeurs de
+            <lb/>Ce changement s'explique par la volonté des éditeurs de
             thématiser dans le texte l'unité de la collection afin de lui donner une identité plus
             forte. Ils procèdent par segmentation du marché et renforcent la séduction de leurs
             séries auprès d'un public qui en connaît par avance les attraits. Or, cette pratique
@@ -451,7 +444,7 @@
             </app>, sa lecture est orientée par le genre, qui détermine des attentes, un mode de
             déchiffrement du texte, une efficacité toute particulière du réseau de stéréotypes et un
             fort codage de la tension narrative.<milestone unit="tei:p"/>
-            <lb/> Dans ce nouveau type de pratique littéraire, l'intervalle
+            <lb/>Dans ce nouveau type de pratique littéraire, l'intervalle
             apparaît comme un mécanisme-clé de l'appréhension des œuvres. Si l'unité architextuelle
             détermine la relation au texte, alors l'œuvre est saisie dans un système qui l'englobe
             et auquel elle est confrontée, celui des autres romans de la collection et des
@@ -460,7 +453,7 @@
             vient enrichir la gamme et doit donc apporter une forme littéraire ; synchroniquement,
             cette variété doit se lire contrastivement dans la série des productions sur le
             présentoir du vendeur.<milestone unit="tei:p"/>
-            <lb/> Une telle dynamique de lecture reformule en termes littéraires
+            <lb/>Une telle dynamique de lecture reformule en termes littéraires
             celle de la consommation de masse qu'ont favorisée les logiques de production
             standardisées, et dont le fordisme a été l'aboutissement. Progressivement, dans les
             grands magasins et les magasins de nouveautés, le consommateur est invité à choisir
@@ -472,7 +465,7 @@
             associée à des marques-collections ici) et des nouveautés, marchandises du moment
             destinées à attirer régulièrement les clients dans la boutique, qui est exploitée dans
             ces productions.<milestone unit="tei:p"/>
-            <lb/> Le plaisir de la lecture d'une œuvre publiée dans une collection
+            <lb/>Le plaisir de la lecture d'une œuvre publiée dans une collection
             populaire engage ainsi la dynamique esthétique associée aux plaisirs modernes de la
             consommation dont Émile Zola entrevoyait les mécanismes dans *Au bonheur des dames*.
             Choisir, hésiter, anticiper sur des plaisirs futurs, sont autant d'actions à caractère
@@ -510,9 +503,9 @@
             consomme davantage et plus vite, et la compulsion de la lecture à intervalles rapides,
             relayée par des récits nerveux, esthétise le plaisir de la consommation.<milestone
                unit="pb"/>
-            <lb/> ## Personnages sériels et esthétisation de la
+            <lb/>## Personnages sériels et esthétisation de la
                consommation<milestone unit="tei:p"/>
-            <lb/> C'est aussi dans la perspective de ces dynamiques marchandes que
+            <lb/>C'est aussi dans la perspective de ces dynamiques marchandes que
             l'on peut comprendre la nature des formes sérielles diégétisées qui vont progressivement
             s'imposer dans les collections populaires. Celles-ci correspondent aux séries sérielles
             analysées par Anne Besson [-@besson_asimov_2004]. Dans ce type de série transfictionnelle, si le
@@ -536,7 +529,7 @@
             collections qu'ils diégétisent, et il faut analyser leurs univers de fiction à partir du
             substrat formé par les logiques industrielles, médiatiques et génériques dont ils
                découlent.<milestone unit="tei:p"/>
-            <lb/> Or, dès lors qu'on les saisit dans cette perspective sédimentée,
+            <lb/>Or, dès lors qu'on les saisit dans cette perspective sédimentée,
             on comprend mieux l'attrait des séries à personnages récurrents pour les lecteurs. De
             fait, on a souvent souligné à leur propos le caractère répétitif de leurs intrigues, en
             les opposant à des formes narratives plus sophistiquées qui tireraient parti de la
@@ -557,7 +550,7 @@
             le rayon entre lesdites aventures apparaissent comme une nouvelle étape dans le
             processus de poïetisation des mécanismes de production, de distribution et de
             consommation qui s'imposent <app corresp="#add #subst">
-               <lem wit="#V1"></lem>
+               <lem wit="#V1"/>
                <rdg wit="#V2">et </rdg>
             </app>dont ils diégétisent les logiques de séduction.
             Chaque nouvelle aventure du personnage renouvelle le plaisir sériel et en enrichit la
@@ -571,7 +564,7 @@
             l'entre-deux-guerres, et continue en France de peu le séduire jusqu'aux années
             1950[^15]. Il existe un plaisir de consommer en série qui se marie mal avec la
             continuité narrative.<milestone unit="tei:p"/>
-            <lb/> Ici encore se joue une relation aux textes à l'intersection des
+            <lb/>Ici encore se joue une relation aux textes à l'intersection des
             dynamiques marchandes et littéraires. Elle témoigne d'une jouissance esthétique qui
             n'engage pas seulement les œuvres, mais aussi les mécanismes de consommation. On en
             voudrait pour preuve les transformations thématiques qui affectent les séries à
@@ -619,7 +612,7 @@
             présents dans la consommation des collections populaires de l'entre-deux-guerres, vont
             se cristalliser durant les Trente Glorieuses comme idéal de la consommation à
                l'américaine[^17].<milestone unit="tei:p"/>
-            <lb/> ## Conclusion<milestone unit="tei:p"/><lb/> Ce que nous avons voulu
+            <lb/>## Conclusion<milestone unit="tei:p"/><lb/>Ce que nous avons voulu
             souligner ici, c'est la manière dont des phénomènes industriels et médiatiques peuvent
             affecter la poétique et l'esthétique des œuvres. C'est d'autant plus frappant dans le
             cas des productions sérielles que celles-ci se situent à l'intersection de
@@ -629,7 +622,7 @@
             leur servent de substrat. Dès lors les mutations des pratiques marchandes affectent la
             nature des textes sériels et les relations esthétiques qu'ils induisent.<milestone
                unit="pb"/>
-            <lb/> C'est ce qui est apparu à l'étude des nouvelles dynamiques
+            <lb/>C'est ce qui est apparu à l'étude des nouvelles dynamiques
             marchandes qui se développent entre la fin du XIX^e^ siècle et les années 1960 : ce sont
             d'abord celles des logiques de standardisation, de sérialisation et de valorisation de
             la marque induites par les nouvelles échelles de distribution ; ce sont ensuite les
@@ -658,7 +651,7 @@
             sur la poétique des textes et la relation esthétique qu'elle induit gagnent à être
             ressaisis à travers les transformations des pratiques marchandes et
                médiatiques.<milestone unit="tei:p"/>
-            <lb/> [^1]: Nous entendons la notion de sérialité, par-delà ses
+            <lb/>[^1]: Nous entendons la notion de sérialité, par-delà ses
             expressions diégétisées, dans la forme la plus large, matérielle, éditoriale, générique
             et thématique, que nous avons développée dans *Fictions à la chaîne* [-@letourneux_fictions_2017].<milestone unit="tei:p"/> <milestone unit="tei:p"/> [^2]:
             Sur le même principe du roman complet à très bas prix, en 1907, Jules Tallandier
@@ -667,60 +660,60 @@
                <lem wit="#V1">inédit</lem>
                <rdg wit="#V2">inédit »</rdg>
             </app>, et en 1908, Jules Rouff, « La Grande collection nationale »<milestone unit="tei:p"/>
-            <lb/> [^3]: Pour se faire une idée partielle de cette circulation des
+            <lb/>[^3]: Pour se faire une idée partielle de cette circulation des
             fascicules américains et des imitations qu'ils ont suscité dans toute l'Europe, voir F.
-            Cristofori et A. Menarini, *Eroi del raconto popolare* [-@menarini_eroi_1986].<milestone unit="tei:p"/><lb/> [^4]: En
+            Cristofori et A. Menarini, *Eroi del raconto popolare* [-@menarini_eroi_1986].<milestone unit="tei:p"/><lb/>[^4]: En
             réalité, le mouvement d'autonomisation des fictions populaires par rapport à
             l'univers de la presse avait été initié dès les années 1850 avec les
             journaux-romans et les livraisons, mais c'est au début du XX^e^ siècle qu'il est
-            accompli.<milestone unit="tei:p"/><lb/> [^5]: Par exemple dans cette
+            accompli.<milestone unit="tei:p"/><lb/>[^5]: Par exemple dans cette
             publicité pour le « Livre populaire » de Fayard (1906) : « Le Livre populaire
             publiera le 15 de chaque mois les meilleures œuvres des grands romanciers
             populaires », ou celle-ci, pour « Les Bleuets » de Tallandier (1936), présentés
             comme « une collection dont les volumes ont fait l'objet d'un choix minutieux,
             d'un contrôle sévère exercé par un Directeur d'une compétence reconnue. Les romans
             du foyer, de la jeune fille, de la femme, respectueux de la morale
-            catholique ».<milestone unit="tei:p"/><lb/> [^6]: À quelques exceptions près,
+            catholique ».<milestone unit="tei:p"/><lb/>[^6]: À quelques exceptions près,
             liées à des préoccupations idéologiques, comme les collections pour la jeunesse
             des éditeurs chrétiens. Cf. Cécile Boulaire (dir.), *Mame, deux siècles d'édition
-            pour la jeunesse* [-@boulaire_mame_2012].<milestone unit="tei:p"/><lb/> [^7]:
+            pour la jeunesse* [-@boulaire_mame_2012].<milestone unit="tei:p"/><lb/>[^7]:
             Les romans de *Buffalo Bill* sont signés « par l'auteur de *Buffalo Bill* », ceux
             de *Nick Carter*, « par l'auteur de *Nick Carter* », sans autre
-            précision.<milestone unit="tei:p"/><lb/> [^8]: On trouve des formules du type
+            précision.<milestone unit="tei:p"/><lb/>[^8]: On trouve des formules du type
             « A travers l'univers ; collection illustrée pour la jeunesse, publiant un volume
             chaque samedi », « Le Livre populaire publiera le 15 de chaque mois les meilleures
             œuvres des grands romanciers populaires » ou « Les Editions pour la jeunesse, un
-            fascicule illustré tous les jeudis ».<milestone unit="tei:p"/><lb/> [^9]:
+            fascicule illustré tous les jeudis ».<milestone unit="tei:p"/><lb/>[^9]:
             Nous reprenons les analyses développées dans notre article (à paraître) « Le genre
             comme pratique historique et médiatique (1860-1940) », *in* Émilie Pézard et
             Valérie Stiénon, *Les Genres du roman au XIX^e^ siècle*<app corresp="#para #biblio">
                <lem wit="#V1">[-@letourneaux_genre_2016]</lem>
                <rdg wit="#V2">[-@letourneux_genre_2016]</rdg>
             </app>.
-            <milestone unit="tei:p"/><lb/> [^10]: Respectivement (avec des variantes) dans des publicités
+            <milestone unit="tei:p"/><lb/>[^10]: Respectivement (avec des variantes) dans des publicités
             pour Paul Bertnay, *Le Mort qui parle*, Charles Mérouvel, *Tout se paye*, Paul Féval,
             *Les Mystères de Londres* (reparution en feuilleton à la fin du XIX^e^ siècle), pour le
             premier, et pour le second, en frontispice de Jules Rouquette et Jules Beaujoint, *La
             Voile rouge*.<milestone unit="tei:p"/>
-            <lb/> [^11]: Dès les années 1920, la plupart des éditeurs populaires
+            <lb/>[^11]: Dès les années 1920, la plupart des éditeurs populaires
             possèdent une collection d'amour et une collection d'aventures (et souvent plusieurs),
             auxquelles ils ajouteront dans les années 1930 une collection policière et une
             collection de cape et d'épée.<milestone unit="tei:p"/>
-            <lb/> [^12]: Chez Tallandier, les couvertures génériques des
+            <lb/>[^12]: Chez Tallandier, les couvertures génériques des
             collections populaires (employées quand l'illustrateur n'a pas eu le temps de dessiner
             une collection spécifique au roman) représentent un jeune garçon lisant pour le « Livre
             national bleu » (roman d'aventures) et une jeune femme alanguie avec un roman de la
             collection pour le « Livre national rouge » (romans sentimentaux).<milestone unit="tei:p"/>
-            <lb/> [^13]: Entre un roman par mois pour Bob Morane et un par
+            <lb/>[^13]: Entre un roman par mois pour Bob Morane et un par
             trimestre pour San Antonio.<milestone unit="tei:p"/>
-            <lb/> [^14]: Policier pour San Antonio (publié dans « Spécial
+            <lb/>[^14]: Policier pour San Antonio (publié dans « Spécial
             police »), *western* pour Catamount (lié à la collection « Aventures du far west »),
             espionnage pour OSS 117 (associé à Fleuve noir « Espionnage ») : à chaque fois, le
             personnage naît dans une collection de genre, dont <app corresp="#meca #gram">
                <lem wit="#V1">ils diégétisent</lem>
                <rdg wit="#V2">il diégétise</rdg>
             </app> les conventions sérielles.<milestone unit="tei:p"/>
-            <lb/> [^15]: Le principe de séries feuilletonantes avait été tenté
+            <lb/>[^15]: Le principe de séries feuilletonantes avait été tenté
             avant la Première Guerre mondiale avec des collections à personnage récurrent comme
             Fantômas, Naz-en-l'Air ou Carot Coupe Tête, ou bricolée à partir de feuilletons revendus
             à la découpe (cas de Zigomar ou de l'Inspecteur Tony), mais <app corresp="#gram #meca">
@@ -731,15 +724,15 @@
                <rdg wit="#V2">abandonné</rdg>
             </app>, pour ne survivre que dans le marché étroit des fascicules, beaucoup plus proches,
             dans leur dynamique, des logiques du feuilleton.<milestone unit="tei:p"/>
-            <lb/> [^16]: Dans *Pornotopie*, Beatriz Preciado a montré le lien qui
+            <lb/>[^16]: Dans *Pornotopie*, Beatriz Preciado a montré le lien qui
             se tisse après la Seconde Guerre mondiale dans les nouvelles figures de la masculinité
             entre consommation et séduction [-@preciado_pornotopie_2011].<milestone unit="tei:p"/>
-            <lb/> [^17]: Sur ces nouveaux modes de consommation dans la France des
+            <lb/>[^17]: Sur ces nouveaux modes de consommation dans la France des
             Trente Glorieuses, voir Kristin Ross, *Rouler plus vite, laver plus blanc ;
             Modernisation de la France et décolonisation au tournant des années soixante*
                [-@ross_rouler_2006].<milestone unit="tei:p"/>
             <milestone unit="tei:p"/>
-            <lb/> ## Bibliographie
+            <lb/>## Bibliographie
          </ab>
       </body>
    </text>

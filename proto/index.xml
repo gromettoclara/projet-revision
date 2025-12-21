@@ -17,7 +17,7 @@
         <title>CritiX</title>
         <link rel="stylesheet" href="assets/css/main.css"/>
         <xf:model id="review">
-            <xf:instance id="text" src="ex_tei.xml"/>
+            <xf:instance id="text" src="ex_tei2.xml"/>
 
             <xf:instance id="app">
                 <app xmlns="http://www.tei-c.org/ns/1.0" xml:id="">
@@ -45,18 +45,18 @@
 
                 <xf:setvalue ref="instance('app')/@xml:id" value="event('app')"/>
                 <xf:setvalue ref="instance('app')/tei:lem/@xml:id" value="event('lem')"/>
-                <xf:insert origin="instance('text')//tei:app[@corresp='#subst'][@xml:id = event('app')]/*[@xml:id = event('lem')]/node()" context="instance('app')/tei:lem" />
+                <xf:insert origin="instance('text')//tei:app[contains(@corresp, '#subst')][@xml:id = event('app')]/*[@xml:id = event('lem')]/node()" context="instance('app')/tei:lem" />
 
-                <xf:action while="count(instance('text')//tei:app[@corresp='#subst'][@xml:id = event('app')]/*[@xml:id[not(. = instance('app')//@xml:id)]]) > 0">
+                <xf:action while="count(instance('text')//tei:app[contains(@corresp, '#subst')][@xml:id = event('app')]/*[@xml:id[not(. = instance('app')//@xml:id)]]) > 0">
                     <xf:insert origin="instance('apparatus')/tei:rdg" context="instance('app')" nodeset="*" at="last()"/>
-                    <xf:var name="rdg" value="instance('text')//tei:app[@corresp='#subst'][@xml:id = event('app')]/*/@xml:id[not(. = instance('app')//@xml:id)][1]"/>
+                    <xf:var name="rdg" value="instance('text')//tei:app[contains(@corresp, '#subst')][@xml:id = event('app')]/*/@xml:id[not(. = instance('app')//@xml:id)][1]"/>
                     <xf:setvalue ref="instance('processing')" value="$rdg" />
                     <xf:setvalue ref="instance('app')/tei:rdg[@xml:id = '']/@xml:id" value="$rdg"/>
-                    <xf:insert context="instance('app')/tei:rdg[@xml:id = instance('processing')]" origin="instance('text')//tei:app[@corresp='#subst'][@xml:id = event('app')]/*[@xml:id = instance('processing')]/node()"/>
+                    <xf:insert context="instance('app')/tei:rdg[@xml:id = instance('processing')]" origin="instance('text')//tei:app[contains(@corresp, '#subst')][@xml:id = event('app')]/*[@xml:id = instance('processing')]/node()"/>
                 </xf:action>
 
-                <xf:delete nodeset="instance('text')//tei:app[@corresp='#subst'][@xml:id = event('app')]/*"/>
-                <xf:insert origin="instance('app')/node()" context="instance('text')//tei:app[@corresp='#subst'][@xml:id = event('app')]" />
+                <xf:delete nodeset="instance('text')//tei:app[contains(@corresp, '#subst')][@xml:id = event('app')]/*"/>
+                <xf:insert origin="instance('app')/node()" context="instance('text')//tei:app[contains(@corresp, '#subst')][@xml:id = event('app')]" />
             </xf:action>
         </xf:model>
     </head>
@@ -67,13 +67,14 @@
             <xf:toggle case="rev" ev:event="DOMActivate"/>
         </xf:trigger>
         <xf:trigger>
-            <xf:label>Read</xf:label>
-            <xf:toggle case="read" ev:event="DOMActivate"/>
-        </xf:trigger>
-        <xf:trigger>
             <xf:label>Check</xf:label>
             <xf:toggle case="check" ev:event="DOMActivate"/>
         </xf:trigger>
+        <xf:trigger>
+            <xf:label>Read</xf:label>
+            <xf:toggle case="read" ev:event="DOMActivate"/>
+        </xf:trigger>
+
 
         <xf:switch>
             <xf:case id="rev">

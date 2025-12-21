@@ -32,13 +32,14 @@
     </xsl:template>
     
     
-    <xsl:template match="tei:rdg[parent::tei:app[@corresp='#meca']]">
+    <xsl:template match="tei:rdg[parent::tei:app[contains(@corresp, '#meca')]]">
         <span class="rdg2">
             <xsl:apply-templates/>
         </span>
     </xsl:template>
 
     <xsl:template match="tei:rdg">
+        <span>
             <xsl:apply-templates/>
         </span>
     </xsl:template>

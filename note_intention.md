@@ -2,7 +2,7 @@
 title: projet-révision
 subtitle: note d'intention
 author: GROMETTO Clara
-date: 14 Avril 2025
+date: novembre 2025
 bibliography: biblio.bib
 nocite: |
   @*

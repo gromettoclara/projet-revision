@@ -3,22 +3,16 @@
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
 
-<!DOCTYPE TEI [
-     <!ENTITY nbsp '&#160;'>
-
-]>
 
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title type="main">Titre de l'article</title>
-            <title type="sub">Sous-titre</title>
-            <title type="sub">Édition comparée trouver un mieux titre</title>
-            <author ref="balzac"/>
+            <title type="main">La gratuité, destinée manifeste de l’édition universitaire</title>
+            <title type="sub">Édition comparée de deux moments du texte</title>
             <principal xml:id="cg">GROMETTO Clara</principal>
             <respStmt>
-               <resp>Sélection, alignement des versions et prototype pour comparaison en ligne</resp>
+               <resp>Sélection, alignement des versions et prototype pour un formulaire de comparaison</resp>
                <persName ref="#cg">
                   <forename>Clara</forename>
                   <surname>Grometto</surname>
@@ -167,7 +161,7 @@
             <purpose type="inform" degree="high"/>
          </textDesc>
          <textClass>
-            <keywords scheme="#fr_RAMEAU"><!--vérifier que c'est la bonne ontologie-->
+            <keywords scheme="#fr_RAMEAU">
                <list>
                   <item>savoir</item>
                   <item>Édition en libre accès</item>
@@ -188,7 +182,7 @@
             </keywords>
          </textClass>
          <abstract>
-            <p>De la voie verte à la voie diamant, de la rétention des droits à la gratuité totale&nbsp;: face à des éditeurs commerciaux incapables de répondre aux nouveaux défis de l’édition en sciences humaines, il importe que les Presses universitaires se mettent en état de satisfaire aux préconisations de cOAlition S. Le directeur des Presses universitaires de Rouen et du Havre s’engage ici en faveur de l’accès ouvert au sein des publications savantes publiques.</p>
+            <p>De la voie verte à la voie diamant, de la rétention des droits à la gratuité totale : face à des éditeurs commerciaux incapables de répondre aux nouveaux défis de l’édition en sciences humaines, il importe que les Presses universitaires se mettent en état de satisfaire aux préconisations de cOAlition S. Le directeur des Presses universitaires de Rouen et du Havre s’engage ici en faveur de l’accès ouvert au sein des publications savantes publiques.</p>
 
          </abstract>
          <particDesc>
@@ -223,8 +217,10 @@
    <text>
       <body>
          <ab>Un éditeur qui donne ses livres au lieu de les vendre, dès le jour de leur sortie,
-            est-ce bien sérieux ? C’est pourtant le pari surprenant assumé cette semaine {+en
-            France+} par les Presses Universitaires de Rouen et du Havre. _La Désillusion comique.
+            est-ce bien sérieux ? C’est pourtant le pari surprenant assumé cette semaine <app xml:id="app-1" corresp="#subst #add">
+               <lem xml:id="lem-1" wit="#V1"/>
+               <rdg xml:id="rdg-1" wit="#V2">en France</rdg>
+            </app> par les Presses Universitaires de Rouen et du Havre. _La Désillusion comique.
             Étude de la place royale, du menteur et de la suite du menteur<app corresp="#meca #unif">
                <lem wit="#V1">de Yohann Deguin_</lem>
                <rdg wit="#V2">_ de Yohann Deguin</rdg>
@@ -248,10 +244,10 @@
                <lem wit="#V1">d’une science véritable</lem>
                <rdg wit="#V2">de savoirs véritables</rdg>
             </app>.
-            <milestone unit="tei:p"/><lb/><lb/> ## Le <app corresp="#meca #unif">
+            <milestone unit="tei:p"/><lb/><lb/>## Le <app corresp="#meca #unif">
                <lem wit="#V1">Savant</lem>
                <rdg wit="#V2">savant</rdg>
-            </app> et la star<milestone unit="tei:p"/><lb/> Les éditions universitaires font aujourd’hui assez pâle
+            </app> et la star<milestone unit="tei:p"/><lb/>Les éditions universitaires font aujourd’hui assez pâle
             figure. Délaissées depuis longtemps par les sciences dites “dures”, elles sont souvent
             peu attractives _a priori_ pour les auteurs : procédures de sélection rigoureuses voire
             dissuasives, faibles tirages, difficultés de distribution, promotion réduite faute de
@@ -289,7 +285,7 @@
             instances de légitimation, favorisant la carrière et le rayonnement de l'auteur, et lui
             octroyant au passage quelques royalties. Le phénomène n'est pas neuf, mais il connaît
             aujourd'hui une extension inquiétante.<milestone unit="pb"/>
-            <lb/><lb/> ## Photocopieuses 2.0<milestone unit="pb"/><lb/> D’autres maisons privées reposent sur un
+            <lb/><lb/>## Photocopieuses 2.0<milestone unit="pb"/><lb/>D’autres maisons privées reposent sur un
             modèle économique différent, plus modeste, moins retentissant, mais dont le charme
             discret se révèle redoutablement efficace depuis trois décennies pour enrichir quelques
             individus avisés. Ces officines, loin de tout tapage, fonctionnent à la manière de
@@ -350,7 +346,7 @@
             supposées vertueuses et rentables, et presses universitaires réputées gaspilleuses
             d’argent public et dépassées à tous égards, mériterait donc d’être largement révisée, en
             faveur des secondes comme nous allons tenter de le montrer pour terminer.<milestone unit="tei:p"/>
-            <lb/><lb/> ## La science seule<milestone unit="tei:p"/><lb/> Ce n’est un mystère pour personne : le côté
+            <lb/><lb/>## La science seule<milestone unit="tei:p"/><lb/>Ce n’est un mystère pour personne : le côté
             obscur est rapide, facile et séduisant. La vie est moins aisée pour les auteurs qui
             décident de faire confiance aux éditeurs universitaires. Les procédures menant à la
             publication y sont longues, douloureuses et punitives. Les manuscrits soumis sont
@@ -389,7 +385,7 @@
             du monde universitaire. C’est donc nécessairement une mission de service public que de
             fournir aux chercheurs et aux citoyens les éléments propres à jeter un éclairage sur la
             réalité rugueuse à étreindre. Les opérateurs privés ne sauraient s’y substituer sans
-            risque de dommage.<milestone unit="pb"/> La mise en place au niveau national d’un label “qualité
+            risque de dommage. La mise en place au niveau national d’un label “qualité
             scientifique”, susceptible d’être octroyé aux travaux qui en feraient la demande,
             permettrait d'identifier facilement les recherches certifiées selon des protocoles
             d'expertise valides, permettant ainsi par exemple aux bibliothèques universitaires de
@@ -404,10 +400,10 @@
                <rdg wit="#V2">transparentes et visent réellement à la diffusion la plus large des
                   textes qu'elles proposent</rdg>
             </app>.
-            <milestone unit="tei:p"/><lb/><lb/> ## La gratuité<app corresp="#subst #reformulation">
+            <milestone unit="tei:p"/><lb/><lb/>## La gratuité<app corresp="#subst #reformulation">
                <lem wit="#V1">: un modèle économique</lem>
                <rdg wit="#V2"> pour les publications scientifiques, unique modèle</rdg>
-            </app> viable<milestone unit="tei:p"/><lb/> Pour les Presses universitaires,
+            </app> viable<milestone unit="tei:p"/><lb/>Pour les Presses universitaires,
                   sortir des logiques commerciales ne se traduit pas nécessairement par une
                   augmentation inconsidérée des financements publics dont elles dépendent. La
                   décision prise par les Presses universitaires de Rouen et du Havre de diffuser
