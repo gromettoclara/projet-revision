@@ -17,7 +17,7 @@
         <title>CritiX</title>
         <link rel="stylesheet" href="assets/css/main.css"/>
         <xf:model id="review">
-            <xf:instance id="text" src="ex_tei2.xml"/>
+            <xf:instance id="text" src="ex_tei.xml"/>
 
             <xf:instance id="app">
                 <app xmlns="http://www.tei-c.org/ns/1.0" xml:id="">
