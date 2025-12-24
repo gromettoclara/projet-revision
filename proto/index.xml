@@ -14,7 +14,7 @@
     lang="fr">
     <head>
         <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover"/>
-        <title>CritiX</title>
+        <title>review-workflow</title>
         <link rel="stylesheet" href="assets/css/main.css"/>
         <xf:model id="review">
             <xf:instance id="text" src="ex_tei.xml"/>

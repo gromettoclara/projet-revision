@@ -28,13 +28,15 @@ header-includes:
 \doublespacing
 ```
 
-Ce travail s'inscrit dans une réflexion autour de la modélisation de la révision éditoriale, notamment dans le cadre de l'édition scientifique. Il s'agit non seulement de modéliser les types de correction mais aussi le processus dialogique qui s'engage entre les divers acteur·ices. Nous voudrions dépasser une approche strictement typologique des révision pour les intégrer la dynamique de leur réception et leur discussion, s'inspirant des gestes et des pratiques des éditeur·ices. 
+Ce travail une expérimentation-réflexion autour de la modélisation de la révision éditoriale, notamment dans le cadre de l'édition scientifique. Il s'agit non seulement de modéliser les types de correction mais aussi le processus dialogique qui s'engage entre les divers acteur·ices. Nous voudrions dépasser une approche strictement typologique des révision pour les intégrer la dynamique de leur réception et leur discussion, s'inspirant des gestes et des pratiques des éditeur·ices. 
 
-Un premier entretien avec <!-- Florence de HN --> montre que la classification des révisions peut peut être pensée indépendamment des métiers et des niveaux d'expertise mobilisés. La première distinction qui paraîtrait aidante relève du degré d’« importance » des corrections. C'est le terme de Florence, mais on va employer un autre terme car on ne veut pas hiérarchiser en terme de niveau mais plutôt de domaine d'expértise mobilisé.
+Un premier entretien avec <!-- Florence de HN --> montre que la classification des révisions peut peut être pensée indépendamment des métiers et des expertise mobilisés. La première distinction qui paraîtrait aidante relève du degré d’« importance » des corrections. C'est le terme de Florence, mais on va employer un autre terme car on ne veut pas hiérarchiser en terme de niveau mais plutôt de domaine d'expértise mobilisé.
 
 Les corrections orthotypographiques et grammaticales relèvent du domaine des correcteur·ices et éditeur·ices. Ils ne sont pas moins importants et ils participent également à la production du sens, d'ailleurs les auteur·ices doivent en prendre connaissance, mais ils doivent les recevoir comme des améliorations de la parts d'experts de la langue. Les reformulations plus substantielles — déplacements de segments, suppressions de redondances, reformulations visant la clarté ou la correction syntaxique — engagent davantage le sens et la structure du texte, et prennent alors la forme de suggestions ou de questions adressées à l’auteur·ice.
 
-Aujourd'hui Stylo (mais pas seulement Stylo car c'est le cas de tous les outils actuels) a un manque important : l'invisibilisation du travail éditorial sur le texte. Faute d’un dispositif permettant de rendre ces interventions visibles et discutables, le dialogue entre éditeur·ice et auteur·ice se déplace vers des outils externes (dans Stylo pas totalement car intégration de Hypothesis, mais moyen détourné), souvent multiplication de fichiers et de mails. 
+<!-- Ajouter la ref à chicago. 
+ -->
+Aujourd'hui Stylo (mais pas seulement Stylo car c'est le cas de tous les outils actuels sauf le track changes de word) a un manque important : l'invisibilisation du travail éditorial sur le texte. Faute d’un dispositif permettant de rendre ces interventions visibles et discutables, le dialogue entre éditeur·ice et auteur·ice se déplace vers des outils externes (dans Stylo pas totalement car intégration de Hypothesis, mais moyen détourné), souvent multiplication de fichiers et de mails. 
 
 C'est la grande qualité du track changes de word : il rend le travail des correcteur.ices visible. 
 
@@ -42,53 +44,24 @@ Mieux structurer l'échange entre auteur et correcteur, visibiliser le travail d
 
 Ce que je propose 
 
+Ce que je propose c'est la modélisation d'un workflow en TEI. XML n'est peut-être pas le langage le plus adapté mais il a l'avantage d'être sémantiquement très riche. Acteur 1 fait des révision / acteur 2 prend connaissance de ces révisions. 
 
 
+Mais la personne qui prend connaissance des révisions veut pouvoir donner son opinion uniquemnt sur ce qui le concerne. L'auteur n'a pas besoin de donner son avis sur des corrections éditoriales ou là où la réviseureuse a une meilleure expertise que lui. 
 
 
-Ce que je propose c'est la modélisation d'un workflow en TEI. XML n'est peut-être pas le langage le plus adapté mais il a l'avantage d'être sémantiquement très riche. 
+Voici donc la catégorisation appliquée
 
-
-
-
-
-
-
-Je veux modéliser non seulement les types de révision mais aussi le processus de révision. Acteur 1 fait des révision / acteur 2 prend connaissance de ces révisions. 
-
-
-
-description des besoins
-
-entretien avec Florence : 
-
-ce qui est pertinent c'est de commencer la classification par le degré d'"importance" des corrections. Ou plutôt c'est une question d'expertise et de métier. 
-- ortho-typo / grammaire => c'est les correcteurices qui sont spécialistes, certains auteurs ne veulent même pas en entendre parler mais pour d'autres c'est important. 
-- des reformulations importantes qui deviennent alors des query ou suggestions.
-    - déplacement
-    - redondances => suppression 
-    - reformulation pour des questions de clarté ou pb de syntaxe
-
-
-importance de visibiliser le travail des éditeurices dans stylo
-
-importance de pouvoir brancher antidote
-
-Le pb c'est qu'on ne voit pas le travail des correcteurices pour engager le dialogue avec l'auteur. Pour le moment, Florence corrige les fautes ortho typo mais pour des reformulations importantes, elle passe par hypothesis. 
-
-
-
-Catégorisation appliquée : 
 
 1. Corrections mécaniques : mécanique de la langue, mécanique du code, mécanique de la pipeline, fluidité de la lecture
 
 - orthographe -- rectifications d’erreurs d'orthographe, harmonisation des graphies.
-- Casse, capitalisation, abréviations, ponctuation, faces -- questions d'uniformisation des majuscules/minuscules, dés abréviations, des signes de ponctuation, espaces insécables. Des changement qui peuvent se faire en masse.
+- Casse, capitalisation, abréviations, ponctuation, faces -- questions d'uniformisation des majuscules/minuscules, dés abréviations, des signes de ponctuation, espaces insécables. Ces changement peuvent se faire en masse.
 - Numérotation, listes, dates, chiffres -- correction ou cohérence des éléments numériques.
 - Grammaire et Syntaxe -- accord, conjugaison, structure de phrases, impropriétés syntaxiques.
 - Code markdown -- harmonisation et correction pour rentrer sans frottement dans la chaîne de conversion. 
 
-2. Modifications substantives : sémantiques ou rhétoriques
+2. Modifications substantives : rhétoriques, stylistique 
 
 - ponctuation -- virgules, points, tirets, guillemets, usage des italiques avec une incidence sur le sens ou le style.
 - Substitutions lexicales / de genre / de nombre non mécaniques.
@@ -103,30 +76,29 @@ Catégorisation appliquée :
 - Vérification de fond sur la bibliographie.
 
 
-description de la chaîne
 
-Workflow : 
+<!-- en quoi ça répondrait au besoin. Expliquer. 
+ -->
+Le workflow permettant de passer de deux markdown à xml tei riche et avec toutes les métadonnées dans le header est un peu artisanale et mériterait d'être rafiné. 
 
-- nettoyage des textes : enlever les saut de ligne qui ne font pas des paragraphes
-- remplacer les doubles retour (donc ça fait des paragraphes) par une balise milestone et lb (chercher-remplacer) 
-- Faire le wdiff et l'écrire dans comparaison.txt
-- on passe le script comparaison.py qui fait aussi un nettoyage des doubles espaces
-- on repasse sur le xml à la main et on remplit le header
-- passage d'une xslt pour ajout des identifiants
-- prototype de xform 
-  - un onglet pour juste regarder les changements mécaniques
-  - un onglet pour choisir le lem donc accepter oou refuser les changements substantiels
-  - un onglet pour lire la version modifiée
+La première étape, à partir de l'export du markdown dans Stylo, est le nettoyage des sources brutes. Essentiellement cela consiste à supprimer les retours charriot qui ne correspondent pas à la création d'un nouveau paragraphe en markdown, pour supprimer des sources de différences non significatives entre les deux versions et faciliter le passage de l'algorithme de diff. Cette étape est Les doubles retours, qui eux marquent des paragraphe en markdow, sont remplacés directement par les balises `<milestone unit="tei:p"/><lb/>`, encore une fois pour mieux aligner les textes. Ces deux premières étapes sont effectuées grâce à des chercher-remplacer. 
 
-en quoi ça répondrait au besoin. Expliquer. 
+Ensuite, un diff est généré grâce à l'algorithme wdiff, qui a un niveau de granularité au mot près. Le résultat est stocké dans un fihier nommé comparaison.txt. Le script en python comparaison.py traite ce fichier. Il repère les segments supprimés et ajoutés balisés sous la forme [- … -] {+ … +} grâce à des regex, et réinjecte le contenu dans des éléments `<app>`, `<lem>` et `<rdg>`, échappe les caractères XML sensibles et nettoie les espaces superflus (<!-- ceux qui existent dans les deux version, restent d'un mauvais nettoyage et ne sont pas des erreurs -->). Le résultat est intégré dans un squelette TEI comprenant la base d'un header. 
 
+Le fichier XML obtenu est ensuite repris manuellement. Cette étape permet de vérifier tout le texte. Le script en python s'avérait en effet efficace jusqu'aux cas particuliers (par exemple ouverture d'un élément app quand il y a une syntaxe md de type [-@machin]). Ce script mériterait donc d'être amélioré (avec par exemple des regex plus solide), ou changer complètement l'approche, mais il était satisfaisant car de toute manière dans le cadre de ce premier projet il fallait relire tout. Aussi c'est l'occasion de compléter et vérifier le header, en remplissant les métadonnées propres à chaque document. On en profite pour ajouter un attribut corresp à chaque élément app. Une transformation XSLT est ensuite appliquée pour ajouter les identifiants à chaque élément `<app>` et ses enfants. 
+
+Grâce à ces ids, un prototype Xform permet la consultation et la validation des corrections en deux étapes. Un premier onglet dédié seulement à la visualisation des changements mécaniques, sans possibilité d'action, seulement pour en prendre connaissance. Un deuxième onglet permet de prendre connaissance des modification substantielles et de les accepter ou les refuser (choisir le lem dans le XML). 
+
+<!-- A cette étape on pourrait faire que ça rajoute un resp et le nom dans le tei mais c'est complexe -->
+
+Un troisième onglet donne accès à la lecture de la version modifiée du texte, avec une mise en avant des changements acceptés ou refusés. 
 
 
 
 <!-- Vu que sur Stylo c'est difficile de tracer qui fait quoi : j'ai déduis depuis le titre des version qui était responsable de quels changements. Donc j'ai abandonné l'idée de mettre un attribut resp. Mais ça souligne un besoin.  -->
 
 
-Comme relevé plus haut, dans Stylo, l’identification précise de qui fait quoi au sein du processus de révision est difficile. J’ai donc décidé de déduire la responsabilité des changements à partir des titres de versions. Cette contrainte m’a conduite à abandonner l’idée d’introduire un attribut formel de type resp à chaque modification. Ce renoncement ne résout toutefois pas le problème ; au contraire, il met en évidence une question : jusqu'à quel point il faut attribuer les interventions aux différents acteurs ? avec quel niveau de granularité ? Plutôt raisonner en terme d'atapes significtaives dans le processus de révision et une attribution. Là je me contredis car c'est un peu ce qui est déjà dans Stylo. 
+Comme relevé plus haut, dans Stylo, l’identification précise de qui fait quoi au sein du processus de révision est difficile. J’ai donc décidé de déduire la responsabilité des changements à partir des titres de versions. Cette contrainte m’a conduite à abandonner l’idée d’introduire un attribut resp à chaque modification. Ce renoncement ne résout toutefois pas le problème ; au contraire, il met en évidence une question : jusqu'à quel point il faut attribuer les interventions aux différents acteurs ? avec quel niveau de granularité ? Plutôt raisonner en terme d'atapes significtaives dans le processus de révision et une attribution. Là je me contredis car c'est un peu ce qui est déjà dans Stylo. 
 
 
 **Corrections pas pertinentes**
@@ -162,13 +134,17 @@ soit une sur-fragmentation du texte, au risque de rendre le track changes illisi
 Cette tension entre précision locale et cohérence globale constitue selon nous le prinicipal problème dans l'entreprise de modélisation et automatisation d'un track changes qui prend en compte cette modélisation. 
 
 
+**Limites de la démarche**
+
+CHoix de xml paraît un peu lourd. Le json par exemple est plus facilement traitable. 
+
 
 
 Le script est basé sur des regex il marche sauf 
 
 - les suppressions (où il y a pas d'ajout dans le rdg)
 - les citations dans le nom que c'est la même syntaxe (par exemple [-@machin])
-- des fois les milestones ça reste des balises et des fois 
+- des fois les milestones ça reste des balises et des fois pas
 
 Choisir de travailler sur la syntaxe markdown parce que c'est là dessus que travaillent les éditeurices de sens public. Et une partie de leur travail c'est de corriger le markdown. Même si ce n'est pas une pratique courante d'encoder du code en TEI, ici ça fait du sens. 
 
@@ -187,11 +163,10 @@ Fredson Bowers, Textual and Literary Criticism (1959).
 **Des trucs à checker :** 
 
 - [x] les espaces autour de milestone et app 
-- [ ] dans snauwaert les citations chelous avec plein de > 
+- [ ] dans snauwaert les citations chelous avec plein de > il faut vérifier
 - [x] laisser des rdg ou des lem vides ? Oui
 - [x] reprendre les textes nettoyés et refaire le wdiff pour que ce soit bien propre
 - [ ] on peut essayer d'améliorer le css du formulaire html
-- [ ] que faire entre profiledesc et interaction timeline ? 
 - [x] est-ce que je mets les resp ? Non je justifie
 - [ ] bien vérifier que tout le header est complété avec cette histoire de revision desc et de timeline
 - [ ] enlever les commentaires dans les xml
@@ -202,3 +177,13 @@ Fredson Bowers, Textual and Literary Criticism (1959).
 - [x] Attributs multi-valués je crois qu'il faut faire un for-each-group sa grand-mere
 - [x] la xslt add-ids ramène des identifiants que je veux pas sur les ab c'est peut-être pas gênant 
 - [x] gestion de méca dans review il faut seulement le rdg
+
+**Reste à faire**
+
+- [ ] déployer une github page
+- [ ] améliorer le css et la xsl pour affichage du texte ? 
+- [ ] écrire l'intro explicative du projet
+- [ ] xml propres 
+- [ ] transformation vers édition finale
+- [ ] choisir le meilleur xml pour exemple dans le proto
+- [ ] essayer d'ajouter un trux de resp

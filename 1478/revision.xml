@@ -75,21 +75,13 @@
                </monogr>
                <note>Encodage XML à partir des sources stylo : versions préparatoires de l'article</note>
             </biblStruct>
-            <listWit>
-               <witness xml:id="V1">Version du <date when-iso="2020-09-03" type="versionning" resp="#tg">03 septembre 2020</date><ptr
-                  target="https://stylo.huma-num.fr/article/673ba70533b8f40011002772/version/673bb3a133b8f40011002ebe/annotate"/></witness>
-               <witness xml:id="V2">Version 1.1 du <date when-iso="2024-11-18" type="versionning" resp="#tg">21 novembre 2024</date> <desc>En tenant compte des remarques de Margot</desc><ptr
-                  target="https://stylo.huma-num.fr/article/673ba70533b8f40011002772/version/673fba4933b8f4001102a185/annotate"/></witness>
-            </listWit>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
          <editorialDecl>
-            <p>L'alignement des versions a été réalisé avec l'aide de l'algorithme <code>wdiff</code>. Cet alignement a été répris et traité par un script en python "maison", pour constituer un premier encodage en XML-TEI. Ce premier encodage a été corrigé à la main, puis une feuille de style XSLT a été appliquée pour rajouter des identifiants à tous les éléments &lt;app&gt;. </p>
+            <p>L'alignement des versions a été réalisé avec l'aide de l'algorithme <code>wdiff</code>. Cet alignement a été repris et traité par un script en python "maison", pour constituer un premier encodage en XML-TEI. Ce premier encodage a été corrigé à la main, puis une feuille de style XSLT a été appliquée pour rajouter des identifiants à tous les éléments &lt;app&gt;. </p>
             <p>Voici les principes adoptés pour l'alignement : <list>
-               <item>La structuration du texte en paragraphes (&lt;p&gt;) a été abandonnée : les
-                  textes sont insérés dans un conteneur &lt;ab&gt; et les changements de
-                  paragraphes sont signalés par des &lt;milestone&gt;, et les retours simples ont été supprimé lors d'une étape de nettoyage des articles (on estime qu'ils servent uniquement la lisbilité du code en écriture et n'ont pas d'impact sur la suite de la chaîne).</item>
+               <item></item>
                <item>autre item</item>
                <item>Étant donné que les éditeurs travaillent sur du code en markdown, on a comparé les articles en markdown. Il y a pas encore d'aspect </item>
                <!--<item>autre item éventuellement</item>-->
@@ -122,7 +114,6 @@
                         <item xml:id="ref">Vérification de fond sur la bibliographie.</item></list>
                   </item>
                </list></p>
-            
             <segmentation>
                <p>Pour mieux aligner les textes et mettre en avant les variations entre les
                   versions, les paragraphes ne sont pas contenus dans des &lt;p&gt;. Le passage d'un
@@ -146,34 +137,32 @@
          <variantEncoding method="parallel-segmentation" location="internal"/>
       </encodingDesc>
       <profileDesc>
+         <creation>
+            <listChange ordered="true">
+               <change xml:id="V1">Version du <date when-iso="2020-09-03" type="versionning" resp="#tg">03 septembre 2020</date><ptr
+                  target="https://stylo.huma-num.fr/article/673ba70533b8f40011002772/version/673bb3a133b8f40011002ebe/annotate"/></change>
+               <change xml:id="V2">Version 1.1 du <date when-iso="2024-11-18" type="versionning" resp="#tg">21 novembre 2024</date> <desc>En tenant compte des remarques de Margot</desc><ptr
+                  target="https://stylo.huma-num.fr/article/673ba70533b8f40011002772/version/673fba4933b8f4001102a185/annotate"/></change>
+            </listChange>
+         </creation>
          <langUsage>
             <language ident="fr">French</language>
          </langUsage>
          <textDesc>
-            <channel mode="w">Stylo <ptr target="https://stylo.huma-num.fr/"/>; éditeur collaboratif sémantique en markdown</channel>
-            <constitution/>
-            <derivation type="revision"/>
-            <domain type="education"/>
+            <channel mode="w">
+               Environnement d’écriture collaborative :
+               <rs type="software">Stylo</rs>
+               <ptr target="https://stylo.huma-num.fr/"/>.
+            </channel>
+            <constitution type="composite">
+               Texte constitué de la superposition de plusieurs couches ou états successifs.
+            </constitution>
+            <derivation/>
+            <domain type="academicResearch"/>
             <factuality type="fact"/>
-            <interaction>
-               <timeline>
-                  <when xml:id="t001"
-                     absolute="2011-03-23T19:56:00"/>
-                  <when xml:id="t002"
-                     absolute="2011-06-14T21:22:00"/>
-                  <when xml:id="t003"
-                     absolute="2011-06-14T23:28:00"/>
-                  <when xml:id="t004"
-                     absolute="2011-07-02T07:20:00"/>
-                  <when xml:id="t005"
-                     absolute="2011-07-21T01:00:00"/>
-                  <when xml:id="t006"
-                     absolute="2014-04-08T01:35:00"/>
-               </timeline>
-               <!--intéressant mais quoi en faire ?--> 
-            </interaction>
+            <interaction/>
             <preparedness type="revised"/>
-            <purpose type="inform" degree="high"/>
+            <purpose type="inform" subtype="research" degree="high"/>
          </textDesc>
          <textClass>
             <keywords scheme="#fr_RAMEAU">
@@ -235,9 +224,6 @@
          </particDesc>
          
       </profileDesc>
-      <!--<revisionDesc status="submitted">
-         <change when-iso="2025-12-25" who="#???">review de la version 1.1</change>
-      </revisionDesc>-->
    </teiHeader>
    <text>
       <body>
