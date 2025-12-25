@@ -25,8 +25,12 @@
         </p>
     </xsl:template>
     
-    <xsl:template match="tei:choice">
+    <xsl:template match="tei:choice[contains(@corresp, '#subst')]">
         <span class="choice" id="{ ./@xml:id }"><xsl:apply-templates select="tei:sic"/></span>
+    </xsl:template>
+
+    <xsl:template match="tei:choice[contains(@corresp, '#meca')]">
+        <span class="choice" id="{ ./@xml:id }"><xsl:apply-templates select="tei:corr"/></span>
     </xsl:template>
     
     <xsl:template match="tei:sic">
