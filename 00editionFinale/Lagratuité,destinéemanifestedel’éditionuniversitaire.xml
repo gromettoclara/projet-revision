@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
-	schematypens="http://purl.oclc.org/dsdl/schematron"?>
-
-
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"
+        type="application/xml"
+        schematypens="http://relaxng.org/ns/structure/1.0"
+    ?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"
+        type="application/xml"
+        schematypens="http://purl.oclc.org/dsdl/schematron"
+    ?><TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -49,8 +49,7 @@
                      <surname>Gheeraert</surname>
                   </author>
                   <title level="a">La gratuité, destinée manifeste de l’édition universitaire</title>
-                  <ref target="https://sens-public.org/articles/1781/"
-                     >https://sens-public.org/articles/1781/</ref>
+                  <ref target="https://sens-public.org/articles/1781/">https://sens-public.org/articles/1781/</ref>
                </analytic>
                <monogr>
                   <title level="j">Revue Sens Public</title>
@@ -60,30 +59,17 @@
                </monogr>
                <note>Encodage XML à partir des sources stylo : versions préparatoires de l'article</note>
             </biblStruct>
-            <listWit>
-               <witness xml:id="V1">Version 1.0 du <date when-iso="2024-11-18" type="versionning" resp="#tg">18 novembre 2024</date><ptr
-                  target="https://stylo.huma-num.fr/article/673ba70533b8f40011002772/version/673bb3a133b8f40011002ebe/annotate"/></witness>
-               <witness xml:id="V2">Version 1.1 du <date when-iso="2024-11-18" type="versionning" resp="#tg">21 novembre 2024</date> <desc>En tenant compte des remarques de Margot</desc><ptr
-                  target="https://stylo.huma-num.fr/article/673ba70533b8f40011002772/version/673fba4933b8f4001102a185/annotate"/></witness>
-            </listWit>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
          <editorialDecl>
-            <p>L'alignement des versions a été réalisé avec l'aide de l'algorithme <code>wdiff</code>. Cet alignement a été répris et traité par un script en python "maison", pour constituer un premier encodage en XML-TEI. Ce premier encodage a été corrigé à la main, puis une feuille de style XSLT a été appliquée pour rajouter des identifiants à tous les éléments &lt;app&gt;. </p>
-            <p>Voici les principes adoptés pour l'alignement : <list>
-                  <item>La structuration du texte en paragraphes (&lt;p&gt;) a été abandonnée : les
-                     textes sont insérés dans un conteneur &lt;ab&gt; et les changements de
-                     paragraphes sont signalés par des &lt;milestone&gt;, et les retours simples ont été supprimé lors d'une étape de nettoyage des articles (on estime qu'ils servent uniquement la lisbilité du code en écriture et n'ont pas d'impact sur la suite de la chaîne).</item>
-                  <item>autre item</item>
-                  <item>Étant donné que les éditeurs travaillent sur du code en markdown, on a comparé les articles en markdown. Il y a pas encore d'aspect </item>
-                  <!--<item>autre item éventuellement</item>-->
-               </list></p>
-            <p>La modélisation des corrections est basée sur les distinctions opérées par le <ref
-                  target="https://www.chicagomanualofstyle.org/book/ed18/frontmatter/toc.html"
-                  >CMOS18</ref> et sur un entretien avec l'éditrice de la revue HN Florence.</p>
-            <p>Deux systèmes se superposent : un niveau de criticité de vérification et une expertise métier reliée.
-               querie ou hard. <!--expliquer--></p>
+            <p>L'alignement des versions a été réalisé avec l'aide de l'algorithme <code>wdiff</code>. Cet alignement a été repris et traité par un script en python "maison", pour constituer un premier encodage en XML-TEI. Ce premier encodage a été corrigé à la main, puis une feuille de style XSLT a été appliquée pour rajouter des identifiants à tous les éléments &lt;choice&gt;. </p>
+            <p>Voici les principes adoptés : <list>
+               <item>Étant donné que les éditeurs travaillent sur du code en markdown, on a comparé les articles en markdown, et traité le code comme du plein texte.</item>
+               <item>Le niveau de granularité permis par l'algorithme <code>wdiff</code> est le mot. Ce niveau est satisfaisnt jusqu'à ce qu'il soit nécessaire de décorréler une correction sur un mot d'une correction sur la ponctuation qui lui est accolée. Cette subtilité sera corrigée à la main.</item>
+            </list></p>
+            <p>La modélisation des corrections est basée sur les distinctions opérées par le <ref target="https://www.chicagomanualofstyle.org/book/ed18/frontmatter/toc.html">CMOS18</ref> et sur un entretien avec l'éditrice de la revue HN Florence.</p>
+            <p>Deux systèmes se superposent : une expertise métier et une catégorisation plus fine du type de correction.</p>
             <p>Pour chaque élément &lt;app&gt;, un attribut "@corresp" est utilisé pour préciser la
                nature de la correction. Les valeurs possibles pour cet attribut sont:<list>
                   <item xml:id="meca">Corrections mécaniques : mécanique de la langue, mécanique du code, mécanique de la pipeline, fluidité de la lecture : on peut diviser en sous-catégories.
@@ -94,7 +80,7 @@
                   <item xml:id="gram">Grammaire et Syntaxe -- accord, conjugaison, structure de phrases, impropriétés syntaxiques.</item>
                      <item xml:id="md">Code markdown -- harmonisation et correction pour rentrer sans frottement dans la chaîne de conversion.</item></list></item>
                   
-                  <item xml:id="subst">Modifications substantives : sémantiques, rhétoriques ou stylistique : les so
+                  <item xml:id="subst">Modifications énonciatives ou discursives (assumant la position de l'auteur) : affectent l’organisation du discours, la rhétorique, le style, la voix de l’auteur et impliquent un dialogue plus proche avec celui-ci.
                   <list><item xml:id="puct">ponctuation -- virgules, points, tirets, guillemets, usage des italiques avec une incidence sur le sens ou le style.</item>
                   <item xml:id="change">Substitutions lexicales non mécaniques.</item>
                   <item xml:id="add">Ajouts de mots/phrases.</item>
@@ -131,34 +117,30 @@
          <variantEncoding method="parallel-segmentation" location="internal"/>
       </encodingDesc>
       <profileDesc>
+         <creation>
+            <listChange ordered="true">
+               <change xml:id="V1">Version 1.0 du <date when-iso="2024-11-18" type="versionning" resp="#tg">18 novembre 2024</date><ptr target="https://stylo.huma-num.fr/article/673ba70533b8f40011002772/version/673bb3a133b8f40011002ebe/annotate"/></change>
+               <change xml:id="V2">Version 1.1 du <date when-iso="2024-11-18" type="versionning" resp="#tg">21 novembre 2024</date> <desc>En tenant compte des remarques de Margot</desc><ptr target="https://stylo.huma-num.fr/article/673ba70533b8f40011002772/version/673fba4933b8f4001102a185/annotate"/></change>
+            </listChange>
+         </creation>
          <langUsage>
             <language ident="fr">French</language>
          </langUsage>
          <textDesc>
-            <channel mode="w">Stylo <ptr target="https://stylo.huma-num.fr/"/>; éditeur collaboratif sémantique en markdown</channel>
-            <constitution/>
-            <derivation type="revision"/>
-            <domain type="education"/>
+            <channel mode="w">
+               Environnement d’écriture collaborative :
+               <rs type="software">Stylo</rs>
+               <ptr target="https://stylo.huma-num.fr/"/>.
+            </channel>
+            <constitution type="composite">
+               Texte constitué de la superposition de plusieurs couches ou états successifs.
+            </constitution>
+            <derivation/>
+            <domain type="academicResearch"/>
             <factuality type="fact"/>
-            <interaction>
-               <timeline>
-                  <when xml:id="t001"
-                     absolute="2011-03-23T19:56:00"/>
-                  <when xml:id="t002"
-                     absolute="2011-06-14T21:22:00"/>
-                  <when xml:id="t003"
-                     absolute="2011-06-14T23:28:00"/>
-                  <when xml:id="t004"
-                     absolute="2011-07-02T07:20:00"/>
-                  <when xml:id="t005"
-                     absolute="2011-07-21T01:00:00"/>
-                  <when xml:id="t006"
-                     absolute="2014-04-08T01:35:00"/>
-               </timeline>
-               <!--intéressant mais quoi en faire ?--> 
-            </interaction>
+            <interaction/>
             <preparedness type="revised"/>
-            <purpose type="inform" degree="high"/>
+            <purpose type="inform" subtype="research" degree="high"/>
          </textDesc>
          <textClass>
             <keywords scheme="#fr_RAMEAU">
@@ -169,7 +151,7 @@
                   <item>publication</item>
                </list>
             </keywords>
-            <keywords >
+            <keywords>
                <list>
                   <item>savoir</item>
                   <item>science ouverte</item>
@@ -210,44 +192,41 @@
          </particDesc>
 
       </profileDesc>
-      <!--<revisionDesc status="submitted">
-         <change when-iso="2025-12-25" who="#???">review de la version 1.1</change>
-      </revisionDesc>-->
    </teiHeader>
    <text>
       <body>
          <ab>Un éditeur qui donne ses livres au lieu de les vendre, dès le jour de leur sortie,
-            est-ce bien sérieux ? C’est pourtant le pari surprenant assumé cette semaine <app xml:id="app-1" corresp="#subst #add">
-               <lem xml:id="lem-1" wit="#V1"/>
-               <rdg xml:id="rdg-1" wit="#V2">en France</rdg>
-            </app> par les Presses Universitaires de Rouen et du Havre. _La Désillusion comique.
-            Étude de la place royale, du menteur et de la suite du menteur<app corresp="#meca #unif">
-               <lem wit="#V1">de Yohann Deguin_</lem>
-               <rdg wit="#V2">_ de Yohann Deguin</rdg>
-            </app> et _La vacillante lumière de la raison. Lire De la Littérature de Germaine de
+            est-ce bien sérieux ? C’est pourtant le pari surprenant assumé cette semaine <choice corresp="#subst #add" xml:id="choice-1">
+               <sic source="#V1" xml:id="sic-1"/>
+               <corr source="#V2" xml:id="corr-1">en France</corr>
+            </choice> par les Presses Universitaires de Rouen et du Havre. _La Désillusion comique.
+            Étude de la place royale, du menteur et de la suite du menteur<choice corresp="#meca #unif" xml:id="choice-2">
+               <sic source="#V1" xml:id="sic-2">de Yohann Deguin_</sic>
+               <corr source="#V2" xml:id="corr-2">_ de Yohann Deguin</corr>
+            </choice> et _La vacillante lumière de la raison. Lire De la Littérature de Germaine de
             Staël_ de Blandine Poirier ont été proposés gratuitement au format électronique sur
             OpenEdition en même temps qu’ils ont été mis en vente en librairie, le 14 novembre 2024.
             La démarche n’est pas ordinaire. Elle est le fruit de discussions menées en accord avec
             les auteurs des livres concernés et la direction de l’université de Rouen. Ni gabegie
             inconsciente d’argent public, ni opération publicitaire sans lendemain, cette décision a
             valeur de manifeste. Aiguillonnée par les principes de l'intiative "cOAlition S"^[Voir
-            le site de <app corresp="#subst #add">
-               <lem wit="#V1">cOAlition S : https://www.coalition-s.org/]</lem>
-               <rdg wit="#V2">[cOAlition S](https://www.coalition-s.org/) : [https://www.coalition-s.org/](https://www.coalition-s.org/). La cOAlition S est une initiative en faveur de l'accès libre complet et immédiat aux
+            le site de <choice corresp="#subst #add" xml:id="choice-3">
+               <sic source="#V1" xml:id="sic-3">cOAlition S : https://www.coalition-s.org/]</sic>
+               <corr source="#V2" xml:id="corr-3">[cOAlition S](https://www.coalition-s.org/) : [https://www.coalition-s.org/](https://www.coalition-s.org/). La cOAlition S est une initiative en faveur de l'accès libre complet et immédiat aux
                   publications de recherche. Elle est portée par un consortium international soutenu
                   par la Commission européenne et le Conseil européen. Le plan S (2021) a constitué
                   la proposition la plus spectaculaire, imposant aux signataires de publier sur des
                   plates-formes ou des revues en libre-accès les résultats de recherches financées
-                  sur fonds public,]</rdg>
-            </app>, elle vise à provoquer une réflexion sur la publication savante, aujourd’hui
-            parasitée par des enjeux financiers nuisibles à la diffusion <app corresp="#subst #change">
-               <lem wit="#V1">d’une science véritable</lem>
-               <rdg wit="#V2">de savoirs véritables</rdg>
-            </app>.
-            <milestone unit="tei:p"/><lb/><lb/>## Le <app corresp="#meca #unif">
-               <lem wit="#V1">Savant</lem>
-               <rdg wit="#V2">savant</rdg>
-            </app> et la star<milestone unit="tei:p"/><lb/>Les éditions universitaires font aujourd’hui assez pâle
+                  sur fonds public,]</corr>
+            </choice>, elle vise à provoquer une réflexion sur la publication savante, aujourd’hui
+            parasitée par des enjeux financiers nuisibles à la diffusion <choice corresp="#subst #change" xml:id="choice-4">
+               <sic source="#V1" xml:id="sic-4">d’une science véritable</sic>
+               <corr source="#V2" xml:id="corr-4">de savoirs véritables</corr>
+            </choice>.
+            <milestone unit="tei:p"/><lb/><lb/>## Le <choice corresp="#meca #unif" xml:id="choice-5">
+               <sic source="#V1" xml:id="sic-5">Savant</sic>
+               <corr source="#V2" xml:id="corr-5">savant</corr>
+            </choice> et la star<milestone unit="tei:p"/><lb/>Les éditions universitaires font aujourd’hui assez pâle
             figure. Délaissées depuis longtemps par les sciences dites “dures”, elles sont souvent
             peu attractives _a priori_ pour les auteurs : procédures de sélection rigoureuses voire
             dissuasives, faibles tirages, difficultés de distribution, promotion réduite faute de
@@ -310,13 +289,13 @@
             léonins dépouillent les auteurs du fruit et surtout de la libre disposition de leur
             travail : grâces soient rendues à l’impression numérique qui empêche les ouvrages d’être
             plus jamais épuisés, de sorte que l’auteur ne se trouve jamais en position de demander à
-            récupérer ses droits cédés, fût-ce pour les offrir gracieusement à la <app corresp="#subst #add">
-               <lem wit="#V1">communauté</lem>
-               <rdg wit="#V2">communauté. Ces éditeurs le refusent d'autant plus fortement qu'ils
+            récupérer ses droits cédés, fût-ce pour les offrir gracieusement à la <choice corresp="#subst #add" xml:id="choice-6">
+               <sic source="#V1" xml:id="sic-6">communauté</sic>
+               <corr source="#V2" xml:id="corr-6">communauté. Ces éditeurs le refusent d'autant plus fortement qu'ils
                   mettent eux-mêmes en vente les travaux des chercheurs sur des plates-formes
                   commerciales en version numérique, saucissonnant monographies et éditions
-                  critiques en sous-chapitres vendus plusieurs euros pièce</rdg>
-            </app>. Un tel système, pour sa propre survie, exige un apport de manuscrits à flux
+                  critiques en sous-chapitres vendus plusieurs euros pièce</corr>
+            </choice>. Un tel système, pour sa propre survie, exige un apport de manuscrits à flux
             continu. Cette faim ogresse de données scientifiques aboutit à la prolifération
             d’ouvrages de qualité diverse. Des dysfonctionnements aussi aberrants perdurent grâce à
             la complicité de tous. Les chercheurs, heureux de trouver une voie de publication facile
@@ -375,10 +354,10 @@
             scientifiques. Laisser à des opérateurs privés à but lucratif le soin de labelliser la
             recherche au détriment de toute évaluation transparente tend à mettre entre les mains
             d’un public plus ou moins large une science douteuse, superficielle, quand elle n’est
-            pas plaisante et confortable. En un temps où vérités alternatives et <app corresp="#subst #change">
-               <lem wit="#V1">complotistes</lem>
-               <rdg wit="#V2">complotismes</rdg>
-            </app> de toute sorte menacent nos sociétés, jamais le besoin de vrai, comme bien public
+            pas plaisante et confortable. En un temps où vérités alternatives et <choice corresp="#subst #change" xml:id="choice-7">
+               <sic source="#V1" xml:id="sic-7">complotistes</sic>
+               <corr source="#V2" xml:id="corr-7">complotismes</corr>
+            </choice> de toute sorte menacent nos sociétés, jamais le besoin de vrai, comme bien public
             et partagé, n’a été aussi criant et aussi désespéré. Or, cette soif de science est
             incompatible avec le principe même d’une quête du profit guidée par l’intérêt et par
             conséquent aveugle à la vérité. Le commerce est régi par des lois qui ne sont pas celles
@@ -392,18 +371,18 @@
             prioriser des ouvrages évalués avec soin, sans égard au prestige _a priori_ de l’éditeur
             qui les a mis sur le marché, ni à la force de frappe de sa politique de communication.
             Le label serait décerné indifféremment aux maisons privées vertueuses – car il s’en
-            trouve malgré tout – comme aux presses publiques, si du moins <app corresp="#subst #change">
-               <lem wit="#V1">elles</lem>
-               <rdg wit="#V2">celles-ci</rdg>
-            </app> acceptent effectivement le jeu des évaluations <app corresp="#subst #add">
-               <lem wit="#V1">transparentes </lem>
-               <rdg wit="#V2">transparentes et visent réellement à la diffusion la plus large des
-                  textes qu'elles proposent</rdg>
-            </app>.
-            <milestone unit="tei:p"/><lb/><lb/>## La gratuité<app corresp="#subst #reformulation">
-               <lem wit="#V1">: un modèle économique</lem>
-               <rdg wit="#V2"> pour les publications scientifiques, unique modèle</rdg>
-            </app> viable<milestone unit="tei:p"/><lb/>Pour les Presses universitaires,
+            trouve malgré tout – comme aux presses publiques, si du moins <choice corresp="#subst #change" xml:id="choice-8">
+               <sic source="#V1" xml:id="sic-8">elles</sic>
+               <corr source="#V2" xml:id="corr-8">celles-ci</corr>
+            </choice> acceptent effectivement le jeu des évaluations <choice corresp="#subst #add" xml:id="choice-9">
+               <sic source="#V1" xml:id="sic-9">transparentes </sic>
+               <corr source="#V2" xml:id="corr-9">transparentes et visent réellement à la diffusion la plus large des
+                  textes qu'elles proposent</corr>
+            </choice>.
+            <milestone unit="tei:p"/><lb/><lb/>## La gratuité<choice corresp="#subst #reformulation" xml:id="choice-10">
+               <sic source="#V1" xml:id="sic-10">: un modèle économique</sic>
+               <corr source="#V2" xml:id="corr-10"> pour les publications scientifiques, unique modèle</corr>
+            </choice> viable<milestone unit="tei:p"/><lb/>Pour les Presses universitaires,
                   sortir des logiques commerciales ne se traduit pas nécessairement par une
                   augmentation inconsidérée des financements publics dont elles dépendent. La
                   décision prise par les Presses universitaires de Rouen et du Havre de diffuser
@@ -426,19 +405,19 @@
                   questions environnementales. Pourtant, le support papier reste plus que jamais un
                   format d'avenir : sans même évoquer le prestige ou la valeur symbolique accordés
                   au livre traditionnel, celui-ci présente l’avantage d’offrir un support pérenne,
-                  <app corresp="#subst #change"><lem wit="V1">confortable</lem>
-                  <rdg wit="V2">agréable</rdg>
-                  </app>, accessible, pratique, ne nécessitant pas de dispositif électronique complexe et
+                  <choice corresp="#subst #change" xml:id="choice-11"><sic source="V1" xml:id="sic-11">confortable</sic>
+                  <corr source="V2" xml:id="corr-11">agréable</corr>
+                  </choice>, accessible, pratique, ne nécessitant pas de dispositif électronique complexe et
             fragile pour être consulté. Il restera un moyen habituel de diffusion des savoirs
             académiques, propre à toucher un autre public que celui des sites universitaires en
             ligne, fussent-ils en accès ouvert. Il convient néanmoins d’apprendre à fabriquer les
             livres autrement, en tenant compte à la fois des enjeux économiques et des nécessités
             nouvelles de l’éco-conception. La politique tarifaire de Presses universitaires sans but
             lucratif devrait tendre à fixer un prix public égal au prix de revient, de manière à
-            couvrir les frais <app corresp="#subst #change">
-               <lem wit="#V1">de publication</lem>
-               <rdg wit="#V2">d'édition</rdg>
-            </app>, mais sans chercher à réaliser un bénéfice contraire aux valeurs du service public
+            couvrir les frais <choice corresp="#subst #change" xml:id="choice-12">
+               <sic source="#V1" xml:id="sic-12">de publication</sic>
+               <corr source="#V2" xml:id="corr-12">d'édition</corr>
+            </choice>, mais sans chercher à réaliser un bénéfice contraire aux valeurs du service public
             et de l'Accès Ouvert. Le recours aux technologies d’impression à la demande constitue
             une bonne piste pour parvenir à coûts constants à ce résultat : le “Print on demand”
             permet en effet le déclenchement de la fabrication des exemplaires à chaque commande,
@@ -452,26 +431,26 @@
             opposés à la science véritable. Certes, les procédures méritent d’être encore améliorées
             et réformées. On pourrait imaginer par exemple de rendre plus facile l’accès à des
             plates-formes de prépublications ouvertes, encore peu employées dans le champ des
-            sciences humaines où le double aveugle reste la norme. <app corresp="#subst #add">
-               <lem wit="#V1">Mais quelles</lem>
-               <rdg wit="#V2">Quelles</rdg>
-            </app> que soient les méthodes employées, les principes et les finalités ne font pas de
+            sciences humaines où le double aveugle reste la norme. <choice corresp="#subst #add" xml:id="choice-13">
+               <sic source="#V1" xml:id="sic-13">Mais quelles</sic>
+               <corr source="#V2" xml:id="corr-13">Quelles</corr>
+            </choice> que soient les méthodes employées, les principes et les finalités ne font pas de
             doute : prendre pour seul critère de publication l’expertise des savants, en finir avec
-            le marchandisation des connaissances, tendre à la gratuité sans embargo des livres <app corresp="#subst #add">
-               <lem wit="#V1">numériques^[Selon les dispositions encouragées par la cOAlition S :
+            le marchandisation des connaissances, tendre à la gratuité sans embargo des livres <choice corresp="#subst #add" xml:id="choice-14">
+               <sic source="#V1" xml:id="sic-14">numériques^[Selon les dispositions encouragées par la cOAlition S :
                   “Plan S”, “voie diamant”, "rétention des droits", ou encore l'initiative "Towards
-                  Responsible Publishing".]</lem>
-               <rdg wit="#V2">numériques</rdg>
-            </app>, enfin serrer les prix de livres papier éco-responsables à défaut de pouvoir les
-            donner gracieusement : telle est à notre sens la destinée manifeste <app corresp="#subst #add">
-               <lem wit="#V1">des</lem>
-               <rdg wit="#V2">de</rdg>
-            </app> Presses universitaires <app>
-               <lem wit="#V1">aujourd’hui</lem>
-               <rdg wit="#V2">aujourd'hui, de façon à généraliser à l'ensemble des publications
+                  Responsible Publishing".]</sic>
+               <corr source="#V2" xml:id="corr-14">numériques</corr>
+            </choice>, enfin serrer les prix de livres papier éco-responsables à défaut de pouvoir les
+            donner gracieusement : telle est à notre sens la destinée manifeste <choice corresp="#subst #add" xml:id="choice-15">
+               <sic source="#V1" xml:id="sic-15">des</sic>
+               <corr source="#V2" xml:id="corr-15">de</corr>
+            </choice> Presses universitaires <choice xml:id="choice-16">
+               <sic source="#V1" xml:id="sic-16">aujourd’hui</sic>
+               <corr source="#V2" xml:id="corr-16">aujourd'hui, de façon à généraliser à l'ensemble des publications
                   académiques, numériques ou papier, l'esprit des propositions de la cOAlition
-                  S</rdg>
-            </app>.
+                  S</corr>
+            </choice>.
          </ab>
       </body>
    </text>

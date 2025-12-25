@@ -79,19 +79,16 @@
       </fileDesc>
       <encodingDesc>
          <editorialDecl>
-            <p>L'alignement des versions a été réalisé avec l'aide de l'algorithme <code>wdiff</code>. Cet alignement a été repris et traité par un script en python "maison", pour constituer un premier encodage en XML-TEI. Ce premier encodage a été corrigé à la main, puis une feuille de style XSLT a été appliquée pour rajouter des identifiants à tous les éléments &lt;app&gt;. </p>
-            <p>Voici les principes adoptés pour l'alignement : <list>
-               <item></item>
-               <item>autre item</item>
-               <item>Étant donné que les éditeurs travaillent sur du code en markdown, on a comparé les articles en markdown. Il y a pas encore d'aspect </item>
-               <!--<item>autre item éventuellement</item>-->
+            <p>L'alignement des versions a été réalisé avec l'aide de l'algorithme <code>wdiff</code>. Cet alignement a été repris et traité par un script en python "maison", pour constituer un premier encodage en XML-TEI. Ce premier encodage a été corrigé à la main, puis une feuille de style XSLT a été appliquée pour rajouter des identifiants à tous les éléments &lt;choice&gt;. </p>
+            <p>Voici les principes adoptés : <list>
+               <item>Étant donné que les éditeurs travaillent sur du code en markdown, on a comparé les articles en markdown, et traité le code comme du plein texte.</item>
+               <item>Le niveau de granularité permis par l'algorithme <code>wdiff</code> est le mot. Ce niveau est satisfaisnt jusqu'à ce qu'il soit nécessaire de décorréler une correction sur un mot d'une correction sur la ponctuation qui lui est accolée. Cette subtilité sera corrigée à la main.</item>
             </list></p>
             <p>La modélisation des corrections est basée sur les distinctions opérées par le <ref
                target="https://www.chicagomanualofstyle.org/book/ed18/frontmatter/toc.html"
                >CMOS18</ref> et sur un entretien avec l'éditrice de la revue HN Florence.</p>
-            <p>Deux systèmes se superposent : un niveau de criticité de vérification et une expertise métier reliée.
-               querie ou hard. <!--expliquer--></p>
-            <p>Pour chaque élément &lt;app&gt;, un attribut "@corresp" est utilisé pour préciser la
+            <p>Deux systèmes se superposent : une expertise métier et une catégorisation plus fine du type de correction.</p>
+            <p>Pour chaque élément &lt;choice&gt;, un attribut "@corresp" est utilisé pour préciser la
                nature de la correction. Les valeurs possibles pour cet attribut sont:<list>
                   <item xml:id="meca">Corrections mécaniques : mécanique de la langue, mécanique du code, mécanique de la pipeline, fluidité de la lecture : on peut diviser en sous-catégories.
                      
@@ -101,7 +98,7 @@
                         <item xml:id="gram">Grammaire et Syntaxe -- accord, conjugaison, structure de phrases, impropriétés syntaxiques.</item>
                         <item xml:id="md">Code markdown -- harmonisation et correction pour rentrer sans frottement dans la chaîne de conversion.</item></list></item>
                   
-                  <item xml:id="subst">Modifications substantives : sémantiques, rhétoriques ou stylistique : les so
+                  <item xml:id="subst">Modifications énonciatives ou discursives (assumant la position de l'auteur) : affectent l’organisation du discours, la rhétorique, le style, la voix de l’auteur et impliquent un dialogue plus proche avec celui-ci.
                      <list><item xml:id="puct">ponctuation -- virgules, points, tirets, guillemets, usage des italiques avec une incidence sur le sens ou le style.</item>
                         <item xml:id="change">Substitutions lexicales non mécaniques.</item>
                         <item xml:id="add">Ajouts de mots/phrases.</item>
@@ -222,7 +219,6 @@
                </persName></person>
             </listPerson>
          </particDesc>
-         
       </profileDesc>
    </teiHeader>
    <text>
@@ -272,13 +268,13 @@
             réside la question spécifique de l'intervalle, puisque à travers ce principe de
             renouvellement encadré se joue la contrainte d'une variété de textes unifiée par un
             architexte commun. Toute l'histoire de la sérialité est liée à cette dynamique de
-            standardisation et de variation, au croisement <app corresp="#subst #change">
-               <lem wit="#V1">d'une logique industrielle</lem>
-               <rdg wit="#V2">des logiques industrielles</rdg>
-            </app> et <app corresp="#subst #change">
-               <lem wit="#V1">médiatique<milestone unit="tei:p"/></lem>
-               <rdg wit="#V2">médiatiques<milestone unit="tei:p"/></rdg>
-            </app>.
+            standardisation et de variation, au croisement <choice corresp="#subst #change">
+               <sic source="#V1">d'une logique industrielle</sic>
+               <corr source="#V2">des logiques industrielles</corr>
+            </choice> et <choice corresp="#subst #change">
+               <sic source="#V1">médiatique<milestone unit="tei:p"/></sic>
+               <corr source="#V2">médiatiques<milestone unit="tei:p"/></corr>
+            </choice>.
             <milestone unit="tei:p"/><lb/>## Collections populaires et poétique industrielle<milestone
                unit="pb"/><lb/>
              La question de l'intervalle se pose ainsi, en amont de la
@@ -404,14 +400,14 @@
             génériquement (se fermant alors une partie du public) mais au contraire il faut qu'il
             promette la plus grande variété d'événements et de tonalités. L'usage de la terminologie
             générique vise à souligner cette variété, avec des formulations comme « grand roman
-            d'amour et d'aventures » ou « grand roman d'aventures, de combat et d'amour »[^10] <app corresp="#meca #app">
-               <lem wit="#V1"/>
-               <rdg wit="#V2">qui </rdg>
-            </app>
-            ont une fonction descriptive <app corresp="#subst #change">
-               <lem wit="#V1">qui vise à insister</lem>
-               <rdg wit="#V2">insistant</rdg>
-            </app> sur la richesse de l'œuvre afin d'en mettre en avant les attraits diversifiés. Au
+            d'amour et d'aventures » ou « grand roman d'aventures, de combat et d'amour »[^10] <choice corresp="#meca #app">
+               <sic source="#V1"/>
+               <corr source="#V2">qui </corr>
+            </choice>
+            ont une fonction descriptive <choice corresp="#subst #change">
+               <sic source="#V1">qui vise à insister</sic>
+               <corr source="#V2">insistant</corr>
+            </choice> sur la richesse de l'œuvre afin d'en mettre en avant les attraits diversifiés. Au
             XX^e^ siècle, les éditeurs se mettent à proposer des collections spécialisées dans un
             genre -- amour, policier, aventure[^11] -- visant à travers lui un type de public
             particulier (respectivement femmes, hommes et enfants[^12]). Ils limitent donc au
@@ -424,10 +420,10 @@
             collection impose un déplacement du texte vers l'architexte éditorial, désormais le
             lecteur saisit le roman par la médiation du genre. En termes commerciaux, il raisonne
             par gamme de produits (par architextes commerciaux) au sein desquels il opère sa
-            sélection. En termes <app corresp="#meca #gram">
-               <lem wit="#V1">littéraire</lem>
-               <rdg wit="#V2">littéraires</rdg>
-            </app>, sa lecture est orientée par le genre, qui détermine des attentes, un mode de
+            sélection. En termes <choice corresp="#meca #gram">
+               <sic source="#V1">littéraire</sic>
+               <corr source="#V2">littéraires</corr>
+            </choice>, sa lecture est orientée par le genre, qui détermine des attentes, un mode de
             déchiffrement du texte, une efficacité toute particulière du réseau de stéréotypes et un
             fort codage de la tension narrative.<milestone unit="tei:p"/>
             <lb/>Dans ce nouveau type de pratique littéraire, l'intervalle
@@ -500,10 +496,10 @@
             déjà le cas des séries de Street and Smith importées par Eichler (dont la poétique
             préfigurait celle qui allait s'imposer quelques décennies plus tard). Cela le sera
             ponctuellement dans les années 1930, par exemple avec les aventures de Maigret,
-            publiées mensuellement <app corresp="#subst #change">
-               <lem wit="#V1">au début</lem>
-               <rdg wit="#V2">à l'origine</rdg>
-            </app>. Mais cela le deviendra surtout massivement quand, après la Seconde Guerre
+            publiées mensuellement <choice corresp="#subst #change">
+               <sic source="#V1">au début</sic>
+               <corr source="#V2">à l'origine</corr>
+            </choice>. Mais cela le deviendra surtout massivement quand, après la Seconde Guerre
             mondiale, la plupart des éditeurs choisiront de donner une identité à leurs collections
             en recourant à des séries à personnages récurrents jouant le rôle de tête de gondole :
             Catamount chez Tallandier, Bob Morane chez Marabout, OSS 117 et Coplan au Fleuve Noir...
@@ -535,10 +531,10 @@
             récurrent des héros dans de nouvelles aventures-livres et la possibilité de choisir dans
             le rayon entre lesdites aventures apparaissent comme une nouvelle étape dans le
             processus de poïetisation des mécanismes de production, de distribution et de
-            consommation qui s'imposent <app corresp="#add #subst">
-               <lem wit="#V1"/>
-               <rdg wit="#V2">et </rdg>
-            </app>dont ils diégétisent les logiques de séduction.
+            consommation qui s'imposent <choice corresp="#add #subst">
+               <sic source="#V1"/>
+               <corr source="#V2">et </corr>
+            </choice>dont ils diégétisent les logiques de séduction.
             Chaque nouvelle aventure du personnage renouvelle le plaisir sériel et en enrichit la
             gamme offerte à l'acheteur. Le caractère immarescible du héros est induit par les modes
             de consommation. Au contraire, les principes de feuilletonisation d'un volume à l'autre
@@ -577,16 +573,16 @@
             consumériste que celui du roman d'aventures de l'entre-deux-guerres dans lesquels la
             culture marchande restait à l'arrière-plan du récit. Le lecteur retrouve dans les
             intrigues les mécanismes mêmes qui prévalent dans la consommation des collections dans
-            lesquelles ces aventures sont publiées, <app corresp="#add #subst">
-               <lem wit="#V1">achetées vite fait</lem>
-               <rdg wit="#V2">achetées</rdg>
-            </app> et lues en série pour un plaisir immédiat, souvent jetés
+            lesquelles ces aventures sont publiées, <choice corresp="#add #subst">
+               <sic source="#V1">achetées vite fait</sic>
+               <corr source="#V2">achetées</corr>
+            </choice> et lues en série pour un plaisir immédiat, souvent jetés
             après lecture. Certes, il s'agit là de plaisirs moins sophistiqués que ceux des
             héros d'espionnage, mais l'oisiveté associée à cette (modeste) lecture de
-            divertissement trouve naturellement écho  <app corresp="#subst #change">
-               <lem wit="#V1">avec</lem>
-               <rdg wit="#V2">dans</rdg>
-            </app> l'univers des destinations exotiques, des grands hôtels et des plaisirs du héros
+            divertissement trouve naturellement écho  <choice corresp="#subst #change">
+               <sic source="#V1">avec</sic>
+               <corr source="#V2">dans</corr>
+            </choice> l'univers des destinations exotiques, des grands hôtels et des plaisirs du héros
             -- dans un *système* de la consommation du divertissement et de ses valeurs. Autrement
             dit, ce qui est diégétisé, c'est cet imaginaire de la consommation qui structure en
             profondeur le plaisir de la lecture sérielle et qui se concrétise culturellement dans la
@@ -642,10 +638,10 @@
             et thématique, que nous avons développée dans *Fictions à la chaîne* [-@letourneux_fictions_2017].<milestone unit="tei:p"/> <milestone unit="tei:p"/> [^2]:
             Sur le même principe du roman complet à très bas prix, en 1907, Jules Tallandier
             lancera « Le Livre national », L'Edition Nouvelle, « Le Livre Universel »,
-            Ferenczy, « Le Livre illustré <app corresp="#meca #unif">
-               <lem wit="#V1">inédit</lem>
-               <rdg wit="#V2">inédit »</rdg>
-            </app>, et en 1908, Jules Rouff, « La Grande collection nationale »<milestone unit="tei:p"/>
+            Ferenczy, « Le Livre illustré <choice corresp="#meca #unif">
+               <sic source="#V1">inédit</sic>
+               <corr source="#V2">inédit »</corr>
+            </choice>, et en 1908, Jules Rouff, « La Grande collection nationale »<milestone unit="tei:p"/>
             <lb/>[^3]: Pour se faire une idée partielle de cette circulation des
             fascicules américains et des imitations qu'ils ont suscité dans toute l'Europe, voir F.
             Cristofori et A. Menarini, *Eroi del raconto popolare* [-@menarini_eroi_1986].<milestone unit="tei:p"/><lb/>[^4]: En
@@ -672,10 +668,10 @@
             fascicule illustré tous les jeudis ».<milestone unit="tei:p"/><lb/>[^9]:
             Nous reprenons les analyses développées dans notre article (à paraître) « Le genre
             comme pratique historique et médiatique (1860-1940) », *in* Émilie Pézard et
-            Valérie Stiénon, *Les Genres du roman au XIX^e^ siècle*<app corresp="#para #biblio">
-               <lem wit="#V1">[-@letourneaux_genre_2016]</lem>
-               <rdg wit="#V2">[-@letourneux_genre_2016]</rdg>
-            </app>.
+            Valérie Stiénon, *Les Genres du roman au XIX^e^ siècle*<choice corresp="#para #biblio">
+               <sic source="#V1">[-@letourneaux_genre_2016]</sic>
+               <corr source="#V2">[-@letourneux_genre_2016]</corr>
+            </choice>.
             <milestone unit="tei:p"/><lb/>[^10]: Respectivement (avec des variantes) dans des publicités
             pour Paul Bertnay, *Le Mort qui parle*, Charles Mérouvel, *Tout se paye*, Paul Féval,
             *Les Mystères de Londres* (reparution en feuilleton à la fin du XIX^e^ siècle), pour le
@@ -695,20 +691,20 @@
             <lb/>[^14]: Policier pour San Antonio (publié dans « Spécial
             police »), *western* pour Catamount (lié à la collection « Aventures du far west »),
             espionnage pour OSS 117 (associé à Fleuve noir « Espionnage ») : à chaque fois, le
-            personnage naît dans une collection de genre, dont <app corresp="#meca #gram">
-               <lem wit="#V1">ils diégétisent</lem>
-               <rdg wit="#V2">il diégétise</rdg>
-            </app> les conventions sérielles.<milestone unit="tei:p"/>
+            personnage naît dans une collection de genre, dont <choice corresp="#meca #gram">
+               <sic source="#V1">ils diégétisent</sic>
+               <corr source="#V2">il diégétise</corr>
+            </choice> les conventions sérielles.<milestone unit="tei:p"/>
             <lb/>[^15]: Le principe de séries feuilletonantes avait été tenté
             avant la Première Guerre mondiale avec des collections à personnage récurrent comme
             Fantômas, Naz-en-l'Air ou Carot Coupe Tête, ou bricolée à partir de feuilletons revendus
-            à la découpe (cas de Zigomar ou de l'Inspecteur Tony), mais <app corresp="#gram #meca">
-               <lem wit="#V1">elle</lem>
-               <rdg wit="#V2">il</rdg>
-            </app> est progressivement <app corresp="#gram #meca">
-               <lem wit="#V1">abandonnée</lem>
-               <rdg wit="#V2">abandonné</rdg>
-            </app>, pour ne survivre que dans le marché étroit des fascicules, beaucoup plus proches,
+            à la découpe (cas de Zigomar ou de l'Inspecteur Tony), mais <choice corresp="#gram #meca">
+               <sic source="#V1">elle</sic>
+               <corr source="#V2">il</corr>
+            </choice> est progressivement <choice corresp="#gram #meca">
+               <sic source="#V1">abandonnée</sic>
+               <corr source="#V2">abandonné</corr>
+            </choice>, pour ne survivre que dans le marché étroit des fascicules, beaucoup plus proches,
             dans leur dynamique, des logiques du feuilleton.<milestone unit="tei:p"/>
             <lb/>[^16]: Dans *Pornotopie*, Beatriz Preciado a montré le lien qui
             se tisse après la Seconde Guerre mondiale dans les nouvelles figures de la masculinité

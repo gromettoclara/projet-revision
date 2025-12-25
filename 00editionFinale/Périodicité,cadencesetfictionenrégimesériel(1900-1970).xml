@@ -98,7 +98,7 @@
                         <item xml:id="gram">Grammaire et Syntaxe -- accord, conjugaison, structure de phrases, impropriétés syntaxiques.</item>
                         <item xml:id="md">Code markdown -- harmonisation et correction pour rentrer sans frottement dans la chaîne de conversion.</item></list></item>
                   
-                  <item xml:id="subst">Modifications substantives : sémantiques, rhétoriques ou stylistique : les so
+                  <item xml:id="subst">Modifications énonciatives ou discursives (assumant la position de l'auteur) : affectent l’organisation du discours, la rhétorique, le style, la voix de l’auteur et impliquent un dialogue plus proche avec celui-ci.
                      <list><item xml:id="puct">ponctuation -- virgules, points, tirets, guillemets, usage des italiques avec une incidence sur le sens ou le style.</item>
                         <item xml:id="change">Substitutions lexicales non mécaniques.</item>
                         <item xml:id="add">Ajouts de mots/phrases.</item>

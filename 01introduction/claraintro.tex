@@ -1,0 +1,603 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+\documentclass[
+]{article}
+\usepackage{xcolor}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\newenvironment{Shaded}{}{}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{#1}}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.49,0.56,0.16}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
+\newcommand{\BuiltInTok}[1]{\textcolor[rgb]{0.00,0.50,0.00}{#1}}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.53,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.56,0.13,0.00}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.73,0.13,0.13}{\textit{#1}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.02,0.16,0.49}{#1}}
+\newcommand{\ImportTok}[1]{\textcolor[rgb]{0.00,0.50,0.00}{\textbf{#1}}}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.40,0.40,0.40}{#1}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.74,0.48,0.00}{#1}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.73,0.40,0.53}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.10,0.09,0.49}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\usepackage{graphicx}
+\makeatletter
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
+% Set default figure placement to htbp
+\def\fps@figure{htbp}
+\makeatother
+% definitions for citeproc citations
+\NewDocumentCommand\citeproctext{}{}
+\NewDocumentCommand\citeproc{mm}{%
+  \begingroup\def\citeproctext{#2}\cite{#1}\endgroup}
+\makeatletter
+ % allow citations to break across lines
+ \let\@cite@ofmt\@firstofone
+ % avoid brackets around text for \cite:
+ \def\@biblabel#1{}
+ \def\@cite#1#2{{#1\if@tempswa , #2\fi}}
+\makeatother
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newenvironment{CSLReferences}[2] % #1 hanging-indent, #2 entry-spacing
+ {\begin{list}{}{%
+  \setlength{\itemindent}{0pt}
+  \setlength{\leftmargin}{0pt}
+  \setlength{\parsep}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1
+   \setlength{\leftmargin}{\cslhangindent}
+   \setlength{\itemindent}{-1\cslhangindent}
+  \fi
+  % set entry spacing
+  \setlength{\itemsep}{#2\baselineskip}}}
+ {\end{list}}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{\hfill\break\parbox[t]{\linewidth}{\strut\ignorespaces#1\strut}}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\usepackage{setspace}
+\usepackage[left=2.2cm, right=2.2cm, top=2cm, bottom=2.3cm]{geometry}
+\setlength{\skip\footins}{0.7cm}
+\usepackage{nowidow}
+\widowpenalty=10000
+\clubpenalty=10000
+\makeatletter
+\renewcommand{\footnoterule}{%
+  \kern -3pt
+  \hrule width 0.35\linewidth
+  \kern 8pt
+}
+\makeatother
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={Pour un workflow de révision -- introduction explicative},
+  pdfauthor={Clara Grometto},
+  colorlinks=true,
+  linkcolor={blue},
+  filecolor={Maroon},
+  citecolor={blue},
+  urlcolor={blue},
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Pour un workflow de révision -- introduction explicative}
+\usepackage{etoolbox}
+\makeatletter
+\providecommand{\subtitle}[1]{% add subtitle to \maketitle
+  \apptocmd{\@title}{\par {\large #1 \par}}{}{}
+}
+\makeatother
+\subtitle{FRA 6730}
+\author{Clara Grometto}
+\date{décembre 2025}
+
+\usepackage{scrextend} 
+\KOMAoptions{footnotes=multiple}
+\addtokomafont{footnote}{\fontsize{9.5pt}{10.5pt}\selectfont}
+\newcommand*\footnotemarkspace{2em} 
+\deffootnote{\footnotemarkspace}
+  {\parindent}
+  {\makebox[\footnotemarkspace][r]{\fontsize{9.5pt}{10.5pt}\selectfont\thefootnotemark.\hspace{0.8em}}} 
+\makeatletter
+\renewcommand{\@makefnmark}{\hbox{\hspace{0pt}\textsuperscript{\normalfont\@thefnmark}}}
+\makeatother
+
+\begin{document}
+\maketitle
+
+\doublespacing
+
+Ce travail constitue une expérimentation-réflexion autour de la
+modélisation de la révision éditoriale, notamment dans le cadre de
+l'édition scientifique. Les sources sont les versions de travail de
+trois articles de la revue \emph{Sens Public}, récupérées sur l'éditeur
+collaboratif en ligne Stylo, qui permet le versionning, et donc de
+remonter à des états antérieurs du texte. Il s'agit non seulement de
+modéliser les types de correction, mais aussi le processus dialogique
+qui s'engage entre les divers·es acteur·rices. Nous voudrions dépasser
+une approche strictement typologique des révisions pour les intégrer à
+la dynamique de leur réception et de leur discussion, en nous inspirant
+des gestes et des pratiques des éditeur·rices.
+
+Aujourd'hui Stylo montre un défaut\,: l'invisibilisation du travail
+éditorial. La fonctionnalité de comparaison des versions était
+insatisfaisante car elle manquait de lisibilité, et a été supprimée dans
+le but d'être améliorée. De manière générale, le dialogue entre
+éditeur·ice et auteur·ice tend à se déplacer vers des outils externes.
+Cela se traduit par une fragmentation des échanges-- multiplication de
+fichiers, de commentaires, de courriels -- qui affaiblit la cohérence du
+processus éditorial et souligne l'impensé du workflow. Dans Stylo, cette
+limite est partiellement contournée par l'intégration d'Hypothesis, qui
+cependant ne permet pas une modélisation des interventions sur le texte.
+C'est précisément là que réside la force du \emph{Track Changes} de
+Word\,: il rend le travail des correcteur·rices immédiatement visible,
+traçable et négociable, et ce dans un seul fichier.
+
+L'enjeu est donc de concevoir un dispositif qui permette à la fois de
+mieux structurer l'échange entre auteur·ice et correcteur·ice, de rendre
+visible le travail éditorial, et ce sans renoncer à une modélisation des
+différents types d'interventions. Ce travail constitue d'ailleurs une
+réflexion sur la pertinence des différents types d'intervention à
+visibiliser en priorité.
+
+Les premiers entretiens informels menés avec les éditeur·rices de
+\emph{Sens Public} et de \emph{Humanités Numériques} montrent que la
+classification des révisions ne peut être pensée indépendamment des
+métiers et des expertises mobilisés. La première distinction qui
+paraîtrait aidante relève du degré d'\,``importance'' des corrections.
+Ce terme, employé par Florence Daniel (éditrice de \emph{Humanités
+Numériques}), revêt selon nous une connotation hiérarchisante. Nous
+n'emploierons pas ce terme afin d'éviter de distinguer les types de
+correction en termes de niveau mais plutôt en termes de domaine
+d'expertise mobilisé.
+
+Les corrections orthotypographiques et grammaticales, les vérifications
+de fond et de forme sur la bibliographie, ou l'assurance d'un rendu
+final conforme relèvent du domaine des correcteur·rices et
+éditeur·rices. Elles ne sont pas moins importantes et participent
+également à la production du sens, d'ailleurs les auteur·rices doivent
+en prendre connaissance, mais ils doivent les recevoir comme des
+corrections de la part d'experts de la langue. Les reformulations plus
+substantielles -- déplacements de segments, suppressions de redondances,
+reformulations visant la clarté -- engagent davantage la structure du
+propos ou bien le style auctorial, et prennent alors la valeur de
+suggestions ou de questions adressées à l'auteur·ice.
+
+Prolongeant les pratiques de l'édition papier (dans lesquelles il était
+d'usage d'indiquer par des signes normalisés la nature précise des
+corrections) dans l'environnement numérique, nous aimerions aussi
+superposer une catégorisation plus fine. Pour élaborer cette typologie,
+nous nous sommes appuyée sur les distinctions formulées dans le Chicago
+Manual of Style (18ᵉ édition),\footnote{\citeproc{ref-ChicagoManualStyle}{{``The
+  {Chicago Manual} of {Style}, 18th {Edition}.''} }} qui propose un état
+des lieux très complet des étapes du processus de publication et
+d'édition, et des différentes règles orthotypo à respecter. Prenant
+chacune des catégories du sommaire, nous avons tenté de les factoriser
+pour avoir un nombre plus limité de types.
+
+Nous avons travaillé directement sur la syntaxe Markdown considérée
+comme du texte brut, car les éditeur·rices et auteur·rices de Sens
+Public produisent et corrigent directement les articles dans ce format.
+Une part significative du travail des éditeur·rices consiste précisément
+à intervenir sur le balisage Markdown, et non uniquement sur le contenu
+linguistique.
+
+Voici donc la double catégorisation appliquée\,:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Corrections mécaniques\,: mécanique de la langue, mécanique du code,
+  mécanique de la pipeline, fluidité de la lecture
+\end{enumerate}
+
+\begin{itemize}
+\tightlist
+\item
+  orthographe -- rectifications d'erreurs d'orthographe, harmonisation
+  des graphies.
+\item
+  Casse, capitalisation, abréviations, ponctuation, faces -- questions
+  d'uniformisation des majuscules/minuscules, des abréviations, des
+  signes de ponctuation, espaces insécables. Ces changements peuvent
+  éventuellement se faire en masse.
+\item
+  Numérotation, listes, dates, chiffres -- correction ou cohérence des
+  éléments numériques.
+\item
+  Grammaire et Syntaxe -- accord, conjugaison, structure de phrases,
+  impropriétés syntaxiques.
+\item
+  Code markdown -- harmonisation et correction pour rentrer sans
+  frottement dans la chaîne de conversion. Dans cette catégorie peut
+  rentrer la correction du BibTeX et de l'insertion de la citation dans
+  le corps de texte. Ici, le rendu présentationnel côtoie le sémantisme
+  des données.
+\end{itemize}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  Modifications énonciatives ou discursives (assumant la position de
+  l'auteur)\,: affectent l'organisation du discours, la rhétorique, le
+  style, la voix de l'auteu·rice et impliquent un dialogue plus proche
+  avec celleux-ci.
+\end{enumerate}
+
+\begin{itemize}
+\tightlist
+\item
+  ponctuation -- virgules, points, tirets, guillemets, usage des
+  italiques avec une incidence sur l'argumentaire ou le style.
+\item
+  Substitutions lexicales / de genre / de nombre avec une incidence sur
+  l'argumentaire ou le style.
+\item
+  Ajouts ou suppressions de mots/phrases.
+\item
+  Déplacements de mots/phrases.
+\item
+  Réécriture ponctuelle de segments, ou plutôt proposition de
+  reformulation, pour des raisons autres que grammaticale ou syntaxique.
+\end{itemize}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  Autour du texte -- interventions sur les références et paratexte
+  éditorial
+\end{enumerate}
+
+\begin{itemize}
+\tightlist
+\item
+  Ajouts de notes de bas de page éditoriales.
+\item
+  Correction de citations.
+\item
+  Vérification de fond sur la bibliographie, les figures et les tableaux
+  insérés.
+\end{itemize}
+
+Nous proposons la modélisation d'un workflow de révision basé sur la TEI
+pour l'alignement de deux versions d'un article, et plus largement sur
+les technologies XML afin de rendre visibles, pour l'auteur, les
+corrections apportées à la version révisée. Le workflow repose sur une
+distinction claire des rôles\,: un premier acteur effectue les
+révisions, tandis qu'un second acteur en prend connaissance et en valide
+-- ou refuse -- certaines.
+
+Le recours à XML peut sembler lourd ou peu adapté, et il est vrai que la
+chaîne mise en œuvre pour arriver au prototype final est assez complexe
+et pour le moins artisanale. Néanmoins, la TEI a l'avantage d'être
+conceptuellement très expressive, offrant un modèle déclaratif qui va
+permettre d'encoder finement les phénomènes textuels et les opérations
+éditoriales. Ce choix se justifie aussi par des intérêts très personnels
+et la volonté de découvrir et de nous essayer à XForm.
+
+Le choix des balises \texttt{\textless{}choice\textgreater{}},
+\texttt{\textless{}sic\textgreater{}} et
+\texttt{\textless{}corr\textgreater{}} s'appuie sur les guidelines
+(3.5).
+
+\begin{quote}
+As in editing a printed text, so in encoding a text in electronic form,
+it may be necessary to accommodate editorial comment on the text and to
+render account of any changes made to the text in preparing it. The tags
+described in this section may be used to record such editorial
+interventions, whether made by the encoder, by the editor of a printed
+edition used as a copy text, by earlier editors, or by the copyists of
+manuscripts.\footnote{\citeproc{ref-TEIGuidelinesSimple}{{``{The TEI
+  Guidelines - Simple Editorial Changes}.''} }}
+\end{quote}
+
+Ce set de balises semblait bien plus pertinent que le détournement des
+éléments dédiés à un apparat critique (comme il était question dans la
+note d'intention). Pour simplifier la pipeline, nous nous sommes limitée
+à ces trois balises. Les guidelines distinguent les corrections
+d'erreurs évidentes de la normalisation ortho-typo (moins universelle),
+des additions, suppressions, et des substitutions. Nous nous appuierons
+plutôt sur l'attribut \texttt{@corresp} de l'élément
+\texttt{\textless{}choice\textgreater{}} pour qualifier plus précisément
+l'intervention encodée.
+
+\subsection{Description du workflow}\label{description-du-workflow}
+
+La première étape, à partir de l'export du markdown depuis Stylo, est le
+nettoyage des sources brutes. Essentiellement, cela consiste à supprimer
+les retours chariot qui ne correspondent pas à la création d'un nouveau
+paragraphe en Markdown, afin de supprimer les différences non
+significatives entre les deux versions du texte et de faciliter le
+passage de l'algorithme de \emph{diff}. Les doubles retours, qui
+signalent un paragraphe en Markdown, sont quant à eux remplacés par les
+balises
+\texttt{\textless{}milestone\ unit="tei:p"/\textgreater{}\textless{}lb/\textgreater{}}\footnote{méthode
+  suggérée par \textsc{Beshero-Bondar}, Elisa,
+  \citeproc{ref-beshero-bondarDocumentModelingTEI2019}{{``Document
+  {Modeling} with the {TEI Critical Apparatus}: {A Panel
+  Presentation}.''} September 2019. }}, encore une fois pour améliorer
+l'alignement les deux versions. En effet, le changement de paragraphe
+est une variante significative qu'il faut prendre en compte. Ces deux
+premières étapes sont effectuées grâce à de simples chercher-remplacer.
+
+Ensuite, un \emph{diff} est généré grâce à l'algorithme \texttt{wdiff},
+qui considère le mot comme la plus petite unité de comparaison. Le
+résultat est stocké dans un fichier \texttt{comparaison.txt}, lequel est
+traité par un script Python (\texttt{comparaison.py}). Il identifie, à
+l'aide d'expressions régulières, les segments supprimés et ajoutés,
+balisés respectivement \texttt{{[}-\ …\ -{]}} et \texttt{\{+\ …\ +\}}.
+Il réinjecte ces contenus dans des éléments
+\texttt{\textless{}choice\textgreater{}},
+\texttt{\textless{}sic\textgreater{}} et
+\texttt{\textless{}corr\textgreater{}}, puis nettoie les espaces
+superflus (espaces résiduels partagés par les deux versions, sans
+incidence sur la traçabilité des différences). Le résultat est intégré
+dans un squelette TEI comprenant la base d'un header.
+
+Le fichier XML obtenu est ensuite repris manuellement. Cette étape
+permet de vérifier tout le texte et de compenser les limites du script,
+qui se révèle efficace pour les cas généraux (les substitutions, les
+plus fréquentes) mais échoue dans certains cas spécifiques (par exemple
+l'ouverture d'un élément \texttt{\textless{}choice\textgreater{}} en
+rencontrant une syntaxe Markdown de type \texttt{{[}-@refId{]}}). Aussi,
+le script ne gère pas les ajouts et suppressions sans remplacement, et
+les caractères sensibles XML doivent être échappés
+manuellement\footnote{En raison de la présence de balises XML dans les
+  fichiers \texttt{.txt} avant le \emph{diff}, il n'était pas possible
+  d'automatiser cette étape dans le script}. Ce script gagnerait donc à
+être amélioré (notamment avec des regex plus solides), voire à être
+remplacé par une approche différente et une réorganisation plus
+cohérente de la chaîne de traitement. En l'état, il a surtout permis
+d'accélérer le travail. Cette reprise manuelle est également l'occasion
+de compléter le teiHeader en renseignant les métadonnées propres à
+chaque article, et d'ajouter un attribut \texttt{@corresp} à chaque
+élément \texttt{\textless{}choice\textgreater{}}.
+
+Une transformation XSLT est ensuite appliquée pour ajouter les
+identifiants à chaque élément \texttt{\textless{}choice\textgreater{}}
+et ses enfants.
+
+Grâce à ces identifiants, un prototype XForms permet la consultation et
+la validation des corrections selon un parcours en plusieurs étapes. Un
+premier onglet dédié à la visualisation des changements dits
+``mécaniques'', sans possibilité d'action\,: il s'agit uniquement d'en
+prendre connaissance. Un deuxième onglet permet de consulter les
+modifications dites ``énonciatives'' pour les accepter ou les refuser.
+Cette validation repose sur la bascule entre les éléments
+\texttt{\textless{}sic\textgreater{}} et
+\texttt{\textless{}corr\textgreater{}}\,: la version retenue est placée
+dans \texttt{\textless{}sic\textgreater{}}, tandis que l'autre est
+conservée dans \texttt{\textless{}corr\textgreater{}}\footnote{Ce
+  stratagème constitue un abus de l'utilisation de ces balise, mais
+  permet de conserver un historique des états du texte sans avoir
+  recours aux éléments TEI dédiés à l'édition critique, qui relève
+  plutôt d'une enquête sur la circulation des textes anciens}. Enfin, un
+troisième onglet donne accès à la lecture de la version modifiée du
+texte, avec une mise en exergue des changements acceptés ou refusés.
+
+\begin{figure}
+\centering
+\pandocbounded{\includegraphics[keepaspectratio]{./workflow.png}}
+\caption{Schéma synthétique de la pipeline}
+\end{figure}
+
+\subsection{Post-mortem}\label{post-mortem}
+
+Ce travail, très manuel, met en évidence les difficultés liées à
+l'automatisation du suivi et de la classification des révisions.
+
+\subsubsection{Corrections non pertinentes en
+masse}\label{corrections-non-pertinentes-en-masse}
+
+Les principales corrections effectuées par Arilys et Adrien relèvent de
+la correction typographique\,: remplacement d'apostrophes droites par
+des apostrophes courbes, ajout d'espaces fines insécables avant
+certaines ponctuations, des opérations de type
+«\,chercher--remplacer\,». Ces interventions, massives et diffuses, ne
+nécessitent pas d'être signalées individuellement à chaque occurrence.
+Pour le présent travail, nous avons choisi de nous appuyer sur des
+versions produites après ces stades de corrections typographiques
+(versions identifiées ``CQ'' pour contrôle qualité), afin de réduire le
+bruit.
+
+\subsubsection{Gestion de la granularité et des changements
+d'échelle}\label{gestion-de-la-granularituxe9-et-des-changements-duxe9chelle}
+
+Pour ce présent travail, on a une granularité qui concerne le mot. Elle
+est satisfaisante dans une certaine mesure, car la plupart des
+corrections portent sur des mots isolés ou des groupes de mots contigus.
+
+Cependant, des changements d'échelle apparaissent selon le type de
+variation. Par exemple, lorsque la ponctuation est accolée à un mot, le
+diff considère l'ensemble comme une seule unité. Dans certains cas, cela
+rend compte de manière pertinente d'une correction typographique, comme
+dans l'exemple suivant\,:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{\textless{}}\KeywordTok{app}\NormalTok{\textgreater{}}
+\NormalTok{    \textless{}}\KeywordTok{lem}\OtherTok{ wit=}\StringTok{"\#V1"}\NormalTok{\textgreater{}vie .\textless{}/}\KeywordTok{lem}\NormalTok{\textgreater{}}
+\NormalTok{    \textless{}}\KeywordTok{rdg}\OtherTok{ wit=}\StringTok{"\#V2"}\NormalTok{\textgreater{}vie.\textless{}/}\KeywordTok{rdg}\NormalTok{\textgreater{}}
+\NormalTok{\textless{}/}\KeywordTok{app}\NormalTok{\textgreater{}}
+\end{Highlighting}
+\end{Shaded}
+
+Dans ce cas précis, l'encodage rend compte de manière pertinente de la
+correction de la ponctuation, en fonction de ses rapports avec le texte
+qui l'entoure. Le niveau de granularité adopté (le mot assorti de sa
+ponctuation) semble adéquat. On pourrait cependant questionner la
+pertinence de prendre en compte systématiquement la ponctuation accolée
+au mot.
+
+En revanche, dans d'autres contextes, la variation ne concerne plus un
+signe ou un mot isolé, mais un ensemble textuel cohérent. C'est le cas,
+par exemple, dans l'article de Snauwert, où l'ensemble des citations est
+passé en italique par les éditeur·rices\,: doit-on considérer chaque
+balise italique comme une micro-variation, ou traiter l'ensemble du
+passage comme une seule intervention ?
+
+Des difficultés similaires apparaissent pour certaines substitutions, où
+un syntagme est remplacé par un pronom (difficile de remonter la chaîne
+de référence), et pour les déplacements de segments textuels, qui ne
+sont pas reconnus comme tels par l'algorithme.
+
+Automatiser complètement la détection des interventions implique donc
+des risques\,: soit une sur-fragmentation du texte, rendant le track
+changes illisible, soit une agrégation trop grossière, qui efface la
+nature précise des interventions. Cette tension entre précision locale
+et cohérence globale constitue, selon nous, le principal défi de la
+modélisation automatique des types de révision.
+
+\subsubsection{Pertinence des
+classifications}\label{pertinence-des-classifications}
+
+Contrairement à l'édition papier, où les correcteur·rices annotaient une
+épreuve destinée à l'auteur puis au métier chargé de reporter ces
+changements sur la copie, ici les éditeur·rices effectuent eux-mêmes les
+modifications. Le suivi strict du modèle papier est donc questionnable
+dans un contexte numérique. La catégorisation qui semble la plus aidante
+serait celle qui structure le dialogue avec l'auteur·ice. Or la
+frontière entre corrections ``mécaniques'' et modifications
+``énonciatives'' n'est pas strictement formelle. Une même opération (par
+exemple une variation de ponctuation ou de casse) peut relever tantôt
+d'une correction mécanique (uniformisation, conformité aux besoins de la
+revue), tantôt d'un choix auctorial passant par-dessus des questions
+d'uniformisation. De même, il est difficile de distinguer une simple
+rectification normative d'une réécriture motivée par des considérations
+stylistiques. La catégorisation dépend donc autant de l'intention de
+l'intervenant·e que de la nature de l'opération.
+
+Si certaines interventions élémentaires peuvent être détectées
+automatiquement (ajouts, suppressions, substitutions au niveau d'un mot,
+d'un paragraphe ou de la ponctuation), l'attribution de ces opérations à
+un domaine d'expertise spécifique nécessite une interprétation humaine.
+Cette classification justifie le maintien des ``petites
+mains''\footnote{\citeproc{ref-melletPetitesMainsLedition2023}{\textsc{Mellet},
+  Margot. {``Les petites mains de l'édition : Réflexion pour des
+  environnements éditoriaux équitables, pluriels et inclusifs.''}
+  {[}n.p.{]} : {[}n.p.{]}, 2023, p. 83--102. }} dans le workflow,
+soulignant l'importance du rapport humain·e entre réviseur·euse et
+auteur·ice.
+
+\subsubsection{Signature ?}\label{signature}
+
+Dans Stylo, il est difficile de déterminer précisément qui intervient à
+chaque étape du processus de révision. Nous avons donc déduit la
+responsabilité des changements en s'appuyant sur les titres et les
+créateur·rices des versions.
+
+Les contraintes de temps s'ajoutant à la complexité du suivi nous ont
+conduite à abandonner l'idée d'introduire un attribut
+\texttt{\textless{}resp\textgreater{}} à chaque modification. Ce
+renoncement met toutefois en évidence une question\,: quel est l'intérêt
+d'attribuer les interventions aux différents acteurs ? avec quel niveau
+de granularité ? On pourrait plutôt raisonner en termes d'étapes
+significatives, de rationalisation du processus de révision, plutôt que
+sur chaque modification ponctuelle. Il s'agirait d'identifier des
+moments pivots et de leur associer une responsabilité. Cela permettrait
+de conserver un historique clair des moments clés du texte, tout en
+laissant une marge de manœuvre pour le \emph{versioning}, qui ne sert
+pas uniquement au suivi des révisions.
+
+\subsection*{Biliographie}\label{biliographie}
+\addcontentsline{toc}{subsection}{Biliographie}
+
+\phantomsection\label{refs}
+\begin{CSLReferences}{0}{1}
+\bibitem[\citeproctext]{ref-TEIGuidelinesSimple}
+{``{The TEI Guidelines - Simple Editorial Changes}.''}
+
+\bibitem[\citeproctext]{ref-ChicagoManualStyle}
+{``The {Chicago Manual} of {Style}, 18th {Edition}.''}
+
+\bibitem[\citeproctext]{ref-beshero-bondarDocumentModelingTEI2019}
+\textsc{Beshero-Bondar}, Elisa.
+{``\href{https://doi.org/10.5281/ZENODO.3446154}{Document {Modeling}
+with the {TEI Critical Apparatus}: {A Panel Presentation}}.''} September
+2019.
+
+\bibitem[\citeproctext]{ref-melletPetitesMainsLedition2023}
+\textsc{Mellet}, Margot. {``Les petites mains de l'édition : Réflexion
+pour des environnements éditoriaux équitables, pluriels et inclusifs.''}
+{[}n.p.{]}. {[}n.p.{]}. 2023, p. 83--102.
+
+\end{CSLReferences}
+
+\end{document}

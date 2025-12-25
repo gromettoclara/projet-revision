@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">La gratuité, destinée manifeste de l’édition universitaire</title>
+            <title type="sub">Édition comparée de deux moments du texte</title>
+            <principal xml:id="cg">GROMETTO Clara</principal>
+            <respStmt>
+               <resp>Sélection, alignement des versions et prototype pour un formulaire de comparaison</resp>
+               <persName ref="#cg">
+                  <forename>Clara</forename>
+                  <surname>Grometto</surname>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Édition de la version finale de l'article</resp>
+               <orgName>
+                  <ref target="https://www.sens-public.org/">Sens Public</ref>
+               </orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Directrice de la revue Sens Public</resp>
+               <persName ref="#mm">
+                  <forename>Margot</forename>
+                  <surname>Mellet</surname>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Rattachement institutionnel</resp>
+               <orgName>DLLF</orgName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Université de Montréal</publisher>
+            <pubPlace>Montréal, Québec</pubPlace>
+            <date when-iso="2025-12-15" type="date-de-rendu">25 décembre 2025</date>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <analytic>
+                  <author>
+                     <forename>Tony</forename>          
+                     <surname>Gheeraert</surname>
+                  </author>
+                  <title level="a">La gratuité, destinée manifeste de l’édition universitaire</title>
+                  <ref target="https://sens-public.org/articles/1781/"
+                     >https://sens-public.org/articles/1781/</ref>
+               </analytic>
+               <monogr>
+                  <title level="j">Revue Sens Public</title>
+                  <imprint>
+                     <date when-iso="2024-12-03" type="publication">03 décembre 2024</date>
+                  </imprint>
+               </monogr>
+               <note>Encodage XML à partir des sources stylo : versions préparatoires de l'article</note>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p>L'alignement des versions a été réalisé avec l'aide de l'algorithme <code>wdiff</code>. Cet alignement a été repris et traité par un script en python "maison", pour constituer un premier encodage en XML-TEI. Ce premier encodage a été corrigé à la main, puis une feuille de style XSLT a été appliquée pour rajouter des identifiants à tous les éléments &lt;choice&gt;. </p>
+            <p>Voici les principes adoptés : <list>
+               <item>Étant donné que les éditeurs travaillent sur du code en markdown, on a comparé les articles en markdown, et traité le code comme du plein texte.</item>
+               <item>Le niveau de granularité permis par l'algorithme <code>wdiff</code> est le mot. Ce niveau est satisfaisnt jusqu'à ce qu'il soit nécessaire de décorréler une correction sur un mot d'une correction sur la ponctuation qui lui est accolée. Cette subtilité sera corrigée à la main.</item>
+            </list></p>
+            <p>La modélisation des corrections est basée sur les distinctions opérées par le <ref
+               target="https://www.chicagomanualofstyle.org/book/ed18/frontmatter/toc.html"
+               >CMOS18</ref> et sur un entretien avec l'éditrice de la revue HN Florence.</p>
+            <p>Deux systèmes se superposent : une expertise métier et une catégorisation plus fine du type de correction.</p>
+            <p>Pour chaque élément &lt;app&gt;, un attribut "@corresp" est utilisé pour préciser la
+               nature de la correction. Les valeurs possibles pour cet attribut sont:<list>
+                  <item xml:id="meca">Corrections mécaniques : mécanique de la langue, mécanique du code, mécanique de la pipeline, fluidité de la lecture : on peut diviser en sous-catégories.
+
+                  <list><item xml:id="orth">orthographe -- rectifications d’erreurs typographiques, harmonisation des graphies.</item>
+                  <item xml:id="unif">Casse, capitalisation, abréviations, ponctuation, faces -- questions d'uniformisation des majuscules/minuscules, dés abréviations, des signes de ponctuation, espaces insécables. des changement qui peuvent se faire en masse.</item>
+                  <item xml:id="num">Numérotation, listes, dates, chiffres -- correction ou cohérence des éléments numériques.</item>
+                  <item xml:id="gram">Grammaire et Syntaxe -- accord, conjugaison, structure de phrases, impropriétés syntaxiques.</item>
+                     <item xml:id="md">Code markdown -- harmonisation et correction pour rentrer sans frottement dans la chaîne de conversion.</item></list></item>
+                  
+                  <item xml:id="subst">Modifications énonciatives ou discursives (assumant la position de l'auteur) : affectent l’organisation du discours, la rhétorique, le style, la voix de l’auteur et impliquent un dialogue plus proche avec celui-ci.
+                  <list><item xml:id="puct">ponctuation -- virgules, points, tirets, guillemets, usage des italiques avec une incidence sur le sens ou le style.</item>
+                  <item xml:id="change">Substitutions lexicales non mécaniques.</item>
+                  <item xml:id="add">Ajouts de mots/phrases.</item>
+                     <item xml:id="supp">Suppressions de mots/phrases.</item>
+                     <item xml:id="move">Déplacement de mots/phrases.</item>
+                     <item xml:id="reformulation">Réécriture ponctuelle de segments.</item></list></item>
+                  <item xml:id="para">Autour du texte -- interventions sur les références et paratexte éditorial
+                     <list><item xml:id="fn">Ajouts d'une note de bas de page éditoriale.</item>
+                        <item xml:id="quote">Correction de citations.</item>
+                        <item xml:id="ref">Vérification de fond sur la bibliographie.</item></list>
+                  </item>
+               </list></p>
+            
+            <segmentation>
+               <p>Pour mieux aligner les textes et mettre en avant les variations entre les
+                  versions, les paragraphes ne sont pas contenus dans des &lt;p&gt;. Le passage d'un
+                  paragraphe à l'autre est signalé par un &lt;milestone unit="tei:p"/&gt; et par un
+                  &lt;lb/&gt;. Cette méthode est suggérée par Beshero-Bondar, Cayless, Vigilanti
+                  (2019: 3.10) <bibl>
+                     <author>
+                        <persName>Beshero-Bondar</persName>
+                        <persName>Cayless</persName>
+                        <persName>Viglianti</persName>
+                     </author>
+                     <title>Document Modeling with the TEI Critical Apparatus</title>
+                     <date>2019</date>
+                     <ref target="http://bit.ly/crit-app-panel"/>
+                  </bibl></p>
+            </segmentation>
+         </editorialDecl>
+         <projectDesc>
+            <p>Encodage réalisé dans le cadre du cours de littérature et culture numérique FRA6730 qui s'est tenu à l'automne 2025.</p>
+         </projectDesc>
+         <variantEncoding method="parallel-segmentation" location="internal"/>
+      </encodingDesc>
+      <profileDesc>
+         <creation>
+            <listChange ordered="true">
+               <change xml:id="V1">Version 1.0 du <date when-iso="2024-11-18" type="versionning" resp="#tg">18 novembre 2024</date><ptr
+                  target="https://stylo.huma-num.fr/article/673ba70533b8f40011002772/version/673bb3a133b8f40011002ebe/annotate"/></change>
+               <change xml:id="V2">Version 1.1 du <date when-iso="2024-11-18" type="versionning" resp="#tg">21 novembre 2024</date> <desc>En tenant compte des remarques de Margot</desc><ptr
+                  target="https://stylo.huma-num.fr/article/673ba70533b8f40011002772/version/673fba4933b8f4001102a185/annotate"/></change>
+            </listChange>
+         </creation>
+         <langUsage>
+            <language ident="fr">French</language>
+         </langUsage>
+         <textDesc>
+            <channel mode="w">
+               Environnement d’écriture collaborative :
+               <rs type="software">Stylo</rs>
+               <ptr target="https://stylo.huma-num.fr/"/>.
+            </channel>
+            <constitution type="composite">
+               Texte constitué de la superposition de plusieurs couches ou états successifs.
+            </constitution>
+            <derivation/>
+            <domain type="academicResearch"/>
+            <factuality type="fact"/>
+            <interaction/>
+            <preparedness type="revised"/>
+            <purpose type="inform" subtype="research" degree="high"/>
+         </textDesc>
+         <textClass>
+            <keywords scheme="#fr_RAMEAU">
+               <list>
+                  <item>savoir</item>
+                  <item>Édition en libre accès</item>
+                  <item>Édition</item>
+                  <item>publication</item>
+               </list>
+            </keywords>
+            <keywords >
+               <list>
+                  <item>savoir</item>
+                  <item>science ouverte</item>
+                  <item>édition</item>
+                  <item>publication</item>
+                  <item>cOAlition S</item>
+                  <item>diffusion des connaissances</item>
+                  <item>chaîne d'édition</item>
+               </list>
+            </keywords>
+         </textClass>
+         <abstract>
+            <p>De la voie verte à la voie diamant, de la rétention des droits à la gratuité totale : face à des éditeurs commerciaux incapables de répondre aux nouveaux défis de l’édition en sciences humaines, il importe que les Presses universitaires se mettent en état de satisfaire aux préconisations de cOAlition S. Le directeur des Presses universitaires de Rouen et du Havre s’engage ici en faveur de l’accès ouvert au sein des publications savantes publiques.</p>
+
+         </abstract>
+         <particDesc>
+            <listPerson>
+               <head>Liste des personnes ayant participé à l'écriture de l'article</head>
+               <person xml:id="mm" role="relecture">
+                  <persName>
+                     <forename>Margot</forename>
+                     <surname>Mellet</surname>
+                  </persName>
+               </person>
+               <person xml:id="tg" role="auteur">
+                  <persName>
+                     <forename>Tony</forename>
+                     <surname>Gheeraert</surname>
+                  </persName>
+               </person>
+               <person xml:id="mvr" role="relecture">
+                  <persName>
+                     <forename>Marcello</forename>
+                     <surname>Vitali-Rosati</surname>
+                  </persName>
+               </person>
+            </listPerson>
+         </particDesc>
+
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <ab>Un éditeur qui donne ses livres au lieu de les vendre, dès le jour de leur sortie,
+            est-ce bien sérieux ? C’est pourtant le pari surprenant assumé cette semaine <choice xml:id="app-1" corresp="#subst #add">
+               <sic source="#V1"/>
+               <corr source="#V2">en France</corr>
+            </choice> par les Presses Universitaires de Rouen et du Havre. _La Désillusion comique.
+            Étude de la place royale, du menteur et de la suite du menteur<choice corresp="#meca #unif">
+               <sic source="#V1">de Yohann Deguin_</sic>
+               <corr source="#V2">_ de Yohann Deguin</corr>
+            </choice> et _La vacillante lumière de la raison. Lire De la Littérature de Germaine de
+            Staël_ de Blandine Poirier ont été proposés gratuitement au format électronique sur
+            OpenEdition en même temps qu’ils ont été mis en vente en librairie, le 14 novembre 2024.
+            La démarche n’est pas ordinaire. Elle est le fruit de discussions menées en accord avec
+            les auteurs des livres concernés et la direction de l’université de Rouen. Ni gabegie
+            inconsciente d’argent public, ni opération publicitaire sans lendemain, cette décision a
+            valeur de manifeste. Aiguillonnée par les principes de l'intiative "cOAlition S"^[Voir
+            le site de <choice corresp="#subst #add">
+               <sic source="#V1">cOAlition S : https://www.coalition-s.org/]</sic>
+               <corr source="#V2">[cOAlition S](https://www.coalition-s.org/) : [https://www.coalition-s.org/](https://www.coalition-s.org/). La cOAlition S est une initiative en faveur de l'accès libre complet et immédiat aux
+                  publications de recherche. Elle est portée par un consortium international soutenu
+                  par la Commission européenne et le Conseil européen. Le plan S (2021) a constitué
+                  la proposition la plus spectaculaire, imposant aux signataires de publier sur des
+                  plates-formes ou des revues en libre-accès les résultats de recherches financées
+                  sur fonds public,]</corr>
+            </choice>, elle vise à provoquer une réflexion sur la publication savante, aujourd’hui
+            parasitée par des enjeux financiers nuisibles à la diffusion <choice corresp="#subst #change">
+               <sic source="#V1">d’une science véritable</sic>
+               <corr source="#V2">de savoirs véritables</corr>
+            </choice>.
+            <milestone unit="tei:p"/><lb/><lb/>## Le <choice corresp="#meca #unif">
+               <sic source="#V1">Savant</sic>
+               <corr source="#V2">savant</corr>
+            </choice> et la star<milestone unit="tei:p"/><lb/>Les éditions universitaires font aujourd’hui assez pâle
+            figure. Délaissées depuis longtemps par les sciences dites “dures”, elles sont souvent
+            peu attractives _a priori_ pour les auteurs : procédures de sélection rigoureuses voire
+            dissuasives, faibles tirages, difficultés de distribution, promotion réduite faute de
+            moyens, et, malgré ou à cause de ces ambitions limitées, un seuil de rentabilité
+            inaccessible en raison du coût humain lié au suivi, à l'édition et à la fabrication
+            d’ouvrages difficiles à vendre. La tentation est grande pour les chercheurs de se
+            tourner vers les propositions d’opérateurs privés à but lucratif. Parmi ces derniers, il
+            s’en trouve de plusieurs types. Certains, qui ont pignon sur rue, font primer la visée
+            commerciale sur toute autre considération. Cette prédilection ne pose pas problème dans
+            le secteur de la fiction ou de la littérature générale. Elle est plus suspecte lorsque
+            ces éditeurs décident de mettre à leur catalogue des ouvrages à prétention scientifique.
+            Leur préférence ira toujours aux sujets à la mode, aux titres séduisants, aux
+            problématiques sociétales susceptibles de parler sans effort et sans technicité
+            excessive à des “honnêtes gens” prédisposés à entendre les thèses vulgarisées par ces
+            volumes de circonstance. Produits sans l'aval d’expertises transparentes conformes aux
+            pratiques académiques, de tels livres sont volontiers farcis d’erreurs, de fautes, de
+            contresens interprétatifs ou d’erreurs littérales. Un directeur de collection peu
+            attentif acoquiné à un éditeur flairant le coup, et voilà le livre approximatif et
+            intellectuellement confortable rapidement lancé. Profitant de l’air du temps favorable
+            et d’une campagne de promotion bien orchestrée, l'auteur bénéficiera aussitôt
+            d’invitations dans les médias et d’un accueil critique bienveillant chez les
+            journalistes. Il fera le tour des plateaux télé et des radios, et gagnera les honneurs
+            de la presse magazine. Ce battage suffira à accréditer son essai. Par ricochet, le livre
+            et son auteur s’attireront non seulement l'approbation d’un grand public confiant, mais
+            même le respect des universitaires, sensibles comme les autres aux puissances trompeuses
+            de l’imagination. Un interview sur France Inter suffit à donner du prix à un livre
+            publié chez un éditeur du VIe arrondissement parisien, alors qu’un minimum de _fact
+            checking_ mettrait en évidence insuffisances et inexactitudes. Voici notre étude
+            brillante mais fausse devenue insensiblement une référence sinon tout à fait encore un
+            classique, facilement disponible, propre à figurer dans les bibliographies, bien reçue
+            par les étudiants aisément séduits voire flattés, sans pourtant que jamais sa validité
+            ni sa valeur scientifique aient été garanties par aucun comité indépendant. Rien qui
+            ressemble à ce qu'on appelle une “évaluation par les pairs” n'aura jamais croisé sa
+            trajectoire. Le succès éditorial et l’exposition médiatique auront fonctionné comme
+            instances de légitimation, favorisant la carrière et le rayonnement de l'auteur, et lui
+            octroyant au passage quelques royalties. Le phénomène n'est pas neuf, mais il connaît
+            aujourd'hui une extension inquiétante.<milestone unit="pb"/>
+            <lb/><lb/>## Photocopieuses 2.0<milestone unit="pb"/><lb/>D’autres maisons privées reposent sur un
+            modèle économique différent, plus modeste, moins retentissant, mais dont le charme
+            discret se révèle redoutablement efficace depuis trois décennies pour enrichir quelques
+            individus avisés. Ces officines, loin de tout tapage, fonctionnent à la manière de
+            photocopieuses à peine améliorées de thèses ou d’actes de colloques, imprimés et vendus
+            à la chaîne, sans beaucoup de précautions ni de corrections. Les livres issus de ces
+            presses, peu défendus par l’éditeur qui ne leur offre aucun lancement digne de ce nom,
+            s’alignent néanmoins les uns à côté des autres sur les rayonnages des bibliothèques
+            universitaires, avant de rejoindre la réserve puis de connaître, après quelques années,
+            la mise au rebut définitive, pudiquement appelée _désherbage_. La quantité prévaut sur
+            la qualité : la rentabilité exige un niveau de production qui s’apparente aux cadences
+            infernales. Un tel rythme empêche tout réel contrôle par l’éditeur et même par les
+            directeurs de collection. Ces derniers sont en général universitaires, quasi bénévoles
+            comme leurs auteurs : le montant des droits annuels, qui dépasse rarement la centaine
+            d’euros, n’est versé systématiquement ni aux uns ni aux autres. Peu importe que le
+            produit des ventes ne serve qu’à l’enrichissement de l’investisseur judicieux : c’est la
+            reconnaissance que veulent obtenir les chercheurs, à travers le référencement de leurs
+            ouvrages au sein des catalogues universitaires et des bases de données académiques.
+            Contre un peu de visibilité et quelques dizaines d’euros de rémunération, à mettre au
+            regard des années de travail passées à la rédaction d’une monographie, ils se
+            déssaisissent de bon cœur de toute propriété sur leur œuvre. Esaü avait bien vendu son
+            droit d’aînesse contre un plat de lentilles. C’est sans limite de durée que des contrats
+            léonins dépouillent les auteurs du fruit et surtout de la libre disposition de leur
+            travail : grâces soient rendues à l’impression numérique qui empêche les ouvrages d’être
+            plus jamais épuisés, de sorte que l’auteur ne se trouve jamais en position de demander à
+            récupérer ses droits cédés, fût-ce pour les offrir gracieusement à la <choice corresp="#subst #add">
+               <sic source="#V1">communauté</sic>
+               <corr source="#V2">communauté. Ces éditeurs le refusent d'autant plus fortement qu'ils
+                  mettent eux-mêmes en vente les travaux des chercheurs sur des plates-formes
+                  commerciales en version numérique, saucissonnant monographies et éditions
+                  critiques en sous-chapitres vendus plusieurs euros pièce</corr>
+            </choice>. Un tel système, pour sa propre survie, exige un apport de manuscrits à flux
+            continu. Cette faim ogresse de données scientifiques aboutit à la prolifération
+            d’ouvrages de qualité diverse. Des dysfonctionnements aussi aberrants perdurent grâce à
+            la complicité de tous. Les chercheurs, heureux de trouver une voie de publication facile
+            et suffisamment diffusée de leurs travaux auprès du public spécialisé, ne songent pas à
+            se plaindre malgré les spoliations dont ils sont les premières victimes. Dans leurs
+            conversations privées, ils ne manquent pas d’éreinter _in petto_ ces pratiques
+            éditoriales contestables auxquelles ils sont bien contraints de se soumettre eux-mêmes.
+            _Publish or perish_. Il n’en reste pas moins que ce sont désormais ces éditeurs privés
+            qui régissent de fait les destinées de la recherche publique. La marque de l’éditeur
+            commercial, attribuée dans l’opacité la plus totale, jamais objectivée par aucune forme
+            de _peer-reviewing_, vaut à elle seule label de scientificité, et détermine avancements
+            et promotions. À défaut de satisfaire à des critères de vérité transparents
+            et démocratiques, au moins le _business model_ de ces officines est-il vertueux,
+            dira-t-on. Et par les temps qui courent, n’est-ce pas l’essentiel ? Voire, car au fond
+            ces opérateurs à but lucratif vivent en grande partie aux frais des contribuables : les
+            livres qu’ils produisent sont vendus à des prix si exorbitants que seules les
+            bibliothèques universitaires sont en mesure de les acheter. Aux revenus procurés par la
+            vente d’une centaine d’exemplaires hors de prix à des services de documentation captifs,
+            s’ajoute le produit des subventions versées par les organismes de recherche en soutien à
+            la publication, et que ces éditeurs commerciaux sollicitent systématiquement. Car à côté
+            des célèbres éditions à compte d’auteur, le monde académique connaît une autre
+            bizarrerie, ou un autre poison : la publication à compte de laboratoire, dont il faudra
+            un jour interroger les aspects tant déontologiques que scientifiques. Et les politiques
+            d’acquisition des bibliothèques universitaires qui achètent les yeux fermés et à prix
+            d’or des livres de qualité aussi hétérogène mériteraient aussi d’être
+            questionnées. L’opposition entre publications savantes commerciales
+            supposées vertueuses et rentables, et presses universitaires réputées gaspilleuses
+            d’argent public et dépassées à tous égards, mériterait donc d’être largement révisée, en
+            faveur des secondes comme nous allons tenter de le montrer pour terminer.<milestone unit="tei:p"/>
+            <lb/><lb/>## La science seule<milestone unit="tei:p"/><lb/>Ce n’est un mystère pour personne : le côté
+            obscur est rapide, facile et séduisant. La vie est moins aisée pour les auteurs qui
+            décident de faire confiance aux éditeurs universitaires. Les procédures menant à la
+            publication y sont longues, douloureuses et punitives. Les manuscrits soumis sont
+            d’abord anonymisés puis envoyés en aveugle à des experts sourcilleux et exigeants.
+            Ceux-ci pèsent chaque idée, parfois chaque virgule, jugent des méthodes, évaluent la
+            nouveauté de l’apport intellectuel et relèvent des biais éventuels. Même quand leur avis
+            est positif, ces examinateurs scrupuleux réclament remaniements, corrections, remises en
+            chantier parfois décourageantes pour les auteurs. Le comité de lecture composé de
+            chercheurs surveille avec vigilance la procédure, et vote _in fine_, au vu du dossier
+            toujours anonymisé, pour prendre ou refuser la décision de publier. Ces navettes durent
+            pendant des mois interminables, suscitant souvent l’incompréhension des acteurs, voire
+            le retrait pur et simple du manuscrit en cours de processus. Au bout du compte, enfin,
+            le livre peut voir le jour, s’il a finalement triomphé des ces fourches caudines,
+            conditions d’une authentique évaluation par les pairs. La valeur scientifique de
+            l’ouvrage est alors assurée. Seulement, comme celui-ci porte sur les langues italiques
+            au temps de la République romaine ou sur les médailles au siècle de Louis XIV, il attire
+            peu les chalands. Indispensable aux rares spécialistes des disciplines concernées, il ne
+            deviendra jamais un _best-seller_, parce que son destin n’est pas, et n’a jamais été, de
+            devenir un succès éditorial. Chacun conviendra pourtant que ces travaux utiles et
+            validés par la communauté doivent être disponibles, en ligne, en librairie et dans les
+            bibliothèques, à destination de ces _happy few_ qui les utiliseront dans le cadre de
+            leurs propres recherches. Le commerce de tels ouvrages, on s’en doute, n’enrichira
+            jamais leur éditeur, quoi qu'on fasse. Ce n'est pas une question de plan
+            marketing. On le voit : l’enjeu pour les Presses universitaires consiste à
+            sortir des logiques commerciales, non pour des raisons idéologiques, mais simplement
+            scientifiques. Laisser à des opérateurs privés à but lucratif le soin de labelliser la
+            recherche au détriment de toute évaluation transparente tend à mettre entre les mains
+            d’un public plus ou moins large une science douteuse, superficielle, quand elle n’est
+            pas plaisante et confortable. En un temps où vérités alternatives et <choice corresp="#subst #change">
+               <sic source="#V1">complotistes</sic>
+               <corr source="#V2">complotismes</corr>
+            </choice> de toute sorte menacent nos sociétés, jamais le besoin de vrai, comme bien public
+            et partagé, n’a été aussi criant et aussi désespéré. Or, cette soif de science est
+            incompatible avec le principe même d’une quête du profit guidée par l’intérêt et par
+            conséquent aveugle à la vérité. Le commerce est régi par des lois qui ne sont pas celles
+            du monde universitaire. C’est donc nécessairement une mission de service public que de
+            fournir aux chercheurs et aux citoyens les éléments propres à jeter un éclairage sur la
+            réalité rugueuse à étreindre. Les opérateurs privés ne sauraient s’y substituer sans
+            risque de dommage. La mise en place au niveau national d’un label “qualité
+            scientifique”, susceptible d’être octroyé aux travaux qui en feraient la demande,
+            permettrait d'identifier facilement les recherches certifiées selon des protocoles
+            d'expertise valides, permettant ainsi par exemple aux bibliothèques universitaires de
+            prioriser des ouvrages évalués avec soin, sans égard au prestige _a priori_ de l’éditeur
+            qui les a mis sur le marché, ni à la force de frappe de sa politique de communication.
+            Le label serait décerné indifféremment aux maisons privées vertueuses – car il s’en
+            trouve malgré tout – comme aux presses publiques, si du moins <choice corresp="#subst #change">
+               <sic source="#V1">elles</sic>
+               <corr source="#V2">celles-ci</corr>
+            </choice> acceptent effectivement le jeu des évaluations <choice corresp="#subst #add">
+               <sic source="#V1">transparentes </sic>
+               <corr source="#V2">transparentes et visent réellement à la diffusion la plus large des
+                  textes qu'elles proposent</corr>
+            </choice>.
+            <milestone unit="tei:p"/><lb/><lb/>## La gratuité<choice corresp="#subst #reformulation">
+               <sic source="#V1">: un modèle économique</sic>
+               <corr source="#V2"> pour les publications scientifiques, unique modèle</corr>
+            </choice> viable<milestone unit="tei:p"/><lb/>Pour les Presses universitaires,
+                  sortir des logiques commerciales ne se traduit pas nécessairement par une
+                  augmentation inconsidérée des financements publics dont elles dépendent. La
+                  décision prise par les Presses universitaires de Rouen et du Havre de diffuser
+                  immédiatement deux ouvrages sur une plate-forme en accès ouvert est ainsi une
+                  opération financièrement neutre, puisque la mise en ligne est assurée par les
+                  éditrices du service dans le cadre de leurs tâches habituelles. Au fond, il n’y a
+                  pas même de débat : pourquoi retarder ou facturer la mise à disposition de données
+                  publiques produites par des chercheurs, eux-mêmes financés sur fonds publics la
+                  plupart du temps ? La distribution immédiate s’impose à tous égards comme une
+                  vertueuse nécessité. Elle bénéficie aussi aux auteurs, en assurant à leurs travaux
+                  la plus large diffusion sans les spolier de leur propriété intellectuelle. La
+                  distribution électronique n’exclut pas le maintien en parallèle d’une publication
+                  papier, éventuellement susceptible de générer marginalement des droits à reverser
+                  aux collaborateurs des volumes. Le développement des
+                  plates-formes ouvertes n’entre pas en concurrence avec les livres au format
+                  papier, mais le mode de production de ces derniers doit également être réfléchi et
+                  adapté aux enjeux de l’édition savante tels qu’ils se dessinent aujourd’hui. La
+                  fabrication d’objets-livres occasionne des coûts d’impression et de diffusion qui
+                  empêchent bien sûr d'envisager leur distribution gratuite. Elle pose aussi des
+                  questions environnementales. Pourtant, le support papier reste plus que jamais un
+                  format d'avenir : sans même évoquer le prestige ou la valeur symbolique accordés
+                  au livre traditionnel, celui-ci présente l’avantage d’offrir un support pérenne,
+                  <choice corresp="#subst #change"><sic source="V1">confortable</sic>
+                  <corr source="V2">agréable</corr>
+                  </choice>, accessible, pratique, ne nécessitant pas de dispositif électronique complexe et
+            fragile pour être consulté. Il restera un moyen habituel de diffusion des savoirs
+            académiques, propre à toucher un autre public que celui des sites universitaires en
+            ligne, fussent-ils en accès ouvert. Il convient néanmoins d’apprendre à fabriquer les
+            livres autrement, en tenant compte à la fois des enjeux économiques et des nécessités
+            nouvelles de l’éco-conception. La politique tarifaire de Presses universitaires sans but
+            lucratif devrait tendre à fixer un prix public égal au prix de revient, de manière à
+            couvrir les frais <choice corresp="#subst #change">
+               <sic source="#V1">de publication</sic>
+               <corr source="#V2">d'édition</corr>
+            </choice>, mais sans chercher à réaliser un bénéfice contraire aux valeurs du service public
+            et de l'Accès Ouvert. Le recours aux technologies d’impression à la demande constitue
+            une bonne piste pour parvenir à coûts constants à ce résultat : le “Print on demand”
+            permet en effet le déclenchement de la fabrication des exemplaires à chaque commande,
+            réduisant singulièrement les frais d'impression et de gestion des stocks, tout en
+            limitant l’impact environnemental. Une chose est sûre : les Presses universitaires n’ont
+            pas vocation à financer le déficit des Universités. Leur économie doit reposer sur un
+            modèle certes soutenable, mais qui doit exclure toute notion de rentabilité, parce que
+            celle-ci est nécessairement contradictoire avec l’engagement au service de la vérité
+            scientifique. Les enjeux et les risques liés à la circulation des savoirs sont
+            aujourd’hui trop urgents pour les laisser régir par des poursuites de gains forcément
+            opposés à la science véritable. Certes, les procédures méritent d’être encore améliorées
+            et réformées. On pourrait imaginer par exemple de rendre plus facile l’accès à des
+            plates-formes de prépublications ouvertes, encore peu employées dans le champ des
+            sciences humaines où le double aveugle reste la norme. <choice corresp="#subst #add">
+               <sic source="#V1">Mais quelles</sic>
+               <corr source="#V2">Quelles</corr>
+            </choice> que soient les méthodes employées, les principes et les finalités ne font pas de
+            doute : prendre pour seul critère de publication l’expertise des savants, en finir avec
+            le marchandisation des connaissances, tendre à la gratuité sans embargo des livres <choice corresp="#subst #add">
+               <sic source="#V1">numériques^[Selon les dispositions encouragées par la cOAlition S :
+                  “Plan S”, “voie diamant”, "rétention des droits", ou encore l'initiative "Towards
+                  Responsible Publishing".]</sic>
+               <corr source="#V2">numériques</corr>
+            </choice>, enfin serrer les prix de livres papier éco-responsables à défaut de pouvoir les
+            donner gracieusement : telle est à notre sens la destinée manifeste <choice corresp="#subst #add">
+               <sic source="#V1">des</sic>
+               <corr source="#V2">de</corr>
+            </choice> Presses universitaires <choice>
+               <sic source="#V1">aujourd’hui</sic>
+               <corr source="#V2">aujourd'hui, de façon à généraliser à l'ensemble des publications
+                  académiques, numériques ou papier, l'esprit des propositions de la cOAlition
+                  S</corr>
+            </choice>.
+         </ab>
+      </body>
+   </text>
+</TEI>

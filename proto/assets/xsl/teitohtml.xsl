@@ -25,22 +25,26 @@
         </p>
     </xsl:template>
     
-    <xsl:template match="tei:app[contains(@corresp, '#subst')]">
-        <span class="app" id="{ ./@xml:id }"><xsl:apply-templates/></span>
+    <xsl:template match="tei:choice[contains(@corresp, '#subst')]">
+        <span class="choice" id="{ ./@xml:id }"><xsl:apply-templates/></span>
     </xsl:template>
     
-    <xsl:template match="tei:app[contains(@corresp, '#subst')]/tei:lem">
-        <span class="lem" id="{ ./@xml:id }"><span style="cursor: pointer;" onclick="review('{ parent::tei:app[contains(@corresp, '#subst')]/@xml:id }', '{ ./@xml:id }')"><xsl:apply-templates/></span></span>
+    <xsl:template match="tei:choice[contains(@corresp, '#subst')]/tei:sic">
+        <span class="sic" id="{ ./@xml:id }"><span style="cursor: pointer;" onclick="review('{ parent::tei:choice[contains(@corresp, '#subst')]/@xml:id }', '{ ./@xml:id }')"><xsl:apply-templates/></span></span>
     </xsl:template>
     
-    <xsl:template match="tei:app[contains(@corresp, '#subst')]/tei:rdg">
-        <span class="rdg" id="{ ./@xml:id }"><span style="cursor: pointer;" onclick="review('{ parent::tei:app[contains(@corresp, '#subst')]/@xml:id }', '{ ./@xml:id }')"><xsl:apply-templates/></span></span>
+    <xsl:template match="tei:choice[contains(@corresp, '#subst')]/tei:corr">
+        <span class="corr" id="{ ./@xml:id }"><span style="cursor: pointer;" onclick="review('{ parent::tei:choice[contains(@corresp, '#subst')]/@xml:id }', '{ ./@xml:id }')"><xsl:apply-templates/></span></span>
     </xsl:template>
     
-    <xsl:template match="tei:app[contains(@corresp, '#meca')]">
+    <xsl:template match="tei:choice[contains(@corresp, '#meca')]">
         <span>
-            <xsl:value-of select="tei:rdg"/>
+            <xsl:value-of select="tei:corr"/>
         </span>
+    </xsl:template>
+
+    <xsl:template match="tei:lb">
+        <br/>
     </xsl:template>
     
 </xsl:stylesheet>

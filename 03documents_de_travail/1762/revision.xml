@@ -77,30 +77,19 @@
                </monogr>
                <note>Encodage XML à partir des sources stylo : versions préparatoires de l'article</note>
             </biblStruct>
-            <listWit>
-               <witness xml:id="V1">Version du <date when-iso="2020-09-03" type="versionning" resp="#tg">03 septembre 2020</date><ptr
-                  target="https://stylo.huma-num.fr/article/673ba70533b8f40011002772/version/673bb3a133b8f40011002ebe/annotate"/></witness>
-               <witness xml:id="V2">Version 1.1 du <date when-iso="2024-11-18" type="versionning" resp="#tg">21 novembre 2024</date> <desc>En tenant compte des remarques de Margot</desc><ptr
-                  target="https://stylo.huma-num.fr/article/673ba70533b8f40011002772/version/673fba4933b8f4001102a185/annotate"/></witness>
-            </listWit>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
          <editorialDecl>
-            <p>L'alignement des versions a été réalisé avec l'aide de l'algorithme <code>wdiff</code>. Cet alignement a été répris et traité par un script en python "maison", pour constituer un premier encodage en XML-TEI. Ce premier encodage a été corrigé à la main, puis une feuille de style XSLT a été appliquée pour rajouter des identifiants à tous les éléments &lt;app&gt;. </p>
-            <p>Voici les principes adoptés pour l'alignement : <list>
-               <item>La structuration du texte en paragraphes (&lt;p&gt;) a été abandonnée : les
-                  textes sont insérés dans un conteneur &lt;ab&gt; et les changements de
-                  paragraphes sont signalés par des &lt;milestone&gt;, et les retours simples ont été supprimé lors d'une étape de nettoyage des articles (on estime qu'ils servent uniquement la lisbilité du code en écriture et n'ont pas d'impact sur la suite de la chaîne).</item>
-               <item>autre item</item>
-               <!--<item>Étant donné que les éditeurs travaillent sur du code en markdown, on a comparé les articles en markdown. Il y a pas encore d'aspect </item>-->
-               <!--<item>autre item éventuellement</item>-->
+            <p>L'alignement des versions a été réalisé avec l'aide de l'algorithme <code>wdiff</code>. Cet alignement a été repris et traité par un script en python "maison", pour constituer un premier encodage en XML-TEI. Ce premier encodage a été corrigé à la main, puis une feuille de style XSLT a été appliquée pour rajouter des identifiants à tous les éléments &lt;choice&gt;. </p>
+            <p>Voici les principes adoptés : <list>
+               <item>Étant donné que les éditeurs travaillent sur du code en markdown, on a comparé les articles en markdown, et traité le code comme du plein texte.</item>
+               <item>Le niveau de granularité permis par l'algorithme <code>wdiff</code> est le mot. Ce niveau est satisfaisnt jusqu'à ce qu'il soit nécessaire de décorréler une correction sur un mot d'une correction sur la ponctuation qui lui est accolée. Cette subtilité sera corrigée à la main.</item>
             </list></p>
             <p>La modélisation des corrections est basée sur les distinctions opérées par le <ref
                target="https://www.chicagomanualofstyle.org/book/ed18/frontmatter/toc.html"
                >CMOS18</ref> et sur un entretien avec l'éditrice de la revue HN Florence.</p>
-            <p>Deux systèmes se superposent : un niveau de criticité de vérification et une expertise métier reliée.
-               querie ou hard. <!--expliquer--></p>
+            <p>Deux systèmes se superposent : une expertise métier et une catégorisation plus fine du type de correction.</p>
             <p>Pour chaque élément &lt;app&gt;, un attribut "@corresp" est utilisé pour préciser la
                nature de la correction. Les valeurs possibles pour cet attribut sont:<list>
                   <item xml:id="meca">Corrections mécaniques : mécanique de la langue, mécanique du code, mécanique de la pipeline, fluidité de la lecture : on peut diviser en sous-catégories.
@@ -111,7 +100,7 @@
                         <item xml:id="gram">Grammaire et Syntaxe -- accord, conjugaison, structure de phrases, impropriétés syntaxiques.</item>
                         <item xml:id="md">Code markdown -- harmonisation et correction pour rentrer sans frottement dans la chaîne de conversion.</item></list></item>
                   
-                  <item xml:id="subst">Modifications substantives : sémantiques, rhétoriques ou stylistique : les so
+                  <item xml:id="subst">Modifications énonciatives ou discursives (assumant la position de l'auteur) : affectent l’organisation du discours, la rhétorique, le style, la voix de l’auteur et impliquent un dialogue plus proche avec celui-ci.
                      <list><item xml:id="puct">ponctuation -- virgules, points, tirets, guillemets, usage des italiques avec une incidence sur le sens ou le style.</item>
                         <item xml:id="change">Substitutions lexicales non mécaniques.</item>
                         <item xml:id="add">Ajouts de mots/phrases.</item>
@@ -148,34 +137,32 @@
          <variantEncoding method="parallel-segmentation" location="internal"/>
       </encodingDesc>
       <profileDesc>
+         <creation>
+            <listChange ordered="true">
+               <change xml:id="V1">Version du <date when-iso="2020-09-03" type="versionning" resp="#tg">03 septembre 2020</date><ptr
+                  target="https://stylo.huma-num.fr/article/673ba70533b8f40011002772/version/673bb3a133b8f40011002ebe/annotate"/></change>
+               <change xml:id="V2">Version 1.1 du <date when-iso="2024-11-18" type="versionning" resp="#tg">21 novembre 2024</date> <desc>En tenant compte des remarques de Margot</desc><ptr
+                  target="https://stylo.huma-num.fr/article/673ba70533b8f40011002772/version/673fba4933b8f4001102a185/annotate"/></change>
+            </listChange>
+         </creation>
          <langUsage>
             <language ident="fr">French</language>
          </langUsage>
          <textDesc>
-            <channel mode="w">Stylo <ptr target="https://stylo.huma-num.fr/"/>; éditeur collaboratif sémantique en markdown</channel>
-            <constitution/>
-            <derivation type="revision"/>
-            <domain type="education"/>
+            <channel mode="w">
+               Environnement d’écriture collaborative :
+               <rs type="software">Stylo</rs>
+               <ptr target="https://stylo.huma-num.fr/"/>.
+            </channel>
+            <constitution type="composite">
+               Texte constitué de la superposition de plusieurs couches ou états successifs.
+            </constitution>
+            <derivation/>
+            <domain type="academicResearch"/>
             <factuality type="fact"/>
-            <interaction>
-               <timeline>
-                  <when xml:id="t001"
-                     absolute="2011-03-23T19:56:00"/>
-                  <when xml:id="t002"
-                     absolute="2011-06-14T21:22:00"/>
-                  <when xml:id="t003"
-                     absolute="2011-06-14T23:28:00"/>
-                  <when xml:id="t004"
-                     absolute="2011-07-02T07:20:00"/>
-                  <when xml:id="t005"
-                     absolute="2011-07-21T01:00:00"/>
-                  <when xml:id="t006"
-                     absolute="2014-04-08T01:35:00"/>
-               </timeline>
-               <!--intéressant mais quoi en faire ?--> 
-            </interaction>
+            <interaction/>
             <preparedness type="revised"/>
-            <purpose type="inform" degree="high"/>
+            <purpose type="inform" subtype="research" degree="high"/>
          </textDesc>
          <textClass>
             <keywords scheme="#fr_RAMEAU">
@@ -235,23 +222,19 @@
                </persName></person>
             </listPerson>
          </particDesc>
-         
       </profileDesc>
-      <!--<revisionDesc status="submitted">
-         <change when-iso="2025-12-25" who="#???">review de la version 1.1</change>
-      </revisionDesc>-->
    </teiHeader>
    <text>
       <body>
          <ab> *À ma mère, l’inaccompagnée* <milestone unit="tei:p"/>
             <lb/>
-            <app corresp="#meca #unif">
-               <lem wit="#V1">« Grief</lem>
-               <rdg wit="#V2">« _Grief</rdg>
-            </app> is all things reimagined through the ever-emerging wounds of the <app corresp="#meca #unif">
-               <lem wit="#V1">world ».</lem>
-               <rdg wit="#V2">world_ »</rdg>
-            </app>
+            <choice corresp="#meca #unif">
+               <sic source="#V1">« Grief</sic>
+               <corr source="#V2">« _Grief</corr>
+            </choice> is all things reimagined through the ever-emerging wounds of the <choice corresp="#meca #unif">
+               <sic source="#V1">world ».</sic>
+               <corr source="#V2">world_ »</corr>
+            </choice>
             <milestone unit="tei:p"/>
             <lb/>— Nick Cave <milestone unit="tei:p"/>
             <lb/>### Dédicace <milestone unit="tei:p"/>
@@ -290,13 +273,13 @@
             que je le veuille ou non. Elle disait aussi qu’il ne tenait qu’à moi de le livrer ou
             non, mais qu’il n’avait pas, qu’il n’avait plus à être fabriqué : qu’il était là déjà,
             tricoté dans le dedans, fait de la trame des jours, tant il est vrai, comme l’écrit
-            Annie Dillard dans *The Writing Life*, que <app corresp="#meca #unif">
-               <lem wit="#V1">« \[h\]ow</lem>
-               <rdg wit="#V2">« *\[h\]ow</rdg>
-            </app> we spend our days is, of course, how we spend our <app corresp="#meca #unif">
-               <lem wit="#V1">life »</lem>
-               <rdg wit="#V2">life* »</rdg>
-            </app> [@dillard_writing_2013, p. 32]. Cette phrase disait que lire était un vivre,
+            Annie Dillard dans *The Writing Life*, que <choice corresp="#meca #unif">
+               <sic source="#V1">« \[h\]ow</sic>
+               <corr source="#V2">« *\[h\]ow</corr>
+            </choice> we spend our days is, of course, how we spend our <choice corresp="#meca #unif">
+               <sic source="#V1">life »</sic>
+               <corr source="#V2">life* »</corr>
+            </choice> [@dillard_writing_2013, p. 32]. Cette phrase disait que lire était un vivre,
             était une forme de la vie, comme l’a montré Marielle @mace_styles_2016, mais aussi
             donnait ses formes à la vie, ignorante autrement en partie, avant cela, avant de lire,
             en quelles formes elle s’étiole ou s’étoile. <milestone unit="tei:p"/>
@@ -319,18 +302,18 @@
             m’interroger sur ce que c’était que de « Vivre avec l’écrivain »
             [@snauwaert_vivre_2008]. Cette interrogation ne m’a sans doute jamais quittée, ni cette
             vie avec l’écrivain qui est la mienne et la vôtre aussi bien. <milestone unit="tei:p"/>
-            <lb/>L’écrivain est pour moi une <app corresp="#subst #punct">
-               <lem wit="#V1">figure</lem>
-               <rdg wit="#V2">figure,</rdg>
-            </app> et c’est pourquoi j’utilise le terme comme un épicène, comme celui d’artiste, ce
+            <lb/>L’écrivain est pour moi une <choice corresp="#subst #punct">
+               <sic source="#V1">figure</sic>
+               <corr source="#V2">figure,</corr>
+            </choice> et c’est pourquoi j’utilise le terme comme un épicène, comme celui d’artiste, ce
             que j’ai longtemps cru qu’il était. L’écrivain comme l’enfant, comme l’élève : ces trois
             termes {+indéfectiblement liés. Ces termes+} fondateurs par lesquels je me tiens, j’y
             puise le genre que je veux, selon mes époques et selon mes besoins, et c’est pourquoi je
             les veux dé-genrés, ouverts, inépuisables. Ce sont les mots les plus beaux, liés de
-            toujours, non des identités mais des rôles. En choisissant de parler de <app corresp="#subst #punct">
-               <lem wit="#V1">figure</lem>
-               <rdg wit="#V2">figure,</rdg>
-            </app> je mets aussi l’accent sur les possibles, je me désintéresse de l’essence — à
+            toujours, non des identités mais des rôles. En choisissant de parler de <choice corresp="#subst #punct">
+               <sic source="#V1">figure</sic>
+               <corr source="#V2">figure,</corr>
+            </choice> je mets aussi l’accent sur les possibles, je me désintéresse de l’essence — à
             laquelle je ne crois pas. Cet écrivain que j’invente épicène, je le fais neutre ou
             changeant, à investir. Ou, s’il penche du côté du masculin, j’en fais mon garçon manqué.
             Car ce terme je le vois comme une figure de la transformation de la vie par l’écriture,
@@ -367,10 +350,10 @@
             indirecte, personnage factice mais qui ne nous oblige ni ne nous est obligé, comme ce
             serait le cas dans le domaine des relations morales réelles. Investi de nos fantasmes,
             nous ne lui devons rien et pouvons tout lui demander[^5]. <milestone unit="tei:p"/>
-            <lb/>Ainsi lorsque Philippe Forest, dans <app corresp="#meca #unif">
-               <lem wit="#V1">*L’enfant</lem>
-               <rdg wit="#V2">*L’Enfant</rdg>
-            </app> éternel*[^6] [-@forest_enfant_2010], relit Mallarmé comme le poète qui a perdu son
+            <lb/>Ainsi lorsque Philippe Forest, dans <choice corresp="#meca #unif">
+               <sic source="#V1">*L’enfant</sic>
+               <corr source="#V2">*L’Enfant</corr>
+            </choice> éternel*[^6] [-@forest_enfant_2010], relit Mallarmé comme le poète qui a perdu son
             fils, cherche-t-il à rejoindre cette communauté des pères endeuillés, non afin de
             relativiser sa peine, mais pour la rattacher à un grand fonds humain antérieur ;
             pour savoir qu’un autre que lui, mieux que lui sans doute parce qu’il est autre, a
@@ -420,13 +403,13 @@
             l’individu derrière l’écrivain, de la personne physique ou de celle de
             l’état-civil ; je parle de cette personne agrandie, augmentée d’écriture, qui nous
             [-a-] fait un chemin de phrases à travers le langage. <milestone
-               unit="tei:p"/> <lb/>## 2. Les *sherpas* du deuil : <app corresp="#meca #unif">
-               <lem wit="#V1">« You</lem>
-               <rdg wit="#V2">« *You</rdg>
-               </app> cannot solve this. This is the starting <app corresp="#meca #unif">
-               <lem wit="#V1">point »</lem>
-               <rdg wit="#V2">point* »</rdg>
-            </app>
+               unit="tei:p"/> <lb/>## 2. Les *sherpas* du deuil : <choice corresp="#meca #unif">
+               <sic source="#V1">« You</sic>
+               <corr source="#V2">« *You</corr>
+               </choice> cannot solve this. This is the starting <choice corresp="#meca #unif">
+               <sic source="#V1">point »</sic>
+               <corr source="#V2">point* »</corr>
+            </choice>
             <milestone unit="tei:p"/>
             <lb/>Avant d’entamer une promenade un peu dilettante au gré de
             certaines de ces figures d’accompagnement contemporaines qui me touchent ou me
@@ -449,50 +432,50 @@
             années, la psychiatre et directrice du *Center for Prolonged Grief* de l’Université
             Columbia, Katherine M. Shear, et ses collègues ont observé que le deuil n’est pas une
             maladie, mais que les endeuillés souffrent. Elles se sont alors interrogées sur la juste
-            place à occuper par le thérapeute : <app corresp="#meca #unif">
-               <lem wit="#V1">« many</lem>
-               <rdg wit="#V2">« *many</rdg>
-            </app> clinicians [...] do not regard any grief response as an illness. Yet, many
+            place à occuper par le thérapeute : <choice corresp="#meca #unif">
+               <sic source="#V1">« many</sic>
+               <corr source="#V2">« *many</corr>
+            </choice> clinicians [...] do not regard any grief response as an illness. Yet, many
             bereaved people are suffering. What then is the role of clinicians in the management of
-            grief? When and how should clinicians provide <app corresp="#meca #unif">
-               <lem wit="#V1">help? »</lem>
-               <rdg wit="#V2">help?* »</rdg>
-            </app> [@shear_bereavement_2013] <milestone unit="tei:p"/>
+            grief? When and how should clinicians provide <choice corresp="#meca #unif">
+               <sic source="#V1">help? »</sic>
+               <corr source="#V2">help?* »</corr>
+            </choice> [@shear_bereavement_2013] <milestone unit="tei:p"/>
             <lb/>Les autrices remarquent que plusieurs, dans l’environnement
             familial et amical des endeuillés, et le cas échéant religieux, peuvent leur venir en
             aide, et le font souvent naturellement dans la première période de deuil, la plus
             brutale et crue. Ce, à condition toutefois que ces aidants spontanés prêtent oreille et
             assistance mais ne cherchent pas à fournir de solutions ou d’avis gratuit dans cette
-            recherche de réponses à des questions sans réponse : <app corresp="#meca #unif">
-               <lem wit="#V1">« Others</lem>
-               <rdg wit="#V2">« *Others</rdg>
-            </app> can be helpful as caring listeners who share in reminiscence and join in seeking
+            recherche de réponses à des questions sans réponse : <choice corresp="#meca #unif">
+               <sic source="#V1">« Others</sic>
+               <corr source="#V2">« *Others</corr>
+            </choice> can be helpful as caring listeners who share in reminiscence and join in seeking
             answers to unanswerable question. \[Yet\] they must resist the urge to provide answers
-            or gratuitous <app corresp="#meca #unif">
-               <lem wit="#V1">advice »</lem>
-               <rdg wit="#V2">advice* »</rdg>
-            </app>. Elles poursuivent : <app corresp="#meca #unif">
-               <lem wit="#V1">« When</lem>
-               <rdg wit="#V2">« *When</rdg>
-            </app> the bereaved do seek support, clinicians can add their voices to the chorus of
+            or gratuitous <choice corresp="#meca #unif">
+               <sic source="#V1">advice »</sic>
+               <corr source="#V2">advice* »</corr>
+            </choice>. Elles poursuivent : <choice corresp="#meca #unif">
+               <sic source="#V1">« When</sic>
+               <corr source="#V2">« *When</corr>
+            </choice> the bereaved do seek support, clinicians can add their voices to the chorus of
             support, bringing both their professional expertise and their humanity to the encounter.
-            However, they must be humble in their <app corresp="#meca #unif">
-               <lem wit="#V1">expertise »</lem>
-               <rdg wit="#V2">expertise* »</rdg>
-            </app>. Tandis qu’elles soulignent l’importance de la rencontre — *the* *encounter* —
+            However, they must be humble in their <choice corresp="#meca #unif">
+               <sic source="#V1">expertise »</sic>
+               <corr source="#V2">expertise* »</corr>
+            </choice>. Tandis qu’elles soulignent l’importance de la rencontre — *the* *encounter* —
             elles mettent en garde de nouveau contre la sollicitude non sollicitée, l’explication
-            non bienvenue du mystère du monde. Et voici ce qu’elles proposent : <app corresp="#meca #unif">
-               <lem wit="#V1">« Informed</lem>
-               <rdg wit="#V2">« *Informed</rdg>
-            </app> clinicians can provide Sherpa-like guidance to bereaved people, walking by their
-            side as they navigate the arduous path to rediscovery of meaning and <app corresp="#meca #unif">
-               <lem wit="#V1">purpose... »</lem>
-               <rdg wit="#V2">purpose...* »</rdg>
-            </app> [@shear_bereavement_2013] L’approche de compagnonnage qu’elles suggèrent est
-            modelée sur ces guides de montagne tibétains qu’on appelle les *sherpas* <app corresp="#meca #unif">
-               <lem wit="#V1">[@shear_pathways_2013]</lem>
-               <rdg wit="#V2"/>
-            </app>. Désignant moins le peuple des montagnes que la présence qui guide, l’approche
+            non bienvenue du mystère du monde. Et voici ce qu’elles proposent : <choice corresp="#meca #unif">
+               <sic source="#V1">« Informed</sic>
+               <corr source="#V2">« *Informed</corr>
+            </choice> clinicians can provide Sherpa-like guidance to bereaved people, walking by their
+            side as they navigate the arduous path to rediscovery of meaning and <choice corresp="#meca #unif">
+               <sic source="#V1">purpose... »</sic>
+               <corr source="#V2">purpose...* »</corr>
+            </choice> [@shear_bereavement_2013] L’approche de compagnonnage qu’elles suggèrent est
+            modelée sur ces guides de montagne tibétains qu’on appelle les *sherpas* <choice corresp="#meca #unif">
+               <sic source="#V1">[@shear_pathways_2013]</sic>
+               <corr source="#V2"/>
+            </choice>. Désignant moins le peuple des montagnes que la présence qui guide, l’approche
             *sherpa* est humble et latérale, elle offre une direction mais chemine *à côté* de
             l’endeuillé, soulage une partie du poids de sa peine en lui préparant le terrain. Comme
             l’écrivain préféré, la thérapeute a ainsi une sorte de savoir d’avance, mais non un
@@ -501,40 +484,40 @@
             <lb/>On trouve un modèle similaire à l’approche thérapeutique
             développée par Katherine Shear et ses collègues chez le psychologue Alan D. Wolfelt, qui
             parle lui de *companioning* [@wolfelt_counseling_2016]. Dans un article au titre
-            explicite : « Companioning vs. Treating : Beyond The Medical Model of Bereavement <app corresp="#para #biblio">
-               <lem wit="#V1">Caregiving »[@wolfelt_companioning_1998]</lem>
-               <rdg wit="#V2">Caregiving »[@Wolfelt2013]</rdg>
-            </app>, il s’oppose au modèle médical du traitement, qui fonctionne sur la recherche de
+            explicite : « Companioning vs. Treating : Beyond The Medical Model of Bereavement <choice corresp="#para #biblio">
+               <sic source="#V1">Caregiving »[@wolfelt_companioning_1998]</sic>
+               <corr source="#V2">Caregiving »[@Wolfelt2013]</corr>
+            </choice>, il s’oppose au modèle médical du traitement, qui fonctionne sur la recherche de
             solutions. C’est que, expliquait Katherine Shear au cours d’une rencontre de travail en
-            mars 2018 : <app corresp="#meca #unif">
-               <lem wit="#V1">« We</lem>
-               <rdg wit="#V2">« *We</rdg>
-            </app> have to accept the fact that this \[grief\] is a part of human life. And as
+            mars 2018 : <choice corresp="#meca #unif">
+               <sic source="#V1">« We</sic>
+               <corr source="#V2">« *We</corr>
+            </choice> have to accept the fact that this \[grief\] is a part of human life. And as
             helpers, we want to solve the suffering, but we can’t ! That’s not what we do or can
             do ! Instead, you know without a shred of doubt that you cannot solve this (grief, the
-            loss of a child). This is the starting <app corresp="#meca #unif">
-               <lem wit="#V1">point »</lem>
-               <rdg wit="#V2">point *»</rdg>
-            </app> [@shear_curriculum_2018]. <milestone unit="tei:p"/>
+            loss of a child). This is the starting <choice corresp="#meca #unif">
+               <sic source="#V1">point »</sic>
+               <corr source="#V2">point *»</corr>
+            </choice> [@shear_curriculum_2018]. <milestone unit="tei:p"/>
             <lb/>
-            <app corresp="#meca #unif">
-               <lem wit="#V1">« You</lem>
-               <rdg wit="#V2">« *You</rdg>
-            </app> cannot solve this. This is the starting <app corresp="#meca #unif">
-               <lem wit="#V1">point »</lem>
-               <rdg wit="#V2">point* »</rdg>
-            </app>. J’aime cette idée d’un point de départ dans la non-solution, l’acceptation de
+            <choice corresp="#meca #unif">
+               <sic source="#V1">« You</sic>
+               <corr source="#V2">« *You</corr>
+            </choice> cannot solve this. This is the starting <choice corresp="#meca #unif">
+               <sic source="#V1">point »</sic>
+               <corr source="#V2">point* »</corr>
+            </choice>. J’aime cette idée d’un point de départ dans la non-solution, l’acceptation de
             l’impuissance médicale, le renoncement au traitement qui n’est pas un renoncement au
             *soulagement* : c’est là que commence le soin des endeuillés, administré non pas de haut
             en bas mais côte à côte ; là où commence l’accompagnement, le partage avec ou le portage
             de l’autre. <milestone unit="tei:p"/>
-            <milestone unit="tei:p"/> ## 3. <app corresp="#meca #unif">
-               <lem wit="#V1">« What</lem>
-               <rdg wit="#V2">« *What</rdg>
-            </app> you don’t want to <app corresp="#meca #unif">
-               <lem wit="#V1">hear »</lem>
-               <rdg wit="#V2">hear* »</rdg>
-            </app>
+            <milestone unit="tei:p"/> ## 3. <choice corresp="#meca #unif">
+               <sic source="#V1">« What</sic>
+               <corr source="#V2">« *What</corr>
+            </choice> you don’t want to <choice corresp="#meca #unif">
+               <sic source="#V1">hear »</sic>
+               <corr source="#V2">hear* »</corr>
+            </choice>
             <milestone unit="tei:p"/>
             <lb/>Une entrevue de l’écrivaine danoise Naja Marie Aidt m’a
             bouleversée en ce sens. Aidt n’a pas souffert d’un deuil dit *compliqué*, bien qu’elle
@@ -552,21 +535,21 @@
             du livre — et elle explique dans quel silence elle l’a écrit, dans quelle absence mais
             aussi, avec et dans la présence ressentie de Carl, qu’elle sent parfois à côté d’elle.
             Elle parle de l’en-commun du deuil, de la communauté qu’il crée, de Carl qui, de son
-            vivant, était <app corresp="#meca #unif">
-               <lem wit="#V1">« the</lem>
-               <rdg wit="#V2">« *the</rdg>
-            </app> glue who made sure we <app corresp="#meca #unif">
-               <lem wit="#V1">connected »,</lem>
-               <rdg wit="#V2">connected* »,</rdg>
-            </app> et dont l’absence continue de s’étendre entre ceux qui l’aimaient, de les faire
+            vivant, était <choice corresp="#meca #unif">
+               <sic source="#V1">« the</sic>
+               <corr source="#V2">« *the</corr>
+            </choice> glue who made sure we <choice corresp="#meca #unif">
+               <sic source="#V1">connected »,</sic>
+               <corr source="#V2">connected* »,</corr>
+            </choice> et dont l’absence continue de s’étendre entre ceux qui l’aimaient, de les faire
             se rejoindre. Et elle évoque ce titre contre-intuitif, qui intime et invite à donner,
-            alors que dans le deuil on a le sentiment qu’on nous a tout pris : <app corresp="#meca #unif">
-               <lem wit="#V1">« you</lem>
-               <rdg wit="#V2">« *you</rdg>
-            </app> have to give back what the dead gave <app corresp="#meca #unif">
-               <lem wit="#V1">you »</lem>
-               <rdg wit="#V2">you* »</rdg>
-            </app>. S’il y a don continu, même après la perte, alors il y a mouvement, il y a
+            alors que dans le deuil on a le sentiment qu’on nous a tout pris : <choice corresp="#meca #unif">
+               <sic source="#V1">« you</sic>
+               <corr source="#V2">« *you</corr>
+            </choice> have to give back what the dead gave <choice corresp="#meca #unif">
+               <sic source="#V1">you »</sic>
+               <corr source="#V2">you* »</corr>
+            </choice>. S’il y a don continu, même après la perte, alors il y a mouvement, il y a
             relation, il y a vie encore. Et les morts continuent d’avoir place dans nos communautés,
             et mieux encore, de faire lien entre nous[^21], contre la sécheresse et la solitude du
             deuil normé. <milestone unit="tei:p"/>
@@ -579,10 +562,10 @@
             avec elles, dans ce présent de l’entrevue, ce temps réel de la rencontre. <milestone
                unit="tei:p"/>
             <lb/>Les deux femmes se connaissent, elles ont déjà fait des
-            entrevues ensemble, peut-être même sont-elles amies, mais ce geste m’a <app corresp="#subst #change">
-               <lem wit="#V1">affectée</lem>
-               <rdg wit="#V2">émue</rdg>
-            </app>, comme si tout à coup c’était vers moi que cette main se tendait, qu’elle étendait
+            entrevues ensemble, peut-être même sont-elles amies, mais ce geste m’a <choice corresp="#subst #change">
+               <sic source="#V1">affectée</sic>
+               <corr source="#V2">émue</corr>
+            </choice>, comme si tout à coup c’était vers moi que cette main se tendait, qu’elle étendait
             soudain son actualité, par cette familiarité simple, chaleureuse. Car cet accompagnement
             révèle qu’il est possible de parler de cette expérience déchirante — la perte réputée la
             plus indicible d’un enfant — en familiarité et même avec une certaine joie ; la joie de
@@ -602,10 +585,10 @@
             de l’être cher ; et en même temps c’est elle qui continue en son absence : on parle au
             mort, à la morte, on l’interpelle, on continue de l’entretenir de la menue épicerie de
             la vie, on lui donne des nouvelles du quartier aussi bien qu’on sollicite son avis
-            devant tel fait majeur, à commencer <app corresp="#subst #add">
-               <lem wit="#V1"/>
-               <rdg wit="#V2">justement </rdg>
-               </app>par sa mort. <milestone unit="tei:p"/> <lb/>Dans ces textes souvent épistolaires, éminemment adressés, à
+            devant tel fait majeur, à commencer <choice corresp="#subst #add">
+               <sic source="#V1"/>
+               <corr source="#V2">justement </corr>
+               </choice>par sa mort. <milestone unit="tei:p"/> <lb/>Dans ces textes souvent épistolaires, éminemment adressés, à
                   défaut d’un compagnonnage adéquat rarement trouvé dans l’entourage, c’est le mort
                   lui-même qui devient le compagnon et l’interlocuteur de sa propre absence, de ce
                   deuil qui devient une forme nouvelle de la relation, un dernier épisode de
@@ -613,19 +596,19 @@
                   modèle qui domine aujourd’hui les études cliniques sur le deuil n’est-il pas celui
                   du renoncement au lien, comme Freud l’avait brièvement suggéré dans son article
                   embryonnaire de 1917[^23], mais celui au contraire des *liens continués*,
-            <app corresp="#meca #unif">
-                  <lem wit="#V1">« continuing bonds »</lem>
-               <rdg wit="#V2">« *continuing bonds* »</rdg>
-            </app> mis en évidence par Dennis Klass et Edith Maria Steffen à la fin des années 1990
+            <choice corresp="#meca #unif">
+                  <sic source="#V1">« continuing bonds »</sic>
+               <corr source="#V2">« *continuing bonds* »</corr>
+            </choice> mis en évidence par Dennis Klass et Edith Maria Steffen à la fin des années 1990
             [@klass_continuing_2018]. Katherine M. Shear suggère ainsi que le deuil est « une forme
             de l’amour » [@shear_grief_2015], sa continuation dans le temps dès lors seulement
-            naturelle : <app corresp="#meca #unif">
-               <lem wit="#V1">« Death</lem>
-               <rdg wit="#V2">« *Death</rdg>
-            </app> is forever, and correspondingly grief is a lasting <app corresp="#meca #unif">
-               <lem wit="#V1">response »</lem>
-               <rdg wit="#V2">response* »</rdg>
-            </app> [@shear_grief_2012]. C’est l’expérience même du deuil, alors, qui se vit comme un
+            naturelle : <choice corresp="#meca #unif">
+               <sic source="#V1">« Death</sic>
+               <corr source="#V2">« *Death</corr>
+            </choice> is forever, and correspondingly grief is a lasting <choice corresp="#meca #unif">
+               <sic source="#V1">response »</sic>
+               <corr source="#V2">response* »</corr>
+            </choice> [@shear_grief_2012]. C’est l’expérience même du deuil, alors, qui se vit comme un
             accompagnement. <milestone unit="tei:p"/>
             <lb/>## 4. *In the mood for care* <milestone unit="tei:p"/>
             <lb/>Un film récent et très primé me semble illustrer parfaitement
@@ -673,17 +656,17 @@
             défunte, qui remplit tout l’espace partagé de l’auto, chacun seul mais uni par cette
             écoute. Cette bande-son des répliques d’*Oncle Vanya* réalisée par l’épouse laisse au
             mari endeuillé, dans le rôle-titre, l’espace exact où insérer sa propre voix. Ce
-            dialogue esseulé mais dont il reste <app corresp="#subst #change">
-               <lem wit="#V1">l’échafaudage</lem>
-               <rdg wit="#V2">l’armature</rdg>
-            </app> m’évoque le dialogue continué de Julian Barnes avec sa femme défunte, dans son
-            journal de deuil *Levels of Life* [@barnes_levels_2013] : <app corresp="#meca #unif">
-               <lem wit="#V1">« I</lem>
-               <rdg wit="#V2">« *I</rdg>
-            </app> tease her, and she teases me back ; we know the lines by <app corresp="#meca #unif">
-               <lem wit="#V1">heart »</lem>
-               <rdg wit="#V2">heart* »</rdg>
-            </app>. *Nous connaissons les répliques par cœur...* Dispositif ingénieux pour
+            dialogue esseulé mais dont il reste <choice corresp="#subst #change">
+               <sic source="#V1">l’échafaudage</sic>
+               <corr source="#V2">l’armature</corr>
+            </choice> m’évoque le dialogue continué de Julian Barnes avec sa femme défunte, dans son
+            journal de deuil *Levels of Life* [@barnes_levels_2013] : <choice corresp="#meca #unif">
+               <sic source="#V1">« I</sic>
+               <corr source="#V2">« *I</corr>
+            </choice> tease her, and she teases me back ; we know the lines by <choice corresp="#meca #unif">
+               <sic source="#V1">heart »</sic>
+               <corr source="#V2">heart* »</corr>
+            </choice>. *Nous connaissons les répliques par cœur...* Dispositif ingénieux pour
             s’accompagner dans un deuil persistant : un deuil qu’on veut soigner en tant que
             relation qu’on veut entretenir, horizontale et continue par rapport à l’événement
             ponctuel et vertical de la mort. <milestone unit="tei:p"/>
@@ -706,13 +689,13 @@
             inlassable vers la ville de la mémoire et de la cendre. <milestone unit="tei:p"/>
             <lb/>Comme chez Naja Marie Aidt, ce que les morts nous ont donné,
             il faut ne pas l’accaparer, mais accepter de le partager, de le laisser circuler de
-            nouveau, <app corresp="#meca #unif">
-               <lem wit="#V1">« you</lem>
-               <rdg wit="#V2">« *you</rdg>
-            </app> have to give back what the dead gave <app corresp="#meca #unif">
-               <lem wit="#V1">you »,</lem>
-               <rdg wit="#V2">you* »,</rdg>
-            </app> cette demande apparemment paradoxale, exorbitante. <milestone unit="tei:p"/>
+            nouveau, <choice corresp="#meca #unif">
+               <sic source="#V1">« you</sic>
+               <corr source="#V2">« *you</corr>
+            </choice> have to give back what the dead gave <choice corresp="#meca #unif">
+               <sic source="#V1">you »,</sic>
+               <corr source="#V2">you* »,</corr>
+            </choice> cette demande apparemment paradoxale, exorbitante. <milestone unit="tei:p"/>
             <lb/>Il faut accepter de se laisser porter par d’autres y compris
             ceux qu’on a perdus ; accepter de se laisser émouvoir donc mouvoir, contre la rigidité
             du premier deuil, sa *self-righteousness*. Il faut accepter que ça vibre dans une langue
@@ -738,161 +721,161 @@
             <lb/>En septembre 2018, il initie un blogue, *The Red Hand
             Files*[^31], où il invite ses fans à lui poser *n’importe quelle question*, et il répond
             à une sélection de celles-ci par une lettre hebdomadaire. Le chanteur déclare maintenant
-            que grâce à ces échanges, ses fans lui ont sauvé la vie : <app corresp="#meca #unif">
-               <lem wit="#V1">« the</lem>
-               <rdg wit="#V2">« *the</rdg>
-            </app> care from the audience saved me. I was helped hugely by my audience, and when I
+            que grâce à ces échanges, ses fans lui ont sauvé la vie : <choice corresp="#meca #unif">
+               <sic source="#V1">« the</sic>
+               <corr source="#V2">« *the</corr>
+            </choice> care from the audience saved me. I was helped hugely by my audience, and when I
             play now, I feel like that’s giving something back. What I’m doing artistically is
             entirely repaying a debt... People say, How can you go on tour ? But for me it’s the
-            other way around. How could I <app corresp="#meca #unif">
-               <lem wit="#V1">not ? »</lem>
-               <rdg wit="#V2">not ?* »</rdg>
-            </app> [@marchese_nick_2022] On entend ici résonner la phrase-titre de Naja Marie Aidt :
+            other way around. How could I <choice corresp="#meca #unif">
+               <sic source="#V1">not ? »</sic>
+               <corr source="#V2">not ?* »</corr>
+            </choice> [@marchese_nick_2022] On entend ici résonner la phrase-titre de Naja Marie Aidt :
             *When death takes something from you give it back*, quand la mort t’a pris quelque chose
             rends-le. <milestone unit="tei:p"/>
             <lb/>Pour un chanteur dont le *New York Times* rappelle qu’il a
             conquis sa notoriété par un comportement inverse d’agressivité envers son public, son
             groupe *The Birthday Party* considéré comme l’un des plus violents en Angleterre dans
-            les années 1980, la transformation est radicale. C’est que, dit le chanteur : <app corresp="#meca #unif">
-               <lem wit="#V1">« My</lem>
-               <rdg wit="#V2">« *My</rdg>
-            </app> son <app corresp="#meca #unif">
-               <lem wit="#V1">died ». « It</lem>
-               <rdg wit="#V2">died* ». « *It</rdg>
-            </app> changed everything for me. Coming out of punk rock, I had an adversarial,
+            les années 1980, la transformation est radicale. C’est que, dit le chanteur : <choice corresp="#meca #unif">
+               <sic source="#V1">« My</sic>
+               <corr source="#V2">« *My</corr>
+            </choice> son <choice corresp="#meca #unif">
+               <sic source="#V1">died ». « It</sic>
+               <corr source="#V2">died* ». « *It</corr>
+            </choice> changed everything for me. Coming out of punk rock, I had an adversarial,
             conflicted relationship with my audience, especially in the early days. But after my son
             died I got an incredible amount of mail from people writing to me with similar
-            experiences. I felt connected to them. I felt like we were suffering <app corresp="#meca #unif">
-               <lem wit="#V1">together »</lem>
-               <rdg wit="#V2">together* »</rdg>
-            </app> [@aswad_concert_2019]. <milestone unit="tei:p"/>
+            experiences. I felt connected to them. I felt like we were suffering <choice corresp="#meca #unif">
+               <sic source="#V1">together »</sic>
+               <corr source="#V2">together* »</corr>
+            </choice> [@aswad_concert_2019]. <milestone unit="tei:p"/>
             <lb/>Dans le prolongement des *Red Hand Files*, Cave se lance dans
             un format plus périlleux encore : la tournée *In Conversation*, décrite par *The
             Guardian* comme « se situant quelque part entre le concert privé et la thérapie de
-            groupe[^34] » [@rogers_conversations_2019], et par Cave comme <app corresp="#meca #unif">
-               <lem wit="#V1">« an</lem>
-               <rdg wit="#V2">« *an</rdg>
-            </app> exercise in <app corresp="#meca #unif">
-               <lem wit="#V1">connectivity »</lem>
-               <rdg wit="#V2">connectivity* »</rdg>
-            </app> [@aswad_concert_2019]. Le chanteur-compositeur y répond en direct à des questions
+            groupe[^34] » [@rogers_conversations_2019], et par Cave comme <choice corresp="#meca #unif">
+               <sic source="#V1">« an</sic>
+               <corr source="#V2">« *an</corr>
+            </choice> exercise in <choice corresp="#meca #unif">
+               <sic source="#V1">connectivity »</sic>
+               <corr source="#V2">connectivity* »</corr>
+            </choice> [@aswad_concert_2019]. Le chanteur-compositeur y répond en direct à des questions
             du public, puis joue au piano des morceaux demandés par l’audience ou suscités par la
             teneur du dialogue. Un exercice de vulnérabilité et d’échange qui est aussi une scène
-            d’engagement <app corresp="#subst #add">
-               <lem wit="#V1">corporel</lem>
-               <rdg wit="#V2">corporel[^wildgod]</rdg>
-            </app>, par laquelle l’endeuillé — l’écrivain, cette figure à investir — est *au milieu*,
+            d’engagement <choice corresp="#subst #add">
+               <sic source="#V1">corporel</sic>
+               <corr source="#V2">corporel[^wildgod]</corr>
+            </choice>, par laquelle l’endeuillé — l’écrivain, cette figure à investir — est *au milieu*,
             entouré et soutenu par le nombre sans chiffre de l’écoute. <milestone unit="tei:p"/>
-            <lb/><app corresp="#subst #add"><lem wit="#V1"/><rdg wit="#V2">[^wildgod]: Il n’hésite d’ailleurs pas à se jeter dans la
+            <lb/><choice corresp="#subst #add"><sic source="#V1"/><corr source="#V2">[^wildgod]: Il n’hésite d’ailleurs pas à se jeter dans la
             foule qui, instantanément, le porte, comme lors du concert de la tournée « Wild God » vu
             à Montréal le 24 avril 2025. <milestone unit="tei:p"/>
-            <lb/></rdg></app> Ailleurs Cave raconte cette anecdote sur le pouvoir des
-            actes de gentillesse, <app corresp="#meca #unif">
-               <lem wit="#V1">« the</lem>
-               <rdg wit="#V2">« *the</rdg>
-            </app> small but monumental <app corresp="#meca #unif">
-               <lem wit="#V1">gestures »</lem>
-               <rdg wit="#V2">gestures* »</rdg>
-            </app> [@ohagan_songs_2022]. Il est question d’un restaurant végétarien de Brighton dont
+            <lb/></corr></choice> Ailleurs Cave raconte cette anecdote sur le pouvoir des
+            actes de gentillesse, <choice corresp="#meca #unif">
+               <sic source="#V1">« the</sic>
+               <corr source="#V2">« *the</corr>
+            </choice> small but monumental <choice corresp="#meca #unif">
+               <sic source="#V1">gestures »</sic>
+               <corr source="#V2">gestures* »</corr>
+            </choice> [@ohagan_songs_2022]. Il est question d’un restaurant végétarien de Brighton dont
             il est un habitué, appelé *Infinity*, où il a développé une relation chaleureuse avec la
-            serveuse, <app corresp="#meca #unif">
-               <lem wit="#V1">« just</lem>
-               <rdg wit="#V2">« *just</rdg>
-            </app> the normal pleasantries, but I liked <app corresp="#meca #unif">
-               <lem wit="#V1">her »</lem>
-               <rdg wit="#V2">her* »</rdg>
-            </app>. Lorsqu’il y retourne pour la première fois après la mort d’Arthur, elle le sert
+            serveuse, <choice corresp="#meca #unif">
+               <sic source="#V1">« just</sic>
+               <corr source="#V2">« *just</corr>
+            </choice> the normal pleasantries, but I liked <choice corresp="#meca #unif">
+               <sic source="#V1">her »</sic>
+               <corr source="#V2">her* »</corr>
+            </choice>. Lorsqu’il y retourne pour la première fois après la mort d’Arthur, elle le sert
             normalement, se comportant de façon très professionnelle, sans toutefois lui témoigner
             d’attention particulière, et il en est un peu surpris. Mais lorsque vient le moment de
             lui remettre sa monnaie, elle lui serre la main avec intention. Et tout à coup ce geste
             calme, d’une grande simplicité, devient le geste par excellence de *care*, le soutien
             silencieux qui, dit-il, se met à signifier plus que tout ce que qui que ce soit avait
-            essayé de lui dire <app corresp="#meca #unif">
-               <lem wit="#V1">— « you</lem>
-               <rdg wit="#V2">— « *you</rdg>
-            </app> know, because of the failure of language in the face of <app corresp="#meca #unif">
-               <lem wit="#V1">catastrophe »</lem>
-               <rdg wit="#V2">catastrophe* »</rdg>
-            </app>. Dans les moments difficiles, dit-il, il retourne souvent à *ce sentiment qu’elle
-            lui a donné* : <app corresp="#meca #unif">
-               <lem wit="#V1">« In</lem>
-               <rdg wit="#V2">« *In</rdg>
-            </app> difficult times I often go back to that feeling she gave <app corresp="#meca #unif">
-               <lem wit="#V1">me »</lem>
-               <rdg wit="#V2">me* »</rdg>
-            </app>. Car dans le deuil on se croit seul et isolé, et, dans ce café au nom d’infini, ce
+            essayé de lui dire <choice corresp="#meca #unif">
+               <sic source="#V1">— « you</sic>
+               <corr source="#V2">— « *you</corr>
+            </choice> know, because of the failure of language in the face of <choice corresp="#meca #unif">
+               <sic source="#V1">catastrophe »</sic>
+               <corr source="#V2">catastrophe* »</corr>
+            </choice>. Dans les moments difficiles, dit-il, il retourne souvent à *ce sentiment qu’elle
+            lui a donné* : <choice corresp="#meca #unif">
+               <sic source="#V1">« In</sic>
+               <corr source="#V2">« *In</corr>
+            </choice> difficult times I often go back to that feeling she gave <choice corresp="#meca #unif">
+               <sic source="#V1">me »</sic>
+               <corr source="#V2">me* »</corr>
+            </choice>. Car dans le deuil on se croit seul et isolé, et, dans ce café au nom d’infini, ce
             geste a été le témoignage du contraire. <milestone unit="tei:p"/>
             <lb/>Découvrant ainsi *l’échec du langage devant la catastrophe*,
             et conséquemment l’absence d’un *langage de deuil* aisément accessible ou que l’on soit
             prêt à entendre, Cave décide après la mort de son fils de placer tout son effort à
-            l’articuler : <app corresp="#meca #unif">
-               <lem wit="#V1">« To</lem>
-               <rdg wit="#V2">« *To</rdg>
-            </app> be forced to grieve publicly, I had to find a means of articulating what had
+            l’articuler : <choice corresp="#meca #unif">
+               <sic source="#V1">« To</sic>
+               <corr source="#V2">« *To</corr>
+            </choice> be forced to grieve publicly, I had to find a means of articulating what had
             happened. Finding the language became, for me, the way out. There is a great deficit in
-            the language around grief. It’s not something we are practiced at as a <app corresp="#meca #md">
-               <lem wit="#V1">society, *because</lem>
-               <rdg wit="#V2">society,* because</rdg>
-            </app> it is too hard to talk about and, more importantly, it’s too hard to listen <app corresp="#meca #md">
-               <lem wit="#V1">to*[^37] »</lem>
-               <rdg wit="#V2">to[^37] »</rdg>
-            </app> [@cave_faith_2022, p. 44]. <milestone unit="tei:p"/>
+            the language around grief. It’s not something we are practiced at as a <choice corresp="#meca #md">
+               <sic source="#V1">society, *because</sic>
+               <corr source="#V2">society,* because</corr>
+            </choice> it is too hard to talk about and, more importantly, it’s too hard to listen <choice corresp="#meca #md">
+               <sic source="#V1">to*[^37] »</sic>
+               <corr source="#V2">to[^37] »</corr>
+            </choice> [@cave_faith_2022, p. 44]. <milestone unit="tei:p"/>
             <lb/>Cette remarque rappelle quant à elle le titre de l’entrevue de
-            Aidt : <app corresp="#meca #unif">
-               <lem wit="#V1">« what</lem>
-               <rdg wit="#V2">« *what</rdg>
-            </app> you don’t want to <app corresp="#meca #unif">
-               <lem wit="#V1">hear »</lem>
-               <rdg wit="#V2">hear* »</rdg>
-            </app>. Ce qu’on ne veut pas entendre, c’est aussi la nouvelle reçue au téléphone qui
-            déchire irrémédiablement la <app corresp="#meca #unif">
-               <lem wit="#V1">vie .</lem>
-               <rdg wit="#V2">vie.</rdg>
-            </app> Pour Cave, c’est l’image de sa femme assise à la table de la cuisine en train
-            d’écouter la radio : la dernière image de la vie d’avant. En conséquence, poursuit-il : <app corresp="#meca #unif">
-               <lem wit="#V1">« So</lem>
-               <rdg wit="#V2">« *So</rdg>
-            </app> many grieving people just remain silent, trapped in their own secret thoughts,
-            trapped in their own minds, with their only form of company being the dead <app corresp="#meca #unif">
-               <lem wit="#V1">themselves »</lem>
-               <rdg wit="#V2">themselves* »</rdg>
-            </app> [@cave_faith_2022, p. 44]. <milestone unit="tei:p"/>
+            Aidt : <choice corresp="#meca #unif">
+               <sic source="#V1">« what</sic>
+               <corr source="#V2">« *what</corr>
+            </choice> you don’t want to <choice corresp="#meca #unif">
+               <sic source="#V1">hear »</sic>
+               <corr source="#V2">hear* »</corr>
+            </choice>. Ce qu’on ne veut pas entendre, c’est aussi la nouvelle reçue au téléphone qui
+            déchire irrémédiablement la <choice corresp="#meca #unif">
+               <sic source="#V1">vie .</sic>
+               <corr source="#V2">vie.</corr>
+            </choice> Pour Cave, c’est l’image de sa femme assise à la table de la cuisine en train
+            d’écouter la radio : la dernière image de la vie d’avant. En conséquence, poursuit-il : <choice corresp="#meca #unif">
+               <sic source="#V1">« So</sic>
+               <corr source="#V2">« *So</corr>
+            </choice> many grieving people just remain silent, trapped in their own secret thoughts,
+            trapped in their own minds, with their only form of company being the dead <choice corresp="#meca #unif">
+               <sic source="#V1">themselves »</sic>
+               <corr source="#V2">themselves* »</corr>
+            </choice> [@cave_faith_2022, p. 44]. <milestone unit="tei:p"/>
             <lb/>À partir de ce deuil qu’il décrit lui-même comme à la fois
             singulier et banal, de cette expérience qu’aucun degré de fortune ne peut endiguer ni
             prévenir, Cave décide de se livrer à ces formes de partage, notamment au format
-            épistolaire des *Red Hand Files*, afin de ne pas laisser chacun à <app corresp="#meca #md">
-               <lem wit="#V1">*sa* *question</lem>
-               <rdg wit="#V2">*sa question</rdg>
-            </app> épouvantable, solitaire* : <milestone unit="tei:p"/>
-            <lb/>&amp; <app corresp="#meca #unif">
-               <lem wit="#V1">You</lem>
-               <rdg wit="#V2">*You</rdg>
-            </app> know, if there is one message I have, really, it concerns the question all
+            épistolaire des *Red Hand Files*, afin de ne pas laisser chacun à <choice corresp="#meca #md">
+               <sic source="#V1">*sa* *question</sic>
+               <corr source="#V2">*sa question</corr>
+            </choice> épouvantable, solitaire* : <milestone unit="tei:p"/>
+            <lb/>&amp; <choice corresp="#meca #unif">
+               <sic source="#V1">You</sic>
+               <corr source="#V2">*You</corr>
+            </choice> know, if there is one message I have, really, it concerns the question all
             grieving people ask : Does it ever get better ? Over and over again, the inbox of The
             Red Hand Files is filled with letters from people wanting an answer to that appalling,
-            solitary question. The answer is yes. We become different. We become <app corresp="#meca #unif">
-               <lem wit="#V1">better</lem>
-               <rdg wit="#V2">better*</rdg>
-            </app> [@cave_faith_2022, p. 43]. <milestone unit="tei:p"/>
+            solitary question. The answer is yes. We become different. We become <choice corresp="#meca #unif">
+               <sic source="#V1">better</sic>
+               <corr source="#V2">better*</corr>
+            </choice> [@cave_faith_2022, p. 43]. <milestone unit="tei:p"/>
             <lb/>Suit l’album *Ghosteen* en 2019, avec son beau néologisme, par
             lequel le chanteur dit avoir insufflé « une respiration dans le vide de l’absence »
             [@cave_faith_2022, p. 47]. C’est aussi que la scène est devenue l’espace d’un cérémonial
             dans lequel le chanteur se sent accompagné de son fils, où il peut littéralement le
-            sentir, un lieu de rituel à la lisière de la créativité et de la <app corresp="#subst #add">
-               <lem wit="#V1">croyance en un autre monde</lem>
-               <rdg wit="#V2">croyance</rdg>
-            </app>. Il dit ainsi, chaque fois qu’il entre sur scène pour prendre les questions du
+            sentir, un lieu de rituel à la lisière de la créativité et de la <choice corresp="#subst #add">
+               <sic source="#V1">croyance en un autre monde</sic>
+               <corr source="#V2">croyance</corr>
+            </choice>. Il dit ainsi, chaque fois qu’il entre sur scène pour prendre les questions du
             public, pénétrer dans un « royaume impossible », et ce, dès les coulisses, où il sent la
             présence d’Arthur avec lui tandis que, au moment d’entrer en scène, il ressent une
             présence forte et soutenante, une force énorme — comme si la main d’Arthur était dans la
-            sienne : <app corresp="#meca #unif">
-               <lem wit="#V1">« his</lem>
-               <rdg wit="#V2">« *his</rdg>
-            </app> hand in mine. It actually felt like the hand of the woman who had reached out to
-            me in Infinity — as if her hand was somehow his <app corresp="#meca #unif">
-               <lem wit="#V1">hand »</lem>
-               <rdg wit="#V2">hand* »</rdg>
-            </app> [@cave_faith_2022, p. 46]. À travers cette expérience répétée chaque soir, Cave
+            sienne : <choice corresp="#meca #unif">
+               <sic source="#V1">« his</sic>
+               <corr source="#V2">« *his</corr>
+            </choice> hand in mine. It actually felt like the hand of the woman who had reached out to
+            me in Infinity — as if her hand was somehow his <choice corresp="#meca #unif">
+               <sic source="#V1">hand »</sic>
+               <corr source="#V2">hand* »</corr>
+            </choice> [@cave_faith_2022, p. 46]. À travers cette expérience répétée chaque soir, Cave
             dit avoir créé une occasion d’aider les gens autant que de recevoir leur aide, un espace
             spécialement dédié à cet accompagnement mutuel, et découvert par là une sorte
             d’« invincibilité à travers une intense vulnérabilité » [@cave_faith_2022, p. 46].
@@ -901,13 +884,13 @@
             compagnonnage est un livre d’entretiens avec Seán O’Hagan tenus de 2020 à 2022, en
             pleine pandémie, et paru à l’automne 2022 sous le titre *Hope, Faith and Carnage*
             [@cave_faith_2022] (qui joue de celui d’un livre de 1993 : *Hope, Faith &amp; Courage :
-            Stories from the Fellowship of Cocaine Anonymous*). Son exergue est : <app corresp="#meca #unif">
-               <lem wit="#V1">« A</lem>
-               <rdg wit="#V2">« *A</rdg>
-            </app> little child shall lead <app corresp="#meca #unif">
-               <lem wit="#V1">them.</lem>
-               <rdg wit="#V2">them.*</rdg>
-            </app> / Isaiah 11:6 ». Tout le propos du chanteur consiste à professer son
+            Stories from the Fellowship of Cocaine Anonymous*). Son exergue est : <choice corresp="#meca #unif">
+               <sic source="#V1">« A</sic>
+               <corr source="#V2">« *A</corr>
+            </choice> little child shall lead <choice corresp="#meca #unif">
+               <sic source="#V1">them.</sic>
+               <corr source="#V2">them.*</corr>
+            </choice> / Isaiah 11:6 ». Tout le propos du chanteur consiste à professer son
             bouleversement radical par la mort de son fils. Le deuil de l’enfant inaugure selon lui
             un monde nouveau, un « royaume impossible » et pourtant habitable, que la présence du
             fils, en filigrane mais sentie, son autorité d’outre-tombe inspire littéralement.
@@ -917,17 +900,17 @@
             <lb/>L’artiste en vient ainsi à reconnaître : <milestone
                unit="tei:p"/>
             <lb/>
-            <app corresp="#meca #unif">
-               <lem wit="#V1">&gt;Looking</lem>
-               <rdg wit="#V2">&gt; *Looking</rdg>
-            </app> back, I think the constant articulation of my own grief and hearing other
+            <choice corresp="#meca #unif">
+               <sic source="#V1">&gt;Looking</sic>
+               <corr source="#V2">&gt; *Looking</corr>
+            </choice> back, I think the constant articulation of my own grief and hearing other
             people’s stories was very healing, because those who grieve know. They are the ones to
             tell the story. They have gone to the darkness and returned with the knowledge. They
             hold the information that other grieving people need to hear. And most astonishing of
-            all, we all go there, in <app corresp="#meca #unif">
-               <lem wit="#V1">time</lem>
-               <rdg wit="#V2">time*</rdg>
-            </app> [@cave_faith_2022, p. 47]. <milestone unit="tei:p"/>
+            all, we all go there, in <choice corresp="#meca #unif">
+               <sic source="#V1">time</sic>
+               <corr source="#V2">time*</corr>
+            </choice> [@cave_faith_2022, p. 47]. <milestone unit="tei:p"/>
             <lb/>« Ceux qui sont en deuil *savent*. Ils sont allés vers la
             noirceur et sont revenus avec le savoir ». C’est une vision polémique du deuil, qui
             d’une situation perçue — et d’abord bien réelle — de déficience et de déperdition, fait
@@ -945,63 +928,63 @@
             attacher », ou de *relegěre* : « rassembler de nouveau, recueillir de nouveau ». Là où,
             sans avoir complètement abdiqué son scepticisme et son doute à l’égard de l’existence de
             Dieu, il accepte de s’en remettre à des intuitions, des sentiments de présence parce que
-            ceux-ci *lui permettent de vivre* : <app corresp="#meca #unif">
-               <lem wit="#V1">« Why</lem>
-               <rdg wit="#V2">« *Why</rdg>
-            </app> would I deny myself what is clearly <app corresp="#meca #unif">
-               <lem wit="#V1">beneficial »</lem>
-               <rdg wit="#V2">beneficial* »</rdg>
-            </app> demande-t-il dans l’un des entretiens. <app corresp="#meca #unif">
-               <lem wit="#V1">« That</lem>
-               <rdg wit="#V2">« *That</rdg>
-            </app> is what my songs have asked for some time : “What if ?” A question unencumbered
-            by an <app corresp="#meca #unif">
-               <lem wit="#V1">answer »</lem>
-               <rdg wit="#V2">answer* »</rdg>
-            </app> [@cave_faith_2022, p. 78-79]. Ce flottement créatif rappelle la recommandation de
-            Kathy Shear à l’égard des *sherpas* du deuil : <app corresp="#meca #unif">
-               <lem wit="#V1">« they</lem>
-               <rdg wit="#V2">« *they</rdg>
-            </app> must resist the urge to provide answers to unanswerable <app corresp="#meca #unif">
-               <lem wit="#V1">questions »</lem>
-               <rdg wit="#V2">questions* »</rdg>
-            </app>. Dans cette question non encombrée d’une réponse, je trouve une nouvelle forme de
+            ceux-ci *lui permettent de vivre* : <choice corresp="#meca #unif">
+               <sic source="#V1">« Why</sic>
+               <corr source="#V2">« *Why</corr>
+            </choice> would I deny myself what is clearly <choice corresp="#meca #unif">
+               <sic source="#V1">beneficial »</sic>
+               <corr source="#V2">beneficial* »</corr>
+            </choice> demande-t-il dans l’un des entretiens. <choice corresp="#meca #unif">
+               <sic source="#V1">« That</sic>
+               <corr source="#V2">« *That</corr>
+            </choice> is what my songs have asked for some time : “What if ?” A question unencumbered
+            by an <choice corresp="#meca #unif">
+               <sic source="#V1">answer »</sic>
+               <corr source="#V2">answer* »</corr>
+            </choice> [@cave_faith_2022, p. 78-79]. Ce flottement créatif rappelle la recommandation de
+            Kathy Shear à l’égard des *sherpas* du deuil : <choice corresp="#meca #unif">
+               <sic source="#V1">« they</sic>
+               <corr source="#V2">« *they</corr>
+            </choice> must resist the urge to provide answers to unanswerable <choice corresp="#meca #unif">
+               <sic source="#V1">questions »</sic>
+               <corr source="#V2">questions* »</corr>
+            </choice>. Dans cette question non encombrée d’une réponse, je trouve une nouvelle forme de
             *care* : une aspiration, un aller-vers qui ne demande pas de certitude, mais qui se
             tend, comme la main qui aide sans rien espérer en retour. C’est tout le sens de l’entrée
-            numéro 6 <app corresp="#para #biblio">
-               <lem wit="#V1">[@cave_issue_2020],</lem>
-               <rdg wit="#V2">[@cave_issue_2018],</rdg>
-            </app> devenue virale lorsqu’elle a été publiée en octobre 2018, et sur laquelle je
+            numéro 6 <choice corresp="#para #biblio">
+               <sic source="#V1">[@cave_issue_2020],</sic>
+               <corr source="#V2">[@cave_issue_2018],</corr>
+            </choice> devenue virale lorsqu’elle a été publiée en octobre 2018, et sur laquelle je
             terminerai, qui fait du deuil le compagnon et comme l’endos de l’amour, permettant
             d’entrer *dans une autre lumière* pour que le deuil puisse devenir un *care* :
                <milestone unit="tei:p"/>
             <lb/>
-            <app corresp="#meca #md">
-               <lem wit="#V1">**ISSUE</lem>
-               <rdg wit="#V2">&gt;**ISSUE</rdg>
-            </app> \#6 / OCTOBER 2018** <app corresp="#meca #unif #md">
-               <lem wit="#V1"><milestone unit="tei:p"/> <lb/>
-                  &gt;I</lem>
-               <rdg wit="#V2"><lb/>&gt; &gt;*I</rdg>
-            </app> have experienced the death of my father, my sister, and my first love <lb/>&gt;in the
+            <choice corresp="#meca #md">
+               <sic source="#V1">**ISSUE</sic>
+               <corr source="#V2">&gt;**ISSUE</corr>
+            </choice> \#6 / OCTOBER 2018** <choice corresp="#meca #unif #md">
+               <sic source="#V1"><milestone unit="tei:p"/> <lb/>
+                  &gt;I</sic>
+               <corr source="#V2"><lb/>&gt; &gt;*I</corr>
+            </choice> have experienced the death of my father, my sister, and my first love <lb/>&gt;in the
             past few years and feel that I have some communication with them, <lb/>&gt;mostly through
             dreams. They are helping me. Are you and Susie feeling <lb/>&gt;that your son Arthur is with you
-            and communicating in some <app corresp="#meca #unif #md">
-               <lem wit="#V1">way ?</lem>
-               <rdg wit="#V2">way ?*</rdg>
-            </app> &gt; <milestone unit="tei:p"/>
-            <lb/>&gt; <app corresp="#meca #md">
-               <lem wit="#V1">[CYNTHIA, SHELBURNE FALLS,</lem><!--on est là et c'est le bordel-->
-               <rdg wit="#V2">[Cynthia, Shelburne Falls,</rdg>
-            </app> VT, USA]{.smallcaps} <app corresp="#meca #md">
-               <lem wit="#V1"><lb/>&gt;</lem>
-               <rdg wit="#V2"><milestone unit="tei:p"/>
-             </rdg>
-            </app>
-            <lb/>&gt; <app corresp="#meca #unif">
-               <lem wit="#V1">&gt;Dear Cynthia, <lb/>&gt; <lb/>&gt;This</lem>
-               <rdg wit="#V2">&gt;*Dear Cynthia,* &gt; &gt;*This</rdg>
-            </app> is a very beautiful question and I am grateful that you have asked <lb/>&gt;it. It seems
+            and communicating in some <choice corresp="#meca #unif #md">
+               <sic source="#V1">way ?</sic>
+               <corr source="#V2">way ?*</corr>
+            </choice> &gt; <milestone unit="tei:p"/>
+            <lb/>&gt; <choice corresp="#meca #md">
+               <sic source="#V1">[CYNTHIA, SHELBURNE FALLS,</sic>
+               <corr source="#V2">[Cynthia, Shelburne Falls,</corr>
+            </choice> VT, USA]{.smallcaps} <choice corresp="#meca #md">
+               <sic source="#V1"><lb/>&gt;</sic>
+               <corr source="#V2"><milestone unit="tei:p"/>
+             </corr>
+            </choice>
+            <lb/>&gt; <choice corresp="#meca #unif">
+               <sic source="#V1">&gt;Dear Cynthia, <lb/>&gt; <lb/>&gt;This</sic>
+               <corr source="#V2">&gt;*Dear Cynthia,* &gt; &gt;*This</corr>
+            </choice> is a very beautiful question and I am grateful that you have asked <lb/>&gt;it. It seems
             to me, that if we love, we grieve. That’s the deal. That’s <lb/>&gt;the pact. Grief and love are
             forever intertwined. Grief is the terrible <lb/>&gt;reminder of the depths of our love and, like
             love, grief is <lb/>&gt;non-negotiable. There is a vastness to grief that overwhelms our
@@ -1010,13 +993,13 @@
             the limits of the universe. Within that <lb/>&gt;whirling gyre all manner of madnesses exist ;
             ghosts and spirits and <lb/>&gt;dream visitations, and everything else that we, in our anguish,
             will <lb/>&gt;into existence. These are precious gifts that are as valid and as real >as we need
-            them to be. They are the spirit guides that lead us out of <lb/>&gt;the <app corresp="#meca #unif">
-               <lem wit="#V1">darkness.</lem>
-               <rdg wit="#V2">darkness.*</rdg>
-            </app> &gt; <lb/>&gt; <app corresp="#meca #unif">
-               <lem wit="#V1">I</lem>
-               <rdg wit="#V2">*I</rdg>
-            </app> feel the presence of my son, all around, but he may not be there. I <lb/>&gt;hear him
+            them to be. They are the spirit guides that lead us out of <lb/>&gt;the <choice corresp="#meca #unif">
+               <sic source="#V1">darkness.</sic>
+               <corr source="#V2">darkness.*</corr>
+            </choice> &gt; <lb/>&gt; <choice corresp="#meca #unif">
+               <sic source="#V1">I</sic>
+               <corr source="#V2">*I</corr>
+            </choice> feel the presence of my son, all around, but he may not be there. I <lb/>&gt;hear him
             talk to me, parent me, guide me, though he may not be there. He <lb/>&gt;visits Susie in her
             sleep regularly, speaks to her, comforts her, but he <lb/>&gt;may not be there. Dread grief
             trails bright phantoms in its wake. These <lb/>&gt;spirits are ideas, essentially. They are our
@@ -1024,44 +1007,44 @@
             <lb/>&gt;possibility. Follow your ideas, because on the other side of the idea is <lb/>&gt;change and
             growth and redemption. Create your spirits. Call to them. <lb/>&gt;Will them alive. Speak to
             them. It is their impossible and ghostly hands <lb/>&gt;that draw us back to the world from
-            which we were jettisoned ; better now <lb/>&gt;and unimaginably <app corresp="#meca #unif">
-               <lem wit="#V1">changed.</lem>
-               <rdg wit="#V2">changed.*</rdg>
-            </app> &gt; <lb/>&gt; <app corresp="#meca #unif">
-               <lem wit="#V1">With</lem>
-               <rdg wit="#V2">*With</rdg>
-            </app> love, <app corresp="#meca #unif #para #biblio">
-               <lem wit="#V1">Nick.</lem>
-               <rdg wit="#V2">Nick.* [@cave_issue_2018]</rdg>
-            </app>
+            which we were jettisoned ; better now <lb/>&gt;and unimaginably <choice corresp="#meca #unif">
+               <sic source="#V1">changed.</sic>
+               <corr source="#V2">changed.*</corr>
+            </choice> &gt; <lb/>&gt; <choice corresp="#meca #unif">
+               <sic source="#V1">With</sic>
+               <corr source="#V2">*With</corr>
+            </choice> love, <choice corresp="#meca #unif #para #biblio">
+               <sic source="#V1">Nick.</sic>
+               <corr source="#V2">Nick.* [@cave_issue_2018]</corr>
+            </choice>
             <milestone unit="tei:p"/>
             <lb/>J’ai livré en partie ma propre histoire affective de la
             lecture, ma propre chronique racontée des œuvres m’ayant touchée et façonnée en tant que
             lectrice, à la fois au long cours et, de façon plus précipitée et incisive, dans les
             dernières années. C’est ce que m’encourage à faire une proposition comme celle de la
             recherche-création, qui préfère, pour citer Barthes encore dans la première leçon de *La
-            Préparation du roman*, aux « impostures de l’objectivité » « les leurres de la <app corresp="#meca #unif">
-               <lem wit="#V1">subjectivité. »</lem>
-               <rdg wit="#V2">subjectivité ».</rdg>
-            </app> Car : « Mieux vaut l’Imaginaire du Sujet que sa censure »
+            Préparation du roman*, aux « impostures de l’objectivité » « les leurres de la <choice corresp="#meca #unif">
+               <sic source="#V1">subjectivité. »</sic>
+               <corr source="#V2">subjectivité ».</corr>
+            </choice> Car : « Mieux vaut l’Imaginaire du Sujet que sa censure »
             [@barthes_preparation_2015, p. 14]. Lire, écrire sont des accompagnements, et il est
             parfois possible d’en isoler des morceaux par la référence ou la citation ; d’autres
-            fois des entreprises artistiques <app corresp="#subst #reformulation">
-               <lem wit="#V1">en font</lem> 
-               <rdg wit="#V2">font de l’accompagnement</rdg></app> leur posture même ou leur
-                  destination, après un virage total de vie, un « milieu du chemin de la <app corresp="#subst #add">
-<lem wit="#V1">vie »</lem>
-               <rdg wit="#V2">vie »[^chemin]</rdg>
-            </app> particulièrement brutal. Mais pour la plupart ces accompagnements sont diffus,
+            fois des entreprises artistiques <choice corresp="#subst #reformulation">
+               <sic source="#V1">en font</sic> 
+               <corr source="#V2">font de l’accompagnement</corr></choice> leur posture même ou leur
+                  destination, après un virage total de vie, un « milieu du chemin de la <choice corresp="#subst #add">
+<sic source="#V1">vie »</sic>
+               <corr source="#V2">vie »[^chemin]</corr>
+            </choice> particulièrement brutal. Mais pour la plupart ces accompagnements sont diffus,
             éparpillés, sous-jacents. En faire la chronique demande alors une attention délibérée,
             car ils font le fond même de nos vies, la toile qui nous sous-tend, aussi solide que
             diaphane, tissée serré. <milestone unit="tei:p"/>
-            <lb/><app corresp="#subst #add">
-               <lem/>
-               <rdg wit="#V2">[^chemin]: Ici je fais bien sûr référence au vers de Dante
+            <lb/><choice corresp="#subst #add">
+               <sic/>
+               <corr source="#V2">[^chemin]: Ici je fais bien sûr référence au vers de Dante
             qui ouvre le livre de _L’Enfer_ dans la _Divine Comédie_, et que reprend Roland
             @barthes_preparation_2015 dans _La Préparation du roman_. <milestone unit="tei:p"/>
-                  <lb/></rdg></app>
+                  <lb/></corr></choice>
             <milestone unit="tei:p"/>
             <lb/>[^5]: Comme le fait Catherine Mavrikakis dans l’intrépide
             « Lettre à Forest » [-@mavrikakis_lettre_2019] <milestone unit="tei:p"/> <lb/>[^6]: Voir en particulier les chapitres 7 et 8, p. 200-221, où
@@ -1075,13 +1058,13 @@
             l’Université Columbia :
             https://prolongedgrief.columbia.edu/prolonged-grief-treatment/ <milestone
                unit="tei:p"/> <lb/>[^21]: C’est toute l’hypothèse
-            de Vinciane <app corresp="#meca #md #unif">
-               <lem wit="#V1">Despret</lem>
-               <rdg wit="#V2">@despret_au_2015</rdg>
-            </app> dans son <app corresp="#meca #md #unif">
-               <lem wit="#V1">essai [@despret_au_2015]</lem>
-               <rdg wit="#V2">essai</rdg>
-            </app>.
+            de Vinciane <choice corresp="#meca #md #unif">
+               <sic source="#V1">Despret</sic>
+               <corr source="#V2">@despret_au_2015</corr>
+            </choice> dans son <choice corresp="#meca #md #unif">
+               <sic source="#V1">essai [@despret_au_2015]</sic>
+               <corr source="#V2">essai</corr>
+            </choice>.
             <milestone unit="tei:p"/>
             <lb/>[^23]: Sur la dimension d’esquisse de cette étude pourtant
             immédiatement devenue un texte de référence, voir Jean @allouch_erotique_1995, p. 17.
@@ -1091,8 +1074,8 @@
             Oberhuber, Catherine Mavrikakis et Simon Harel à l’Université de Montréal (CRSH
             2020-2023) : https://avotreservice.net <milestone unit="tei:p"/>
             <lb/>[^31]: https://www.theredhandfiles.com <milestone unit="tei:p"/>
-            <lb/>[^34]: Ma traduction. <app corresp="#meca #md"><lem wit="#V1"/><rdg wit="#V2"><milestone unit="tei:p"/>
-            <lb/></rdg></app> [^37]: C’est moi qui souligne. <milestone unit="tei:p"/>
+            <lb/>[^34]: Ma traduction. <choice corresp="#meca #md"><sic source="#V1"/><corr source="#V2"><milestone unit="tei:p"/>
+            <lb/></corr></choice> [^37]: C’est moi qui souligne. <milestone unit="tei:p"/>
             <lb/>## Bibliographie</ab>
       </body>
    </text>

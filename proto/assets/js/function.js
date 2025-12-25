@@ -1,4 +1,4 @@
-function review(app, lem) {
+function review(choice, sic) {
     XsltForms_xmlevents.dispatch(
         document.getElementById("review"),
         "callbackevent",
@@ -7,8 +7,8 @@ function review(app, lem) {
         null,
         null,
         {
-            app: app,
-            lem: lem
+            choice: choice,
+            sic: sic
         }
     );
 }

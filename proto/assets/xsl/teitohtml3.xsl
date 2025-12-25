@@ -25,23 +25,27 @@
         </p>
     </xsl:template>
     
-    <xsl:template match="tei:app">
+    <xsl:template match="tei:choice">
         <span id="{@xml:id}">
-            <xsl:apply-templates select="tei:rdg"/>
+            <xsl:apply-templates select="tei:corr"/>
         </span>
     </xsl:template>
     
     
-    <xsl:template match="tei:rdg[parent::tei:app[contains(@corresp, '#meca')]]">
-        <span class="rdg2">
+    <xsl:template match="tei:corr[parent::tei:choice[contains(@corresp, '#meca')]]">
+        <span class="corr2">
             <xsl:apply-templates/>
         </span>
     </xsl:template>
 
-    <xsl:template match="tei:rdg">
+    <xsl:template match="tei:corr">
         <span>
             <xsl:apply-templates/>
         </span>
+    </xsl:template>
+
+    <xsl:template match="tei:lb">
+        <br/>
     </xsl:template>
     
 </xsl:stylesheet>

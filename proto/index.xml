@@ -19,17 +19,17 @@
         <xf:model id="review">
             <xf:instance id="text" src="ex_tei.xml"/>
 
-            <xf:instance id="app">
-                <app xmlns="http://www.tei-c.org/ns/1.0" xml:id="">
-                    <lem xml:id=""/> 
-                </app>
+            <xf:instance id="choice">
+                <choice xmlns="http://www.tei-c.org/ns/1.0" xml:id="">
+                    <sic xml:id=""/> 
+                </choice>
             </xf:instance>
 
             <xf:instance id="apparatus">
-                <app xmlns="http://www.tei-c.org/ns/1.0" xml:id="">
-                    <lem xml:id=""/>
-                    <rdg xml:id=""/>
-                </app>
+                <choice xmlns="http://www.tei-c.org/ns/1.0" xml:id="">
+                    <sic xml:id=""/>
+                    <corr xml:id=""/>
+                </choice>
             </xf:instance>
 
             <xf:instance id="processing">
@@ -38,25 +38,25 @@
 
             <xf:action ev:event="callbackevent">
 
- <!-- Remise à zéro de l'instance app --> 
-<xf:delete nodeset="instance('app')/*"/>
-    <xf:insert origin="instance('apparatus')/tei:lem" context="instance('app')" nodeset="*"/> 
+ <!-- Remise à zéro de l'instance choice --> 
+<xf:delete nodeset="instance('choice')/*"/>
+    <xf:insert origin="instance('apparatus')/tei:sic" context="instance('choice')" nodeset="*"/> 
 
 
-                <xf:setvalue ref="instance('app')/@xml:id" value="event('app')"/>
-                <xf:setvalue ref="instance('app')/tei:lem/@xml:id" value="event('lem')"/>
-                <xf:insert origin="instance('text')//tei:app[contains(@corresp, '#subst')][@xml:id = event('app')]/*[@xml:id = event('lem')]/node()" context="instance('app')/tei:lem" />
+                <xf:setvalue ref="instance('choice')/@xml:id" value="event('choice')"/>
+                <xf:setvalue ref="instance('choice')/tei:sic/@xml:id" value="event('sic')"/>
+                <xf:insert origin="instance('text')//tei:choice[contains(@corresp, '#subst')][@xml:id = event('choice')]/*[@xml:id = event('sic')]/node()" context="instance('choice')/tei:sic" />
 
-                <xf:action while="count(instance('text')//tei:app[contains(@corresp, '#subst')][@xml:id = event('app')]/*[@xml:id[not(. = instance('app')//@xml:id)]]) > 0">
-                    <xf:insert origin="instance('apparatus')/tei:rdg" context="instance('app')" nodeset="*" at="last()"/>
-                    <xf:var name="rdg" value="instance('text')//tei:app[contains(@corresp, '#subst')][@xml:id = event('app')]/*/@xml:id[not(. = instance('app')//@xml:id)][1]"/>
-                    <xf:setvalue ref="instance('processing')" value="$rdg" />
-                    <xf:setvalue ref="instance('app')/tei:rdg[@xml:id = '']/@xml:id" value="$rdg"/>
-                    <xf:insert context="instance('app')/tei:rdg[@xml:id = instance('processing')]" origin="instance('text')//tei:app[contains(@corresp, '#subst')][@xml:id = event('app')]/*[@xml:id = instance('processing')]/node()"/>
+                <xf:action while="count(instance('text')//tei:choice[contains(@corresp, '#subst')][@xml:id = event('choice')]/*[@xml:id[not(. = instance('choice')//@xml:id)]]) > 0">
+                    <xf:insert origin="instance('apparatus')/tei:corr" context="instance('choice')" nodeset="*" at="last()"/>
+                    <xf:var name="corr" value="instance('text')//tei:choice[contains(@corresp, '#subst')][@xml:id = event('choice')]/*/@xml:id[not(. = instance('choice')//@xml:id)][1]"/>
+                    <xf:setvalue ref="instance('processing')" value="$corr" />
+                    <xf:setvalue ref="instance('choice')/tei:corr[@xml:id = '']/@xml:id" value="$corr"/>
+                    <xf:insert context="instance('choice')/tei:corr[@xml:id = instance('processing')]" origin="instance('text')//tei:choice[contains(@corresp, '#subst')][@xml:id = event('choice')]/*[@xml:id = instance('processing')]/node()"/>
                 </xf:action>
 
-                <xf:delete nodeset="instance('text')//tei:app[contains(@corresp, '#subst')][@xml:id = event('app')]/*"/>
-                <xf:insert origin="instance('app')/node()" context="instance('text')//tei:app[contains(@corresp, '#subst')][@xml:id = event('app')]" />
+                <xf:delete nodeset="instance('text')//tei:choice[contains(@corresp, '#subst')][@xml:id = event('choice')]/*"/>
+                <xf:insert origin="instance('choice')/node()" context="instance('text')//tei:choice[contains(@corresp, '#subst')][@xml:id = event('choice')]" />
             </xf:action>
         </xf:model>
     </head>
@@ -94,7 +94,7 @@
             <h2>Debug</h2>
 
             <xf:output value="serialize(instance('text'))"/>
-            <xf:output value="serialize(instance('app'))"/>
+            <xf:output value="serialize(instance('choice'))"/>
             <xf:output value="serialize(instance('processing'))"/>
         </div>
         <script type="text/javascript" src="assets/js/function.js">/**/</script>

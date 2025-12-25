@@ -5,9 +5,9 @@
     version="2.0">
     
     
-    <xsl:variable name="app-prefix" select="'app-'"/>
-    <xsl:variable name="rdg-prefix" select="'rdg-'"/>
-    <xsl:variable name="lem-prefix" select="'lem-'"/>
+    <xsl:variable name="choice-prefix" select="'choice-'"/>
+    <xsl:variable name="corr-prefix" select="'corr-'"/>
+    <xsl:variable name="sic-prefix" select="'sic-'"/>
     
     <xsl:output method="xml" encoding="UTF-8"/>
     
@@ -60,7 +60,7 @@
     </xsl:template>
     
     
-    <xsl:template match="tei:app">
+    <xsl:template match="tei:choice">
         <xsl:copy>
             <xsl:for-each select="@*">
                 <xsl:if test="name() != 'xml:id'">
@@ -71,7 +71,7 @@
             </xsl:for-each>
             
             <xsl:attribute name="xml:id">
-                <xsl:value-of select="$app-prefix || (count(preceding::tei:app) + 1)"/>
+                <xsl:value-of select="$choice-prefix || (count(preceding::tei:choice) + 1)"/>
             </xsl:attribute>
             
             <xsl:apply-templates/>
@@ -79,7 +79,7 @@
     </xsl:template>
     
     
-    <xsl:template match="tei:rdg">
+    <xsl:template match="tei:corr">
         <xsl:copy>
             <xsl:for-each select="@*">
                 <xsl:if test="name() != 'xml:id'">
@@ -90,14 +90,14 @@
             </xsl:for-each>
             
             <xsl:attribute name="xml:id">
-                <xsl:value-of select="$lem-prefix || (count(preceding::tei:lem) + 1)"/>
+                <xsl:value-of select="$corr-prefix || (count(preceding::tei:corr) + 1)"/>
             </xsl:attribute>
             
             <xsl:apply-templates/>
         </xsl:copy>
     </xsl:template>
     
-    <xsl:template match="tei:lem">
+    <xsl:template match="tei:sic">
         <xsl:copy>
             <xsl:for-each select="@*">
                 <xsl:if test="name() != 'xml:id'">
@@ -108,7 +108,7 @@
             </xsl:for-each>
             
             <xsl:attribute name="xml:id">
-                <xsl:value-of select="$lem-prefix || (count(preceding::tei:lem) + 1)"/>
+                <xsl:value-of select="$sic-prefix || (count(preceding::tei:sic) + 1)"/>
             </xsl:attribute>
             
             <xsl:apply-templates/>

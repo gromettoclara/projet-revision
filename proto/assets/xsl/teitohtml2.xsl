@@ -25,16 +25,20 @@
         </p>
     </xsl:template>
     
-    <xsl:template match="tei:app">
-        <span class="app" id="{ ./@xml:id }"><xsl:apply-templates select="tei:lem"/></span>
+    <xsl:template match="tei:choice">
+        <span class="choice" id="{ ./@xml:id }"><xsl:apply-templates select="tei:sic"/></span>
     </xsl:template>
     
-    <xsl:template match="tei:lem">
-        <span class="lem" id="{ ./@xml:id }"><span style="cursor: pointer;" onclick="review('{ parent::tei:app/@xml:id }', '{ ./@xml:id }')"><xsl:apply-templates/></span></span>
+    <xsl:template match="tei:sic">
+        <span class="sic" id="{ ./@xml:id }"><span style="cursor: pointer;" onclick="review('{ parent::tei:choice/@xml:id }', '{ ./@xml:id }')"><xsl:apply-templates/></span></span>
     </xsl:template>
     
-    <xsl:template match="tei:rdg">
-        <span class="rdg" id="{ ./@xml:id }"><span style="cursor: pointer;" onclick="review('{ parent::tei:app/@xml:id }', '{ ./@xml:id }')"><xsl:apply-templates/></span></span>
+    <xsl:template match="tei:corr">
+        <span class="corr" id="{ ./@xml:id }"><span style="cursor: pointer;" onclick="review('{ parent::tei:choice/@xml:id }', '{ ./@xml:id }')"><xsl:apply-templates/></span></span>
+    </xsl:template>
+
+    <xsl:template match="tei:lb">
+        <br/>
     </xsl:template>
     
 </xsl:stylesheet>

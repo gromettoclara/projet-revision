@@ -4,16 +4,16 @@
 import re
 from xml.sax.saxutils import escape
 
-def diff_to_tei(diff_text: str, wit_lem="#V1", wit_rdg="#V2") -> str:
+def diff_to_tei(diff_text: str, source_sic="#V1", source_corr="#V2") -> str:
     """
-    Transforme le texte avec [-...-] {+...+} en TEI avec <app>, <lem>, <rdg>.
+    Transforme le texte avec [-...-] {+...+} en TEI avec <choice>, <sic>, <corr>.
     """
     pattern = re.compile(r"\[-(.*?)-\]\s*\{\+(.*?)\+\}", re.DOTALL)
 
     def replacer(match):
-        deleted = escape(match.group(1).strip())
-        added = escape(match.group(2).strip())
-        return f"<app><lem wit=\"{wit_lem}\">{deleted}</lem><rdg wit=\"{wit_rdg}\">{added}</rdg></app>"
+        deleted = match.group(1).strip()
+        added = match.group(2).strip()
+        return f"<choice><sic source=\"{source_sic}\">{deleted}</sic><corr source=\"{source_corr}\">{added}</corr></choice>"
 
     tei_body = pattern.sub(replacer, diff_text)
 
@@ -24,12 +24,8 @@ def diff_to_tei(diff_text: str, wit_lem="#V1", wit_rdg="#V2") -> str:
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
 
-<!DOCTYPE TEI [
-     <!ENTITY nbsp '&#160;'>
 
-]>
-
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0">s
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -72,30 +68,19 @@ def diff_to_tei(diff_text: str, wit_lem="#V1", wit_rdg="#V2") -> str:
                <!--ref de l'article-->
                <note>Encodage XML à partir des sources stylo : versions préparatoires de l'article</note>
             </biblStruct>
-            <listWit>
-               <witness xml:id="V1">Version du <date when-iso="date" type="versionning" resp="#truc">date</date><ptr
-                  target="url"/></witness>
-               <witness xml:id="V2">Version du <date when-iso="date" type="versionning" resp="#truc">date</date> <desc>desc</desc><ptr
-                  target="url"/></witness>
-            </listWit>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
          <editorialDecl>
-            <p>L'alignement des versions a été réalisé avec l'aide de l'algorithme <code>wdiff</code>. Cet alignement a été répris et traité par un script en python "maison", pour constituer un premier encodage en XML-TEI. Ce premier encodage a été corrigé à la main, puis une feuille de style XSLT a été appliquée pour rajouter des identifiants à tous les éléments &lt;app&gt;. </p>
-            <p>Voici les principes adoptés pour l'alignement : <list>
-               <item>La structuration du texte en paragraphes (&lt;p&gt;) a été abandonnée : les
-                  textes sont insérés dans un conteneur &lt;ab&gt; et les changements de
-                  paragraphes sont signalés par des &lt;milestone&gt;, et les retours simples ont été supprimé lors d'une étape de nettoyage des articles (on estime qu'ils servent uniquement la lisbilité du code en écriture et n'ont pas d'impact sur la suite de la chaîne).</item>
-               <item>autre item</item>
-               <item>Étant donné que les éditeurs travaillent sur du code en markdown, on a comparé les articles en markdown. Il y a pas encore d'aspect </item>
-               <!--<item>autre item éventuellement</item>-->
+            <p>L'alignement des versions a été réalisé avec l'aide de l'algorithme <code>wdiff</code>. Cet alignement a été repris et traité par un script en python "maison", pour constituer un premier encodage en XML-TEI. Ce premier encodage a été corrigé à la main, puis une feuille de style XSLT a été appliquée pour rajouter des identifiants à tous les éléments &lt;choice&gt;. </p>
+            <p>Voici les principes adoptés : <list>
+               <item>Étant donné que les éditeurs travaillent sur du code en markdown, on a comparé les articles en markdown, et traité le code comme du plein texte.</item>
+               <item>Le niveau de granularité permis par l'algorithme <code>wdiff</code> est le mot. Ce niveau est satisfaisnt jusqu'à ce qu'il soit nécessaire de décorréler une correction sur un mot d'une correction sur la ponctuation qui lui est accolée. Cette subtilité sera corrigée à la main.</item>
             </list></p>
             <p>La modélisation des corrections est basée sur les distinctions opérées par le <ref
                target="https://www.chicagomanualofstyle.org/book/ed18/frontmatter/toc.html"
                >CMOS18</ref> et sur un entretien avec l'éditrice de la revue HN Florence.</p>
-            <p>Deux systèmes se superposent : un niveau de criticité de vérification et une expertise métier reliée.
-               querie ou hard. <!--expliquer--></p>
+            <p>Deux systèmes se superposent : une expertise métier et une catégorisation plus fine du type de correction.</p>
             <p>Pour chaque élément &lt;app&gt;, un attribut "@corresp" est utilisé pour préciser la
                nature de la correction. Les valeurs possibles pour cet attribut sont:<list>
                   <item xml:id="meca">Corrections mécaniques : mécanique de la langue, mécanique du code, mécanique de la pipeline, fluidité de la lecture : on peut diviser en sous-catégories.
@@ -143,18 +128,25 @@ def diff_to_tei(diff_text: str, wit_lem="#V1", wit_rdg="#V2") -> str:
          <variantEncoding method="parallel-segmentation" location="internal"/>
       </encodingDesc>
       <profileDesc>
+         <listChange/> <!--lister les versions-->
          <langUsage>
             <language ident="fr">French</language>
          </langUsage>
          <textDesc>
-            <channel mode="w">Stylo <ptr target="https://stylo.huma-num.fr/"/>; éditeur collaboratif sémantique en markdown</channel>
-            <constitution/>
-            <derivation type="revision"/>
-            <domain type="education"/>
+            <channel mode="w">
+               Environnement d’écriture collaborative :
+               <rs type="software">Stylo</rs>
+               <ptr target="https://stylo.huma-num.fr/"/>.
+            </channel>
+            <constitution type="composite">
+               Texte constitué de la superposition de plusieurs couches ou états successifs.
+            </constitution>
+            <derivation/>
+            <domain type="academicResearch"/>
             <factuality type="fact"/>
             <interaction/>
             <preparedness type="revised"/>
-            <purpose type="inform" degree="high"/>
+            <purpose type="inform" subtype="research" degree="high"/>
          </textDesc>
          <textClass>
             <keywords scheme="#fr_RAMEAU">
@@ -191,7 +183,7 @@ def diff_to_tei(diff_text: str, wit_lem="#V1", wit_rdg="#V2") -> str:
 
 def main():
     input_file = "./textes/comparaison.txt"
-    output_file = "apparat.xml"
+    output_file = "revision.xml"
 
     with open(input_file, "r", encoding="utf-8") as f:
         diff_text = f.read()

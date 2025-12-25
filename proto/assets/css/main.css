@@ -1,19 +1,23 @@
-.app {
-  border: 1px red solid;
+.choice {
+  border: 2px red solid;
 }
 
-.lem {
+.sic {
   text-decoration: underline;
   text-decoration-color: blue;
+  text-decoration-thickness: 3px;
+  font-weight: bold;
 }
 
-.rdg {
+.corr {
   text-decoration: underline;
   text-decoration-color: green;
+  text-decoration-thickness: 3px;
 
 }
 
-.rdg2 {
+.corr2 {
   text-decoration: underline;
   text-decoration-color: violet;
+  text-decoration-thickness: 3px;
 }
