@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/Debian)  (format=lualatex 2025.2.24)  25 DEC 2025 20:06
+This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/Debian)  (format=lualatex 2025.2.24)  25 DEC 2025 21:37
  restricted system commands enabled.
 **claraintro.tex
 (./claraintro.tex
@@ -934,36 +934,55 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 
-Package hyperref Warning: Ignoring empty anchor on input line 244.
+Package hyperref Warning: Ignoring empty anchor on input line 245.
 
+LaTeX Font Info:    Calculating math sizes for size <9.5> on input line 245.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 9.5pt on input line 245.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 6.64996pt on input line 245.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 4.75pt on input line 245.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 9.5pt on input line 245.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 6.64996pt on input line 245.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 4.75pt on input line 245.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 9.5pt on input line 245.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 6.64996pt on input line 245.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 4.75pt on input line 245.
 [2
 Missing character: There is no ᵉ (U+1D49) in font [lmroman10-regular]:+tlig;!
 ]
 
-Package hyperref Warning: Ignoring empty anchor on input line 368.
+Package hyperref Warning: Ignoring empty anchor on input line 370.
 
 [3]
 
-Package hyperref Warning: Ignoring empty anchor on input line 395.
+Package hyperref Warning: Ignoring empty anchor on input line 397.
 
 
-Package hyperref Warning: Ignoring empty anchor on input line 424.
+Package hyperref Warning: Ignoring empty anchor on input line 426.
 
 [4]
 
-Package hyperref Warning: Ignoring empty anchor on input line 451.
+Package hyperref Warning: Ignoring empty anchor on input line 453.
 
-<./workflow.png, id=42, 2593.69pt x 714.67pt>
+<./workflow.png, id=46, 2593.69pt x 714.67pt>
 File: ./workflow.png Graphic file (type png)
 <use ./workflow.png>
-Package luatex.def Info: ./workflow.png  used on input line 457.
+Package luatex.def Info: ./workflow.png  used on input line 459.
 (luatex.def)             Requested size: 2593.6837pt x 714.66824pt.
 [5<./workflow.png>]
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 495.
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 497.
  [6]
 
-Package hyperref Warning: Ignoring empty anchor on input line 555.
+Package hyperref Warning: Ignoring empty anchor on input line 557.
 
 [7] [8] (./claraintro.aux)
  ***********
@@ -973,15 +992,15 @@ L3 programming layer <2024-01-22>
 )
 
 Here is how much of LuaTeX's memory you used:
- 21532 strings out of 476553
+ 21570 strings out of 476553
  125086,1977958 words of node,token memory allocated
- 677 words of node memory still in use:
+ 717 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 1 local_par, 11 glue, 4 kern, 1 penalty, 1 margin_k
-ern, 4 glyph, 16 attribute, 59 glue_spec, 16 attribute_list, 1 write, 2 pdf_acti
+ern, 4 glyph, 20 attribute, 59 glue_spec, 20 attribute_list, 1 write, 6 pdf_acti
 on nodes
-   avail lists: 1:1,2:339,3:119,4:93,5:439,6:32,7:8828,8:2,9:187,10:20,11:692
- 43130 multiletter control sequences out of 65536+600000
- 69 fonts using 19946003 bytes
+   avail lists: 1:1,2:347,3:264,4:95,5:439,6:31,7:8828,8:67,9:192,10:20,11:692
+ 43168 multiletter control sequences out of 65536+600000
+ 87 fonts using 27424415 bytes
  108i,6n,120p,1006b,445s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/texmf
 /fonts/opentype/public/lm/lmroman10-bold.otf></usr/share/texmf/fonts/opentype/pu
@@ -992,10 +1011,10 @@ f/fonts/opentype/public/lm/lmroman10-italic.otf></usr/share/texmf/fonts/opentype
 /public/lm/lmroman10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmro
 man12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman17-regular.o
 tf>
-Output written on claraintro.pdf (8 pages, 264419 bytes).
+Output written on claraintro.pdf (8 pages, 265188 bytes).
 
-PDF statistics: 162 PDF objects out of 1000 (max. 8388607)
- 118 compressed objects within 2 object streams
+PDF statistics: 171 PDF objects out of 1000 (max. 8388607)
+ 127 compressed objects within 2 object streams
  25 named destinations out of 1000 (max. 131072)
  57 words of extra memory for PDF output out of 10000 (max. 100000000)
 

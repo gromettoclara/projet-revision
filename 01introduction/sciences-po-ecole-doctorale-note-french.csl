@@ -26,6 +26,7 @@
         <single>dir.</single>
         <multiple>dir.</multiple>
       </term>
+      <term name="accessed">consulté</term>
       <term name="no-publisher" form="short">s.n.</term>
       <term name="no-place" form="short">s.l.</term>
     </terms>
@@ -130,18 +131,19 @@
     </choose>
   </macro>
   <macro name="access">
-    <choose>
-      <if variable="URL" match="any">
-        <text variable="URL" prefix="URL&#160;: " suffix=" "/>
-        <text term="accessed" prefix="[" suffix=" "/>
-        <date variable="accessed" form="text" suffix="">
-          <date-part name="day"/>
-          <date-part name="month"/>
-          <date-part name="year"/>
-        </date>
-      </if>
-    </choose>
-  </macro>
+  <choose>
+    <if variable="URL">
+      <group delimiter=" ">
+        <text variable="URL" prefix="URL&#160;: "/>
+        <group prefix="(" suffix=")">
+          <text value="consulté le "/>
+          <text variable="accessed" form="text" date-parts="day month year"/>
+        </group>
+      </group>
+    </if>
+  </choose>
+</macro>
+
   <macro name="title">
     <choose>
       <if type="article bill book broadcast graphic legal_case legislation map motion_picture patent personal_communication report song webpage" match="any">
@@ -428,7 +430,7 @@
           <text macro="yearpage" suffix=". "/>
           <text macro="medium" suffix=". "/>
           <text macro="dimensions" suffix=". "/>
-          <text macro="access" suffix="]. "/>
+          <text macro="access"/>
           <text macro="archive"/>
         </else>
       </choose>
@@ -455,7 +457,7 @@
         <text macro="medium"/>
         <text macro="dimensions"/>
         <text macro="collection"/>
-        <text macro="access" suffix="]"/>
+        <text macro="access"/>
         <text macro="archive"/>
       </group>
     </layout>

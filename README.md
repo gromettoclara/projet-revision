@@ -30,3 +30,15 @@
 ### Faire le diff avec `wdiff` 
 
 `wdiff <V1> <V2> > comparaison.txt`
+
+
+\usepackage{scrextend} 
+\KOMAoptions{footnotes=multiple}
+\addtokomafont{footnote}{\fontsize{9.5pt}{10.5pt}\selectfont}
+\newcommand*\footnotemarkspace{2em} 
+\deffootnote{\footnotemarkspace}
+  {\parindent}
+  {\makebox[\footnotemarkspace][r]{\fontsize{9.5pt}{10.5pt}\selectfont\thefootnotemark.\hspace{0.8em}}} 
+\makeatletter
+\renewcommand{\@makefnmark}{\hbox{\hspace{0pt}\textsuperscript{\normalfont\@thefnmark}}}
+\makeatother
